@@ -62,3 +62,7 @@ the amount of Blocto points to send
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Demo
+
+You can find the demo project here: [https://github.com/portto/reward-demo](https://github.com/portto/reward-demo)
+
