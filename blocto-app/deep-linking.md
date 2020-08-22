@@ -6,7 +6,7 @@ description: Open your dApp with Blocto in one click
 
 > With Blocto deep link, you can boost the conversion rate new sign-ups. According to our partners, it has improved from **5%** to **80%**
 
-### Using Blocto deep link
+### Usage
 
 ```http
 https://blocto.app/link?url=URL&blockchain=BLOCKCHAIN
@@ -20,7 +20,7 @@ For example:
 * CryptoKitties `https://blocto.app/link?url=https://cryptokitties.co&blockchain=ethereum`
 * Knight Story`https://blocto.app/link?url=https://knightstory.io&blockchain=ethereum`
 
-### Deep link experience
+### Deep-link Experience
 
 #### For new users
 
