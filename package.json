@@ -7,12 +7,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "docsify-cli": "^4.3.0",
-    "now": "^15.8.0"
+    "docsify-cli": "^4.3.0"
   },
   "scripts": {
-    "start": "docsify start docs",
-    "deploy": "now -p"
+    "start": "docsify start docs"
   },
   "repository": {
     "type": "git",
