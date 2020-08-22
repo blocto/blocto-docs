@@ -442,5 +442,5 @@ The demo project also shows how you can run local **Flow emulator** and **dev-wa
 
 ## Other Examples
 
-**NFT Minter** by Blockchain@Berkeley: [https://berkeley-blockchain-demo.vercel.app/](https://berkeley-blockchain-demo.vercel.app/)
+* **NFT Minter** by Blockchain@Berkeley: [https://berkeley-blockchain-demo.vercel.app/](https://berkeley-blockchain-demo.vercel.app/)
 
