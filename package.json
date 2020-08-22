@@ -1,0 +1,37 @@
+{
+  "name": "blocto-wiki",
+  "version": "1.0.0",
+  "description": "Blocto Wiki",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "docsify-cli": "^4.3.0",
+    "now": "^15.8.0"
+  },
+  "scripts": {
+    "start": "docsify start docs",
+    "deploy": "now -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/portto/wiki.git"
+  },
+  "keywords": [
+    "Blocto",
+    "Wallet",
+    "Ethereum",
+    "Tron",
+    "Flow",
+    "Tangerine",
+    "Blockchain",
+    "SDK"
+  ],
+  "author": "Hsuan Lee <hlee@portto.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/portto/wiki/issues"
+  },
+  "homepage": "https://github.com/portto/wiki#README"
+}
