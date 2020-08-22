@@ -4,14 +4,17 @@
 
 ## Using Blocto SDK <a id="blocto-sdk"></a>
 
+* [Overview](blocto-sdk/overview.md)
 * [Flow](blocto-sdk/flow/README.md)
-  * [Setup](blocto-sdk/flow/setup.md)
   * [Login/Register](blocto-sdk/flow/login-register.md)
   * [Sign Transaction](blocto-sdk/flow/authorization.md)
 
 ## Using Blocto App <a id="blocto-app"></a>
 
-* [Untitled](blocto-app/untitled.md)
+* [Deep Linking](blocto-app/deep-linking.md)
+* [Batch Transaction](blocto-app/batch-transaction.md)
+* [Push Notification](blocto-app/untitled.md)
+* [Sending Rewards](blocto-app/sending-rewards.md)
 
 ## Technical Documents
 
