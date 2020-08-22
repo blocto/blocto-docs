@@ -4,26 +4,15 @@ description: Using Blocto SDK in Flow dApps
 
 # Flow
 
-## Getting Super Powers
+![](../../.gitbook/assets/90207745_10216372775897317_679639005058301952_o.jpg)
 
-Becoming a super hero is a fairly straight forward process:
+### Flow
 
-```
-$ give me super-powers
-```
+[Flow](https://onflow.org), built by [Dapper Labs](https://www.dapperlabs.com/), is a decentralized platform built to support the next generation of games, apps, and the digital assets that power them.
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+### Flow JavaScript SDK
 
-Once you're strong enough, save the world:
+Flow ships with a bundle JavaScript libraries including [Flow SDK](https://github.com/onflow/flow-js-sdk/tree/master/packages/sdk) and [Flow Client Library \(FCL\)](https://github.com/onflow/flow-js-sdk/tree/master/packages/fcl). With these libraries, web-based dApps can interact with Flow blockchain easily. If you're familiar with dApp development on Ethereum, they're basically the web3.js for Flow.
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
-
-
+Flow Client Library, or FCL, defines how web-based dApps can interact with wallet providers like Blocto SDK. In the following sections, we will show you how to use Blocto wallet service in your Flow dApp.
 
