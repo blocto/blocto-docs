@@ -1,2 +1,24 @@
+---
+description: Flow networks that Blocto supports
+---
+
 # Flow Networks
+
+### Mainnet \(Coming Soon\)
+
+* Access Node `TBA`
+* Blocto Wallet `TBA`
+
+### Testnet 
+
+* Access Node `https://access-testnet.onflow.org`
+* Blocto Wallet `https://flow-wallet-testnet.blocto.app/authn`
+
+```javascript
+import * as fcl from "@onflow/fcl"
+
+fcl.config()
+  .put("accessNode.api", "https://access-testnet.onflow.org") // connect to Flow testnet
+  .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn") // use Blocto testnet wallet
+```
 

@@ -7,7 +7,7 @@
 * [Overview](blocto-sdk/overview.md)
 * [Flow](blocto-sdk/flow/README.md)
   * [Tutorial](blocto-sdk/flow/tutorial.md)
-  * [Login/Register](blocto-sdk/flow/login-register.md)
+  * [Login / Register](blocto-sdk/flow/login-register.md)
   * [Sign Transaction](blocto-sdk/flow/authorization.md)
   * [Flow Networks](blocto-sdk/flow/flow-networks.md)
 * [Ethereum \(Coming Soon\)](blocto-sdk/ethereum-coming-soon.md)

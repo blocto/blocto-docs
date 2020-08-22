@@ -1,2 +1,44 @@
-# Login/Register
+---
+description: Connect to Blocto wallet through Flow Client Library (FCL)
+---
+
+# Login / Register
+
+### Step 1 - Configure FCL
+
+```javascript
+import * as fcl from "@onflow/fcl"
+
+fcl.config()
+  // connect to Flow testnet
+  .put("accessNode.api", "https://access-testnet.onflow.org")
+  // use Blocto testnet wallet
+  .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
+```
+
+### Step 2 - Authenticate
+
+```javascript
+import * as fcl from "@onflow/fcl"
+
+fcl
+  .currentUser()
+  .subscribe(console.log) // fires everytime account connection status updates
+  
+// authenticate
+fcl.authenticate()
+```
+
+### Step 3 - Unauthenticate
+
+```javascript
+import * as fcl from "@onflow/fcl"
+
+fcl
+  .currentUser()
+  .subscribe(console.log) // fires everytime account connection status updates
+  
+// unauthenticate and clear account info in FCL
+fcl.unauthenticate()
+```
 
