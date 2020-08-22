@@ -2,7 +2,7 @@
 description: You can send reward to your users as a way of incentive
 ---
 
-# Sending Rewards
+# Rewards
 
 ### Domains
 

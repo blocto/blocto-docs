@@ -2,7 +2,15 @@
 
 * [Introduction](README.md)
 
-## Using Blocto SDK <a id="blocto-sdk"></a>
+## Blocto <a id="blocto-app"></a>
+
+* [Overview](blocto-app/overview.md)
+* [Deep Linking](blocto-app/deep-linking.md)
+* [Batch Transaction](blocto-app/batch-transaction.md)
+* [Push Notification](blocto-app/untitled.md)
+* [Rewards](blocto-app/sending-rewards.md)
+
+## Blocto SDK
 
 * [Overview](blocto-sdk/overview.md)
 * [Flow](blocto-sdk/flow/README.md)
@@ -14,13 +22,6 @@
 * [Tron \(Coming Soon\)](blocto-sdk/tron-coming-soon.md)
 * [Tezos \(Coming Soon\)](blocto-sdk/tezos-coming-soon.md)
 * [Solana \(Coming Soon\)](blocto-sdk/solana-coming-soon.md)
-
-## Using Blocto App <a id="blocto-app"></a>
-
-* [Deep Linking](blocto-app/deep-linking.md)
-* [Batch Transaction](blocto-app/batch-transaction.md)
-* [Push Notification](blocto-app/untitled.md)
-* [Sending Rewards](blocto-app/sending-rewards.md)
 
 ## Technical Documents
 

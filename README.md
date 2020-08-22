@@ -1,29 +1,22 @@
 ---
-description: Getting started with Blocto
+description: Getting started with Blocto and Blocto SDK
 ---
 
 # Introduction
 
-## Getting Super Powers
+Blocto is built with two goals in mind:
 
-Becoming a super hero is a fairly straight forward process:
+1. **Make it simple for average users to use dApps**
+2. **Make it simple for developers to build good dApps**
 
-```
-$ give me super-powers
-```
+For these goals we have built:
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+1. [Blocto app](blocto-app/overview.md) to reduce entry barrier and improve dApp experience
+2. [Blocto SDK](blocto-sdk/overview.md) to help developers build awesome dApps with minimal effort
+
+![](.gitbook/assets/screen-shot-2020-08-22-at-6.48.39-pm.png)
+
+{% hint style="warning" %}
+Blocto is under heavy development. New features come every week. [Subscribe to our mailing list](https://blocto.typeform.com/to/nJTnwcjv) so you don't miss out on our news.
 {% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
-
-
 
