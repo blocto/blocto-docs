@@ -1,3 +1,4 @@
-# Blocto Wiki
+# Introduction
 
 Documentations for integrating with Blocto wallet
+
