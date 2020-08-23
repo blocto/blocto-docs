@@ -5,6 +5,7 @@
 ## Blocto <a id="blocto-app"></a>
 
 * [Overview](blocto-app/overview.md)
+* [Web3 Provider](blocto-app/web3-provider.md)
 * [Deep Linking](blocto-app/deep-linking.md)
 * [Batch Transaction](blocto-app/batch-transaction.md)
 * [Push Notification](blocto-app/untitled.md)
