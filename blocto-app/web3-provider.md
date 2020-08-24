@@ -42,6 +42,8 @@ Dapper Labs has built the tools to carry out this verification:
 * [Go implementation](https://github.com/dapperlabs/dappauth)
 * [JavaScript implementation](https://github.com/dapperlabs/dappauth.js)
 
+Use it in your dApps:
+
 {% tabs %}
 {% tab title="Go" %}
 ```go
