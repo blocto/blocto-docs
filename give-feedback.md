@@ -2,7 +2,7 @@
 description: Let us know if you have found bugs or you would like to request for features.
 ---
 
-# 🖋 Give Feedback
+# Give Feedback
 
 Blocto is built for developers to optimize their dApp experience and maximize growth. We value your inputs a lot!
 
