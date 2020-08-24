@@ -22,8 +22,8 @@
   * [Flow Networks](blocto-sdk/flow/flow-networks.md)
 * [Ethereum \(Coming Soon\)](blocto-sdk/ethereum-coming-soon.md)
 * [Tron \(Coming Soon\)](blocto-sdk/tron-coming-soon.md)
-* [Tezos \(Coming Soon\)](blocto-sdk/tezos-coming-soon.md)
-* [Solana \(Coming Soon\)](blocto-sdk/solana-coming-soon.md)
+* [Tezos \(Coming in 2021\)](blocto-sdk/tezos-coming-soon.md)
+* [Solana \(Coming in 2021\)](blocto-sdk/solana-coming-soon.md)
 
 ## Technical Documents
 

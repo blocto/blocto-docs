@@ -2,7 +2,7 @@
 description: Using Blocto SDK in Solana dApps
 ---
 
-# Solana \(Coming Soon\)
+# Solana \(Coming in 2021\)
 
 ### What can I do with Blocto Solana SDK?
 

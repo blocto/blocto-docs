@@ -2,7 +2,7 @@
 description: Using Blocto SDK in Tezos dApps
 ---
 
-# Tezos \(Coming Soon\)
+# Tezos \(Coming in 2021\)
 
 ### What can I do with Blocto Tezos SDK?
 
