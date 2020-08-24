@@ -1,8 +1,9 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [📣 Introduction](README.md)
+* [🖋 Give Feedback](give-feedback.md)
 
-## Blocto <a id="blocto-app"></a>
+## 📱 Blocto <a id="blocto-app"></a>
 
 * [Overview](blocto-app/overview.md)
 * [Web3 Provider](blocto-app/web3-provider.md)
@@ -11,7 +12,7 @@
 * [Push Notification](blocto-app/untitled.md)
 * [Rewards](blocto-app/sending-rewards.md)
 
-## Blocto SDK
+## 📦 Blocto SDK
 
 * [Overview](blocto-sdk/overview.md)
 * [Flow](blocto-sdk/flow/README.md)
@@ -24,12 +25,12 @@
 * [Tezos \(Coming Soon\)](blocto-sdk/tezos-coming-soon.md)
 * [Solana \(Coming Soon\)](blocto-sdk/solana-coming-soon.md)
 
-## Technical Documents
+## 📖 Technical Documents
 
 * [Contract Wallet](technical-documents/contract-wallet.md)
 * [Key Management](technical-documents/key-management.md)
 
-## Community
+## 🤷 Community
 
 * [Discord](https://discord.gg/H34KZqF)
 * [Twitter](https://twitter.com/BloctoApp)

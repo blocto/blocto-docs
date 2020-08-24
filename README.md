@@ -2,7 +2,7 @@
 description: Getting started with Blocto and Blocto SDK
 ---
 
-# Introduction
+# 📣 Introduction
 
 Blocto is built with two goals in mind:
 
