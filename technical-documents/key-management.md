@@ -4,37 +4,39 @@ description: Blocto uses mixed-custodial model to provide both convenience and s
 
 # Key Management
 
-## Non-Custodial
+Blocto uses **mixed-custodial key management model** to provide both convenience and security, since both custodial and non-custodial models have their flaws:
+
+### Non-Custodial
 
 In non-custodial systems, user takes full responsibility in their key management. This is aligned with some of core-values of blockchain: decentralization and autonomous.
 
-### Advantages
+#### Advantages
 
 1. Doesn't have to trust any organizations.
 2. Users have full control over their accounts.
 
-### Disadvantages
+#### Disadvantages
 
 1. Complex and intimidating, especially for beginners.
 2. If user loses the key, nobody can help recover the account.
 3. If the key gets leaked, someone else will have full control over the user's account.
 
-## Custodial
+### Custodial
 
 In custodial systems, some 3rd party helps users manage their keys and provide an account/password or OAuth interface for managing the access.
 
-### Advantages
+#### Advantages
 
 1. Much simpler user experience. Similar to centralized systems.
 2. If user forgets the password, there's always a way to recover user's access.
 3. Custodial service operators usually have better security measures to manage the keys than non-tech-savvy users.
 
-### Disadvantages
+#### Disadvantages
 
 1. The custodial service operator can be malicious. They may steal users' assets.
 2. The custodial service poses an appealing target for hackers. Any centralized system has the potential to be hacked.
 
-## Mixed-Custodial
+### Mixed-Custodial
 
 Blocto incorporates a mixed-custodial key management model to take the advantages from both sides:
 
