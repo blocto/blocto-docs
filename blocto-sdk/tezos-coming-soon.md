@@ -21,7 +21,7 @@ description: Using Blocto SDK in Tezos dApps
 ### When will Blocto Tezos SDK launch?
 
 It's currently **in the early stage of development**.   
-We expect to launch Blocto SDK for Tezos **by the end of 2020**.
+We expect to launch Blocto SDK for Tezos **in early 2021**.
 
 ### Join Blocto SDK beta testing program!
 
