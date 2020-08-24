@@ -31,7 +31,7 @@
 
 ## Community
 
-* [Twitter](https://twitter.com/BloctoApp)
 * [Discord](https://discord.gg/H34KZqF)
+* [Twitter](https://twitter.com/BloctoApp)
 * [Facebook](https://www.facebook.com/blocto/)
 
