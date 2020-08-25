@@ -6,8 +6,6 @@ description: Blocto wallets are built with smart contracts
 
 Blocto wallets are built with smart contracts. This gives Blocto wallets a lot of advantages over regular private-key wallets.
 
-Blocto's EVM contract wallet was forked and modified from [Dapper Wallet](https://github.com/dapperlabs/dapper-contracts). 
-
 ### Meta Transaction
 
 Transaction fee is troublesome and confusing for blockchain beginners.
@@ -41,4 +39,8 @@ With contract wallet, Blocto can combine multiple transactions into a single tra
 
 1. Save gas fee
 2. Make multiple transactions atomic, so they either all succeed or all fail
+
+### Acknowledgement
+
+Blocto's EVM contract wallet was modified from [Dapper Wallet](https://github.com/dapperlabs/dapper-contracts). 
 
