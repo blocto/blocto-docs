@@ -6,8 +6,16 @@ description: Flow networks that Blocto supports
 
 ### Mainnet \(Coming Soon\)
 
-* Access Node `TBA`
-* Blocto Wallet `TBA`
+* Access Node `https://flow-access.portto.io`
+* Blocto Wallet `https://flow-wallet.blocto.app/authn`
+
+```javascript
+import * as fcl from "@onflow/fcl"
+
+fcl.config()
+  .put("accessNode.api", "https://flow-access.portto.io") // connect to Flow mainnet
+  .put("challenge.handshake", "https://flow-wallet.blocto.app/authn") // use Blocto wallet
+```
 
 ### Testnet 
 
