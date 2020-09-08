@@ -6,9 +6,10 @@
 ## Blocto <a id="blocto-app"></a>
 
 * [Overview](blocto-app/overview.md)
-* [Web3 Provider](blocto-app/web3-provider.md)
+* [Web3 Integration \(Ethereum/Tron/Tangerine\)](blocto-app/web3-provider/README.md)
+  * [Sign Message](blocto-app/web3-provider/sign-message.md)
+  * [Batch Transaction](blocto-app/web3-provider/batch-transaction.md)
 * [Deep Linking](blocto-app/deep-linking.md)
-* [Batch Transaction](blocto-app/batch-transaction.md)
 * [Push Notification](blocto-app/untitled.md)
 * [Rewards](blocto-app/sending-rewards.md)
 
