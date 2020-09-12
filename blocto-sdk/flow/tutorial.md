@@ -357,15 +357,15 @@ const SendTransaction = () => {
 
       const { transactionId } = tx
 
-      setStatus("Transaction sent, waiting for confirmation")
+      setStatus(`Transaction (${transactionId}) sent, waiting for confirmation`)
 
       const unsub = fcl
-        .tx({ transactionId })
+        .tx(transactionId)
         .subscribe(transaction => {
           setTransaction(transaction)
 
           if (fcl.tx.isSealed(transaction)) {
-            setStatus("Transaction is Sealed")
+            setStatus(`Transaction (${transactionId}) is Sealed`)
             unsub()
           }
         })
