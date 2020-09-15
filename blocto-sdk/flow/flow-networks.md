@@ -13,7 +13,7 @@ description: Flow networks that Blocto supports
 import * as fcl from "@onflow/fcl"
 
 fcl.config()
-  .put("accessNode.api", "https://flow-access.portto.io") // connect to Flow mainnet
+  .put("accessNode.api", "https://flow-access-mainnet.portto.io") // connect to Flow mainnet
   .put("challenge.handshake", "https://flow-wallet.blocto.app/authn") // use Blocto wallet
 ```
 
