@@ -6,7 +6,7 @@ description: Flow networks that Blocto supports
 
 ### Mainnet \(Beta\)
 
-* Access Node `https://flow-access.portto.io`
+* Access Node `https://flow-access-mainnet.portto.io`
 * Blocto Wallet `https://flow-wallet.blocto.app/authn`
 
 ```javascript
