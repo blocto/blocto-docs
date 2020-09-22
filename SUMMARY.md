@@ -10,7 +10,7 @@
   * [Sign Message](blocto-app/web3-provider/sign-message.md)
   * [Batch Transaction](blocto-app/web3-provider/batch-transaction.md)
 * [Deep Linking](blocto-app/deep-linking.md)
-* [Push Notification](blocto-app/untitled.md)
+* [Push Notification](blocto-app/push-notification.md)
 * [Rewards](blocto-app/sending-rewards.md)
 
 ## Blocto SDK
