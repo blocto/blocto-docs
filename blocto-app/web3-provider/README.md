@@ -4,7 +4,7 @@ description: >-
   blockchain
 ---
 
-# Web3.js Integration \(Ethereum/Tron/Tangerine\)
+# Web3.js Integration \(Ethereum/Tron\)
 
 ### Injection
 
