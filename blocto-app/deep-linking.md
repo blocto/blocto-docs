@@ -9,11 +9,11 @@ description: Open your dApp with Blocto in one click
 ### Usage
 
 ```http
-https://blocto.app/link?url=URL&blockchain=BLOCKCHAIN
+https://blocto.app/link?url=URL&blockchains=BLOCKCHAINS
 ```
 
 * `URL`: the URL of your dApp
-* `BLOCKCHAIN`: optional parameter. `ethereum/tron/tangerine/flow`
+* `BLOCKCHAINS`: \(optional\) blockchains you dApp use, comma separated. `ethereum/tron/tangerine/flow`
 
 For example:
 
