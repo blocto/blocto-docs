@@ -16,6 +16,21 @@ fcl.config()
   .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
 ```
 
+Alternatively, if you already have user's email and would like to pre-fill it for user's Blocto account, you can use the custom handshake URL instead:
+
+```javascript
+import * as fcl from "@onflow/fcl"
+
+fcl.config()
+  // connect to Flow testnet
+  .put("accessNode.api", "https://access-testnet.onflow.org")
+  // use Blocto testnet wallet
+  .put(
+    "challenge.handshake",
+    "https://flow-wallet-testnet.blocto.app/authn/-/user@some.where"
+  )
+```
+
 ### Step 2 - Authenticate
 
 ```javascript
