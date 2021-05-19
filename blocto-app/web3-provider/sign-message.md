@@ -4,7 +4,7 @@ description: Sign and verify challenges for off-chain authentication
 
 # Sign Message
 
-For dApps relying on `signMessage` for off-chain authentication, Blocto follows [EIP-1654](https://github.com/ethereum/EIPs/issues/1654). To verify the signature, you need to call method on the wallet contract to check if the signature came from a rightful owner of the wallet contract.
+For dApps relying on `signMessage` for off-chain authentication, Blocto follows [EIP-1654](https://github.com/ethereum/EIPs/issues/1654). To verify the signature, you need to call a method on the wallet contract to check if the signature came from a rightful owner of the wallet contract.
 
 Dapper Labs has built the tools to carry out this verification:
 
