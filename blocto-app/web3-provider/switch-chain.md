@@ -22,7 +22,7 @@ await window.ethereum.request({
 Switching network will emit a `chainChanged` event.
 
 ```javascript
-provider.on('chainChanged', (chainId) => {
+window.ethereum.on('chainChanged', (chainId) => {
   console.log(chainId) // 0x38 if it's BSC
 })
 ```
