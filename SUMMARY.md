@@ -10,7 +10,7 @@
   * [Sign Message](blocto-app/web3-provider/sign-message.md)
   * [Batch Transaction](blocto-app/web3-provider/batch-transaction.md)
   * [Switch Chain](blocto-app/web3-provider/switch-chain.md)
-* [Web3.js Integration \(Solana, Coming Soon\)](blocto-app/web3.js-integration-solana-coming-soon/README.md)
+* [Web3.js Integration \(Solana\)](blocto-app/web3.js-integration-solana-coming-soon/README.md)
   * [Establish Connection](blocto-app/web3.js-integration-solana-coming-soon/establish-connection.md)
   * [Send Transaction](blocto-app/web3.js-integration-solana-coming-soon/send-transaction.md)
 * [Deep Linking](blocto-app/deep-linking.md)
