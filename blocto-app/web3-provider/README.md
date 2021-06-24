@@ -8,7 +8,7 @@ description: >-
 
 ### Injection
 
-Blocto injects web3 provider to web context as `window.bloctoProvider` and `window.BLOCKCHAIN` where BLOCKCHAIN is either 
+Blocto injects web3 provider to web context as `window.BLOCKCHAIN` where BLOCKCHAIN is either 
 
 * `ethereum` // support BSC network starting from 2.8.0 on Android/iOS
 * `tron`
