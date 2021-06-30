@@ -26,7 +26,7 @@
   * [Sign Transaction](blocto-sdk/flow/authorization.md)
   * [Flow Networks](blocto-sdk/flow/flow-networks.md)
 * [Ethereum/BSC](blocto-sdk/evm-sdk/README.md)
-  * [Web3.js](blocto-sdk/evm-sdk/web3.js.md)
+  * [Web3.js Integration](blocto-sdk/evm-sdk/web3.js.md)
 * [Solana \(Coming in 2021\)](blocto-sdk/solana-coming-soon.md)
 * [Tezos \(Coming in 2021\)](blocto-sdk/tezos-coming-soon.md)
 
