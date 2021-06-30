@@ -25,10 +25,9 @@
   * [Login / Register](blocto-sdk/flow/login-register.md)
   * [Sign Transaction](blocto-sdk/flow/authorization.md)
   * [Flow Networks](blocto-sdk/flow/flow-networks.md)
-* [Ethereum \(Coming Soon\)](blocto-sdk/ethereum-coming-soon.md)
-* [BSC \(Coming Soon\)](blocto-sdk/bsc-coming-soon.md)
+* [Ethereum/BSC](blocto-sdk/evm-sdk/README.md)
+  * [Web3.js](blocto-sdk/evm-sdk/web3.js.md)
 * [Solana \(Coming in 2021\)](blocto-sdk/solana-coming-soon.md)
-* [Tron \(Coming Soon\)](blocto-sdk/tron-coming-soon.md)
 * [Tezos \(Coming in 2021\)](blocto-sdk/tezos-coming-soon.md)
 
 ## Technical Documents
