@@ -15,7 +15,7 @@ Install from npm/yarn
 
 ```bash
 $ yarn add web3
-$ yarn add @blocto/sdk
+$ yarn add @blocto/sdk@^0.1.2
 ```
 
 Initiate the Blocto provider for web3.js
