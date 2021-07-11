@@ -26,7 +26,7 @@ $ yarn add styled-components
 ```
 
 {% hint style="danger" %}
-FCL is under heavy developments and the versions are not always backward compatible. We recommend that you use `@onflow/fcl@^0.0.52` for now.
+FCL is under heavy developments and the versions are not always backward compatible. We recommend that you use `@onflow/fcl@^0.0.71` for now.
 {% endhint %}
 
 You can start the app and see it running on `http://localhost:3000`
