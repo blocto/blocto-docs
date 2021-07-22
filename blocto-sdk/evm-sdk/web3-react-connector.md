@@ -77,7 +77,7 @@ const connector = new BloctoConnector({
 
 {% tab title="Ethereum Testnet \(Rinkeby\)" %}
 ```javascript
-const blocto = new BloctoConnector({
+const connector = new BloctoConnector({
     chainId: 4,
     rpc: 'https://rinkeby.infura.io/v3/YOUR_INFURA_ID',
 });
