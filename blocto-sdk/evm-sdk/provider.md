@@ -23,7 +23,7 @@ $ yarn add @blocto/sdk
 ... or via CDN
 
 ```javascript
-<script src="https://unpkg.com/@blocto/sdk@0.1.0/dist/blocto-sdk.umd.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/@blocto/sdk@0.2.0/dist/blocto-sdk.umd.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
 ### **Usage**
@@ -32,14 +32,15 @@ Initiate the Blocto provider
 
 ```javascript
 import Web3 from 'web3'
-import BloctoProvider from '@blocto/sdk'
+import BloctoSDK from '@blocto/sdk'
 
-const bloctoProvider = new BloctoProvider({
-    // (required) chainId to be used
-    chainId: '0x1', 
-    
-    // (required for Ethereum) JSON RPC endpoint
-    rpc: 'https://mainnet.infura.io/v3/YOUR_INFURA_ID',
+const bloctoSDK = new BloctoSDK({
+    ethereum: {
+        // (required) chainId to be used
+        chainId: '0x1', 
+        // (required for Ethereum) JSON RPC endpoint
+        rpc: 'https://mainnet.infura.io/v3/YOUR_INFURA_ID',
+    },
     
     // (optional) Blocto app ID
     appId: 'YOUR_BLOCTO_APP_ID',
@@ -59,7 +60,7 @@ const bloctoProvider = new BloctoProvider({
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>chainId</code>
+      <td style="text-align:left"><code>ethereum.chainId</code>
       </td>
       <td style="text-align:left">String (hex)</td>
       <td style="text-align:left">
@@ -71,11 +72,11 @@ const bloctoProvider = new BloctoProvider({
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>rpc</code>
+      <td style="text-align:left"><code>ethereum.rpc</code>
       </td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">JSON RPC endpoint</td>
-      <td style="text-align:left"><b>Yes</b> (only for Ethereum)</td>
+      <td style="text-align:left"><b>Yes </b>(only for Ethereum)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>appId</code>
@@ -93,9 +94,11 @@ const bloctoProvider = new BloctoProvider({
 {% tabs %}
 {% tab title="Ethereum Mainnet" %}
 ```javascript
-const bloctoProvider = new BloctoProvider({
-    chainId: '0x1', // 1
-    rpc: 'https://mainnet.infura.io/v3/YOUR_INFURA_ID',
+const bloctoSDK = new BloctoSDK({
+    ethereum: {
+        chainId: '0x1', // 1
+        rpc: 'https://mainnet.infura.io/v3/YOUR_INFURA_ID',
+    },
     appId: 'YOUR_BLOCTO_APP_ID',
 });
 ```
@@ -103,9 +106,11 @@ const bloctoProvider = new BloctoProvider({
 
 {% tab title="Ethereum Testnet \(Rinkeby\)" %}
 ```javascript
-const bloctoProvider = new BloctoProvider({
-    chainId: '0x4', // 4
-    rpc: 'https://rinkeby.infura.io/v3/YOUR_INFURA_ID',
+const bloctoSDK = new BloctoSDK({
+    ethereum: {
+        chainId: '0x4', // 4
+        rpc: 'https://rinkeby.infura.io/v3/YOUR_INFURA_ID',
+    },
     appId: 'YOUR_BLOCTO_APP_ID',
 });
 ```
@@ -113,8 +118,10 @@ const bloctoProvider = new BloctoProvider({
 
 {% tab title="BSC Mainnet" %}
 ```javascript
-const bloctoProvider = new BloctoProvider({
-    chainId: '0x38', // 56
+const bloctoSDK = new BloctoSDK({
+    ethereum: {
+        chainId: '0x38', // 56
+    },
     appId: 'YOUR_BLOCTO_APP_ID',
 });
 ```
@@ -122,8 +129,10 @@ const bloctoProvider = new BloctoProvider({
 
 {% tab title="BSC Testnet \(Chapel\)" %}
 ```javascript
-const bloctoProvider = new BloctoProvider({
-    chainId: '0x61', // 97
+const bloctoSDK = new BloctoSDK({
+    ethereum: {
+        chainId: '0x61', // 97
+    },
     appId: 'YOUR_BLOCTO_APP_ID',
 });
 ```
@@ -137,18 +146,18 @@ Once the connection request is fired, there would be a prompt modal to guide use
 
 ```javascript
 // EIP-1193 way (recommended)
-const accounts = bloctoProvider.request({ method: 'eth_requestAccounts' })
+const accounts = bloctoSDK.ethereum.request({ method: 'eth_requestAccounts' })
 
 // Alternative: EIP-1102 way
 // CAVEATS! it's deprecated and may be removed from future version
-const accounts = await bloctoProvider.enable()
+const accounts = await bloctoSDK.ethereum.enable()
 ```
 
 After connected with Blocto wallet, you can start to send JSON-RPC request with blocto provider
 
 ```javascript
 // sign a message
-bloctoProvider.request({
+bloctoSDK.ethereum.request({
   method: 'eth_sign', 
   params: ["0xyourethaddress", "0x48656c6c6f20776f726c64"
 ] })
