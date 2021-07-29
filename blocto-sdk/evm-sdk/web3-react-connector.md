@@ -83,6 +83,22 @@ const connector = new BloctoConnector({
 });
 ```
 {% endtab %}
+
+{% tab title="BSC Mainnet" %}
+```javascript
+const connector = new BloctoConnector({
+    chainId: 56,
+});
+```
+{% endtab %}
+
+{% tab title="BSC Testnet \(Chapel\)" %}
+```javascript
+const connector = new BloctoConnector({
+    chainId: 97,
+});
+```
+{% endtab %}
 {% endtabs %}
 
 #### Usage
