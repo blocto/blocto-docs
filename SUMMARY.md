@@ -25,7 +25,7 @@
   * [Login / Register](blocto-sdk/flow/login-register.md)
   * [Sign Transaction](blocto-sdk/flow/authorization.md)
   * [Flow Networks](blocto-sdk/flow/flow-networks.md)
-* [Ethereum/BSC](blocto-sdk/evm-sdk/README.md)
+* [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/evm-sdk/README.md)
   * [Provider](blocto-sdk/evm-sdk/provider.md)
   * [Web3.js Integration](blocto-sdk/evm-sdk/web3.js.md)
   * [Web3-React Connector](blocto-sdk/evm-sdk/web3-react-connector.md)

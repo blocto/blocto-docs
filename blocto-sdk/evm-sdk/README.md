@@ -2,7 +2,7 @@
 description: Using Blocto SDK in EVM-based dApps
 ---
 
-# Ethereum/BSC
+# Ethereum / BSC / Polygon / Avalanche
 
 ### What can I do with Blocto Ethereum SDK?
 

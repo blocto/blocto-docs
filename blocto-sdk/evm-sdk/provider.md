@@ -139,7 +139,16 @@ const bloctoSDK = new BloctoSDK({
 {% endtab %}
 {% endtabs %}
 
-
+| Network | Chain ID |
+| :--- | :--- |
+| Ethereum Mainnet | 1 |
+| Ethereum Rinkeby Testnet | 4 |
+| BSC Mainnet | 56 |
+| BSC Chapel Testnet | 97 |
+| Polygon Mainnet | 137 |
+| Polygon Mumbai Testnet | 80001 |
+| Avalanche Mainnet | 43114 |
+| Avalanche Fuji Testnet | 43113 |
 
 **Connect to Blocto wallet**  
 Once the connection request is fired, there would be a prompt modal to guide user to register/login to Blocto wallet

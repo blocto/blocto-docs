@@ -101,6 +101,17 @@ const connector = new BloctoConnector({
 {% endtab %}
 {% endtabs %}
 
+| Network | Chain ID |
+| :--- | :--- |
+| Ethereum Mainnet | 1 |
+| Ethereum Rinkeby Testnet | 4 |
+| BSC Mainnet | 56 |
+| BSC Chapel Testnet | 97 |
+| Polygon Mainnet | 137 |
+| Polygon Mumbai Testnet | 80001 |
+| Avalanche Mainnet | 43114 |
+| Avalanche Fuji Testnet | 43113 |
+
 #### Usage
 
 After connector is ready, now you can activate it using `useWeb3React` hook provided by `web3-react` . Now your code might look like:
