@@ -29,10 +29,10 @@
   * [Provider](blocto-sdk/evm-sdk/provider.md)
   * [Web3.js Integration](blocto-sdk/evm-sdk/web3.js.md)
   * [Web3-React Connector](blocto-sdk/evm-sdk/web3-react-connector.md)
-* [Solana](blocto-sdk/solana-coming-soon/README.md)
-  * [Getting started](blocto-sdk/solana-coming-soon/getting-started.md)
-  * [Connect to Blocto wallet](blocto-sdk/solana-coming-soon/connect-to-blocto-wallet.md)
-  * [Send Transaction](blocto-sdk/solana-coming-soon/send-transaction.md)
+* [Solana](blocto-sdk/solana/README.md)
+  * [Getting started](blocto-sdk/solana/getting-started.md)
+  * [Connect to Blocto wallet](blocto-sdk/solana/connect-to-blocto-wallet.md)
+  * [Send Transaction](blocto-sdk/solana/send-transaction.md)
 * [Tezos \(Coming in 2021\)](blocto-sdk/tezos-coming-soon.md)
 
 ## Technical Documents
