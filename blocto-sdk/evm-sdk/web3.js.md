@@ -13,7 +13,7 @@ APIs are subject to breaking changes.
 
 ```bash
 $ yarn add web3
-$ yarn add @blocto/sdk^@0.2.0
+$ yarn add @blocto/sdk^@0.2.1
 ```
 
 ```javascript
