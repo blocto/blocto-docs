@@ -8,7 +8,7 @@ In order to send a transaction, the web application must:
 * Have it be signed by the user's Blocto wallet.
 * Send it with Blocto custom JSON-RPC.
 
-For more information about the transactions on Solana, it is recommended to check out the `solana-web3.js` [docs](https://solana-labs.github.io/solana-web3.js/class/src/transaction.js~Transaction.html) as well as the official [Solana docs](https://docs.solana.com/developing/programming-model/transactions).
+For more information about the transactions on Solana, it is recommended to check out the `solana-web3.js` [docs](https://solana-labs.github.io/solana-web3.js/classes/Transaction.html) as well as the official [Solana docs](https://docs.solana.com/developing/programming-model/transactions).
 
 **Plain Transaction**
 
