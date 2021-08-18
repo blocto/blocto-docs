@@ -6,8 +6,6 @@ description: Using Blocto SDK in EVM-based dApps
 
 ### What can I do with Blocto Ethereum SDK?
 
->
-
 * **Get access to all the web3.js functionalities**
   * Interact with Ethereum-like networks
     * Ethereum Mainnet & Rinkeby Testnet
