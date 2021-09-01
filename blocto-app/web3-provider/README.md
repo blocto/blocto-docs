@@ -4,13 +4,15 @@ description: >-
   blockchain
 ---
 
-# Web3.js Integration \(Ethereum/BSC/Tron\)
+# Web3.js Integration \(Ethereum/BSC/Polygon/Avalanche/Tron\)
 
 ### Injection
 
 Blocto injects web3 provider to web context as `window.BLOCKCHAIN` where BLOCKCHAIN is either 
 
-* `ethereum` // support BSC network starting from 2.8.0 on Android/iOS
+* `ethereum`
+  * support BSC network starting from 2.8.0 on Android/iOS
+  * support Polygon/Avalanche\(c-chain\) network starting from 2.14.0 on Android/iOS
 * `tron`
 
 You can use the provider with your web3.js like

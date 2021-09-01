@@ -6,7 +6,7 @@
 ## Blocto <a id="blocto-app"></a>
 
 * [Overview](blocto-app/overview.md)
-* [Web3.js Integration \(Ethereum/BSC/Tron\)](blocto-app/web3-provider/README.md)
+* [Web3.js Integration \(Ethereum/BSC/Polygon/Avalanche/Tron\)](blocto-app/web3-provider/README.md)
   * [Sign Message](blocto-app/web3-provider/sign-message.md)
   * [Batch Transaction](blocto-app/web3-provider/batch-transaction.md)
   * [Switch Chain](blocto-app/web3-provider/switch-chain.md)
