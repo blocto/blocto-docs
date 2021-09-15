@@ -16,6 +16,7 @@
 * [Deep Linking](blocto-app/deep-linking.md)
 * [Push Notification](blocto-app/push-notification.md)
 * [Rewards](blocto-app/sending-rewards.md)
+* [Token Listing](blocto-app/token-listing.md)
 
 ## Blocto SDK
 
