@@ -31,6 +31,22 @@ fcl.config()
   )
 ```
 
+Starting from `@onflow/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of iframe.  Simply modify your wallet connection to:
+
+```javascript
+import * as fcl from "@onflow/fcl"
+
+fcl.config()
+  // connect to Flow testnet
+  .put("accessNode.api", "https://access-testnet.onflow.org")
+  // use Blocto testnet wallet with HTTP/POST
+  .put(
+    "discovery.wallet",
+    "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+  )
+  .put("discovery.wallet.method", "HTTP/POST")
+```
+
 ### Step 2 - Authenticate
 
 ```javascript
