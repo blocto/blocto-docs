@@ -414,14 +414,13 @@ You can find the complete code of the Hello World project here: [https://github.
 
 ## Demo Project
 
-More example interactions with FCL can be found in this project: [https://github.com/portto/fcl-demo](https://github.com/portto/fcl-demo)  
-Hosted online demo: [http://fcl-demo.portto.io/](http://fcl-demo.portto.io/)
+More example interactions with FCL can be found in this project: [https://github.com/portto/fcl-demo](https://github.com/portto/fcl-demo)\
+Hosted online demo: [https://fcl-demo.netlify.app/](https://fcl-demo.netlify.app)
 
 {% hint style="success" %}
 The demo project also shows how you can run local **Flow emulator** and **dev-wallet**
 {% endhint %}
 
-## Other Examples
+## Other Resources
 
-* **NFT Minter** by Blockchain@Berkeley: [https://berkeley-blockchain-demo.vercel.app/](https://berkeley-blockchain-demo.vercel.app/)
-
+* **Flow App Quickstart**: [https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/](https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/)
