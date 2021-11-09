@@ -7,7 +7,7 @@ description: A thin JSON-RPC wrapper for interacting with chains and Blocto wall
 Blocto SDK comes with an [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md) compatible provider, you can use it to interact with Ethereum-like chains.
 
 {% hint style="warning" %}
-Note that Blocto SDK for Ethereum-like chains is still in **Beta**.  
+Note that Blocto SDK for Ethereum-like chains is still in **Beta**.\
 APIs are subject to breaking changes.
 {% endhint %}
 
@@ -28,7 +28,7 @@ $ yarn add @blocto/sdk
 
 ### **Usage**
 
-Initiate the Blocto provider 
+Initiate the Blocto provider&#x20;
 
 ```javascript
 import Web3 from 'web3'
@@ -49,45 +49,11 @@ const bloctoSDK = new BloctoSDK({
 
 #### Blocto Provider parameters
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-      <th style="text-align:left">Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>ethereum.chainId</code>
-      </td>
-      <td style="text-align:left">String (hex)</td>
-      <td style="text-align:left">
-        <p>EVM chain ID to connect to</p>
-        <p>Reference: <a href="https://chainid.network/">EVM Networks</a>
-        </p>
-      </td>
-      <td style="text-align:left"><b>Yes</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>ethereum.rpc</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">JSON RPC endpoint</td>
-      <td style="text-align:left"><b>Yes </b>(only for Ethereum)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>appId</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Blocto dApp ID</td>
-      <td style="text-align:left"><b>No</b>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Parameter          | Type         | Description                                                                                           | Required                    |
+| ------------------ | ------------ | ----------------------------------------------------------------------------------------------------- | --------------------------- |
+| `ethereum.chainId` | String (hex) | <p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network">EVM Networks</a></p> | **Yes**                     |
+| `ethereum.rpc`     | String       | JSON RPC endpoint                                                                                     | **Yes **(only for Ethereum) |
+| `appId`            | String       | Blocto dApp ID                                                                                        | **No**                      |
 
 #### Examples
 
@@ -104,7 +70,7 @@ const bloctoSDK = new BloctoSDK({
 ```
 {% endtab %}
 
-{% tab title="Ethereum Testnet \(Rinkeby\)" %}
+{% tab title="Ethereum Testnet (Rinkeby)" %}
 ```javascript
 const bloctoSDK = new BloctoSDK({
     ethereum: {
@@ -127,7 +93,7 @@ const bloctoSDK = new BloctoSDK({
 ```
 {% endtab %}
 
-{% tab title="BSC Testnet \(Chapel\)" %}
+{% tab title="BSC Testnet (Chapel)" %}
 ```javascript
 const bloctoSDK = new BloctoSDK({
     ethereum: {
@@ -139,18 +105,18 @@ const bloctoSDK = new BloctoSDK({
 {% endtab %}
 {% endtabs %}
 
-| Network | Chain ID |
-| :--- | :--- |
-| Ethereum Mainnet | 1 |
-| Ethereum Rinkeby Testnet | 4 |
-| BSC Mainnet | 56 |
-| BSC Chapel Testnet | 97 |
-| Polygon Mainnet | 137 |
-| Polygon Mumbai Testnet | 80001 |
-| Avalanche Mainnet | 43114 |
-| Avalanche Fuji Testnet | 43113 |
+| Network                  | Chain ID |
+| ------------------------ | -------- |
+| Ethereum Mainnet         | 1        |
+| Ethereum Rinkeby Testnet | 4        |
+| BSC Mainnet              | 56       |
+| BSC Chapel Testnet       | 97       |
+| Polygon Mainnet          | 137      |
+| Polygon Mumbai Testnet   | 80001    |
+| Avalanche Mainnet        | 43114    |
+| Avalanche Fuji Testnet   | 43113    |
 
-**Connect to Blocto wallet**  
+**Connect to Blocto wallet**\
 Once the connection request is fired, there would be a prompt modal to guide user to register/login to Blocto wallet
 
 ```javascript
@@ -166,11 +132,9 @@ After connected with Blocto wallet, you can start to send JSON-RPC request with 
 
 ```javascript
 // sign a message
-bloctoSDK.solana.request({
+bloctoSDK.ethereum.request({
   method: 'eth_sign', 
   params: ["0xyourethaddress", "0x48656c6c6f20776f726c64"
 ] })
 ```
-
-
 
