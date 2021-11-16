@@ -424,3 +424,6 @@ The demo project also shows how you can run local **Flow emulator** and **dev-wa
 ## Other Resources
 
 * **Flow App Quickstart**: [https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/](https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/)
+* **Other frameworks (community built)**
+  * ****[Angular](https://github.com/ic3guy/FlowAngularExample)
+  * [Svelte](https://github.com/amitkothari/crypto-candy)
