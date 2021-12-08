@@ -52,7 +52,7 @@ const bloctoSDK = new BloctoSDK({
 | Parameter          | Type         | Description                                                                                           | Required                    |
 | ------------------ | ------------ | ----------------------------------------------------------------------------------------------------- | --------------------------- |
 | `ethereum.chainId` | String (hex) | <p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network">EVM Networks</a></p> | **Yes**                     |
-| `ethereum.rpc`     | String       | JSON RPC endpoint                                                                                     | **Yes **(only for Ethereum) |
+| `ethereum.rpc`     | String       | JSON RPC endpoint                                                                                     | **Yes** (only for Ethereum) |
 | `appId`            | String       | Blocto dApp ID                                                                                        | **No**                      |
 
 #### Examples

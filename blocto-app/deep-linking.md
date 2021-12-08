@@ -13,11 +13,12 @@ https://blocto.app/link?url=URL&blockchains=BLOCKCHAINS
 ```
 
 * `URL`: the URL of your dApp
-* `BLOCKCHAINS`: \(optional\) blockchains you dApp use, comma separated. `ethereum/tron/tangerine/flow`
+* `BLOCKCHAINS`: (optional) blockchains you dApp use, comma separated. `ethereum/tron/tangerine/flow`
 
 For example:
 
-* CryptoKitties `https://blocto.app/link?url=https://cryptokitties.co&blockchain=ethereum`
+* CryptoKitties\
+  `https://blocto.app/link?url=https://cryptokitties.co&blockchain=ethereum`
 * Knight Story`https://blocto.app/link?url=https://knightstory.io&blockchain=ethereum`
 
 ### Deep-link Experience
@@ -33,4 +34,3 @@ For example:
 
 1. Blocto app gets activated
 2. User gets directed to your dApp with their existing Blocto account
-

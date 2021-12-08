@@ -4,10 +4,10 @@ description: Use Blocto wallet SDK with your existing web3.js integration
 
 # Web3.js Integration
 
-You can use Blocto wallet service with your current [web3.js](https://web3js.readthedocs.io/en/v1.3.4/) integration with only a few simple lines of code. 
+You can use Blocto wallet service with your current [web3.js](https://web3js.readthedocs.io/en/v1.3.4/) integration with only a few simple lines of code.&#x20;
 
 {% hint style="warning" %}
-Note that Blocto SDK for Ethereum-like chains is still in **Beta**.  
+Note that Blocto SDK for Ethereum-like chains is still in **Beta**.\
 APIs are subject to breaking changes.
 {% endhint %}
 
@@ -35,45 +35,11 @@ const bloctoSDK = new BloctoSDK({
 const web3 = new Web3(bloctoSDK.ethereum);
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-      <th style="text-align:left">Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>ethereum.chainId</code>
-      </td>
-      <td style="text-align:left">String (hex)</td>
-      <td style="text-align:left">
-        <p>EVM chain ID to connect to</p>
-        <p>Reference: <a href="https://chainid.network/">EVM Networks</a>
-        </p>
-      </td>
-      <td style="text-align:left"><b>Yes</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>ethereum.rpc</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">JSON RPC endpoint</td>
-      <td style="text-align:left"><b>Yes </b>(only for Ethereum)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>appId</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Blocto dApp ID</td>
-      <td style="text-align:left"><b>No</b>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Parameter          | Type         | Description                                                                                           | Required                    |
+| ------------------ | ------------ | ----------------------------------------------------------------------------------------------------- | --------------------------- |
+| `ethereum.chainId` | String (hex) | <p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network">EVM Networks</a></p> | **Yes**                     |
+| `ethereum.rpc`     | String       | JSON RPC endpoint                                                                                     | **Yes** (only for Ethereum) |
+| `appId`            | String       | Blocto dApp ID                                                                                        | **No**                      |
 
 {% tabs %}
 {% tab title="Ethereum Mainnet" %}
@@ -88,7 +54,7 @@ const bloctoSDK = new BloctoSDK({
 ```
 {% endtab %}
 
-{% tab title="Ethereum Testnet \(Rinkeby\)" %}
+{% tab title="Ethereum Testnet (Rinkeby)" %}
 ```javascript
 const bloctoSDK = new BloctoSDK({
     ethereum: {
@@ -111,7 +77,7 @@ const bloctoSDK = new BloctoSDK({
 ```
 {% endtab %}
 
-{% tab title="BSC Testnet \(Chapel\)" %}
+{% tab title="BSC Testnet (Chapel)" %}
 ```javascript
 const bloctoSDK = new BloctoSDK({
     ethereum: {
@@ -123,7 +89,7 @@ const bloctoSDK = new BloctoSDK({
 {% endtab %}
 {% endtabs %}
 
-You can then use the `web3` object for on-chain interactions.  For more documentation for what you can do with web3.js, check out 
+You can then use the `web3` object for on-chain interactions.  For more documentation for what you can do with web3.js, check out&#x20;
 
 * [web3.js 1.2.x docs](https://web3js.readthedocs.io/en/v1.2.11/index.html)
 * [web3.js 0.2x.x docs](https://github.com/ethereum/web3.js/blob/0.20.7/DOCUMENTATION.md)
@@ -144,5 +110,4 @@ const provider = new BloctoProvider(config);
 const web3 = new Web3(provider);
 ```
 
-\*\*\*\*
-
+****
