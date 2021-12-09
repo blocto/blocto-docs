@@ -1,6 +1,6 @@
 # Decrypt User ID
 
-Get encrypted user id from [web.js (EVM-based)](web3.js-integration-ethereum-bsc-polygon-avalanche.md) or [web.js (Solana)](web3.js-integration-solana.md). The user id is encrypted by AES (CBC).
+Get encrypted user id from [web.js (EVM-based)](web3-provider-integration-ethereum-bsc-polygon-avalanche.md) or [web.js (Solana)](web3-provider-integration-solana.md). The user id is encrypted by AES (CBC).
 
 {% tabs %}
 {% tab title="JavaScript" %}
