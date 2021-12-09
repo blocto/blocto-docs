@@ -8,7 +8,7 @@ description: >-
 
 ### Technical Flow
 
-1. Get encrypted user IDs from your web app through web3.js
+1. Get encrypted user IDs from your web app through web3 provider
 2. Send user IDs to your backend
 3. [Decrypt](decrypt-user-id.md) user IDs on your backend
 4. Call [Send API](send-api.md) to send push notification
