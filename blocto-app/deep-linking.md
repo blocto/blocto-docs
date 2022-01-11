@@ -13,13 +13,14 @@ https://blocto.app/link?url=URL&blockchains=BLOCKCHAINS
 ```
 
 * `URL`: the URL of your dApp
-* `BLOCKCHAINS`: (optional) blockchains you dApp use, comma separated. `ethereum/tron/tangerine/flow`
+* `BLOCKCHAINS`: (optional) blockchains you dApp use, comma separated. `ethereum/tron/flow/bsc/solana`
 
 For example:
 
 * CryptoKitties\
-  `https://blocto.app/link?url=https://cryptokitties.co&blockchain=ethereum`
-* Knight Story`https://blocto.app/link?url=https://knightstory.io&blockchain=ethereum`
+  `https://blocto.app/link?url=https://cryptokitties.co&blockchains=ethereum`
+* BloctoSwap (Cross-chain)\
+  `https://blocto.app/link?url=https://swap.blocto.app&blockchains=ethereum,flow`
 
 ### Deep-link Experience
 
