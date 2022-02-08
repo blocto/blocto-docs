@@ -16,6 +16,8 @@ Content-Type: application/json
 
 ### APIs
 
+The body params of all POST requests are in JSON format.
+
 {% swagger baseUrl="https://api.blocto.app" path="/notification/send" method="post" summary="Send push notification" %}
 {% swagger-description %}
 Send push notification to users by either user IDs or tags.
