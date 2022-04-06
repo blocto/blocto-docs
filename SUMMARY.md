@@ -22,7 +22,7 @@
 * [Rewards](blocto-app/sending-rewards.md)
 * [Token Listing](blocto-app/token-listing.md)
 
-## Blocto SDK
+## Blocto Javascript SDK <a href="#blocto-sdk" id="blocto-sdk"></a>
 
 * [Overview](blocto-sdk/overview.md)
 * [Flow](blocto-sdk/flow/README.md)
