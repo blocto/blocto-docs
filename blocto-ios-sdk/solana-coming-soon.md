@@ -1,2 +1,0 @@
-# Solana (Coming soon)
-

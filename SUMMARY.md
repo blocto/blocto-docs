@@ -22,40 +22,41 @@
 * [Rewards](blocto-app/sending-rewards.md)
 * [Token Listing](blocto-app/token-listing.md)
 
-## Blocto Javascript SDK <a href="#blocto-sdk" id="blocto-sdk"></a>
+## BLOCTO SDK
 
 * [Overview](blocto-sdk/overview.md)
-* [Flow](blocto-sdk/flow/README.md)
-  * [Tutorial](blocto-sdk/flow/tutorial.md)
-  * [Login / Register](blocto-sdk/flow/login-register.md)
-  * [Sign Transaction](blocto-sdk/flow/authorization.md)
-  * [Flow Networks](blocto-sdk/flow/flow-networks.md)
-* [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/evm-sdk/README.md)
-  * [Provider](blocto-sdk/evm-sdk/provider.md)
-  * [Web3.js Integration](blocto-sdk/evm-sdk/web3.js.md)
-  * [Web3-React Connector](blocto-sdk/evm-sdk/web3-react-connector.md)
-  * [Server Side Render](blocto-sdk/evm-sdk/server-side-render.md)
-* [Solana](blocto-sdk/solana/README.md)
-  * [Getting started](blocto-sdk/solana/getting-started.md)
-  * [Connect to Blocto wallet](blocto-sdk/solana/connect-to-blocto-wallet.md)
-  * [Send Transaction](blocto-sdk/solana/send-transaction.md)
-  * [Server Sider Render](blocto-sdk/solana/server-sider-render.md)
-* [Tezos (Coming Soon)](blocto-sdk/tezos-coming-soon.md)
-
-## BLOCTO Android SDK
-
-* [Overview](blocto-android-sdk/overview.md)
-* [Solana (Coming Soon)](blocto-android-sdk/solana-coming-soon/README.md)
-  * [Getting started](blocto-android-sdk/solana-coming-soon/getting-started.md)
-  * [Connect to Blocto wallet](blocto-android-sdk/solana-coming-soon/connect-to-blocto-wallet.md)
-  * [Send Transaction](blocto-android-sdk/solana-coming-soon/send-transaction.md)
-* [Ethereum / BSC / Polygon / Avalanche (Coming Soon)](blocto-android-sdk/ethereum-bsc-polygon-avalanche-coming-soon.md)
-
-## BLOCTO iOS SDK
-
-* [Overview](blocto-ios-sdk/overview.md)
-* [Solana (Coming Soon)](blocto-ios-sdk/solana-coming-soon.md)
-* [Ethereum / BSC / Polygon / Avalanche (Coming Soon)](blocto-ios-sdk/ethereum-bsc-polygon-avalanche-coming-soon.md)
+* [Register App ID](blocto-sdk/register-app-id.md)
+* [Javascript SDK](blocto-sdk/javascript-sdk/README.md)
+  * [Flow](blocto-sdk/javascript-sdk/flow/README.md)
+    * [Tutorial](blocto-sdk/javascript-sdk/flow/tutorial.md)
+    * [Login / Register](blocto-sdk/javascript-sdk/flow/login-register.md)
+    * [Sign Transaction](blocto-sdk/javascript-sdk/flow/authorization.md)
+    * [Flow Networks](blocto-sdk/javascript-sdk/flow/flow-networks.md)
+  * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/javascript-sdk/evm-sdk/README.md)
+    * [Provider](blocto-sdk/javascript-sdk/evm-sdk/provider.md)
+    * [Web3.js Integration](blocto-sdk/javascript-sdk/evm-sdk/web3.js.md)
+    * [Web3-React Connector](blocto-sdk/javascript-sdk/evm-sdk/web3-react-connector.md)
+    * [Server Side Render](blocto-sdk/javascript-sdk/evm-sdk/server-side-render.md)
+  * [Solana](blocto-sdk/javascript-sdk/solana/README.md)
+    * [Getting started](blocto-sdk/javascript-sdk/solana/getting-started.md)
+    * [Connect to Blocto wallet](blocto-sdk/javascript-sdk/solana/connect-to-blocto-wallet.md)
+    * [Send Transaction](blocto-sdk/javascript-sdk/solana/send-transaction.md)
+    * [Server Sider Render](blocto-sdk/javascript-sdk/solana/server-sider-render.md)
+  * [Tezos (Coming Soon)](blocto-sdk/javascript-sdk/tezos-coming-soon.md)
+* [Android SDK](blocto-sdk/android-sdk/README.md)
+  * [Prerequest](blocto-sdk/android-sdk/prerequest.md)
+  * [Solana (Coming Soon)](blocto-sdk/android-sdk/solana-coming-soon/README.md)
+    * [Getting started](blocto-sdk/android-sdk/solana-coming-soon/getting-started.md)
+    * [Connect to Blocto wallet](blocto-sdk/android-sdk/solana-coming-soon/connect-to-blocto-wallet.md)
+    * [Send Transaction](blocto-sdk/android-sdk/solana-coming-soon/send-transaction.md)
+  * [Ethereum / BSC / Polygon / Avalanche (Coming Soon)](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche-coming-soon.md)
+* [iOS SDK](blocto-sdk/ios-sdk/README.md)
+  * [Prerequest](blocto-sdk/ios-sdk/prerequest.md)
+  * [Solana (Coming Soon)](blocto-sdk/ios-sdk/solana-coming-soon/README.md)
+    * [Getting started](blocto-sdk/ios-sdk/solana-coming-soon/getting-started.md)
+    * [Connect to Blocto wallet](blocto-sdk/ios-sdk/solana-coming-soon/connect-to-blocto-wallet.md)
+    * [Send Transaction](blocto-sdk/ios-sdk/solana-coming-soon/send-transaction.md)
+  * [Ethereum / BSC / Polygon / Avalanche (Coming Soon)](blocto-sdk/ios-sdk/ethereum-bsc-polygon-avalanche-coming-soon.md)
 
 ## Technical Documents
 

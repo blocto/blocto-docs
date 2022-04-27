@@ -1,6 +1,11 @@
 # Solana (Coming Soon)
 
-### What can I do with Blocto Android Solana SDK?
+{% hint style="warning" %}
+Note that Blocto iOS SDK for Solana is still in **Beta**.\
+APIs are subject to breaking changes.
+{% endhint %}
+
+### What can I do with Blocto iOS Solana SDK?
 
 * **Get access to all the blockchain interactions**
   * Interact with Solana networks (Mainnet, Testnet)

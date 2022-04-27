@@ -1,8 +1,4 @@
----
-description: Web.js Integration (Solana)
----
-
-# Web3.js Integration (Solana)
+# Web3 Provider Integration (Solana)
 
 ### Getting Encrypted User IDs From your Web App
 
