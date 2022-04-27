@@ -13,13 +13,13 @@ and ask user to connect the wallet.
 BloctoSDK.shared.solana.requestAccount { [weak self] result in
     switch result {
     case .success(let address):
-        
+        // handle address here
     case .failure(let error):
-        
+        // handle error here
     }
 }
 ```
 
-{% hint style="info" %}
-Make sure you initialize Blocto SDK first
+{% hint style="warning" %}
+Make sure you [initialize Blocto SDK](https://docs.blocto.app/blocto-sdk/ios-sdk/solana-coming-soon/getting-started#initialize-blocto-sdk) first
 {% endhint %}
