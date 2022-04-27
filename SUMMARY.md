@@ -45,10 +45,15 @@
 ## BLOCTO Android SDK
 
 * [Overview](blocto-android-sdk/overview.md)
-* [Solana (coming soon)](blocto-android-sdk/solana-coming-soon/README.md)
+* [Solana (Coming soon)](blocto-android-sdk/solana-coming-soon/README.md)
   * [Getting started](blocto-android-sdk/solana-coming-soon/getting-started.md)
   * [Connect to Blocto wallet](blocto-android-sdk/solana-coming-soon/connect-to-blocto-wallet.md)
   * [Send Transaction](blocto-android-sdk/solana-coming-soon/send-transaction.md)
+
+## BLOCTO iOS SDK
+
+* [Overview](blocto-ios-sdk/overview.md)
+* [Solana (Coming soon)](blocto-ios-sdk/solana-coming-soon.md)
 
 ## Technical Documents
 
