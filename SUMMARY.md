@@ -49,11 +49,13 @@
   * [Getting started](blocto-android-sdk/solana-coming-soon/getting-started.md)
   * [Connect to Blocto wallet](blocto-android-sdk/solana-coming-soon/connect-to-blocto-wallet.md)
   * [Send Transaction](blocto-android-sdk/solana-coming-soon/send-transaction.md)
+* [Ethereum / BSC / Polygon / Avalanche (Coming Soon)](blocto-android-sdk/ethereum-bsc-polygon-avalanche-coming-soon.md)
 
 ## BLOCTO iOS SDK
 
 * [Overview](blocto-ios-sdk/overview.md)
-* [Solana (Coming soon)](blocto-ios-sdk/solana-coming-soon.md)
+* [Solana (Coming Soon)](blocto-ios-sdk/solana-coming-soon.md)
+* [Ethereum / BSC / Polygon / Avalanche (Coming Soon)](blocto-ios-sdk/ethereum-bsc-polygon-avalanche-coming-soon.md)
 
 ## Technical Documents
 
