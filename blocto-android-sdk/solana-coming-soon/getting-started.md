@@ -7,7 +7,16 @@ APIs are subject to breaking changes.
 
 ### Register an App ID
 
-TBA
+1. Go to Developer Dashboard ([production](https://developers.blocto.app), [staging](https://developers-staging.blocto.app))
+2. Login with Blocto account or register a new one
+3. Register an app to get app id
+
+{% hint style="info" %}
+Based on development environment, you need to download the corresponding Blocto app for testing:
+
+* [production](https://play.google.com/store/apps/details?id=com.portto.blocto)
+* [staging](https://play.google.com/store/apps/details?id=com.portto.blocto.staging)
+{% endhint %}
 
 ### Installation
 

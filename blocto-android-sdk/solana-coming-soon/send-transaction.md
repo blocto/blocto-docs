@@ -1,6 +1,6 @@
 # Send Transaction
 
-Once the app is connected to Blocto wallet, it can send transactions on behalf of the user, with the user's permission.
+Once your app is connected to Blocto wallet, it can send transactions on behalf of the user, with the user's permission.
 
 In order to send a transaction, the app must:
 
