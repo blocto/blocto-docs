@@ -18,7 +18,7 @@ For more information about the transactions on Solana, it is recommended to chec
 
 For plain transactions (no dApp-side signing involved), you can just create transaction with [solana-web3.kotlin](https://github.com/portto/solana-web3.kotlin) and sign-and-send the transaction with `signAndSendTransaction` method.
 
-```
+```kotlin
 val address = "SOLANA_ADDRESS"
 val transaction = Transaction()
 
@@ -41,7 +41,7 @@ BloctoSDK.solana.signAndSendTransaction(
 
 For transactions involving dApp-side signing, first you need to convert the transaction to our wallet-compatible format by calling `convertToProgramWalletTransaction`, and sign the instructions with your keys, then sign-and-send the partial-signed transaction with our `signAndSendTransaction` method.
 
-```
+```kotlin
 suspend fun convertToProgramWalletTransaction(
     address: String,
     transaction: Transaction

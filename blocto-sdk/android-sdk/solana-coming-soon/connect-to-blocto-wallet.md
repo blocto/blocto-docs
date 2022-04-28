@@ -13,7 +13,7 @@ Once the wallet connection requested, it would
 
 and ask user to connect the wallet.
 
-```
+```kotlin
 BloctoSDK.solana.requestAccount(
     context = this,
     onSuccess = { address ->
