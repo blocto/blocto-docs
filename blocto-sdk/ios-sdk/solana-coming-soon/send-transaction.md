@@ -6,7 +6,7 @@ In order to send a transaction, the app must:
 
 * Create an unsigned transaction or transactions using Solana web3.
 * Have it be signed by the user's Blocto wallet.
-* Sign it and send it with Blocto SDKfix.
+* Send it with Blocto custom JSON-RPC.
 
 For more information about the transactions on Solana, it is recommended to check out the [SolanaWeb3](https://github.com/portto/solana-web3.swift) as well as the [official Solana docs](https://docs.solana.com/developing/programming-model/transactions).
 
