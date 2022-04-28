@@ -1,13 +1,11 @@
 # Prerequest
 
-There are two paths for using Blocto service through Android SDK
+Blocto Android SDK supports two flows depending on whether the Blocto app is installed or not.
 
-1. User has already install Blocto native wallet app.
-2. User not install Blocto (SDK will route to Web SDK for you).
+* **Blocto app installed**\
+  ****Based on development environment, you need to download the corresponding Blocto app for testing:
+  * [production](https://play.google.com/store/apps/details?id=com.portto.blocto)
+  * [staging](https://play.google.com/store/apps/details?id=com.portto.blocto.staging)\
 
-{% hint style="info" %}
-Based on development environment, you need to download the corresponding Blocto app for testing:
-
-* [production](https://play.google.com/store/apps/details?id=com.portto.blocto)
-* [staging](https://play.google.com/store/apps/details?id=com.portto.blocto.staging)
-{% endhint %}
+* **Blocto app not installed**\
+  SDK would open browser using Web SDK in your dApp to use the Blocto service.
