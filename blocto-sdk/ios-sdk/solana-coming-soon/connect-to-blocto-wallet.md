@@ -4,12 +4,12 @@ Before you start to interact with Blocto wallet, you need to have wallet connect
 
 Once the wallet connection requested, it would
 
-* redirect to the **Blocto wallet app** if it is installed
-* open Web SDK page using ASWebAuthenticationSession
+* redirect to the **Blocto wallet app** if it is installed.
+* open Blocto web SDK using ASWebAuthenticationSession if the app is not installed.
 
 and ask user to connect the wallet.
 
-```
+```swift
 BloctoSDK.shared.solana.requestAccount { [weak self] result in
     switch result {
     case .success(let address):

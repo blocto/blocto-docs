@@ -4,17 +4,17 @@ In this guide we show how to use it.
 
 A sample application is available at: [https://github.com/portto/blocto-ios-sdk/tree/main/Example](https://github.com/portto/blocto-ios-sdk/tree/main/Example)
 
-## Adding Library Dependency
+## Installation
 
-An easy way to add Blocto iOS SDK dependency to an iOS project is through _CocoaPods_, like this (the exact version may change in the future):
+An easy way to add Blocto iOS SDK dependency to an iOS project is through _CocoaPods_, like this:
 
-```
-  pod 'BloctoSDK/Solana'
+```ruby
+pod 'BloctoSDK/Solana'
 ```
 
 The dependency can be installed simply by `pod install`:
 
-```shell
+```ruby
 pod install
 ```
 
@@ -22,7 +22,7 @@ pod install
 
 #### Initialize Blocto SDK
 
-```
+```swift
 if #available(iOS 13.0, *) {
     BloctoSDK.shared.initialize(
         with: "YOUR_APP_ID", // required
@@ -40,14 +40,14 @@ if #available(iOS 13.0, *) {
 ```
 
 {% hint style="info" %}
-testnet: Specify the cluster. `true` for **mainnet-beta** and `false` for **devnet**. Default is `false`.
+parameter `testnet`: specify the cluster. `true` for **mainnet-beta** and `false` for **devnet**. Default is `false.`
 {% endhint %}
 
 
 
 #### UIApplicationDelegate delegate method implementation
 
-```
+```swift
 func application(
     _ app: UIApplication,
     open url: URL,
@@ -61,7 +61,7 @@ func application(
 }
 ```
 
-```
+```swift
 func application(
     _ application: UIApplication,
     continue userActivity: NSUserActivity,
