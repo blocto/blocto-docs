@@ -1,5 +1,9 @@
 # Send Transaction
 
+{% hint style="warning" %}
+Make sure you [initialize Blocto SDK](https://docs.blocto.app/blocto-sdk/ios-sdk/solana-coming-soon/getting-started#initialize-blocto-sdk) first
+{% endhint %}
+
 Once your app is connected to Blocto wallet, it can send transactions on behalf of the user, with the user's permission.
 
 In order to send a transaction, the app must:
@@ -14,7 +18,7 @@ For more information about the transactions on Solana, it is recommended to chec
 
 For plain transactions (no dApp-side signing involved), you can just create transaction with [SolanaWeb3](https://github.com/portto/solana-web3.swift) and sign-and-send the transaction with `signAndSendTransaction` method.
 
-```
+```swift
 val userWalletAddress = "SOLANA_ADDRESS"
 val transaction = Transaction()
 
@@ -34,11 +38,13 @@ BloctoSDK.shared.solana.signAndSendTransaction(
     }
 ```
 
+****
+
 **Partial Sign Transaction**
 
 For transactions involving dApp-side signing, first you need to convert the transaction to our wallet-compatible format by calling `convertToProgramWalletTransaction`, and sign the instructions with your keys, then sign-and-send the partial-signed transaction with our `signAndSendTransaction` method.
 
-```
+```swift
 val userWalletAddress = "SOLANA_ADDRESS"
 val transaction = Transaction()
 
@@ -73,7 +79,3 @@ BloctoSDK.shared.solana.convertToProgramWalletTransaction(
         }
     }
 ```
-
-{% hint style="warning" %}
-Make sure you [initialize Blocto SDK](https://docs.blocto.app/blocto-sdk/ios-sdk/solana-coming-soon/getting-started#initialize-blocto-sdk) first
-{% endhint %}
