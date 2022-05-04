@@ -1,7 +1,7 @@
 # Send Transaction
 
 {% hint style="warning" %}
-Make sure you [initialize Blocto SDK](https://docs.blocto.app/blocto-sdk/ios-sdk/solana-coming-soon/getting-started#initialize-blocto-sdk) first
+Make sure you [initialize Blocto SDK](getting-started.md) first
 {% endhint %}
 
 Once your app is connected to Blocto wallet, it can send transactions on behalf of the user, with the user's permission.

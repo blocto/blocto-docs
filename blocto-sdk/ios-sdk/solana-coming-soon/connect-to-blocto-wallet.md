@@ -1,7 +1,7 @@
 # Connect to Blocto wallet
 
 {% hint style="warning" %}
-Make sure you [initialize Blocto SDK](https://docs.blocto.app/blocto-sdk/ios-sdk/solana-coming-soon/getting-started#initialize-blocto-sdk) first
+Make sure you [initialize Blocto SDK](getting-started.md) first
 {% endhint %}
 
 Before you start to interact with Blocto wallet, you need to have wallet connected.
