@@ -5,7 +5,8 @@ Blocto iOS SDK supports two flows depending on whether the Blocto app is install
 * **Blocto app installed**\
   ****Based on development environment, you need to download the corresponding Blocto app for testing:
   * [production](https://apps.apple.com/tw/app/blocto-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E9%8C%A2%E5%8C%85-by-portto/id1481181682)
-  * [firebase staging](https://appdistribution.firebase.dev/i/8d66340bb3ad10ed) (you can download it after we add your device to provisioning profile and release a new staging version)\
+  * [staging](https://appdistribution.firebase.dev/i/8d66340bb3ad10ed) (testnet environment)
+    * you can download it after we add your device to provisioning profile and release a new staging version\
 
 * **Blocto app not installed**\
   SDK would open browser using Web SDK in your dApp to use the Blocto service.
