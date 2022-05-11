@@ -1,5 +1,3 @@
 # iOS SDK
 
-
-
-A sample application is available at: [https://github.com/portto/blocto-ios-sdk/tree/main/Example](https://github.com/portto/blocto-ios-sdk/tree/main/Example)
+Blocto iOS SDK is open source and available at [Github](https://github.com/portto/blocto-ios-sdk).
