@@ -11,7 +11,7 @@ To sign a message, the app must specify the sign type. All available types are l
 | Sign Type                                                                | Type                        | Message                  |
 | ------------------------------------------------------------------------ | --------------------------- | ------------------------ |
 | ETH Sign                                                                 | `EvmSignType.ETH_SIGN`      | hex string (`0x` prefix) |
-| Personal Sign                                                            | `EvmSignType.PERONSAL_SIGN` | plain string             |
+| Personal Sign                                                            | `EvmSignType.PERSONAL_SIGN` | plain string             |
 | Sign Typed Data v3                                                       | `EvmSignType.TYPED_DATA_V3` | json string              |
 | Sign Typed Data v4                                                       | `EvmSignType.TYPED_DATA_V4` | json string              |
 | <p>Sign Typed Data</p><p>(currently identical to Sign Typed Data v4)</p> | `EvmSignType.TYPED_DATA`    | json string              |
