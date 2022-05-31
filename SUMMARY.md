@@ -53,7 +53,7 @@
     * [Getting Started](blocto-sdk/android-sdk/solana/getting-started.md)
     * [Connect to Blocto wallet](blocto-sdk/android-sdk/solana/connect-to-blocto-wallet.md)
     * [Send Transaction](blocto-sdk/android-sdk/solana/send-transaction.md)
-  * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche/README.md)
+  * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche.md)
     * [Getting Started](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche/getting-started.md)
     * [Connect to Blocto wallet](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche/connect-to-blocto-wallet.md)
     * [Sign Message](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche/sign-message.md)

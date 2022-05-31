@@ -1,4 +1,4 @@
-# Sign message
+# Sign Message
 
 {% hint style="warning" %}
 Make sure you [initialize Blocto SDK](../solana/getting-started.md) first
@@ -23,7 +23,7 @@ When using **`sign`** type, please make sure input message is hex string with **
 {% endhint %}
 
 {% hint style="warning" %}
-We highly recommend you specify version when using typedSign. Because we can't make sure what version of Blocto Wallet app the user installed. When using **`typedSig`**`  ```  we just use the latest version of typedSign, but the "latest" typedSign in user's current Blocto Wallet app is might not match with the "latest" typedSign in BloctoSDK. In such case, it may lead to unexpected result.
+We highly recommend you specify version when using typedSign. Because we can't make sure what version of Blocto Wallet app the user installed. When using **`typedSign`**we just use the latest version of typedSign, but the "latest" typedSign in user's current Blocto Wallet app might not match with the "latest" typedSign in BloctoSDK. In such case, it may lead to unexpected result.
 {% endhint %}
 
 Let's take Ethereum for example. BSC, Polygon and Avalanche use the same **`signMessage`** method as below.
