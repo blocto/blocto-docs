@@ -13,8 +13,10 @@ Once the wallet connection requested, it would
 
 and ask user to connect the wallet.
 
-```kotlin
-BloctoSDK.solana.requestAccount(
+```
+// Request account based on specific chain
+
+BloctoSDK.[ethereum/bnb/polygon/avalanche].requestAccount(
     context = context,
     onSuccess = { address ->
         // wallet connected

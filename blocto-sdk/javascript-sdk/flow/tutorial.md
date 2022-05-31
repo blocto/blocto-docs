@@ -415,7 +415,7 @@ You can find the complete code of the Hello World project here: [https://github.
 ## Demo Project
 
 More example interactions with FCL can be found in this project: [https://github.com/portto/fcl-demo](https://github.com/portto/fcl-demo)\
-Hosted online demo: [https://fcl-demo.netlify.app/](https://fcl-demo.netlify.app)
+Hosted online demo: [https://fcl-demo.netlify.app/](https://fcl-demo.netlify.app/)
 
 {% hint style="success" %}
 The demo project also shows how you can run local **Flow emulator** and **dev-wallet**

@@ -14,7 +14,7 @@ Blocto iOS SDK supports two flows depending on whether the Blocto app is install
 ## Universal Links & Custom URL Scheme
 
 Blocto iOS SDK uses[ Universal Links](https://developer.apple.com/ios/universal-links/) to bring back information from Blocto wallet app to yours.\
-If you do not set Universal Links in Developer Dashboard ([production](https://developers.blocto.app), [staging](https://developers-staging.blocto.app)) or any situation that can't open your app correctly, we will use [Custom URL Scheme](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app) instead.&#x20;
+If you do not set Universal Links in Developer Dashboard ([production](https://developers.blocto.app/), [staging](https://developers-staging.blocto.app/)) or any situation that can't open your app correctly, we will use [Custom URL Scheme](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app) instead.&#x20;
 
 Please make sure to implement **BOTH** [Apple Universal Links](https://developer.apple.com/ios/universal-links/) and [Custom URL Scheme](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app) for better user experience.
 
@@ -27,7 +27,7 @@ For custom URL Scheme please register scheme using prefix **blocto** with app id
 {% hint style="warning" %}
 We highly recommend you provide a Universal Links rather than only use custom scheme for safety reason.
 
-You can use tools such as [ngrok](https://ngrok.com) for Universal Links on testing purpose.
+You can use tools such as [ngrok](https://ngrok.com/) for Universal Links on testing purpose.
 {% endhint %}
 
 ![Universal Links example applinks:04b2-61-216-44-25.ngrok.io?mode=developer](../../.gitbook/assets/image.png)

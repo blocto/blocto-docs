@@ -35,11 +35,11 @@ const bloctoSDK = new BloctoSDK({
 const web3 = new Web3(bloctoSDK.ethereum);
 ```
 
-| Parameter          | Type         | Description                                                                                           | Required                    |
-| ------------------ | ------------ | ----------------------------------------------------------------------------------------------------- | --------------------------- |
-| `ethereum.chainId` | String (hex) | <p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network">EVM Networks</a></p> | **Yes**                     |
-| `ethereum.rpc`     | String       | JSON RPC endpoint                                                                                     | **Yes** (only for Ethereum) |
-| `appId`            | String       | Blocto dApp ID                                                                                        | **No**                      |
+| Parameter          | Type         | Description                                                                                            | Required                    |
+| ------------------ | ------------ | ------------------------------------------------------------------------------------------------------ | --------------------------- |
+| `ethereum.chainId` | String (hex) | <p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a></p> | **Yes**                     |
+| `ethereum.rpc`     | String       | JSON RPC endpoint                                                                                      | **Yes** (only for Ethereum) |
+| `appId`            | String       | Blocto dApp ID                                                                                         | **No**                      |
 
 {% tabs %}
 {% tab title="Ethereum Mainnet" %}
