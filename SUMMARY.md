@@ -3,6 +3,29 @@
 * [📣 Introduction](README.md)
 * [Give Feedback](give-feedback.md)
 
+## Blocto <a href="#blocto-app" id="blocto-app"></a>
+
+* [Overview](blocto-app/overview.md)
+* [Web3.js Integration (Ethereum / BSC / Polygon / Avalanche / Tron)](blocto-app/web3-provider/README.md)
+  * [Sign Message](blocto-app/web3-provider/sign-message.md)
+  * [Batch Transaction](blocto-app/web3-provider/batch-transaction.md)
+  * [Switch Chain](blocto-app/web3-provider/switch-chain/README.md)
+    * [Getting Started](blocto-app/web3-provider/switch-chain/getting-started.md)
+    * [Connect to Blocto wallet](blocto-app/web3-provider/switch-chain/connect-to-blocto-wallet.md)
+    * [Sign Message](blocto-app/web3-provider/switch-chain/sign-message.md)
+    * [Send Transaction](blocto-app/web3-provider/switch-chain/send-transaction.md)
+* [Web3.js Integration (Solana)](blocto-app/web3.js-integration-solana/README.md)
+  * [Establish Connection](blocto-app/web3.js-integration-solana/establish-connection.md)
+  * [Send Transaction](blocto-app/web3.js-integration-solana/send-transaction.md)
+* [Deep Linking](blocto-app/deep-linking.md)
+* [Push Notification](blocto-app/push-notification/README.md)
+  * [Web3 Provider Integration (Ethereum/BSC/Polygon/Avalanche)](blocto-app/push-notification/web3-provider-integration-ethereum-bsc-polygon-avalanche.md)
+  * [Web3 Provider Integration (Solana)](blocto-app/push-notification/web3-provider-integration-solana.md)
+  * [Decrypt User ID](blocto-app/push-notification/decrypt-user-id.md)
+  * [Send API](blocto-app/push-notification/send-api.md)
+* [Rewards](blocto-app/sending-rewards.md)
+* [Token Listing](blocto-app/token-listing.md)
+
 ## BLOCTO SDK
 
 * [Overview](blocto-sdk/overview.md)
@@ -46,29 +69,6 @@
     * [Connect to Blocto wallet](blocto-sdk/ios-sdk/ethereum-bsc-polygon-avalanche/connect-to-blocto-wallet.md)
     * [Sign Message](blocto-sdk/ios-sdk/ethereum-bsc-polygon-avalanche/sign-message.md)
     * [Send Transaction](blocto-sdk/ios-sdk/ethereum-bsc-polygon-avalanche/send-transaction.md)
-
-## Blocto <a href="#blocto-app" id="blocto-app"></a>
-
-* [Overview](blocto-app/overview.md)
-* [Web3.js Integration (Ethereum / BSC / Polygon / Avalanche / Tron)](blocto-app/web3-provider/README.md)
-  * [Sign Message](blocto-app/web3-provider/sign-message.md)
-  * [Batch Transaction](blocto-app/web3-provider/batch-transaction.md)
-  * [Switch Chain](blocto-app/web3-provider/switch-chain/README.md)
-    * [Getting Started](blocto-app/web3-provider/switch-chain/getting-started.md)
-    * [Connect to Blocto wallet](blocto-app/web3-provider/switch-chain/connect-to-blocto-wallet.md)
-    * [Sign Message](blocto-app/web3-provider/switch-chain/sign-message.md)
-    * [Send Transaction](blocto-app/web3-provider/switch-chain/send-transaction.md)
-* [Web3.js Integration (Solana)](blocto-app/web3.js-integration-solana/README.md)
-  * [Establish Connection](blocto-app/web3.js-integration-solana/establish-connection.md)
-  * [Send Transaction](blocto-app/web3.js-integration-solana/send-transaction.md)
-* [Deep Linking](blocto-app/deep-linking.md)
-* [Push Notification](blocto-app/push-notification/README.md)
-  * [Web3 Provider Integration (Ethereum/BSC/Polygon/Avalanche)](blocto-app/push-notification/web3-provider-integration-ethereum-bsc-polygon-avalanche.md)
-  * [Web3 Provider Integration (Solana)](blocto-app/push-notification/web3-provider-integration-solana.md)
-  * [Decrypt User ID](blocto-app/push-notification/decrypt-user-id.md)
-  * [Send API](blocto-app/push-notification/send-api.md)
-* [Rewards](blocto-app/sending-rewards.md)
-* [Token Listing](blocto-app/token-listing.md)
 
 ## Technical Documents
 
