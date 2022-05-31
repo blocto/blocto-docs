@@ -1,7 +1,7 @@
 # Sign Message
 
 {% hint style="warning" %}
-Make sure you initialize Blocto SDK first
+Make sure you [initialize Blocto SDK](getting-started.md) first
 {% endhint %}
 
 Once your app is connected to Blocto wallet, it can sign message on behalf of the user, with the user's permission.
