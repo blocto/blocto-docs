@@ -26,4 +26,3 @@ window.ethereum.on('chainChanged', (chainId) => {
   console.log(chainId) // 0x38 if it's BSC
 })
 ```
-
