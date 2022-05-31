@@ -9,7 +9,7 @@ Before you start to interact with Blocto wallet, you need to have wallet connect
 Once the wallet connection requested, it would
 
 * redirect to the **Blocto wallet app** if it is installed.
-* open Blocto web SDK using ASWebAuthenticationSession if the app is not installed.
+* open Blocto web SDK using ASWebAuthenticationSession if the **Blocto Wallet app** is not installed.
 
 and ask user to connect the wallet.
 

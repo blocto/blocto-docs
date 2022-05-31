@@ -9,7 +9,7 @@ A sample application is available at: [https://github.com/portto/blocto-ios-sdk/
 An easy way to add Blocto iOS SDK dependency to an iOS project is through _CocoaPods_, like this:
 
 ```ruby
-pod 'BloctoSDK/Solana'
+pod 'BloctoSDK/EVMBase'
 ```
 
 The dependency can be installed simply by `pod install`:
@@ -19,7 +19,7 @@ pod install
 ```
 
 {% hint style="warning" %}
-BloctoSDK start support Solana from version 0.1.0 with Blocto Wallet app from 3.7.0.
+BloctoSDK start support EVMBase from version 0.2.1 with Blocto Wallet app from 3.8.0.
 {% endhint %}
 
 ## Usage
@@ -44,7 +44,11 @@ if #available(iOS 13.0, *) {
 ```
 
 {% hint style="info" %}
-parameter `testnet`: specify the cluster.`true` for **devnet** and`false` for **mainnet-beta**. Default is `false.`
+parameter `testnet`: specify the network. Default is `false.`\
+in Ethereum`true` for Rinkeby and `false` for mainnet.\
+in BSC`true` for testnet  and `false` for mainnet.\
+in Polygon`true` for Mumbai and `false` for mainnet.\
+in Avalanche`true` for FUJI Testnet and `false` for mainnet.
 {% endhint %}
 
 
