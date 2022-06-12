@@ -20,7 +20,7 @@ const isSignatureValid = await AppUtils.verifyAccountProof(
     signatures,
   },
   {
-    fclCryptoContract: BLOCTO_VERIFY_CONTRACT_ADDRESS
+    fclCryptoContract: BLOCTO_FCLCRYPTO_CONTRACT_ADDRESS
   }
 )
 
@@ -29,12 +29,12 @@ const isSignatureValid = const isValid = await fcl.verifyUserSignatures(
   message,
   signatures,
   {
-    fclCryptoContract: BLOCTO_VERIFY_CONTRACT_ADDRESS
+    fclCryptoContract: BLOCTO_FCLCRYPTO_CONTRACT_ADDRESS
   }
 )
 ```
 
-The addresses of the Blocto FCLCrypto contract can be found here:
+The addresses of the Blocto FCLCrypto contract `BLOCTO_FCLCRYPTO_CONTRACT_ADDRESS` can be found here:
 
 | Network | Blocto FCLCrypto Address |
 | ------- | ------------------------ |
