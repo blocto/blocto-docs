@@ -6,7 +6,9 @@ description: Flow networks that Blocto supports
 
 ### Mainnet
 
-* Access Node `https://flow-access-mainnet.portto.io`
+* Access Node
+  * RESTful `https://rest-mainnet.onflow.org`
+  * gRPC `https://access-mainnet-beta.onflow.org`
 * Blocto Wallet `https://flow-wallet.blocto.app/authn`
 
 ```javascript
@@ -17,9 +19,11 @@ fcl.config()
   .put("challenge.handshake", "https://flow-wallet.blocto.app/authn") // use Blocto wallet
 ```
 
-### Testnet 
+### Testnet&#x20;
 
-* Access Node `https://access-testnet.onflow.org`
+* Access Node
+  * RESTful `https://rest-testnet.onflow.org`
+  * gRPC `https://access-testnet.onflow.org`
 * Blocto Wallet `https://flow-wallet-testnet.blocto.app/authn`
 
 ```javascript
@@ -29,4 +33,3 @@ fcl.config()
   .put("accessNode.api", "https://access-testnet.onflow.org") // connect to Flow testnet
   .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn") // use Blocto testnet wallet
 ```
-

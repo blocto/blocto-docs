@@ -10,10 +10,12 @@ description: Connect to Blocto wallet through Flow Client Library (FCL)
 import * as fcl from "@onflow/fcl"
 
 fcl.config()
-  // connect to Flow testnet
-  .put("accessNode.api", "https://access-testnet.onflow.org")
-  // use Blocto testnet wallet
-  .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
+    // connect to Flow testnet
+    // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
+    .put("accessNode.api", "https://rest-testnet.onflow.org")
+    
+    // use Blocto testnet wallet
+    .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
 ```
 
 Alternatively, if you already have user's email and would like to pre-fill it for user's Blocto account, you can use the custom handshake URL instead:
@@ -22,13 +24,14 @@ Alternatively, if you already have user's email and would like to pre-fill it fo
 import * as fcl from "@onflow/fcl"
 
 fcl.config()
-  // connect to Flow testnet
-  .put("accessNode.api", "https://access-testnet.onflow.org")
-  // use Blocto testnet wallet
-  .put(
-    "challenge.handshake",
-    "https://flow-wallet-testnet.blocto.app/authn/-/user@some.where"
-  )
+    // connect to Flow testnet
+    // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
+    .put("accessNode.api", "https://rest-testnet.onflow.org")
+    // use Blocto testnet wallet
+    .put(
+        "challenge.handshake",
+        "https://flow-wallet-testnet.blocto.app/authn/-/user@some.where"
+    )
 ```
 
 Starting from `@onflow/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of iframe.  Simply modify your wallet connection to:
@@ -38,7 +41,9 @@ import * as fcl from "@onflow/fcl"
 
 fcl.config()
   // connect to Flow testnet
-  .put("accessNode.api", "https://access-testnet.onflow.org")
+  // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
+  .put("accessNode.api", "https://rest-testnet.onflow.org")
+  
   // use Blocto testnet wallet with HTTP/POST
   .put(
     "discovery.wallet",
@@ -72,4 +77,3 @@ fcl
 // unauthenticate and clear account info in FCL
 fcl.unauthenticate()
 ```
-
