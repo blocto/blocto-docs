@@ -13,9 +13,12 @@ fcl.config()
     // connect to Flow testnet
     // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
     .put("accessNode.api", "https://rest-testnet.onflow.org")
+    // use pop instead of default IFRAME/RPC option for security enforcement
+    .put("discovery.wallet.method", "POP/RPC")
     
     // use Blocto testnet wallet
     .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
+    
 ```
 
 Alternatively, if you already have user's email and would like to pre-fill it for user's Blocto account, you can use the custom handshake URL instead:
@@ -27,6 +30,8 @@ fcl.config()
     // connect to Flow testnet
     // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
     .put("accessNode.api", "https://rest-testnet.onflow.org")
+    // use pop instead of default IFRAME/RPC option for security enforcement
+    .put("discovery.wallet.method", "POP/RPC")
     // use Blocto testnet wallet
     .put(
         "challenge.handshake",
@@ -34,7 +39,7 @@ fcl.config()
     )
 ```
 
-Starting from `@onflow/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of iframe.  Simply modify your wallet connection to:
+Starting from `@onflow/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of popup.  Simply modify your wallet connection to:
 
 ```javascript
 import * as fcl from "@onflow/fcl"
@@ -51,6 +56,10 @@ fcl.config()
   )
   .put("discovery.wallet.method", "HTTP/POST")
 ```
+
+{% hint style="info" %}
+Notice that since 2022/09/07, Blocto no longer supports `IFRAME/`RPC flow for authentication, due to the reason that iframes in popup are easily forgeable, users may not notice that they're interacting with forged domain with iframes, thus make them vulnerable.
+{% endhint %}
 
 ### Step 2 - Authenticate
 

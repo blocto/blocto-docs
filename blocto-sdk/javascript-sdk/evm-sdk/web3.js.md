@@ -11,9 +11,15 @@ Note that Blocto SDK for Ethereum-like chains is still in **Beta**.\
 APIs are subject to breaking changes.
 {% endhint %}
 
+{% hint style="info" %}
+Since 2022/09/07, Blocto upgrade the login flow and had a breaking change in @blocto/sdk.&#x20;
+
+If you're using a version < 0.3.0, the sdk may not work properly, please upgrade to ^0.3.0 as soon as possible.
+{% endhint %}
+
 ```bash
 $ yarn add web3
-$ yarn add @blocto/sdk^@0.2.1
+$ yarn add @blocto/sdk
 ```
 
 ```javascript
@@ -93,21 +99,5 @@ You can then use the `web3` object for on-chain interactions.  For more document
 
 * [web3.js 1.2.x docs](https://web3js.readthedocs.io/en/v1.2.11/index.html)
 * [web3.js 0.2x.x docs](https://github.com/ethereum/web3.js/blob/0.20.7/DOCUMENTATION.md)
-
-### **Migrate from 0.1.x**
-
-Start from 0.2.0 we make the ethereum provider and its corresponding config standalone, so that we can integrate with more other chains.
-
-```javascript
-// current version
-const ethereumConfig = { chainId, rpc };
-const sdk = new BloctoSDK({ ethereum: ethreumConfig, appId, /* other configs */ });
-const web3 = new Web3(sdk.ethereum);
-
-// 0.1.x
-const config = { chainId, rpc, appId };
-const provider = new BloctoProvider(config);
-const web3 = new Web3(provider);
-```
 
 ****
