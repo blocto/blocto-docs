@@ -29,7 +29,7 @@ $ yarn add @blocto/sdk
 ... or via CDN
 
 ```javascript
-<script src="https://unpkg.com/@blocto/sdk@0.2.0/dist/blocto-sdk.umd.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/@blocto/sdk@0.3.0/dist/blocto-sdk.umd.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
 ### **Usage**
