@@ -62,7 +62,7 @@
   * [Flow](blocto-sdk/android-sdk/flow/README.md)
     * [Get Started](blocto-sdk/android-sdk/flow/get-started.md)
 * [iOS SDK](blocto-sdk/ios-sdk/README.md)
-  * [Prerequest](blocto-sdk/ios-sdk/prerequest.md)
+  * [Prerequisite](blocto-sdk/ios-sdk/prerequest.md)
   * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/ios-sdk/ethereum-bsc-polygon-avalanche/README.md)
     * [Getting Started](blocto-sdk/ios-sdk/ethereum-bsc-polygon-avalanche/getting-started.md)
     * [Connect to Blocto wallet](blocto-sdk/ios-sdk/ethereum-bsc-polygon-avalanche/connect-to-blocto-wallet.md)
@@ -72,7 +72,11 @@
     * [Getting started](blocto-sdk/ios-sdk/solana/getting-started.md)
     * [Connect to Blocto wallet](blocto-sdk/ios-sdk/solana/connect-to-blocto-wallet.md)
     * [Send Transaction](blocto-sdk/ios-sdk/solana/send-transaction.md)
-  * [Flow](blocto-sdk/ios-sdk/flow.md)
+  * [Flow](blocto-sdk/ios-sdk/flow/README.md)
+    * [Getting started](blocto-sdk/ios-sdk/flow/getting-started.md)
+    * [Connect to Blocto wallet](blocto-sdk/ios-sdk/flow/connect-to-blocto-wallet.md)
+    * [Sign user message](blocto-sdk/ios-sdk/flow/sign-user-message.md)
+    * [Blockchain Interactions](blocto-sdk/ios-sdk/flow/blockchain-interactions.md)
 
 ## Technical Documents
 
