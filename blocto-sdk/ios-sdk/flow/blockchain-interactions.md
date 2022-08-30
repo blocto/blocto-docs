@@ -71,14 +71,16 @@ While `query` is used for sending scripts to the chain, `mutate` is used for bui
 
 In order to check transaction status, we can use `getTransactionStatus` in `fcl` to polling until transaction have been sealed into block.
 
-<pre class="language-swift"><code class="lang-swift">import FCL_SDK
-<strong>
-</strong><strong>Task {
-</strong>    do {
+```swift
+import FCL_SDK
+
+Task {
+    do {
         let result = try await fcl.getTransactionStatus(transactionId: txHash)
     } catch {
         // handle error here.
     }
-}</code></pre>
+}
+```
 
 After the status changes to sealed, we can query the Flow blockchain to see if the transaction works as expected.
