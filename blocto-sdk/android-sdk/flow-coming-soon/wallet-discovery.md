@@ -1,12 +1,35 @@
+---
+description: Create a UI of wallets for user to log in
+---
+
 # Wallet Discovery
 
-When you initialize FCL, it's required to provide a list of wallet providers. The following is an example of adding `Blocto` as a wallet provider.
+To allow the user to choose a wallet from the supported wallets you've added during FCL initialization, FCL provides Discovery for developers to focus on building their dApps.
+
+There are two ways an app can use Discovery:
+
+1. Discovery UI: A wallet list applying [Material Design 3](https://m3.material.io/)
+2. Config: A list of wallets for custom UI
+
+### Discovery UI
+
+Discovery UI is the simplest way to integrate Wallet Discovery.  By calling `showConnectWalletDialog()`, FCL presents a list of wallet providers for a user to login.
 
 ```kotlin
-val walletProviderList = listOf(Blocto.getInstance(YOUR_BLOCTO_APP_ID))
+// MainActivity.kt
+showConnectWalletDialog {
+    // authentication on user click
+}
 ```
 
-{% hint style="info" %}
-To obtain a **Blocto App ID**, please refer to the [instructions](../../register-app-id.md).
-{% endhint %}
+### Config
 
+FCL allows the developer to control over the authentication UI. You can access the wallet providers   directly from `Fcl.config.supportedWallets`.
+
+```kotlin
+// Create your own UI by supplying wallet provider list as data to an adapter
+val providerList = Fcl.config.supportedWallets
+
+// Once you get the user's selected provider, you need to add it to config
+Fcl.config.put(Config.Option.SelectedWalletProvider(provider))
+```
