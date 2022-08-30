@@ -24,6 +24,9 @@ pub fun main(): UFix64 {
 Task {
     let argument = try await fcl.query(script: script)
     label.text = argument.value.description
+    
+    // decode as Swift `Decodable` type or primitive type
+    let value: Decimal = argument.value.toSwiftValue()
 }
 ```
 
