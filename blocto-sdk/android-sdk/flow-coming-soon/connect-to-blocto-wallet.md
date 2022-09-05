@@ -17,7 +17,7 @@ By connecting to a wallet, a user's Flow account address can be retrieved. There
 Account proof data can be used to prove a user controls an on-chain account
 {% endhint %}
 
-### Simple login
+### Simple Login
 
 ```kotlin
 when (val result = Fcl.login()) {
@@ -30,7 +30,7 @@ when (val result = Fcl.login()) {
 }
 ```
 
-### Account-proof login
+### Account-proof Login
 
 If a dApp asks the user for authentication with account proof data,  the user will be asked to approve signing a message. It will return user's flow account address with `AccountProofData` which can be used to prove the ownership of a Flow account.
 
