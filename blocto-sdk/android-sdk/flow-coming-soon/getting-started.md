@@ -21,7 +21,7 @@ To initialize FCL, call `Fcl.init()`.
 ```kotlin
 Fcl.init(
     env = Network.TESTNET,
-    appDetail = AppDetail(),
+    appDetail = AppDetail("My first dApp"),
     supportedWallets = walletProviderList
 )
 ```
@@ -30,7 +30,7 @@ Fcl.init(
 FCL requires some essential information for initialization:
 
 * env: The network on which the app was built. i.e. `Network.TESTNET` or `Network.MAINNET`
-* appDetail: The information of the app.
+* appDetail (optional): The information of the app.
 * supportedWallets: A list of **wallet providers** supported by the app.
 {% endhint %}
 
