@@ -30,7 +30,7 @@ Task {
 }
 ```
 
-* _Mutate the chain_: Use transaction to send Cadence code with specify authorizer to perform permanently state changes on chain. Must be perform after user logged in.
+* _Mutate the chain_: Use transaction to send Cadence code with specify authorizer to perform permanently state changes on chain. Must be performed after user logged in.
 
 ```swift
 import FCL_SDK

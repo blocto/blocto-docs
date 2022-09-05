@@ -2,7 +2,7 @@
 description: Connecting wallet is being called as authentication or authn in FCL
 ---
 
-# Connect to Blocto wallet
+# Connect to Blocto Wallet
 
 {% hint style="warning" %}
 Make sure you set the configuration in [Getting started](getting-started.md) first.
@@ -88,5 +88,5 @@ Task {
 BLOCTO\_FCLCRYPTO\_CONTRACT\_ADDRESS can be found [here](../../javascript-sdk/flow/account-proof.md)
 
 {% hint style="warning" %}
-input parameter `appIdentifier` should be exactly same with `FCLAccountProofDat` 's appId above. They should all be a human readable string.
+input parameter `appIdentifier` should be exactly same with `FCLAccountProofData` 's appId above. They should all be a human readable string.
 {% endhint %}
