@@ -3,7 +3,7 @@
 * [📣 Introduction](README.md)
 * [Give Feedback](give-feedback.md)
 
-## Blocto <a href="#blocto-app" id="blocto-app"></a>
+## Blocto App
 
 * [Overview](blocto-app/overview.md)
 * [Web3.js Integration (Ethereum / BSC / Polygon / Avalanche / Tron)](blocto-app/web3-provider/README.md)
