@@ -74,5 +74,5 @@ when (val result = Fcl.verifyAccountProof(FLOW_APP_IDENTIFIER, accountProofData)
 ```
 
 {% hint style="warning" %}
-The first parameter of `verifyAccountProof()`, `appIdentifier`, is identical with `AccountProofResolvedData` 's appIdentifier.&#x20;
+The first parameter of `verifyAccountProof()`, `appIdentifier`, is identical to `AccountProofResolvedData` 's appIdentifier.&#x20;
 {% endhint %}
