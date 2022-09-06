@@ -58,7 +58,9 @@ fcl.config()
 ```
 
 {% hint style="info" %}
-Notice that since 2022/09/12, Blocto no longer supports `IFRAME/`RPC flow for authentication, due to the reason that iframes in popup are easily forgeable, users may not notice that they're interacting with forged domain with iframes, thus make them vulnerable.
+Notice that Blocto will no longer support `IFRAME/`RPC flow for authentication, due to the reason that iframes in popup are easily forgeable, users may not notice that they're interacting with forged domain with iframes, thus make them vulnerable.
+
+The accurate release date will be updated asap.
 {% endhint %}
 
 ### Step 2 - Authenticate
