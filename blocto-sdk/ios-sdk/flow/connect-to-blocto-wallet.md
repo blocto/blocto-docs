@@ -5,7 +5,7 @@ description: Connecting wallet is being called as authentication or authn in FCL
 # Connect to Blocto Wallet
 
 {% hint style="warning" %}
-Make sure you set the configuration in [Getting started](getting-started.md) first.
+Make sure you have set the configuration in [Getting Started](getting-started.md) first.
 {% endhint %}
 
 There are two different ways to connect wallet:

@@ -4,6 +4,10 @@ description: Query and mutate Flow blockchain
 
 # Blockchain Interactions
 
+{% hint style="warning" %}
+Make sure you have set the configuration in [Getting Started](getting-started.md) first.
+{% endhint %}
+
 We are assuming you have read the [Scripts Documentation](https://docs.onflow.org/fcl/reference/scripts/) before this, as transactions are sort of scripts with more required things.
 
 There are two different operations to interact with Flow blockchain:

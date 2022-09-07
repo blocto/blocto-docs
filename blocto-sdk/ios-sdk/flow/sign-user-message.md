@@ -1,12 +1,12 @@
 # Sign User Message
 
 {% hint style="warning" %}
-Make sure you set the configuration in [Getting started](getting-started.md) first.
+Make sure you have set the configuration in [Getting Started](getting-started.md) first.
 {% endhint %}
 
 Use of cryptographic signatures is a key part of the blockchain. They are used to prove ownership of an address without exposing its private key. While primarily used for signing transactions, cryptographic signatures can also be used to sign arbitrary messages.
 
-FCL has a feature that let you send arbitrary string to a wallet provider where the user may approve signing it with their private keys.
+FCL allows you to send an arbitrary string to a wallet provider where the user may approve signing it with their private keys.
 
 ```swift
 import FCL_SDK

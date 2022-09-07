@@ -1,14 +1,17 @@
 # Blockchain Interactions
 
 {% hint style="warning" %}
-Make sure you set the configuration in [Getting started](getting-started.md) first.
+Make sure you have set the configuration in [Getting Started](getting-started.md) first.
 {% endhint %}
 
 We are assuming you have read the [Scripts Documentation](https://docs.onflow.org/fcl/reference/scripts/) before this, as transactions are sort of scripts with more required things.
 
-There are two different operations to interact with Flow blockchain.
+There are two different operations to interact with Flow blockchain:
 
-* _Query the chain_: Send arbitrary Cadence scripts to the chain and receive back decoded values. Can be performed without user login.
+1. Query: Send arbitrary Cadence scripts to the chain and receive decoded values. Can be performed without user login
+2. Mutate: Use transaction to send Cadence code with specify authorizer to perform permanently state changes on chain. Must be performed after user logged in
+
+### Query
 
 ```swift
 import FCL_SDK
@@ -30,10 +33,9 @@ Task {
 }
 ```
 
-* _Mutate the chain_: Use transaction to send Cadence code with specify authorizer to perform permanently state changes on chain. Must be performed after user logged in.
+### Mutate
 
 ```swift
-import FCL_SDK
 
 // 1. login or authanticate first.
 
@@ -65,11 +67,11 @@ Task { @MainActor in
 }
 ```
 
-While `query` is used for sending scripts to the chain, `mutate` is used for building and sending transactions. Just like [scripts](https://docs.onflow.org/fcl/reference/scripts/).
+While `query` is used for sending scripts to the chain, `mutate` is used for building and sending transactions.
 
 ### Transaction status
 
-In order to check transaction status, we can use `getTransactionStatus` in `fcl` to polling until transaction have been sealed into block.
+In order to check transaction status, we can use `getTransactionStatus` in `fcl` to keep polling until transaction have been sealed into block.
 
 ```swift
 import FCL_SDK

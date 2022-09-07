@@ -1,5 +1,9 @@
 # Sign User Message
 
+{% hint style="warning" %}
+Make sure you have set the configuration in [Getting Started](getting-started.md) first.
+{% endhint %}
+
 In blockchain, signatures are used to prove the ownership of an address without exposing its private key. While primarily used for signing transactions, cryptographic signatures can also be used to sign arbitrary messages.
 
 FCL allows you to send an arbitrary string to a wallet provider where the user may approve signing it with their private keys.
