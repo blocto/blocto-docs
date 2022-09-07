@@ -8,7 +8,7 @@ To allow the user to choose a wallet from the supported wallets you've added dur
 
 There are two ways an app can use Discovery:
 
-1. Discovery UI: A wallet list applying [Material Design 3](https://m3.material.io/)
+1. Discovery UI: A wallet list applying Material Design
 2. Config: A list of wallets for custom UI
 
 ### Discovery UI
@@ -21,6 +21,11 @@ showConnectWalletDialog {
     // authentication on user click
 }
 ```
+
+{% hint style="info" %}
+In order to use the new Material Design 3 themes, you need to add Material Design version 1.5.0 or later.\
+[Learn more about Material Design 3](https://m3.material.io/)
+{% endhint %}
 
 ### Config
 
