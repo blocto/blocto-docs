@@ -4,6 +4,10 @@ description: Initialize FCL and add Blocto as a wallet provider
 
 # Getting Started
 
+In this guide we will show you prerequisite for Blocto Flow SDK.
+
+A sample app is available at: [https://github.com/portto/fcl-android/tree/main/fcl-sample](https://github.com/portto/fcl-android/tree/main/fcl-sample)
+
 ### Installation
 
 Add the dependency below to your module's `build.gradle` file
@@ -15,6 +19,17 @@ dependencies {
 ```
 
 ### Initialization
+
+Add FCL content provider to `AndroidManifest.xml`.
+
+```xml
+<application>
+<provider
+            android:authorities="com.portto.fcl.context"
+            android:name="com.portto.fcl.lifecycle.FCLContentProvider"
+            android:exported="false"/>
+</application>
+```
 
 To initialize FCL, call `Fcl.init()`.
 
