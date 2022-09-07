@@ -1,4 +1,8 @@
-# Getting started
+---
+description: Initialize FCL and add Blocto as a wallet provider
+---
+
+# Getting Started
 
 In this guide we will show you prerequisite for Blocto Flow SDK.
 
