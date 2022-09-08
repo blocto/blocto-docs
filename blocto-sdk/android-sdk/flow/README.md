@@ -1,4 +1,4 @@
-# Flow (Coming Soon)
+# Flow
 
 {% hint style="warning" %}
 Note that Blocto Android SDK for Flow is still in **Beta**.\
@@ -6,6 +6,10 @@ APIs are subject to breaking changes.
 {% endhint %}
 
 We highly recommend using [FCL-Android](https://github.com/portto/fcl-android) to interact with Flow blockchain instead of using Blocto SDK directly due to Flow blockchain's unique transaction flow for web. Blocto provides both native  (has Blocto wallet app installed) and web experience (Blocto wallet app not installed). When Blocto app is installed, Blocto-SDK-Flow is used as a `Wallet Provider` under the hood within FCL-Android.
+
+{% hint style="warning" %}
+FCL-Android and Blocto-SDK-Flow only supports Blocto wallet app version `3.12.0` and above.
+{% endhint %}
 
 ### What can I do with Blocto Android Flow SDK?
 
