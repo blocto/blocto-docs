@@ -13,7 +13,7 @@ There are two ways an app can use Discovery:
 
 ### Discovery UI
 
-Discovery UI is the simplest way to integrate Wallet Discovery.  By calling `showConnectWalletDialog()`, FCL presents a list of wallet providers for a user to login.
+Discovery UI is the simplest way to integrate Wallet Discovery.  By calling `showConnectWalletDialog()`, FCL presents a list of wallet providers for a user to log in.
 
 ```kotlin
 // MainActivity.kt
