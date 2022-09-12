@@ -5,7 +5,7 @@ description: Connecting to wallet is being called authentication or authn in FCL
 # Connect to Blocto Wallet
 
 {% hint style="warning" %}
-Make sure you have set the configuration in [Wallet Discovery](wallet-discovery.md) first.
+Make sure you have set the configuration in [Wallet Discovery](../flow/wallet-discovery.md) first.
 {% endhint %}
 
 By connecting to a wallet, a user's Flow account address can be retrieved. There are two different ways to connect a wallet:

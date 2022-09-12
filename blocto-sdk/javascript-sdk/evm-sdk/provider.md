@@ -12,7 +12,9 @@ APIs are subject to breaking changes.
 {% endhint %}
 
 {% hint style="info" %}
-Since 2022/09/12, Blocto upgrade the login flow and had a breaking change in @blocto/sdk.&#x20;
+Blocto will upgrade the login flow and had a breaking change in @blocto/sdk soon.
+
+The accurate release date will be updated as soon as possible.&#x20;
 
 If you're using a version < 0.3.0, the sdk may not work properly, please upgrade to ^0.3.0 as soon as possible.
 {% endhint %}

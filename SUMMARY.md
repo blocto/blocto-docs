@@ -58,7 +58,7 @@
   * [Flow](blocto-sdk/android-sdk/flow/README.md)
     * [Getting Started](blocto-sdk/android-sdk/flow/getting-started.md)
     * [Wallet Discovery](blocto-sdk/android-sdk/flow/wallet-discovery.md)
-    * [Connect to Blocto Wallet](blocto-sdk/android-sdk/flow/connect-to-blocto-wallet.md)
+    * [Connect to Blocto Wallet](blocto-sdk/android-sdk/flow-coming-soon/connect-to-blocto-wallet.md)
     * [Sign User Message](blocto-sdk/android-sdk/flow/sign-user-message.md)
     * [Blockchain Interactions](blocto-sdk/android-sdk/flow/blockchain-interactions.md)
 * [iOS SDK](blocto-sdk/ios-sdk/README.md)
