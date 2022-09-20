@@ -17,7 +17,7 @@ A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https
 * iOS version >= 13
 * android version >= 11
 
-### Github
+### Release Page
 
 * FCL-SDK is available through [github](https://github.com/portto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/portto/blocto-unity-sdk/releases)
 
