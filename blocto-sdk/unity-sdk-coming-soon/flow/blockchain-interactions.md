@@ -60,11 +60,11 @@ if(result.IsSuccessed)
     var name = result.Data.As<CadenceComposite>().CompositeFieldAs<CadenceString>("name").Value;
     var balance = result.Data.As<CadenceComposite>().CompositeFieldAs<CadenceNumber>("balance").Value;
     var address = result.Data.As<CadenceComposite>().CompositeFieldAs<CadenceAddress>("address").Value;
-    et"Name: {name}, Balance: {balance}, Address: {address}";
+    Debug.Log($"Name: {name}, Balance: {balance}, Address: {address})";
 }
 else
 {
-    _resultTxt.text = result.Message;
+    Debug.Log($"Error message: {result.Message}");
 }
 ```
 
