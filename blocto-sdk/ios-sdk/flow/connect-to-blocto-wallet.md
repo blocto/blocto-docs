@@ -42,7 +42,7 @@ Task {
 
 `fcl.authanticate` is also called behide `fcl.login()` with `accountProofData` set to nil.
 
-Both method above store address under `fcl.currentUser` , to get user address just simply call as below.
+Both methods above store address under `fcl.currentUser` , to get user address just simply call as below.
 
 ```swift
 if let userWalletAddress = fcl.currentUser?.address {
