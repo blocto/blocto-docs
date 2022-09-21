@@ -62,7 +62,7 @@ if let accountProof = fcl.currentUser?.accountProof {
 
 Cadence has a built-in function called verify that will verify a signature against a Flow account given the account address.
 
-FCL-Swift includes a utility function in `AppUtilities`, verifyAccountProof, for verifying one or more account proof signatures against an account's public key on the Flow blockchain.
+FCL-Swift includes a utility function in `AppUtilities`, `verifyAccountProof`, for verifying one or more account proof signatures against an account's public key on the Flow blockchain.
 
 ```swift
 import FCL_SDK
