@@ -14,17 +14,18 @@ using Flow.Net.Sdk.Core.Models;
 
 var userSignature = default(FlowSignature);
 var originalMessage = "SignMessage Test";
-_fcl.SignUserMessage(originalMessage, result => 
-                                            {
-                                                if(result.IsSuccessed == false)
-                                                {
-                                                    Debug.Log($"Get signmessage failed, Reason: {result.Message}");
-                                                    return;
-                                                }
-                                                
-                                                userSignature = result.Data;
-                                                Debug.Log($"Message: {originalMessage} \r\nSignature: {Encoding.UTF8.GetString(userSignature.Signature)} \r\nKeyId: {userSignature.KeyId}");
-                                            });    
+fcl.SignUserMessage(
+    message: originalMessage,
+    callback: result => {
+                  if(result.IsSuccessed == false)
+                  {
+                      Debug.Log($"Get signmessage failed, Reason: {result.Message}");
+                      return;
+                  }
+                
+                  userSignature = result.Data;
+                  Debug.Log($"Message: {originalMessage} \r\nSignature: {Encoding.UTF8.GetString(userSignature.Signature)} \r\nKeyId: {userSignature.KeyId}");
+              }); 
 ```
 
 Unlike account proof, `fcl` will NOT hold that user signature for you. You have to store it yourself for verification.
