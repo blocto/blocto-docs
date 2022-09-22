@@ -15,7 +15,7 @@ There are two different operations to interact with Flow blockchain:
 1. Query: Send arbitrary Cadence scripts to the chain and receive `ExecuteResult<ICadence>` values. Can be performed without user login
 2. Mutate: Use transaction to send Cadence code with specify authorizer to perform permanently state changes on chain. Must be performed after user logged in
 
-about `ICadance`, you can get more detail description from [Flow.Net](https://github.com/tyronbrand/flow.net#execute-scripts)
+about `ICadance`, you can get more detailed description from [Flow.Net](https://github.com/tyronbrand/flow.net#execute-scripts)
 
 #### Query
 
@@ -93,9 +93,11 @@ var tx = new FlowTransaction
                             },
             };
 
-fcl.Mutate(tx, txId => {
-                    Debug.Log($"https://testnet.flowscan.org/transaction/{txId}");
-                });
+fcl.Mutate(
+    tx: tx,
+    callback: txId => {
+                   Debug.Log($"https://testnet.flowscan.org/transaction/{txId}");
+               });
 ```
 
 While `query` is used for sending scripts to the chain, `mutate` is used for building and sending transactions.
