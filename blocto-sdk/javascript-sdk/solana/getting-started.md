@@ -40,7 +40,7 @@ const bloctoSDK = new BloctoSDK({
         // (required) devnet to be used
         net: 'testnet',
         // (optional) rpc endpoint
-        rpc: 'https://api.${net}.solana.com',
+        rpc: 'https://api.testnet.solana.com',
     },
     
     // (optional) Blocto app ID
