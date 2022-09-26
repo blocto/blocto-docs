@@ -11,14 +11,6 @@ Note that Blocto SDK for Solana is still in **Beta**.\
 APIs are subject to breaking changes.
 {% endhint %}
 
-{% hint style="info" %}
-Blocto will upgrade the login flow and had a breaking change in @blocto/sdk soon.
-
-The accurate release date will be updated as soon as possible.&#x20;
-
-If you're using a version < 0.3.0, the sdk may not work properly, please upgrade to ^0.3.0 as soon as possible.
-{% endhint %}
-
 ### Installation
 
 Install from npm/yarn
@@ -32,7 +24,7 @@ $ yarn add @blocto/sdk
 
 ```javascript
 <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
-<script src="https://unpkg.com/@blocto/sdk@0.2.1/dist/blocto-sdk.umd.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/@blocto/sdk" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
 ### **Usage**
@@ -47,6 +39,8 @@ const bloctoSDK = new BloctoSDK({
     solana: {
         // (required) devnet to be used
         net: 'testnet',
+        // (optional) rpc endpoint
+        rpc: 'https://api.${net}.solana.com',
     },
     
     // (optional) Blocto app ID
@@ -56,8 +50,8 @@ const bloctoSDK = new BloctoSDK({
 
 #### Blocto Provider parameters
 
-| Parameter  | Type   | Description                        | Required |
-| ---------- | ------ | ---------------------------------- | -------- |
-| solana.net | String | one of `testnet` or `mainnet-beta` | **Yes**  |
-| `appId`    | String | Blocto dApp ID                     | **No**   |
+| solana.net | String | one of `testnet` or `mainnet-beta` | **Yes** |
+| ---------- | ------ | ---------------------------------- | ------- |
+| solana.rpc | String | custom rpc endpoint                | **No**  |
+| `appId`    | String | Blocto dApp ID                     | **No**  |
 

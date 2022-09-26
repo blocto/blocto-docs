@@ -11,14 +11,6 @@ Note that Blocto SDK for Ethereum-like chains is still in **Beta**.\
 APIs are subject to breaking changes.
 {% endhint %}
 
-{% hint style="info" %}
-Blocto will upgrade the login flow and had a breaking change in @blocto/sdk soon.
-
-The accurate release date will be updated as soon as possible.&#x20;
-
-If you're using a version < 0.3.0, the sdk may not work properly, please upgrade to ^0.3.0 as soon as possible.
-{% endhint %}
-
 ```bash
 $ yarn add web3
 $ yarn add @blocto/sdk
