@@ -1,4 +1,4 @@
-# Prerequest
+# Prerequisite
 
 Blocto iOS SDK supports two flows depending on whether the Blocto app is installed or not.
 
@@ -19,7 +19,7 @@ If you do not set Universal Links in Developer Dashboard ([production](https://d
 Please make sure to implement **BOTH** [Apple Universal Links](https://developer.apple.com/ios/universal-links/) and [Custom URL Scheme](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app) for better user experience.
 
 {% hint style="info" %}
-For custom URL Scheme please register scheme using prefix **blocto** with app id from Developer Dashboard e.g. blocto64776cec-5953-4a58-8025-772f55a3917b
+For custom URL Scheme please register scheme using prefix **blocto** with app id from Developer Dashboard e.g. blocto64776cec-5953-4a58-8025-772f55a3917b or blocto-staging64776cec-5953-4a58-8025-772f55a3917b
 {% endhint %}
 
 ![Custom URL Scheme example](<../../.gitbook/assets/image (1).png>)
