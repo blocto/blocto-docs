@@ -43,7 +43,6 @@
     * [Connect to Blocto wallet](blocto-sdk/javascript-sdk/solana/connect-to-blocto-wallet.md)
     * [Send Transaction](blocto-sdk/javascript-sdk/solana/send-transaction.md)
     * [Server Sider Render](blocto-sdk/javascript-sdk/solana/server-sider-render.md)
-  * [Tezos (Coming Soon)](blocto-sdk/javascript-sdk/tezos-coming-soon.md)
 * [Android SDK](blocto-sdk/android-sdk/README.md)
   * [Prerequest](blocto-sdk/android-sdk/prerequest.md)
   * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche.md)
