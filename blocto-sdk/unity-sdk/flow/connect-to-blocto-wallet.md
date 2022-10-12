@@ -83,27 +83,7 @@ fcl.Authenticate(
               }));
 ```
 
-or
-
-```csharp
-using Flow.FCL;
-using Blocto.Sdk.Flow.Utility;
-
-var accountProofData = default(AccountProofData);
-fcl.Authenticate(
-    accountProofData:accountProofData,
-    callback:((currentUser,  accountProofData) => {
-                  accountProofData = accountProofData;
-              }));
-              
-var appUtility = new AppUtility(gameObject, new EncodeUtility());
-var isValid = appUtility.VerifyAccountProofSignature( 
-    appIdentifier: accountProofData!.AppId,
-    accountProofData: accountProofData,
-    fclCryptoContract: BLOCTO_FCLCRYPTO_CONTRACT_ADDRESS);
-```
-
-BLOCTO\_FCLCRYPTO\_CONTRACT\_ADDRESS can be found here
+BLOCTO\_FCLCRYPTO\_CONTRACT\_ADDRESS can be found [here](../../javascript-sdk/flow/account-proof.md)
 
 {% hint style="warning" %}
 input parameter `appIdentifier` should be exactly same with `AccountProofData` 's appId above. They should all be a human readable string.

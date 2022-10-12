@@ -58,6 +58,7 @@ var walletProvider = BloctoWalletProvider.CreateBloctoWalletProvider(
                     
                     return walletProvider;
                 },
+    env: {"testnet" or "mainnet"},
     bloctoAppIdentifier:Guid.Parse("d0c4c565-db60-4848-99c8-2bdfc6bd3576"));
         
 var fcl = FlowClientLibrary.CreateClientLibrary(
@@ -67,3 +68,7 @@ var fcl = FlowClientLibrary.CreateClientLibrary(
                 }, 
     config: config);
 ```
+
+If you build unity on iOS platform, you will find LSApplicationQueriesSchemes in info.plist that created by blocto sdk. **Pleases, don’t remove it.**
+
+<figure><img src="../../../.gitbook/assets/LSQueriesSchemes.png" alt=""><figcaption></figcaption></figure>

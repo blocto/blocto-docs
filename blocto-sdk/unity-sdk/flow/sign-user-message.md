@@ -24,7 +24,11 @@ fcl.SignUserMessage(
                   }
                 
                   userSignature = result.Data;
-                  Debug.Log($"Message: {originalMessage} \r\nSignature: {Encoding.UTF8.GetString(userSignature.Signature)} \r\nKeyId: {userSignature.KeyId}");
+                  Debug.Log($"Message: {originalMessage} \r\n");
+                  foreach (var userSignature in result.Data)
+                  {
+                      Debug.Log($"Signature: {Encoding.UTF8.GetString(userSignature.Signature)} \r\nKeyId: {userSignature.KeyId}\");
+                  }
               }); 
 ```
 
@@ -56,8 +60,4 @@ var isVerify = appUtil.VerifyUserSignatures(
 Debug.Log($"Verify result: {isVerify}");
 ```
 
-BLOCTO\_FCLCRYPTO\_CONTRACT\_ADDRESS can be found here
-
-{% hint style="info" %}
-Blocto SDK has helper function to make data into hex string, just import `BloctoSDK` to use it.
-{% endhint %}
+BLOCTO\_FCLCRYPTO\_CONTRACT\_ADDRESS can be found [here](../../javascript-sdk/flow/account-proof.md)

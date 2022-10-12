@@ -77,6 +77,7 @@
     * [Sign User Message](blocto-sdk/ios-sdk/flow/sign-user-message.md)
     * [Blockchain Interactions](blocto-sdk/ios-sdk/flow/blockchain-interactions.md)
 * [Unity SDK](blocto-sdk/unity-sdk/README.md)
+  * [Prerequisite](blocto-sdk/unity-sdk/prerequisite.md)
   * [Flow](blocto-sdk/unity-sdk/flow/README.md)
     * [Getting Started](blocto-sdk/unity-sdk/flow/getting-started.md)
     * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/flow/connect-to-blocto-wallet.md)
