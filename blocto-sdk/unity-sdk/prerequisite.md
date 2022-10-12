@@ -54,7 +54,7 @@ If you do not set iOS Universal Links or android Deep Link in Developer Dashboar
 
 ## Unity Build Setting
 
-In android, please add activity and intent-filter in yours AndroidManifest.xml![](<../../.gitbook/assets/Main Camera Inspector.png>)
+In android, please add activity and intent-filter in yours AndroidManifest.xml
 
 ```xml
 <activity android:name="com.blocto.unity.PluginActivity"
@@ -67,5 +67,6 @@ In android, please add activity and intent-filter in yours AndroidManifest.xml![
         <category android:name="android.intent.category.LAUNCHER" />
         <category android:name="android.intent.category.DEFAULT" />
     </intent-filter>
+    <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
 </activity>
 ```
