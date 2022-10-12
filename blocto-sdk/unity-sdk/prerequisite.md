@@ -54,7 +54,7 @@ If you do not set iOS Universal Links or android Deep Link in Developer Dashboar
 
 ## Unity Build Setting
 
-In android, please add activity and intent-filter in yours AndroidManifest.xml
+In android, please add `activity` and `intent-filter` in yours AndroidManifest.xml
 
 ```xml
 <activity android:name="com.blocto.unity.PluginActivity"
