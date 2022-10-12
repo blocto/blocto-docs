@@ -17,10 +17,10 @@ Initialize Blocto SDK
 ```kotlin
 BloctoSDK.init(
     appId = "YOUR_APP_ID", // required
-    debug = true           // optional (default is false)
+    env = BloctoEnv.PROD   // optional (default is BloctoEnv.PROD)
 )
 ```
 
 {% hint style="info" %}
-`debug`: Specify the cluster. `true` for **mainnet** and `false` for **testnet**. Default is `false`.
+`env`: Specify the cluster. `BloctoEnv.PROD` for **mainnet** and `BloctoEnv.DEV` for **testnet**. Default is `BloctoEnv.PROD`.
 {% endhint %}
