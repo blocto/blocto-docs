@@ -5,7 +5,7 @@ Blocto iOS SDK supports two flows depending on whether the Blocto app is install
 * **Blocto app installed**\
   ****Based on development environment, you need to download the corresponding Blocto app for testing:
   * [production](https://apps.apple.com/tw/app/blocto-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E9%8C%A2%E5%8C%85-by-portto/id1481181682)
-  * [staging](https://appdistribution.firebase.dev/i/8d66340bb3ad10ed) (testnet environment)
+  * [dev](https://appdistribution.firebase.dev/i/50335e7876650bce) (testnet environment)
     * you can download it after we add your device to provisioning profile and release a new staging version\
 
 * **Blocto app not installed**\

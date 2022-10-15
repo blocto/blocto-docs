@@ -33,7 +33,7 @@ Task {
     label.text = argument.value.description
     
     // decode as Swift `Decodable` type or primitive type
-    let value: Decimal = argument.value.toSwiftValue()
+    let value: String = argument.value.toSwiftValue()
 }
 ```
 

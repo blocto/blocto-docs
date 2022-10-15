@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 In this guide we show how to use it.
 
@@ -19,7 +19,7 @@ pod install
 ```
 
 {% hint style="warning" %}
-BloctoSDK start support EVMBase from version 0.2.1 with Blocto Wallet app from 3.8.0.
+Blocto wallet supports EVMBase staring from version 3.8.0.
 {% endhint %}
 
 ## Usage
@@ -27,28 +27,20 @@ BloctoSDK start support EVMBase from version 0.2.1 with Blocto Wallet app from 3
 #### Initialize Blocto SDK
 
 ```swift
-if #available(iOS 13.0, *) {
-    BloctoSDK.shared.initialize(
-        with: "YOUR_APP_ID", // required
-        window: yourWindow, // required PresentationContextProvider of web SDK authentication.
-        logging: true, // optional (default is true)
-        testnet: true // optional (default is false)
-    )
-} else {
-    BloctoSDK.shared.initialize(
-        with: "YOUR_APP_ID", // required
-        logging: true, // optional (default is true)
-        testnet: true // optional (default is false)
-    )
-}
+BloctoSDK.shared.initialize(
+    with: "YOUR_APP_ID", // required
+    window: yourWindow, // required PresentationContextProvider of web SDK authentication.
+    logging: true, // optional (default is true)
+    environment: .dev // optional (default is prod)
+)
 ```
 
 {% hint style="info" %}
-parameter `testnet`: specify the network. Default is `false.`\
-in Ethereum`true` for Rinkeby and `false` for mainnet.\
-in BSC`true` for testnet  and `false` for mainnet.\
-in Polygon`true` for Mumbai and `false` for mainnet.\
-in Avalanche`true` for FUJI Testnet and `false` for mainnet.
+parameter `environment`:\
+in Ethereum`dev` for Rinkeby and `prod` for mainnet.\
+in BSC`dev` for testnet  and `prod` for mainnet.\
+in Polygon`dev` for Mumbai and `prod` for mainnet.\
+in Avalanche`dev` for FUJI Testnet and `prod` for mainnet.
 {% endhint %}
 
 

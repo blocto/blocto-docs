@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 In this guide we show how to use it.
 
@@ -19,7 +19,7 @@ pod install
 ```
 
 {% hint style="warning" %}
-BloctoSDK start support Solana from version 0.1.0 with Blocto Wallet app from 3.7.0.
+Blocto wallet supports Solana staring from version 3.7.0.
 {% endhint %}
 
 ## Usage
@@ -27,24 +27,16 @@ BloctoSDK start support Solana from version 0.1.0 with Blocto Wallet app from 3.
 #### Initialize Blocto SDK
 
 ```swift
-if #available(iOS 13.0, *) {
-    BloctoSDK.shared.initialize(
-        with: "YOUR_APP_ID", // required
-        window: yourWindow, // required PresentationContextProvider of web SDK authentication.
-        logging: true, // optional (default is true)
-        testnet: true // optional (default is false)
-    )
-} else {
-    BloctoSDK.shared.initialize(
-        with: "YOUR_APP_ID", // required
-        logging: true, // optional (default is true)
-        testnet: true // optional (default is false)
-    )
-}
+BloctoSDK.shared.initialize(
+    with: "YOUR_APP_ID", // required
+    window: yourWindow, // required PresentationContextProvider of web SDK authentication.
+    logging: true, // optional (default is true)
+    environment: .dev // optional (default is prod)
+)
 ```
 
 {% hint style="info" %}
-parameter `testnet`: specify the cluster.`true` for **devnet** and`false` for **mainnet-beta**. Default is `false.`
+parameter `environment`: specify the cluster.`.dev` for **devnet** and`.prod` for **mainnet-beta**. Default is `.prod.`
 {% endhint %}
 
 

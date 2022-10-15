@@ -1,2 +1,0 @@
-# Aptos (Coming Soon)
-
