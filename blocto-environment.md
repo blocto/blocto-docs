@@ -1,6 +1,6 @@
 # Blocto Environment
 
-There are two environments in Blocto: _prod_ and _dev_ which corresponding to different blockchain networks.
+Blocto is a cross-chain wallet and uses email as login. There are two environments in Blocto: _prod_ and _dev_ which corresponding to different blockchain networks. The same environment means the same account system.
 
 | Chain \ Environment | prod              | dev                    | prod |
 | ------------------- | ----------------- | ---------------------- | ---- |
@@ -24,7 +24,7 @@ Blocto Javascript SDK uses different environment according to blockchain network
 
 * EVM-based blockchains: chainId
 * Solana: network
-* Flow: challenge.handshake from config
+* Flow: `challenge.handshake` from config
 
 For instance, if you specify `chainId = 0x13881` for Polygon, it will use Blocto _dev_ environment.
 
