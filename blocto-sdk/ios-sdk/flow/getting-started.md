@@ -20,13 +20,13 @@ A sample app is available at: [https://github.com/portto/fcl-swift/tree/main/Dem
 FCL-SDK is available through [CocoaPods](https://cocoapods.org/). You can include specific subspec to install, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FCL-SDK', '~> 0.2.0'
+pod 'FCL-SDK', '~> 0.1.3'
 ```
 
 ### Swift Package Manager <a href="#swift-package-manager" id="swift-package-manager"></a>
 
 ```swift
-.package(url: "https://github.com/portto/fcl-swift", .upToNextMinor(from: "0.2.0"))
+.package(url: "https://github.com/portto/fcl-swift", .upToNextMinor(from: "0.1.3"))
 ```
 
 Here's an example PackageDescription:
@@ -44,7 +44,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/portto/fcl-swift", .upToNextMinor(from: "0.2.0"))
+        .package(url: "https://github.com/portto/fcl-swift", .upToNextMinor(from: "0.1.3"))
     ],
     targets: [
         .target(
@@ -67,7 +67,7 @@ import FCL_SDK
 let bloctoWalletProvider = try BloctoWalletProvider(
     bloctoAppIdentifier: bloctoSDKAppId,
     window: nil,
-    network: .testnet,
+    testnet: true,
     logging: true
 )
 fcl.config

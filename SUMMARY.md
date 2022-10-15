@@ -1,6 +1,7 @@
 # Table of contents
 
 * [📣 Introduction](README.md)
+* [Blocto Environment](blocto-environment.md)
 * [Give Feedback](give-feedback.md)
 
 ## Blocto App
