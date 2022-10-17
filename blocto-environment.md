@@ -1,6 +1,6 @@
 # Blocto Environment
 
-Blocto is a cross-chain wallet and uses email as login. There are two environments in Blocto: _prod_ and _dev_ which corresponding to different blockchain networks. The same environment means the same account system.
+Blocto is a cross-chain wallet and uses email as login. There are two environments in Blocto: _prod_ and _dev_ which is corresponding to different blockchain networks. The same environment means the same account system.
 
 | Chain \ Environment | prod              | dev                    | prod |
 | ------------------- | ----------------- | ---------------------- | ---- |
