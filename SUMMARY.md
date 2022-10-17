@@ -44,7 +44,7 @@
     * [Connect to Blocto wallet](blocto-sdk/javascript-sdk/solana/connect-to-blocto-wallet.md)
     * [Send Transaction](blocto-sdk/javascript-sdk/solana/send-transaction.md)
     * [Server Sider Render](blocto-sdk/javascript-sdk/solana/server-sider-render.md)
-  * [Aptos](blocto-sdk/javascript-sdk/evm-sdk-1/README.md)
+  * [Aptos2](blocto-sdk/javascript-sdk/evm-sdk-1/README.md)
     * [Provider](blocto-sdk/javascript-sdk/evm-sdk-1/provider.md)
     * [Send Transaction](blocto-sdk/javascript-sdk/evm-sdk-1/send-transaction.md)
     * [Sign message](blocto-sdk/javascript-sdk/evm-sdk-1/send-transaction-1.md)
