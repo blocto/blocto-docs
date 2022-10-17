@@ -20,7 +20,7 @@ We're building _staging_ environment which is more stable than _dev_.
 
 ### Javascript SDK
 
-Blocto Javascript SDK uses different environment according to blockchain network. The key properties are as below:
+Blocto Javascript SDK uses different environments according to different blockchain networks. The key properties are as below:
 
 * EVM-based blockchains: chainId
 * Solana: network
