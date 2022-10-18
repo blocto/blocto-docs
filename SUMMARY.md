@@ -48,6 +48,7 @@
     * [Provider](blocto-sdk/javascript-sdk/evm-sdk-1/provider.md)
     * [Send Transaction](blocto-sdk/javascript-sdk/evm-sdk-1/send-transaction.md)
     * [Sign message](blocto-sdk/javascript-sdk/aptos/sign-message.md)
+    * [Wallet adapter](blocto-sdk/javascript-sdk/aptos/wallet-adapter.md)
 * [Android SDK](blocto-sdk/android-sdk/README.md)
   * [Prerequest](blocto-sdk/android-sdk/prerequest.md)
   * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche.md)
