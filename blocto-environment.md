@@ -10,7 +10,7 @@ Blocto is a cross-chain wallet and uses email as login. There are two environmen
 | Avalanche           | Mainnet (C Chain) | Fuji Testnet (C Chain) |      |
 | Solana              | Mainnet Beta      | Devnet                 |      |
 | Flow                | Mainnet           | Testnet                |      |
-| Aptos               | Mainnet           | Devnet                 |      |
+| Aptos               | Mainnet           | Testnet                |      |
 
 {% hint style="info" %}
 We're building _staging_ environment which is more stable than _dev_.
