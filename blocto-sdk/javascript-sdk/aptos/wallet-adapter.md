@@ -1,6 +1,6 @@
 # Wallet adapter
 
-Blocto provide an out-of-the box wallet adapter that is the extension of the official [aptos wallet adapter](https://github.com/aptos-labs/aptos-wallet-adapter), which provider blocto wallet support & extra features.
+Blocto wallet adapter is the extension of the official [aptos wallet adapter](https://github.com/aptos-labs/aptos-wallet-adapter), which provides blocto wallet support and extra features.
 
 ### Installation
 
