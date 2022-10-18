@@ -93,7 +93,7 @@ const { connected, account, network, ...rest } = useWallet();
   signAndSubmitTransaction(
     transaction: TransactionPayload
   ): Promise<PendingTransaction>; - function to sign and submit the transaction to chain
-*/ja
+*/
 ```
 
 ### Connect wallet
