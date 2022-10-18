@@ -25,8 +25,8 @@ import {
   PontemWalletAdapter,
   SpikaWalletAdapter,
   RiseWalletAdapter,
-  FletchWalletAdapter
-} from '@manahippo/aptos-wallet-adapter';
+  FletchWalletAdapter,
+} from '@blocto/aptos-wallet-adapter';
 
 const wallets = [
   new BloctoWalletAdapter(),
@@ -57,10 +57,25 @@ const App: React.FC = () => {
 export default App;
 ```
 
-### Web3 hook
+If you want to develop on other networks with blocto wallet, simply pass in the `network` config:
 
 ```javascript
-import { useWallet } from '@manahippo/aptos-wallet-adapter';
+import { 
+ // ...
+  WalletAdapterNetwork
+} from '@blocto/aptos-wallet-adapter';
+
+const wallets = [
+  new BloctoWalletAdapter({ network: WalletAdapterNetwork.Testnet }),
+  // ...
+];
+// ...
+```
+
+### React Hook
+
+```javascript
+import { useWallet } from '@blocto/aptos-wallet-adapter';
 
 const { connected, account, network, ...rest } = useWallet();
 
@@ -84,7 +99,7 @@ const { connected, account, network, ...rest } = useWallet();
 ### Connect wallet
 
 ```javascript
-import { AptosWalletName, useWallet } from "@manahippo/aptos-wallet-adapter"
+import { AptosWalletName, useWallet } from "@blocto/aptos-wallet-adapter"
 
 ...
 
