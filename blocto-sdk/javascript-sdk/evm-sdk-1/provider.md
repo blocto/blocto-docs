@@ -28,7 +28,7 @@ $ yarn add @blocto/sdk
 
 ### Get App ID
 
-It's required to register an app id before using Blocto SDK, check out the [Register App ID](https://docs.blocto.app/blocto-sdk/register-app-id) section
+It's required to register an app id before using Blocto SDK, check out the [Register App ID](../../register-app-id.md) section
 
 ### **Usage**
 
