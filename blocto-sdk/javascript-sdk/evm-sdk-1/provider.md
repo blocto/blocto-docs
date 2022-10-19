@@ -50,12 +50,16 @@ const bloctoSDK = new BloctoSDK({
 | Parameter       | Type   | Description                  | Required |
 | --------------- | ------ | ---------------------------- | -------- |
 | `aptos.chainId` | number | Aptos chain ID to connect to | **Yes**  |
-| `appId`         | String | Blocto dApp ID               | **No**   |
+| `appId`         | String | Blocto dApp ID               | **Yes**  |
+
+### Get App ID
+
+Check out the section [Register App ID](https://docs.blocto.app/blocto-sdk/register-app-id)
 
 #### Examples
 
 {% tabs %}
-{% tab title="Ethereum Mainnet" %}
+{% tab title="Aptos Mainnet" %}
 ```javascript
 const bloctoSDK = new BloctoSDK({
     aptos: {
