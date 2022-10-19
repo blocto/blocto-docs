@@ -26,6 +26,10 @@ $ yarn add @blocto/sdk
 <script src="https://unpkg.com/@blocto/sdk" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
+### Get App ID
+
+It's required to register an app id before using Blocto SDK, check out the [Register App ID](https://docs.blocto.app/blocto-sdk/register-app-id) section
+
 ### **Usage**
 
 Initiate the Blocto provider&#x20;
@@ -51,10 +55,6 @@ const bloctoSDK = new BloctoSDK({
 | --------------- | ------ | ---------------------------- | -------- |
 | `aptos.chainId` | number | Aptos chain ID to connect to | **Yes**  |
 | `appId`         | String | Blocto dApp ID               | **Yes**  |
-
-### Get App ID
-
-Check out the section [Register App ID](https://docs.blocto.app/blocto-sdk/register-app-id)
 
 #### Examples
 
