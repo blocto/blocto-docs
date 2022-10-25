@@ -7,7 +7,7 @@ description: Connect to Blocto wallet through Flow Client Library (FCL)
 ### Step 1 - Configure FCL
 
 ```javascript
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 
 fcl.config()
     // connect to Flow testnet
@@ -24,7 +24,7 @@ fcl.config()
 Alternatively, if you already have user's email and would like to pre-fill it for user's Blocto account, you can use the custom handshake URL instead:
 
 ```javascript
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 
 fcl.config()
     // connect to Flow testnet
@@ -39,10 +39,10 @@ fcl.config()
     )
 ```
 
-Starting from `@onflow/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of popup.  Simply modify your wallet connection to:
+Starting from `@blocto/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of popup.  Simply modify your wallet connection to:
 
 ```javascript
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 
 fcl.config()
   // connect to Flow testnet
@@ -66,7 +66,7 @@ The accurate release date will be updated as soon as possible.
 ### Step 2 - Authenticate
 
 ```javascript
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 
 fcl
   .currentUser()
@@ -76,10 +76,12 @@ fcl
 fcl.authenticate()
 ```
 
+{% embed url="https://codesandbox.io/s/blocto-fcl-login-tjr78i?file=/src/index.js" %}
+
 ### Step 3 - Unauthenticate
 
 ```javascript
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 
 fcl
   .currentUser()
@@ -88,3 +90,5 @@ fcl
 // unauthenticate and clear account info in FCL
 fcl.unauthenticate()
 ```
+
+{% embed url="https://codesandbox.io/s/blocto-fcl-unauthenticate-rxqv1w?file=/src/App.js" %}

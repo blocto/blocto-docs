@@ -4,9 +4,9 @@ Once the web application is connected to Blocto wallet, it can send transactions
 
 In order to send a transaction, the web application must:
 
-* Create an unsigned transaction or transactions.
-* Have it be signed by the user's Blocto wallet.
-* Send it with Blocto custom JSON-RPC.
+- Create an unsigned transaction or transactions.
+- Have it be signed by the user's Blocto wallet.
+- Send it with Blocto custom JSON-RPC.
 
 For more information about the transactions on Solana, it is recommended to check out the `solana-web3.js` [docs](https://solana-labs.github.io/solana-web3.js/classes/Transaction.html) as well as the official [Solana docs](https://docs.solana.com/developing/programming-model/transactions).
 
@@ -16,14 +16,17 @@ For plain transactions \(no dApp-side signing involved\), you can just create tr
 
 {% tabs %}
 {% tab title="signAndSendTransaction\(\)" %}
+
 ```javascript
 const transaction = new solanaWeb3.Transaction();
 ...
 const txHash = await bloctoSDK.solana.signAndSendTransaction(transaction);
 ```
+
 {% endtab %}
 
 {% tab title="request\(\)" %}
+
 ```javascript
 const transaction = new solanaWeb3.Transaction();
 ...
@@ -34,6 +37,7 @@ bloctoSDK.solana.request({
   }
 });
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -43,6 +47,7 @@ For transactions involving dApp-side signing, first you need to convert the tran
 
 {% tabs %}
 {% tab title="convertToProgramWalletTransaction\(\)" %}
+
 ```javascript
 const transaction = new solanaWeb3.Transaction();
 ...
@@ -52,9 +57,11 @@ converted.partialSign(...signers);
 
 const txHash = await bloctoSDK.solana.signAndSendTransaction(converted);
 ```
+
 {% endtab %}
 
 {% tab title="request\(\)" %}
+
 ```javascript
 const transaction = new solanaWeb3.Transaction();
 ...
@@ -77,6 +84,8 @@ const txHash = await bloctoSDK.solana.request({
   }
 });
 ```
+
 {% endtab %}
 {% endtabs %}
 
+{% embed url="https://codesandbox.io/s/sol-send-token-13vb3p?file=/src/App.js" %}

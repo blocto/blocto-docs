@@ -40,3 +40,8 @@ The addresses of the Blocto FCLCrypto contract `BLOCTO_FCLCRYPTO_CONTRACT_ADDRES
 | ------- | ------------------------ |
 | Mainnet | 0xdb6b70764af4ff68       |
 | Testnet | 0x5b250a8a85b44a67       |
+
+[More about verifyAccountProof api](https://github.com/onflow/fcl-js/blob/master/docs/reference/proving-authentication.mdx) 
+## as of fcl@^1.0.0
+
+{% embed url="https://codesandbox.io/s/boring-bash-m79np5?file=/src/App.js" %}

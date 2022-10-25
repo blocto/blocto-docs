@@ -21,12 +21,12 @@ $ npx create-react-app hello-world
 In the `hello-world` folder you've just created, install dependencies necessary for this project.
 
 ```
-$ yarn add @onflow/fcl
+$ yarn add @blocto/fcl
 $ yarn add styled-components
 ```
 
 {% hint style="danger" %}
-FCL is under heavy developments and the versions are not always backward compatible. We recommend that you use `@onflow/fcl@^0.0.71` for now.
+FCL is under heavy developments and the versions are not always backward compatible. We recommend that you use `@blocto/fcl@^0.0.71` for now.
 {% endhint %}
 
 You can start the app and see it running on `http://localhost:3000`
@@ -45,7 +45,7 @@ $ yarn start
 {% tab title="src/GetLatestBlock.js" %}
 ```jsx
 import React, {useState} from "react"
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 import styled from 'styled-components'
 
 const Card = styled.div`
@@ -121,7 +121,7 @@ export default App
 ```jsx
 import React from 'react'
 import ReactDOM from 'react-dom'
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
@@ -160,7 +160,7 @@ Now, let's add login functionality to your dApp.
 ```jsx
 import React, {useState, useEffect} from "react"
 import styled from "styled-components"
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 
 const Card = styled.div`
   margin: 10px 5px;
@@ -239,7 +239,7 @@ export default App;
 ```jsx
 import React from 'react'
 import ReactDOM from 'react-dom'
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
@@ -277,7 +277,7 @@ Finally, we can use the connected Blocto Flow account to send a transaction.
 {% tab title="src/SendTransaction.js" %}
 ```jsx
 import React, {useState} from "react"
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 import styled from 'styled-components'
 
 const Card = styled.div`
