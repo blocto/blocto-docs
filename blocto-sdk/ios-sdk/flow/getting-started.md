@@ -85,7 +85,7 @@ If window not specify, `BloctoWalletProvider` will find top view controller from
 
 In order to let FCL-Swift know whether user install Blocto app, please add following scheme to your info.plist.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>info.plist</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/LSQueriesSchemes.png" alt=""><figcaption><p>info.plist</p></figcaption></figure>
 
 If you open source code or open info.plist with external editor, it will look like this.
 

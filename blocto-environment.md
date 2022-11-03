@@ -2,15 +2,7 @@
 
 Blocto is a cross-chain wallet and uses email as login. There are two environments in Blocto: _prod_ and _dev_ which is corresponding to different blockchain networks. The same environment means the same account system.
 
-| Chain \ Environment | prod              | dev                    | prod |
-| ------------------- | ----------------- | ---------------------- | ---- |
-| Ethereum            | Mainnet           | Rinkeby                |      |
-| BNB Chain           | Mainnet           | Chapel Testnet         |      |
-| Polygon             | Mainnet           | Mumbai                 |      |
-| Avalanche           | Mainnet (C Chain) | Fuji Testnet (C Chain) |      |
-| Solana              | Mainnet Beta      | Devnet                 |      |
-| Flow                | Mainnet           | Testnet                |      |
-| Aptos               | Mainnet           | Testnet                |      |
+<table><thead><tr><th>Chain \ Environment</th><th>prod</th><th>dev</th><th data-hidden>prod</th></tr></thead><tbody><tr><td>Ethereum</td><td>Mainnet</td><td>Rinkeby</td><td></td></tr><tr><td>BNB Chain</td><td>Mainnet</td><td>Chapel Testnet</td><td></td></tr><tr><td>Polygon</td><td>Mainnet</td><td>Mumbai</td><td></td></tr><tr><td>Avalanche</td><td>Mainnet (C Chain)</td><td>Fuji Testnet (C Chain)</td><td></td></tr><tr><td>Solana</td><td>Mainnet Beta</td><td>Devnet</td><td></td></tr><tr><td>Flow</td><td>Mainnet</td><td>Testnet</td><td></td></tr><tr><td>Aptos</td><td>Mainnet</td><td>Testnet</td><td></td></tr></tbody></table>
 
 {% hint style="info" %}
 We're building _staging_ environment which is more stable than _dev_.

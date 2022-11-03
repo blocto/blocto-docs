@@ -33,7 +33,7 @@ If you do not set iOS Universal Links or android Deep Link in Developer Dashboar
 
 * iOS Universal Links setting. please add Associated Domains in Xcode project setting and add new path **`/blocto`** to your apple-app-site-association
 
-<figure><img src="../../.gitbook/assets/UniversalLink.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/UniversalLink (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Please add a new path **`/blocto`** to your apple-app-site-association
 * Android Deep Links setting, please add **`activity`** and **`intent-filter`** in yours AndroidManifest.xml
