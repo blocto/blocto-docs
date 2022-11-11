@@ -57,16 +57,25 @@ If you do not set iOS Universal Links or android Deep Link in Developer Dashboar
 In android, please add `activity` and `intent-filter` in yours AndroidManifest.xml
 
 ```xml
-<activity android:name="com.blocto.unity.PluginActivity"
-          android:theme="@style/UnityThemeSelector"
-          android:process="e.unity3d"
-          android:configChanges="keyboardHidden|orientation|screenSize"
-          android:screenOrientation="portrait">
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-        <category android:name="android.intent.category.DEFAULT" />
-    </intent-filter>
-    <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
-</activity>
+<application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name">
+    <activity android:name="com.unity3d.player.UnityPlayerActivity"
+              android:launchMode="singleTask"
+              android:label="@string/app_name"
+              android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">
+        <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+        <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+</application>
 ```
