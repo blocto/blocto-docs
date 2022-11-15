@@ -39,7 +39,6 @@
     * [Web3.js Integration](blocto-sdk/javascript-sdk/evm-sdk/web3.js.md)
     * [Web3-React Connector](blocto-sdk/javascript-sdk/evm-sdk/web3-react-connector.md)
     * [Server Side Render](blocto-sdk/javascript-sdk/evm-sdk/server-side-render.md)
-    * [Login / Register](blocto-sdk/javascript-sdk/evm-sdk/login-register.md)
     * [Sign Message](blocto-sdk/javascript-sdk/evm-sdk/sign-message.md)
   * [Solana](blocto-sdk/javascript-sdk/solana/README.md)
     * [Getting started](blocto-sdk/javascript-sdk/solana/getting-started.md)
