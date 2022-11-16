@@ -47,7 +47,7 @@ const loginHandler = async () => {
 
 const logoutHandler = async () => {
   try {
-    await bloctoSDK?.ethereum?.request({ method: "eth_disconnect" });
+    await bloctoSDK?.ethereum?.request({ method: "wallet_disconnect" });
     localStorage.removeItem("sdk.session");
     setAddress(null);
   } catch (error) {
