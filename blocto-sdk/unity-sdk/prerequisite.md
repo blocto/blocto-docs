@@ -24,8 +24,8 @@ walletProvider.ForcedUseWebView = true;
 
 ## iOS Universal Links & Android Deep Link
 
-Blocto Unity SDK uses iOS[ Universal Links](https://developer.apple.com/ios/universal-links/) or android [Deep Link](https://developer.android.com/training/app-links/deep-linking) to bring back information from Blocto wallet app to yours.\
-If you do not set iOS Universal Links or android Deep Link in Developer Dashboard ([production](https://developers.blocto.app/), [staging](https://developers-staging.blocto.app/)) or any situation that can't open your app correctly.
+Blocto Unity SDK uses iOS[ Universal Links](https://developer.apple.com/ios/universal-links/) or Android [Deep Link](https://developer.android.com/training/app-links/deep-linking) to bring back information from Blocto wallet app to yours.\
+If you do not set iOS Universal Links or Android Deep Link in Developer Dashboard ([production](https://developers.blocto.app/), [dev](https://developers-dev.blocto.app/)) or any situation that can't open your app correctly.
 
 * iOS Universal Links setting. please add Associated Domains in Xcode project setting and add new path **`/blocto`** to your apple-app-site-association
 
