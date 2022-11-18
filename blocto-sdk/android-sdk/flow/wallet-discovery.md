@@ -17,7 +17,7 @@ Discovery UI is the simplest way to integrate Wallet Discovery.  By calling `sho
 
 ```kotlin
 // MainActivity.kt
-showConnectWalletDialog {
+showConnectWalletDialog(this) {
     // authentication on user click
 }
 ```
