@@ -16,7 +16,6 @@ APIs are subject to breaking changes.
 Install from npm/yarn
 
 ```bash
-$ yarn add web3
 $ yarn add @blocto/sdk
 ```
 
@@ -35,7 +34,6 @@ It's required to register an app id before using Blocto SDK, check out the [Regi
 Initiate the Blocto provider&#x20;
 
 ```javascript
-import Web3 from 'web3'
 import BloctoSDK from '@blocto/sdk'
 
 const bloctoSDK = new BloctoSDK({
@@ -64,6 +62,17 @@ const bloctoSDK = new BloctoSDK({
 const bloctoSDK = new BloctoSDK({
     aptos: {
         chainId: 1,
+    },
+    appId: 'YOUR_BLOCTO_APP_ID',
+});
+```
+{% endtab %}
+
+{% tab title="Aptos Testnet" %}
+```javascript
+const bloctoSDK = new BloctoSDK({
+    aptos: {
+        chainId: 2,
     },
     appId: 'YOUR_BLOCTO_APP_ID',
 });
