@@ -24,7 +24,14 @@ const transaction = {
   type: 'entry_function_payload',
   type_arguments: ['0x1::aptos_coin::AptosCoin'],
 }
+const options = {
+  max_gas_amount: '20000' // default to '50000'
+}
 ... 
 // sign and submit the transaction & get the tx hash
-const { hash } await bloctoSDK.aptos.signAndSubmitTransaction(transaction)
+const { hash } await bloctoSDK.aptos.signAndSubmitTransaction(transaction, options)
 ```
+
+{% hint style="warning" %}
+Gas unit price is not supported in options currently, we will use [estimate\_gas\_price](https://fullnode.mainnet.aptoslabs.com/v1/spec#/operations/estimate\_gas\_price) from Aptos full node api instead.
+{% endhint %}
