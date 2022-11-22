@@ -7,8 +7,7 @@ description: Use Blocto wallet SDK with your existing web3.js integration
 You can use Blocto wallet service with your current [web3.js](https://web3js.readthedocs.io/en/v1.3.4/) integration with only a few simple lines of code.&#x20;
 
 {% hint style="warning" %}
-Note that Blocto SDK for Ethereum-like chains is still in **Beta**.\
-APIs are subject to breaking changes.
+Note that Blocto SDK for Ethereum-like chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 ```bash

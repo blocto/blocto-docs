@@ -5,8 +5,7 @@ description: Use Blocto wallet SDK to connect Ethereum
 # Login / Register
 
 {% hint style="warning" %}
-Note that Blocto SDK for Ethereum-like chains is still in **Beta**.  
-APIs are subject to breaking changes.
+Note that Blocto SDK for Ethereum-like chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 Install from npm/yarn

@@ -7,8 +7,7 @@ description: A thin JSON-RPC wrapper for interacting with chains and Blocto wall
 Blocto SDK comes with an Petra (Aptos official wallet) API-compatible  provider, you can use it to interact with Aptos network.
 
 {% hint style="warning" %}
-Note that Blocto SDK for Aptos is still in **Beta**.\
-APIs are subject to breaking changes.
+Note that Blocto SDK for Aptos is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 ### Installation

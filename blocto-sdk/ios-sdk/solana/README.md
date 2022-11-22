@@ -1,8 +1,7 @@
-# Solana (Coming Soon)
+# Solana
 
 {% hint style="warning" %}
-Note that Blocto iOS SDK for Solana is still in **Beta**.\
-APIs are subject to breaking changes.
+Note that Blocto iOS SDK for Solana is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 ### What can I do with Blocto iOS Solana SDK?
@@ -22,3 +21,4 @@ APIs are subject to breaking changes.
   Get paid easily with our payment APIs. Users can pay easily with credit cards or other crypto currencies like BTC, ETH, USDC, USDT, ...
 * **Connected to Blocto App**\
   Once you've integrated with Blocto Android SDK, your users can manage their assets easily and securely through Blocto App. Your dApp can tap into the vast blockchain ecosystem instantly.
+

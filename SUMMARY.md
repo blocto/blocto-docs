@@ -42,7 +42,7 @@
     * [Login / Register](blocto-sdk/javascript-sdk/evm-sdk/login-register.md)
     * [Sign Message](blocto-sdk/javascript-sdk/evm-sdk/sign-message.md)
   * [Solana](blocto-sdk/javascript-sdk/solana/README.md)
-    * [Getting started](blocto-sdk/javascript-sdk/solana/getting-started.md)
+    * [Getting Started](blocto-sdk/javascript-sdk/solana/getting-started.md)
     * [Connect to Blocto wallet](blocto-sdk/javascript-sdk/solana/connect-to-blocto-wallet.md)
     * [Send Transaction](blocto-sdk/javascript-sdk/solana/send-transaction.md)
     * [Get Contract Value](blocto-sdk/javascript-sdk/solana/contract.md)

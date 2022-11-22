@@ -1,8 +1,7 @@
 # Ethereum / BSC / Polygon / Avalanche
 
 {% hint style="warning" %}
-Note that Blocto iOS SDK for EVM is still in **Beta**.\
-APIs are subject to breaking changes.
+Note that Blocto iOS SDK for EVM is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 ### What can I do with Blocto iOS EVM SDK?

@@ -5,8 +5,7 @@ description: Use Blocto wallet SDK to connect Ethereum
 # Sign Message
 
 {% hint style="warning" %}
-Note that Blocto SDK for Ethereum-like chains is still in **Beta**.  
-APIs are subject to breaking changes.
+Note that Blocto SDK for Ethereum-like chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 Install from npm/yarn
@@ -16,7 +15,6 @@ $ yarn add @blocto/sdk
 ```
 
 ### Use web3 api
-
 
 ```javascript
 import Web3 from "web3";
@@ -35,9 +33,6 @@ const web3 = new Web3(bloctoSDK.ethereum);
 const handleSignMessage = () => {
     web3.eth.sign(message, address);
 };
-
 ```
 
-
 {% embed url="https://codesandbox.io/s/blocto-sdk-evm-sign-5573c9?file=/src/App.js:558-635" %}
-

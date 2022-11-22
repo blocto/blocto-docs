@@ -2,13 +2,12 @@
 description: A thin JSON-RPC wrapper for interacting with chains and Blocto wallet.
 ---
 
-# Getting started
+# Getting Started
 
 Blocto SDK comes with an [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md) compatible provider, you can use it to interact with Solana.
 
 {% hint style="warning" %}
-Note that Blocto SDK for Solana is still in **Beta**.\
-APIs are subject to breaking changes.
+Note that Blocto SDK for Solana is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 ### Installation
