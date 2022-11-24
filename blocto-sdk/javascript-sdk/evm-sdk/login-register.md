@@ -16,7 +16,7 @@ $ yarn add @blocto/sdk
 
 ### Step 1 - Configure Web3 and @blocto/sdk
 
-#### rinkeby rpc demo
+#### Rinkeby RPC demo
 
 ```javascript
 import Web3 from "web3";
@@ -36,7 +36,7 @@ export { web3, bloctoSDK };
 
 ### Step 2 - Authenticate
 
-#### rinkeby rpc demo
+#### Authentication demo
 
 ```javascript
 const loginHandler = async () => {
