@@ -39,7 +39,7 @@ fcl.config()
     )
 ```
 
-Starting from `@blocto/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of popup.  Simply modify your wallet connection to:
+Starting from `@blocto/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of popup. Simply modify your wallet connection to:
 
 ```javascript
 import * as fcl from "@blocto/fcl"
@@ -56,12 +56,6 @@ fcl.config()
   )
   .put("discovery.wallet.method", "HTTP/POST")
 ```
-
-{% hint style="info" %}
-Notice that Blocto will no longer support `IFRAME/`RPC flow for authentication, due to the reason that iframes in popup are easily forgeable, users may not notice that they're interacting with forged domain with iframes, thus make them vulnerable.
-
-The accurate release date will be updated as soon as possible.
-{% endhint %}
 
 ### Step 2 - Authenticate
 
