@@ -15,7 +15,7 @@ A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https
 
 * .Net Core version >= 2.1
 * iOS version >= 13
-* Android version >= 11
+* Android version >= 7.1
 
 ### Release Page
 
