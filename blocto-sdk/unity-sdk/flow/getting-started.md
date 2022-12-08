@@ -58,7 +58,7 @@ var walletProvider = BloctoWalletProvider.CreateBloctoWalletProvider(
                     
                     return walletProvider;
                 },
-    env: {"dev" or "mainnet"},
+    env: {"testnet" or "mainnet"},
     bloctoAppIdentifier:Guid.Parse("d0c4c565-db60-4848-99c8-2bdfc6bd3576"));
         
 var fcl = FlowClientLibrary.CreateClientLibrary(
