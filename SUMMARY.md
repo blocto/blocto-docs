@@ -73,6 +73,10 @@
     * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/flow/connect-to-blocto-wallet.md)
     * [Sign User Message](blocto-sdk/unity-sdk/flow/sign-user-message.md)
     * [Blockchain Interactions](blocto-sdk/unity-sdk/flow/blockchain-interactions.md)
+  * [Solana (coming soon)](blocto-sdk/unity-sdk/solana-coming-soon/README.md)
+    * [Send Transaction](blocto-sdk/unity-sdk/solana-coming-soon/send-transaction.md)
+    * [Getting Started](blocto-sdk/unity-sdk/solana-coming-soon/getting-started.md)
+    * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/solana-coming-soon/connect-to-blocto-wallet.md)
 
 ## Blocto App
 

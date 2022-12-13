@@ -88,7 +88,6 @@ const GetLatestBlock = () => {
 }
 
 export default GetLatestBlock
-
 ```
 {% endtab %}
 
@@ -113,7 +112,6 @@ function App() {
 }
 
 export default App
-
 ```
 {% endtab %}
 
@@ -140,7 +138,6 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister()
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -204,7 +201,6 @@ const CurrentUser = () => {
 }
 
 export default CurrentUser
-
 ```
 {% endtab %}
 
@@ -231,7 +227,6 @@ function App() {
 }
 
 export default App;
-
 ```
 {% endtab %}
 
@@ -259,7 +254,6 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister()
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -370,7 +364,6 @@ const SendTransaction = () => {
 }
 
 export default SendTransaction
-
 ```
 {% endtab %}
 
@@ -399,7 +392,6 @@ function App() {
 }
 
 export default App;
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -425,5 +417,5 @@ The demo project also shows how you can run local **Flow emulator** and **dev-wa
 
 * **Flow App Quickstart**: [https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/](https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/)
 * **Other frameworks (community built)**
-  * ****[Angular](https://github.com/ic3guy/FlowAngularExample)
+  * \*\*\*\*[Angular](https://github.com/ic3guy/FlowAngularExample)
   * [Svelte](https://github.com/amitkothari/crypto-candy)

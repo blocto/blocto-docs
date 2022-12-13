@@ -2,6 +2,11 @@
 
 Blocto Unity SDK supports two flows depending on whether the Blocto app is installed or not.
 
+dddd
+
+*
+
+    <figure><img src="../../.gitbook/assets/checkscript.jpg" alt=""><figcaption></figcaption></figure>
 * **Blocto app installed**\
   ****Based on development environment, you need to download the corresponding Blocto app for testing:
   * [prod](https://apps.apple.com/tw/app/blocto-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E9%8C%A2%E5%8C%85-by-portto/id1481181682)
