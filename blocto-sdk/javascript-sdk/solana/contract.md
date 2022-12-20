@@ -27,39 +27,38 @@ const bloctoSDK = new BloctoSDK({
   },
 });
 
-const handleGetContract = async () => {
-  const formatProgramStruct = (data) => {
-    const withBufferLayout = data.map((attribute) =>
-      BufferLayout?.[attribute.type]?.(attribute.name)
-    );
-    return BufferLayout.struct(withBufferLayout);
-  };
+const formatProgramStruct = (data) => {
+  const withBufferLayout = data.map((attribute) =>
+    BufferLayout?.[attribute.type]?.(attribute.name)
+  );
+  return BufferLayout.struct(withBufferLayout);
+};
 
-  const getContract = async () => {
-    try {
-      const key = new PublicKey(accountPubKey);
-      // Different response type than the type of the response from getAccountInfo in @solana/web3.js
-      const accountInfo = await bloctoSDK?.solana?.request({
-        method: "getAccountInfo",
-        params: [
-          key,
-          {
-            encoding: "base64"
-          }
-        ]
-      });
+const getContract = async () => {
+  try {
+    const key = new PublicKey(accountPubKey);
+    // Different response type than the type of the response from getAccountInfo in @solana/web3.js
+    const accountInfo = await bloctoSDK?.solana?.request({
+      method: "getAccountInfo",
+      params: [
+        key,
+        {
+          encoding: "base64",
+        },
+      ],
+    });
 
-      if (!accountInfo) {
-        setResponse("Error: Program not found.");
-      }
-      const layout = formatProgramStruct(JSON.parse(struct));
-      const info = layout.decode(accountInfo?.data);
-      setResponse(info);
-    } catch (error) {
-      console.error("error", error);
-      setResponse(error);
+    if (!accountInfo) {
+      setResponse("Error: Program not found.");
     }
-  };
+    const layout = formatProgramStruct(JSON.parse(struct));
+    const info = layout.decode(accountInfo?.data);
+    setResponse(info);
+  } catch (error) {
+    console.error("error", error);
+    setResponse(error);
+  }
+};
 ```
 
-{% embed url="https://codesandbox.io/s/blocto-sdk-evm-contract-prg7rk?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/blocto-sdk-sol-get-contract-nt0pv6?file=/src/App.js" %}
