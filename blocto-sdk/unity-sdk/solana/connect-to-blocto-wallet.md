@@ -15,6 +15,6 @@ and ask user to connect the wallet.
 
 ```csharp
 bloctoWalletProvider.RequestAccount(address => {
-        Debug.Log($"Address: {address}");
-    });
+                                           Debug.Log($"Address: {address}");
+                                    });
 ```
