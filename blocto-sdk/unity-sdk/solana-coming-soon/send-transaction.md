@@ -26,7 +26,7 @@ var transaction = new Transaction();
 
 bloctoWalletProvider.SignAndSendTransaction(address, transaction, txhash => {                                                                     
                                                                         Debug.Log($"Tx hash: {txhash}");
-                                                                    }); 
+                                                                  }); 
 ```
 
 ### **Partial Sign Transaction**
@@ -45,8 +45,8 @@ var convertedTransaction = bloctoWalletProvider.ConvertToProgramWalletTransactio
 
 convertedTransaction.PartialSign(new List<Account>{ signer });
 bloctoWalletProvider.SignAndSendTransaction(address, convertedTransaction, txhash => {
-                                                                Debug.Log($"Tx hash: {txhash}");
-                                                            });
+                                                                                 Debug.Log($"Tx hash: {txhash}");
+                                                                           });
 ```
 
 \
