@@ -19,7 +19,10 @@ A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https
 
 ### Release Page
 
-* FCL-Unity and Blocto-unity-SDK is available through [github](https://github.com/portto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/portto/blocto-unity-sdk/releases)
+FCL-Unity and Blocto-unity-SDK is available through [github](https://github.com/portto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/portto/blocto-unity-sdk/releases)
+
+* [FCL-Unity latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/blocto-unity-sdk.0.2.3)
+* [Blocto-unity-sdk latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/blocto-unity-sdk.0.2.3)
 
 <figure><img src="../../../.gitbook/assets/fcl-unity-release-page.png" alt=""><figcaption><p>FCL-Unity download page</p></figcaption></figure>
 
