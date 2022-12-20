@@ -12,7 +12,10 @@ A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https
 
 ## Release Page <a href="#release-page" id="release-page"></a>
 
-coming soon
+Portto.Blocto.Core and Portto.Blocto.Solana is available through [github](https://github.com/portto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/portto/blocto-unity-sdk/releases)
+
+* [Portto.Blocto.Core latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/portto.blocto.core.0.1.0)
+* [Portto.Blocto.Solana latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/portto.blocto.core.0.1.0)
 
 ## Import .unitypackage <a href="#import-unitypackage" id="import-unitypackage"></a>
 
