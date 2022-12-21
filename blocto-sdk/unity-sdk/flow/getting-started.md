@@ -21,8 +21,8 @@ A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https
 
 FCL-Unity and Blocto-unity-SDK is available through [github](https://github.com/portto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/portto/blocto-unity-sdk/releases)
 
-* [FCL-Unity latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/blocto-unity-sdk.0.2.3)
-* [Blocto-unity-sdk latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/blocto-unity-sdk.0.2.3)
+* [FCL-Unity latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/fcl-unity0.2.1)
+* [Blocto-unity-sdk latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/blocto-unity-sdk.0.2.4)
 
 <figure><img src="../../../.gitbook/assets/fcl-unity-release-page.png" alt=""><figcaption><p>FCL-Unity download page</p></figcaption></figure>
 
@@ -74,4 +74,4 @@ var fcl = FlowClientLibrary.CreateClientLibrary(
 
 If you build unity on iOS platform, you will find LSApplicationQueriesSchemes in info.plist that created by blocto sdk. **Pleases, don’t remove it.**
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-11-18 at 9.59.45 AM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2022-11-18 at 9.59.45 AM (2).png" alt=""><figcaption></figcaption></figure>
