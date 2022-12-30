@@ -37,7 +37,7 @@ var bloctoWalletProvider = BloctoWalletProvider.CreateBloctoWalletProvider(
                                                     env: EnvEnum.Devnet,
                                                     bloctoAppIdentifier:Guid.Parse("{your app id}")
                                                 );
-bloctoWalletProvider.Chain = ChainEnum.Ethereum;
+bloctoWalletProvider.Chain = [ChainEnum.Ethereum/ChainEnum.BSC/...];
 ```
 
 regarding the blockchain supported by Evm SDK, we provide ChainEnum.Ethereum (Ethereum), ChainEnum.BSC (Bsc), ChainEnum.Polygon (Polygon), ChainEnum.Avalanche (Avalanche).
