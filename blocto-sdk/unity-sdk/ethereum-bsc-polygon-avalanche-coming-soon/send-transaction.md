@@ -1,6 +1,8 @@
 # Send Transaction
 
-> [Make sure you  first](#user-content-fn-1)[^1]
+{% hint style="info" %}
+Make sure you [initialize Blocto SDK](getting-started.md) first
+{% endhint %}
 
 Once your app is connected to Blocto wallet, it can send transactions on behalf of the user, with the user's permission.
 
@@ -29,5 +31,3 @@ bloctoWalletProvider.SendTransaction(
                     Debug.Log("TxId: {txId}");
                 });
 </code></pre>
-
-[^1]: 
