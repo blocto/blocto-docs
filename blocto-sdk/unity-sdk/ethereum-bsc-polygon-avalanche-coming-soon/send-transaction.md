@@ -11,12 +11,12 @@ In order to send a transaction, the app needs to:
 * Create **data** which is the content of transacting with a smart contract
 * Create **value** if needs to send the Ether to smart contract
 
-| Parameter            | Type                     | Description                                                                                                                                 |
-| -------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **fromAddress**      | address string           | the sender address                                                                                                                          |
-| **toAddress**        | address string           | the smart contract address                                                                                                                  |
-| **data**             | hex string (`0x` prefix) | the content of transacting with a smart contract, can use library, such as [NEthereum](https://github.com/Nethereum/Nethereum), to generate |
-| **value** (optional) | BigInteger               | the amount of Ether deposit in the smart contract (if the smart contract accepts ether)                                                     |
+| Parameter       | Type                     | Description                                                                                                                                 |
+| --------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **fromAddress** | address string           | the sender address                                                                                                                          |
+| **toAddress**   | address string           | the smart contract address                                                                                                                  |
+| **value**       | BigInteger               | the amount of Ether deposit in the smart contract (if the smart contract accepts ether)                                                     |
+| **data**        | hex string (`0x` prefix) | the content of transacting with a smart contract, can use library, such as [NEthereum](https://github.com/Nethereum/Nethereum), to generate |
 
 <pre><code><strong>var web3 = new Web3("{your node url}");
 </strong>var contract = web3.Eth.GetContract("{your smart contract abi json}", "{your smart contract address}");
