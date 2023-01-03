@@ -22,7 +22,7 @@ You can import **Custom Packages**, which are made by portto using Unity. More d
 
 Choose **Assets > Import Package >** to import both types of package.
 
-\## Wallet Provider
+### Wallet Provider
 
 1. [Register app id](https://docs.blocto.app/blocto-sdk/register-app-id) (bloctoSDKAppId) in order to init `BloctoWalletProvider`
 2. Create `BloctoWalletProvider` instance.

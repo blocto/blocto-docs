@@ -16,7 +16,7 @@ To sign a message, the app must specify the sign type. All available types are l
 | Sign Typed Data v4                                                       | `EvmSignType.TYPED_DATA_V4` | json string              |
 | <p>Sign Typed Data</p><p>(currently identical to Sign Typed Data v4)</p> | `EvmSignType.TYPED_DATA`    | json string              |
 
-```csharp
+```
 bloctoWalletProvider.SignMessage(
     message: message,
     signTypeEnum: [SignTypeEnum.Eth_Sign/SignTypeEnum.Personal_Sign/SignTypeEnum.SignTypeData/...],
