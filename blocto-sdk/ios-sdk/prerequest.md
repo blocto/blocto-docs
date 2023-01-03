@@ -29,4 +29,4 @@ We highly recommend you provide a Universal Links rather than only use custom sc
 You can use tools such as [ngrok](https://ngrok.com/) for Universal Links on testing purpose.
 {% endhint %}
 
-![Universal Links example applinks:04b2-61-216-44-25.ngrok.io?mode=developer](<../../.gitbook/assets/UniversalLink (1) (2).png>)
+![Universal Links example applinks:04b2-61-216-44-25.ngrok.io?mode=developer](<../../.gitbook/assets/UniversalLink (1) (1) (2).png>)
