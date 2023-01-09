@@ -48,6 +48,10 @@ Dapper Labs has built the tools to carry out this verification:
 
 Use it in your dApps (usually on backend):
 
+{% hint style="info" %}
+Don't forget to update the RPC URL to current network.
+{% endhint %}
+
 {% tabs %}
 {% tab title="Go" %}
 ```go
