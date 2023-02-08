@@ -1,4 +1,4 @@
-# Ethereum / BSC / Polygon / Avalanche (Coming soon)
+# Ethereum / BSC / Polygon / Avalanche
 
 ### What can I do with Blocto Unity EVM SDK?
 
@@ -6,7 +6,7 @@
   * Interact with Ethereum-like networks
     * Ethereum Mainnet & Rinkeby Testnet
     * BSC Mainnet & Tesnet
-    * Polugon Mainnet & Testnet
+    * Polygon Mainnet & Testnet
     * Avalanche Mainnet & Testnet
   * Sign transactions
   * Send transactions
