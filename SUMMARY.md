@@ -107,6 +107,10 @@
 * [Contract Wallet](technical-documents/contract-wallet.md)
 * [Key Management](technical-documents/key-management.md)
 
+## Support
+
+* [Contact Us](https://portto.zendesk.com/hc/requests/new)
+
 ## Community
 
 * [Discord](https://discord.gg/H34KZqF)
