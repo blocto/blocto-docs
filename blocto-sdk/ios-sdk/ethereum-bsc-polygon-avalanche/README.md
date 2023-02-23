@@ -10,7 +10,7 @@ Note that Blocto iOS SDK for EVM is still in **Beta**. APIs are subject to break
   * Interact with Ethereum-like networks
     * Ethereum Mainnet & Rinkeby Testnet
     * BSC Mainnet & Tesnet
-    * Polugon Mainnet & Testnet
+    * Polygon Mainnet & Testnet
     * Avalanche Mainnet & Testnet
   * Sign transactions
   * Send transactions
