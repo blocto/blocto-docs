@@ -13,8 +13,6 @@ fcl.config()
     // connect to Flow testnet
     // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
     .put("accessNode.api", "https://rest-testnet.onflow.org")
-    // use pop instead of default IFRAME/RPC option for security enforcement
-    .put("discovery.wallet.method", "POP/RPC")
     
     // use Blocto testnet wallet
     .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
@@ -30,8 +28,6 @@ fcl.config()
     // connect to Flow testnet
     // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
     .put("accessNode.api", "https://rest-testnet.onflow.org")
-    // use pop instead of default IFRAME/RPC option for security enforcement
-    .put("discovery.wallet.method", "POP/RPC")
     // use Blocto testnet wallet
     .put(
         "challenge.handshake",
