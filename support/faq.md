@@ -152,34 +152,6 @@ We have gathered commonly asked questions regarding Blocto SDK integration in th
 
       You need to change your chainID from 2 (Testnet) to 1(Mainnet).
 
-      👉More [updates](https://github.com/aptos-labs/aptos-wallet-adapter)
-
-      \
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-
-
-\
-
-
-\
+      👉More [updates](https://github.com/aptos-labs/aptos-wallet-adapter)\
 
 
