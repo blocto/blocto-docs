@@ -73,15 +73,14 @@ We have gathered commonly asked questions regarding Blocto SDK integration in th
 7.  Q: Length error regarding signing and verifying the message.\
 
 
-    Context:&#x20;
-
-    _`I followed the instructions at: https://docs.blocto.app/blocto-sdk/javascript-sdk/evm-sdk/sign-message`_
-
-    _`However, when verifying the message, there is an error about the length of the signature. Specifically:`_
-
-    _`The signature after signing with Blocto's provider is 262 characters long (including 0x).`_
-
-    _`The signature in the example (and accepted in the library) is 132 characters long (including 0x).`_
+    > Context: \
+    > _I followed the instructions at: https://docs.blocto.app/blocto-sdk/javascript-sdk/evm-sdk/sign-message_
+    >
+    > _However, when verifying the message, there is an error about the length of the signature. Specifically:_
+    >
+    > _The signature after signing with Blocto's provider is 262 characters long (including 0x)._
+    >
+    > _The signature in the example (and accepted in the library) is 132 characters long (including 0x)._
 
 
 
