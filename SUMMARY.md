@@ -110,6 +110,7 @@
 ## Support
 
 * [Contact Us](https://portto.zendesk.com/hc/requests/new)
+* [FAQ](support/faq.md)
 
 ## Community
 
