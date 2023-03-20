@@ -18,10 +18,10 @@ Austin Griffith introduced [meta-transaction](https://medium.com/@austin\_48503/
 
 1. The wallet itself is a smart contract
 2. The owner holds a key to control the wallet contract
-3. When the owner sends a transaction, he signs the message with his key but instead of sending the signed message to blockchain directly, he sends it to a 3rd party relayer who pays for the transaction fee and actually send the transaction onto blockchain.
+3. When the owner sends a transaction, he signs the message with his key but instead of sending the signed message to blockchain directly, he sends it to a 3rd party relayer who pays for the transaction fee and actually sends the transaction onto blockchain.
 4. The signed message is verified by the wallet contract to make sure that it actually came from the rightful owner.
 
-Blocto makes the fee payment flexible by incorporating meta-transaction. In Blocto, the transaction fee can be payed by either:
+Blocto makes the fee payment flexible by incorporating meta-transaction. In Blocto, the transaction fee can be paid by either:
 
 * dApp builder, to improve user experience and the fee is treated like dApp operation cost
 * Blocto, as our user acquisition cost
@@ -42,7 +42,7 @@ In any of the supported chains (Ethereum, Flow, Solana and Tron), there are thre
    ****The key managed by Blocto backend service. On EVM chains, this key is also used as the fee payer account for meta-transactions.\
 
 3. **Recovery Key**\
-   ****The key used to reset account access. In custodial mode, this key is manages by Blocto backend service and is used when user sets up non-custodial mode or reset non-custodial mode. In non-custodial mode, the recovery key is generated from users' device and is encrypted with the recovery password set by the users. The encrypted recovery key is then sent to users' email for backup.
+   ****The key used to reset account access. In custodial mode, this key is managed by Blocto backend service and is used when user sets up non-custodial mode or reset non-custodial mode. In non-custodial mode, the recovery key is generated from users' device and is encrypted with the recovery password set by the users. The encrypted recovery key is then sent to users' email for backup.
 
 For different account operations, different keys are used:
 
