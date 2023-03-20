@@ -8,7 +8,7 @@ Blocto uses **mixed-custodial key management model** to provide both convenience
 
 ## Non-Custodial
 
-In non-custodial systems, user takes full responsibility in their key management. This is aligned with some of core-values of blockchain: decentralization and autonomous.
+In non-custodial systems, user takes full responsibility in their key management. This is aligned with some of core-values of blockchain: decentralization and autonomy.
 
 ### Advantages
 
@@ -41,8 +41,8 @@ In custodial systems, some 3rd party helps users manage their keys and provide a
 Blocto incorporates a mixed-custodial key management model to take the advantages from both sides:
 
 1. **Custodial at first**\
-   When users just signed up, the key is stored in Blocto's custodial service. This is for providing an easy on boarding experience to the users and avoid bombarding them with complexity. The keys stored in our services are managed by HSMs to provide superior security.
+   When users just signed up, the key is stored in Blocto's custodial service. This is for providing an easy onboarding experience to the users and avoid bombarding them with complexity. The keys stored in our services are managed by HSMs to provide superior security.
 2. **Non-custodial later**\
-   Users have the option to upgrade to non-custodial mode by generating a new key on their mobile device and replace the ownership of the account. By then the keys stored in Blocto's custodial service will be voided and won’t be able to access the account anymore.
+   Users have the option to upgrade to non-custodial mode by generating a new key on their mobile device and replacing the ownership of the account. By then the keys stored in Blocto's custodial service will be voided and won’t be able to access the account anymore.
 
 The idea is that when user just started, they don't care that much about security, since they don't have anything in their wallet yet. At this stage, **custodial model** is a better choice. As time goes by, user have accumulated more assets in their wallets and more knowledge about how blockchain works. This is the appropriate time for advanced users to switch to **non-custodial model** for more security.
