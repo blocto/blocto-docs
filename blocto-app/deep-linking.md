@@ -13,7 +13,7 @@ https://blocto.app/link?url=URL&blockchains=BLOCKCHAINS
 ```
 
 * `URL`: the URL of your dApp
-* `BLOCKCHAINS`: (optional) blockchains you dApp use, comma separated. `ethereum/tron/flow/bsc/solana/polygon/avalance`
+* `BLOCKCHAINS`: (optional) blockchains you dApp use, comma separated. `ethereum/tron/flow/bsc/solana/polygon/avalanche`
 
 For example:
 
