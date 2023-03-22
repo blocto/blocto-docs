@@ -29,7 +29,7 @@ const options = {
 }
 ... 
 // sign and submit the transaction & get the tx hash
-const { hash } await bloctoSDK.aptos.signAndSubmitTransaction(transaction, options)
+const { hash } = await bloctoSDK.aptos.signAndSubmitTransaction(transaction, options)
 ```
 
 {% hint style="warning" %}
