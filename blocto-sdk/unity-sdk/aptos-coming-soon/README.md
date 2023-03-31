@@ -4,14 +4,12 @@
 
 Note that Blocto unity SDK for Aptos is still in **Beta**. APIs are subject to breaking changes.
 
-#### What can I do with Blocto unity Solana SDK? <a href="#what-can-i-do-with-blocto-unity-solana-sdk" id="what-can-i-do-with-blocto-unity-solana-sdk"></a>
+#### What can I do with Blocto unity Aptos SDK? <a href="#what-can-i-do-with-blocto-unity-solana-sdk" id="what-can-i-do-with-blocto-unity-solana-sdk"></a>
 
 * **Get access to all the blockchain interactions**
-  * Interact with Solana networks (Mainnet, Testnet)
+  * Interact with Aptos networks (Mainnet, Testnet)
   * Sign transactions
   * Send transactions
-  * Lookup smart contract state
-  * Query smart contract events
   * ... and a lot more
 * **Seamless onboarding experience**\
   Users can sign up easily with Blocto account start exploring you dApp in seconds.

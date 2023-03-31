@@ -59,7 +59,7 @@ let package = Package(
 
 ## Configuration
 
-[Register app id](../prerequest.md) (bloctoSDKAppId) in order to init `BloctoWalletProvider`&#x20;
+[Register app id](../prerequest.md) (bloctoSDKAppId) in order to init `BloctoWalletProvider`
 
 ```swift
 import FCL_SDK
@@ -85,7 +85,7 @@ If window not specify, `BloctoWalletProvider` will find top view controller from
 
 In order to let FCL-Swift know whether user install Blocto app, please add following scheme to your info.plist.
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-11-18 at 9.59.45 AM (1) (1).png" alt=""><figcaption><p>info.plist</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2022-11-18 at 9.59.45 AM (1) (1) (1).png" alt=""><figcaption><p>info.plist</p></figcaption></figure>
 
 If you open source code or open info.plist with external editor, it will look like this.
 
@@ -96,8 +96,6 @@ If you open source code or open info.plist with external editor, it will look li
     <string>blocto</string>
 </array>
 ```
-
-
 
 Add below code to your AppDelegate:
 

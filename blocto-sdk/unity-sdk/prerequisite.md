@@ -10,7 +10,7 @@
 Blocto Unity SDK supports two flows depending on whether the Blocto app is installed or not.
 
 * **Blocto app installed**\
-  ****Based on development environment, you need to download the corresponding Blocto app for testing:
+  \*\*\*\*Based on development environment, you need to download the corresponding Blocto app for testing:
   * [prod](https://apps.apple.com/tw/app/blocto-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E9%8C%A2%E5%8C%85-by-portto/id1481181682)
   * [dev](https://appdistribution.firebase.dev/i/50335e7876650bce) (after joining app distribution, you need to wait for releasing next version)
 * **Blocto app not installed**\
@@ -36,7 +36,7 @@ If you do not set iOS Universal Links or Android Deep Link in Developer Dashboar
 
 * iOS Universal Links setting. please add Associated Domains in Xcode project setting and add new path **`/blocto`** to your apple-app-site-association
 
-<figure><img src="../../.gitbook/assets/UniversalLink (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/UniversalLink (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Please add a new path **`/blocto`** to your apple-app-site-association
 * Android Deep Links setting, please add **`activity`** and **`intent-filter`** in yours AndroidManifest.xml
