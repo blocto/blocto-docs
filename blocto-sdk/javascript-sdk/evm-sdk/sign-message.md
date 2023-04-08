@@ -29,13 +29,12 @@ const bloctoSDK = new BloctoSDK({
 
 const web3 = new Web3(bloctoSDK.ethereum);
 
-
 const handleSignMessage = () => {
-    web3.eth.sign(message, address);
+  web3.eth.sign(message, address);
 };
 ```
 
-{% embed url="https://codesandbox.io/s/blocto-sdk-evm-sign-5573c9?file=/src/App.js:558-635" %}
+{% embed url="https://codesandbox.io/s/blocto-sdk-evm-sign-c1c4mb?file=/src/App.js" %}
 
 #### Verify Signature
 
@@ -139,4 +138,4 @@ async function debug() {
 
 {% endtab %}
 {% endtabs %}
-{% embed url="https://codesandbox.io/s/evm-verify-the-signature-qobyzv?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/evm-verify-the-signature-drjjnz?file=/src/App.js" %}

@@ -60,4 +60,4 @@ const transaction = await fcl.tx(transactionId).onceSealed();
 console.log(transaction); // The transactions status and events after being sealed
 ```
 
-{% embed url="https://codesandbox.io/s/zealous-wind-cc1fgj?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/blocto-fcl-sign-dm4sc4?file=/src/App.js" %}

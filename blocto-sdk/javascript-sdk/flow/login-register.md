@@ -56,29 +56,25 @@ fcl.config()
 ### Step 2 - Authenticate
 
 ```javascript
-import * as fcl from "@blocto/fcl"
+import * as fcl from "@blocto/fcl";
 
-fcl
-  .currentUser()
-  .subscribe(console.log) // fires everytime account connection status updates
-  
+fcl.currentUser().subscribe(console.log); // fires everytime account connection status updates
+
 // authenticate
-fcl.authenticate()
+fcl.authenticate();
 ```
 
-{% embed url="https://codesandbox.io/s/blocto-fcl-login-tjr78i?file=/src/index.js" %}
+{% embed url="https://codesandbox.io/s/blocto-fcl-login-g0lq48?file=/src/index.js" %}
 
 ### Step 3 - Unauthenticate
 
 ```javascript
-import * as fcl from "@blocto/fcl"
+import * as fcl from "@blocto/fcl";
 
-fcl
-  .currentUser()
-  .subscribe(console.log) // fires everytime account connection status updates
-  
+fcl.currentUser().subscribe(console.log); // fires everytime account connection status updates
+
 // unauthenticate and clear account info in FCL
-fcl.unauthenticate()
+fcl.unauthenticate();
 ```
 
-{% embed url="https://codesandbox.io/s/blocto-fcl-unauthenticate-rxqv1w?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/blocto-fcl-authenticate-x8vzni?file=/src/App.js" %}
