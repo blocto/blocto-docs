@@ -44,5 +44,3 @@ The addresses of the Blocto FCLCrypto contract `BLOCTO_FCLCRYPTO_CONTRACT_ADDRES
 [More about verifyAccountProof api](https://github.com/onflow/fcl-js/blob/master/docs/reference/proving-authentication.mdx)
 
 ## as of fcl@^1.0.0
-
-{% embed url="https://codesandbox.io/s/blocto-fcl-proofaccount-6cdr4h?file=/src/App.js" %}
