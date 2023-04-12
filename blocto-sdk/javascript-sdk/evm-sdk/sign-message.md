@@ -5,7 +5,7 @@ description: Sign and verify challenges for off-chain authentication
 # Sign Message
 
 {% hint style="warning" %}
-Note that Blocto SDK for Ethereum-like chains is still in **Beta**. APIs are subject to breaking changes.
+Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 Install from npm/yarn
@@ -135,7 +135,7 @@ async function debug() {
   }
 }
 ```
-
 {% endtab %}
 {% endtabs %}
+
 {% embed url="https://codesandbox.io/s/evm-verify-the-signature-drjjnz?file=/src/App.js" %}

@@ -2,12 +2,12 @@
 description: Use blocto-connector to connect Blocto wallet SDK with web3-react easily
 ---
 
-# Web3-React Connector
+# Integrate with Web3-React
 
 If you are using `web3-react` for your project, we provide a connector module for you to connect Blocto wallet SDK easily.
 
 {% hint style="warning" %}
-Note that Blocto SDK for Ethereum-like chains is still in **Beta**. APIs are subject to breaking changes.
+Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 Install from npm/yarn

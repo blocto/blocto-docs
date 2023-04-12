@@ -3,7 +3,7 @@
 ### What can I do with Blocto Unity EVM SDK?
 
 * **Get access to all the web3.js functionalities**
-  * Interact with Ethereum-like networks
+  * Interact with EVM-compatible blockchains
     * Ethereum Mainnet & Rinkeby Testnet
     * BSC Mainnet & Tesnet
     * Polygon Mainnet & Testnet

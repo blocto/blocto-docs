@@ -1,5 +1,5 @@
 ---
-description: Using Blocto SDK in EVM-based dApps
+description: Using Blocto SDK in EVM-compatible dApps
 ---
 
 # Ethereum / BSC / Polygon / Avalanche
@@ -7,9 +7,11 @@ description: Using Blocto SDK in EVM-based dApps
 ### What can I do with Blocto Ethereum SDK?
 
 * **Get access to all the web3.js functionalities**
-  * Interact with Ethereum-like networks
+  * Interact with Ethereum-compatible blockchains
     * Ethereum Mainnet & Rinkeby Testnet
     * BSC Mainnet & Tesnet
+    * Polygon Mainnet & Testnet
+    * Avalanche Mainnet & Testnet
   * Sign transactions
   * Send transactions
   * Lookup smart contract state
@@ -23,4 +25,3 @@ description: Using Blocto SDK in EVM-based dApps
   Get paid easily with our payment APIs. Users can pay easily with credit cards or other crypto currencies like Bitcoin, Ethereum, Tron, USDT, ...
 * **Connected to Blocto App**\
   Once you've integrated with Blocto SDK, your users can manage their assets easily and securely through Blocto App. Your dApp can tap into the vast blockchain ecosystem instantly.
-

@@ -4,10 +4,10 @@ description: A thin JSON-RPC wrapper for interacting with chains and Blocto wall
 
 # Provider
 
-Blocto SDK comes with an [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md) compatible provider, you can use it to interact with Ethereum-compatible chains.
+Blocto SDK comes with an [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md) compatible provider, you can use it to interact with EVM-compatible chains.
 
 {% hint style="warning" %}
-Note that Blocto SDK for Ethereum-compatible chains is still in **Beta**. APIs are subject to breaking changes.
+Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
 ### Installation
@@ -27,7 +27,7 @@ $ yarn add @blocto/sdk
 
 ### **Usage**
 
-Initiate the Blocto provider&#x20;
+Initiate the Blocto provider
 
 ```javascript
 import Web3 from 'web3'
@@ -136,4 +136,3 @@ bloctoSDK.ethereum.request({
   params: ["0xyourethaddress", "0x48656c6c6f20776f726c64"
 ] })
 ```
-

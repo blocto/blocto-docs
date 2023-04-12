@@ -7,7 +7,7 @@ Note that Blocto iOS SDK for EVM is still in **Beta**. APIs are subject to break
 ### What can I do with Blocto iOS EVM SDK?
 
 * **Get access to all the web3.js functionalities**
-  * Interact with Ethereum-like networks
+  * Interact with EVM-compatible blockchains
     * Ethereum Mainnet & Rinkeby Testnet
     * BSC Mainnet & Tesnet
     * Polygon Mainnet & Testnet
