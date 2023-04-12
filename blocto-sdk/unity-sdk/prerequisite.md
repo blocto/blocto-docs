@@ -9,12 +9,16 @@
 
 Blocto Unity SDK supports two flows depending on whether the Blocto app is installed or not.
 
-* **Blocto app installed**\
-  \*\*\*\*Based on development environment, you need to download the corresponding Blocto app for testing:
-  * [prod](https://apps.apple.com/tw/app/blocto-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E9%8C%A2%E5%8C%85-by-portto/id1481181682)
-  * [dev](https://appdistribution.firebase.dev/i/50335e7876650bce) (after joining app distribution, you need to wait for releasing next version)
-* **Blocto app not installed**\
-  SDK would open browser using Web SDK in your dApp to use the Blocto service. In Android, Blocto SDK provider `CloseWebView` method to close web view when user click back button.
+#### **Blocto app installed**
+
+Based on development environment, you need to download the corresponding Blocto app for testing:
+
+* [prod](https://apps.apple.com/tw/app/blocto-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E9%8C%A2%E5%8C%85-by-portto/id1481181682)
+* [dev](https://appdistribution.firebase.dev/i/50335e7876650bce) (after joining app distribution, you need to wait for releasing next version)
+
+#### **Blocto app not installed**
+
+SDK would open browser using Web SDK in your dApp to use the Blocto service. In Android, Blocto SDK provider `CloseWebView` method to close web view when user click back button.
 
 ```csharp
 if(Input.GetKey(KeyCode.Escape))
@@ -28,6 +32,8 @@ You can setting `ForcedUseWebView` for use of the Web SDK instead the Blocto app
 ```csharp
 walletProvider.ForcedUseWebView = true;
 ```
+
+
 
 ## iOS Universal Links & Android Deep Link
 
