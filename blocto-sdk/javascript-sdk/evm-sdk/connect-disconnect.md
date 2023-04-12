@@ -2,7 +2,7 @@
 description: Use Blocto wallet SDK to connect Ethereum
 ---
 
-# Login / Register
+# Connect / Disconnect
 
 {% hint style="warning" %}
 Note that Blocto SDK for Ethereum-like chains is still in **Beta**. APIs are subject to breaking changes.
@@ -34,9 +34,7 @@ const web3 = new Web3(bloctoSDK.ethereum);
 export { web3, bloctoSDK };
 ```
 
-### Step 2 - Authenticate
-
-#### Authentication demo
+### Step 2 - Connect / Disconnect
 
 ```javascript
 const loginHandler = async () => {
