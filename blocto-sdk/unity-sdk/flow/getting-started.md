@@ -71,4 +71,4 @@ var fcl = FlowClientLibrary.CreateClientLibrary(
 
 If you build unity on iOS platform, you will find LSApplicationQueriesSchemes in info.plist that created by blocto sdk. **Pleases, don’t remove it.**
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-11-18 at 9.59.45 AM (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2022-11-18 at 9.59.45 AM (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
