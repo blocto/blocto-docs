@@ -16,6 +16,7 @@
     * [Server Side Render](blocto-sdk/javascript-sdk/evm-sdk/server-side-render.md)
     * [Connect / Disconnect](blocto-sdk/javascript-sdk/evm-sdk/connect-disconnect.md)
     * [Sign Message](blocto-sdk/javascript-sdk/evm-sdk/sign-message.md)
+    * [Switch Ethereum Chain](blocto-sdk/javascript-sdk/evm-sdk/switch-ethereum-chain.md)
   * [Flow](blocto-sdk/javascript-sdk/flow/README.md)
     * [Tutorial](blocto-sdk/javascript-sdk/flow/tutorial.md)
     * [Login / Register](blocto-sdk/javascript-sdk/flow/login-register.md)
