@@ -38,7 +38,8 @@ export { web3, bloctoSDK };
 
 ```javascript
 const loginHandler = async () => {
-  const accounts = await bloctoSDK?.ethereum?.enable();
+  // (optional) when the email is provided, the login modal will prefill the email field.
+  const accounts = await bloctoSDK?.ethereum?.enable("client@email.com");
   setAddress(accounts[0]);
 };
 
