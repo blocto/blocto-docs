@@ -1,6 +1,4 @@
-# Aptos (Coming soon)
-
-## Aptos <a href="#solana" id="solana"></a>
+# Aptos
 
 Note that Blocto unity SDK for Aptos is still in **Beta**. APIs are subject to breaking changes.
 

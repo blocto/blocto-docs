@@ -79,7 +79,7 @@
     * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/flow/connect-to-blocto-wallet.md)
     * [Sign User Message](blocto-sdk/unity-sdk/flow/sign-user-message.md)
     * [Blockchain Interactions](blocto-sdk/unity-sdk/flow/blockchain-interactions.md)
-  * [Aptos (Coming soon)](blocto-sdk/unity-sdk/aptos-coming-soon/README.md)
+  * [Aptos](blocto-sdk/unity-sdk/aptos-coming-soon/README.md)
     * [Getting Started](blocto-sdk/unity-sdk/aptos-coming-soon/getting-started.md)
     * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/aptos-coming-soon/connect-to-blocto-wallet.md)
     * [Sign User Message](blocto-sdk/unity-sdk/aptos-coming-soon/sign-user-message.md)
