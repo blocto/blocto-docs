@@ -15,7 +15,7 @@ A sample application is available at: [https://github.com/portto/blocto-unity-sd
 Portto.Blocto.Core and Portto.Blocto.Solana is available through [github](https://github.com/portto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/portto/blocto-unity-sdk/releases)
 
 * [Portto.Blocto.Core](../prerequisite.md#latest-version)
-* [Portto.Blocto.Evm](../prerequisite.md#latest-version)
+* [Portto.Blocto.Aptos](../prerequisite.md)
 
 ### Import .unitypackage <a href="#import-unitypackage" id="import-unitypackage"></a>
 
