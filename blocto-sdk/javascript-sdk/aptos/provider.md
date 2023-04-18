@@ -4,7 +4,7 @@ description: A thin JSON-RPC wrapper for interacting with chains and Blocto wall
 
 # Provider
 
-Blocto SDK comes with an Petra (Aptos official wallet) API-compatible  provider, you can use it to interact with Aptos network.
+Blocto SDK comes with an Petra (Aptos official wallet) API-compatible provider, you can use it to interact with Aptos network.
 
 {% hint style="warning" %}
 Note that Blocto SDK for Aptos is still in **Beta**. APIs are subject to breaking changes.
@@ -30,7 +30,7 @@ It's required to register an app id before using Blocto SDK, check out the [Regi
 
 ### **Usage**
 
-Initiate the Blocto provider&#x20;
+Initiate the Blocto provider
 
 ```javascript
 import BloctoSDK from '@blocto/sdk'
@@ -79,7 +79,8 @@ const bloctoSDK = new BloctoSDK({
 {% endtab %}
 {% endtabs %}
 
-**Connect to Blocto wallet**\
+#### **Connect to Blocto wallet**
+
 Once the connection request is fired, there would be a prompt modal to guide user to register/login to Blocto wallet
 
 ```javascript
@@ -91,6 +92,3 @@ const {
 ```
 
 After connecting with Blocto wallet, you can start to interact with Aptos blockchain with Blocto provider.
-
-
-

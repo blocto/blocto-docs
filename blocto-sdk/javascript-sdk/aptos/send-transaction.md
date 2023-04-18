@@ -8,13 +8,11 @@ In order to send a transaction, the web application must:
 * Have it be signed by the user's Blocto wallet.
 * Send it with Blocto custom RPC server.
 
-**Sign and submit a Transaction**
+#### **Sign and submit a Transaction**
 
 {% hint style="warning" %}
 Note that there're three types of transaction payload in aptos: **entry\_function**_**\_**_**payload, script\_payload and module\_bundle,** for the time being Blocto only supports **entry\_function\_payload** type.
 {% endhint %}
-
-
 
 ```javascript
 // transfer 1000 Octas to 0x123
