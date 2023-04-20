@@ -93,4 +93,21 @@ You can then use the `web3` object for on-chain interactions. For more documenta
 * [web3.js 1.2.x docs](https://web3js.readthedocs.io/en/v1.2.11/index.html)
 * [web3.js 0.2x.x docs](https://github.com/ethereum/web3.js/blob/0.20.7/DOCUMENTATION.md)
 
+#### Supported Chain ID
+
+| Network                  | Chain ID |
+| ------------------------ | -------- |
+| Ethereum Mainnet         | 1        |
+| Ethereum Rinkeby Testnet | 4        |
+| Arbitrum Mainnet         | 42161    |
+| Arbitrum Goerli Testnet  | 421613   |
+| Optimism Mainnet         | 10       |
+| Optimism Goerli Testnet  | 420      |
+| Polygon Mainnet          | 137      |
+| Polygon Mumbai Testnet   | 80001    |
+| BSC Mainnet              | 56       |
+| BSC Chapel Testnet       | 97       |
+| Avalanche Mainnet        | 43114    |
+| Avalanche Fuji Testnet   | 43113    |
+
 ***

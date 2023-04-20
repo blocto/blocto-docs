@@ -2,17 +2,19 @@
 description: Using Blocto SDK in EVM-compatible dApps
 ---
 
-# Ethereum / BSC / Polygon / Avalanche
+# Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche
 
 ### What can I do with Blocto Ethereum SDK?
 
 * **Get access to all the web3.js functionalities**
   * Interact with Ethereum-compatible blockchains
     * Ethereum Mainnet & Rinkeby Testnet
-    * BSC Mainnet & Tesnet
+    * Arbitrum Mainnet & Arbitrum Goerli Testnet
+    * Optimism Mainnet & Optimism Goerli Testnet
     * Polygon Mainnet & Testnet
+    * BNB Smart Chain Mainnet & Tetsnet
     * Avalanche Mainnet & Testnet
-  * Sign transactions
+  * Sign messages
   * Send transactions
   * Lookup smart contract state
   * Query smart contract events

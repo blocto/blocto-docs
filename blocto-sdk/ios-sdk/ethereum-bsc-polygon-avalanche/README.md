@@ -12,7 +12,7 @@ Note that Blocto iOS SDK for EVM is still in **Beta**. APIs are subject to break
     * BSC Mainnet & Tesnet
     * Polygon Mainnet & Testnet
     * Avalanche Mainnet & Testnet
-  * Sign transactions
+  * Sign messages
   * Send transactions
   * Lookup smart contract state
   * Query smart contract events

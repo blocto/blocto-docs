@@ -1,12 +1,14 @@
-# Web3.js Integration (Ethereum/BSC/Polygon/Avalanche)
+# Web3 Provider Integration - Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche
 
 ### Getting Encrypted User IDs From your Web App
 
 Blocto injects a global API into websites at `window.bloctoProvider` and `window.ethereum` at the same time. Currently, Blocto supports networks:
 
 * Ethereum
-* BSC
+* Arbitrum
+* Optimism
 * Polygon
+* BSC
 * Avalanche (C-Chain)
 
 Please contact Blocto team to get your app ID.

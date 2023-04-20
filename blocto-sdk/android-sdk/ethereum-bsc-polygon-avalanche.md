@@ -12,7 +12,7 @@ Note that Blocto Android SDK for EVM is still in **Beta**. APIs are subject to b
     * BSC Mainnet & Tesnet
     * Polygon Mainnet & Testnet
     * Avalanche Mainnet & Testnet
-  * Sign transactions
+  * Sign messages
   * Send transactions
   * Lookup smart contract state
   * Query smart contract events

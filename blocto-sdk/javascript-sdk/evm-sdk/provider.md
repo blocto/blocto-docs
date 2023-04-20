@@ -108,10 +108,14 @@ const bloctoSDK = new BloctoSDK({
 | ------------------------ | -------- |
 | Ethereum Mainnet         | 1        |
 | Ethereum Rinkeby Testnet | 4        |
-| BSC Mainnet              | 56       |
-| BSC Chapel Testnet       | 97       |
+| Arbitrum Mainnet         | 42161    |
+| Arbitrum Goerli Testnet  | 421613   |
+| Optimism Mainnet         | 10       |
+| Optimism Goerli Testnet  | 420      |
 | Polygon Mainnet          | 137      |
 | Polygon Mumbai Testnet   | 80001    |
+| BSC Mainnet              | 56       |
+| BSC Chapel Testnet       | 97       |
 | Avalanche Mainnet        | 43114    |
 | Avalanche Fuji Testnet   | 43113    |
 
@@ -134,5 +138,5 @@ After connected with Blocto wallet, you can start to send JSON-RPC request with 
 bloctoSDK.ethereum.request({
   method: 'eth_sign', 
   params: ["0xyourethaddress", "0x48656c6c6f20776f726c64"
-] })
+]})
 ```

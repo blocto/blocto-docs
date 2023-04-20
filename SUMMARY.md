@@ -9,7 +9,7 @@
 * [Overview](blocto-sdk/overview.md)
 * [Register App ID](blocto-sdk/register-app-id.md)
 * [JavaScript SDK](blocto-sdk/javascript-sdk/README.md)
-  * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/javascript-sdk/evm-sdk/README.md)
+  * [Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche](blocto-sdk/javascript-sdk/evm-sdk/README.md)
     * [Provider](blocto-sdk/javascript-sdk/evm-sdk/provider.md)
     * [Integrate with Web3.js](blocto-sdk/javascript-sdk/evm-sdk/web3.js.md)
     * [Integrate with Web3-React](blocto-sdk/javascript-sdk/evm-sdk/web3-react.md)
@@ -92,7 +92,7 @@
 ## Blocto App
 
 * [Overview](blocto-app/overview.md)
-* [Web3.js Integration (Ethereum / BSC / Polygon / Avalanche / Tron)](blocto-app/web3-provider/README.md)
+* [Web3.js Integration - Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche / Tron](blocto-app/web3-provider/README.md)
   * [Sign Message](blocto-app/web3-provider/sign-message.md)
   * [Batch Transaction](blocto-app/web3-provider/batch-transaction.md)
   * [Switch Chain](blocto-app/web3-provider/switch-chain/README.md)
@@ -101,7 +101,7 @@
   * [Send Transaction](blocto-app/web3.js-integration-solana/send-transaction.md)
 * [Deep Linking](blocto-app/deep-linking.md)
 * [Push Notification](blocto-app/push-notification/README.md)
-  * [Web3 Provider Integration (Ethereum/BSC/Polygon/Avalanche)](blocto-app/push-notification/web3-provider-integration-ethereum-bsc-polygon-avalanche.md)
+  * [Web3 Provider Integration - Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche](blocto-app/push-notification/web3-provider-integration-ethereum-bsc-polygon-avalanche.md)
   * [Web3 Provider Integration (Solana)](blocto-app/push-notification/web3-provider-integration-solana.md)
   * [Decrypt User ID](blocto-app/push-notification/decrypt-user-id.md)
   * [Send API](blocto-app/push-notification/send-api.md)
