@@ -2,7 +2,7 @@
 description: Sign and verify challenges for off-chain authentication
 ---
 
-# Sign Message
+# Sign Message and Verify
 
 {% hint style="warning" %}
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
@@ -14,7 +14,7 @@ Install from npm/yarn
 $ yarn add @blocto/sdk
 ```
 
-### Use web3 api
+### Use web3.js
 
 ```javascript
 import Web3 from "web3";

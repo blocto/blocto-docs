@@ -15,7 +15,7 @@
     * [Integrate with Web3-React](blocto-sdk/javascript-sdk/evm-sdk/web3-react.md)
     * [Server Side Render](blocto-sdk/javascript-sdk/evm-sdk/server-side-render.md)
     * [Connect / Disconnect](blocto-sdk/javascript-sdk/evm-sdk/connect-disconnect.md)
-    * [Sign Message](blocto-sdk/javascript-sdk/evm-sdk/sign-message.md)
+    * [Sign Message and Verify](blocto-sdk/javascript-sdk/evm-sdk/sign-message.md)
     * [Switch Ethereum Chain](blocto-sdk/javascript-sdk/evm-sdk/switch-ethereum-chain.md)
   * [Flow](blocto-sdk/javascript-sdk/flow/README.md)
     * [Tutorial](blocto-sdk/javascript-sdk/flow/tutorial.md)
