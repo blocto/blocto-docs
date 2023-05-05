@@ -13,19 +13,19 @@ Install from npm/yarn/pnpm
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm i @blocto/sdk @rainbow-me/rainbowkit wagmi ethers@^5
+npm i @rainbow-me/rainbowkit wagmi ethers@^5 @blocto/rainbowkit-connector
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @blocto/sdk @rainbow-me/rainbowkit wagmi ethers@^5
+yarn add @rainbow-me/rainbowkit wagmi ethers@^5 @blocto/rainbowkit-connector
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @blocto/sdk @rainbow-me/rainbowkit wagmi ethers@^5
+pnpm add @rainbow-me/rainbowkit wagmi ethers@^5 @blocto/rainbowkit-connector
 ```
 {% endtab %}
 
@@ -45,7 +45,7 @@ import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
-import { bloctoWallet } from '@rainbow-me/rainbowkit/wallets';
+import { bloctoWallet } from '@blocto/rainbowkit-connector';
 ```
 
 ### Step 2 - Configure 
@@ -67,7 +67,7 @@ const { chains, provider } = configureChains(
 
 const { wallets } = getDefaultWallets({
   appName: 'My RainbowKit App',
-  projectId: 'YOUR_PROJECT_ID', // 
+  projectId: 'YOUR_PROJECT_ID',
   chains
 });
 
@@ -106,7 +106,7 @@ const App = () => {
 };
 ```
 
-#### Step 4 - Add the connect button
+### Step 4 - Add the connect button
 
 #### Then, in your app, import and render the ```ConnectButton``` component.
 
@@ -118,7 +118,13 @@ export const YourApp = () => {
 ```
 ##### RainbowKit will now handle your user's wallet selection, display wallet/transaction information and handle network/wallet switching.
 
-Now you can easily use `Rainbowkit` connect BloctoWallet To see more configurations, please check out
+Now you can easily use `Rainbowkit` connect `BloctoWallet` 
+
+To see more configurations, please check out
 
 * [Rainbowkit](https://www.rainbowkit.com/docs/installation#wrap-providers)
 * [Wagmi](https://wagmi.sh/react/getting-started)
+
+### Code Sandbox Sample
+
+{% embed url="https://codesandbox.io/s/evm-rainbowkit-dncj9j" %}
