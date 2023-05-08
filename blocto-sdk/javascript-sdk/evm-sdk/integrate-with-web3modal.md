@@ -13,7 +13,7 @@ Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are su
 Install from npm/yarn
 
 ```sh
-$ yarn add @blocto/blocto-wagmi-connector
+$ yarn add @blocto/wagmi-connector
 ```
 
 ### Step 1 - Configure `CreateClient` with `BloctoConnector`
@@ -21,7 +21,7 @@ $ yarn add @blocto/blocto-wagmi-connector
 #### Arbitrum RPC demo
 
 ```typescript
-import { BloctoConnector } from '@blocto/blocto-wagmi-connector'
+import { BloctoConnector } from '@blocto/wagmi-connector'
 
 // ...
 
@@ -53,7 +53,7 @@ export const client = createClient({
 ### Step 2 - Configure `<Web3Modal />`
 
 ```tsx
-import { BloctoWeb3ModalConfig } from '@blocto/blocto-wagmi-connector'
+import { BloctoWeb3ModalConfig } from '@blocto/wagmi-connector'
 
 // ...
 

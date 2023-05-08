@@ -13,13 +13,13 @@ Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are su
 Install from npm/yarn
 
 ```bash
-$ yarn add @blocto/blocto-connector
+$ yarn add @blocto/react-web3-connector
 ```
 
-Import and initiate Blocto-Connector
+Import and initiate react-web3-connector
 
 ```javascript
-import { BloctoConnector } from '@blocto/blocto-connector'
+import { BloctoConnector } from '@blocto/react-web3-connector'
 
 const connector = new BloctoConnector({
   chainId: NETWORK_CHAIN_ID,
