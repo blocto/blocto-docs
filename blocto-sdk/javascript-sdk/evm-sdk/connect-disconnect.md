@@ -39,7 +39,6 @@ export { web3, bloctoSDK };
 ```javascript
 const loginHandler = async () => {
   // (optional) when the email is provided, the login modal will prefill the email field.
-  // ethereum.enable() is deprecated in favor of the RPC method eth_requestAccounts.
   const accounts = await bloctoSDK?.ethereum?.request({
     method: "eth_requestAccounts",
     params: ["client@email.com"]
