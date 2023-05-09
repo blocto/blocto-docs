@@ -12,12 +12,27 @@ Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are su
 
 ### Installation
 
-Install from npm/yarn
+Install from npm/yarn/pnpm
 
+{% tabs %}
+{% tab title="npm" %}
 ```bash
-$ yarn add web3
-$ yarn add @blocto/sdk
+npm i @blocto/sdk
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @blocto/sdk
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm add @blocto/sdk
+```
+{% endtab %}
+{% endtabs %}
 
 ... or via CDN
 
@@ -27,10 +42,9 @@ $ yarn add @blocto/sdk
 
 ### **Usage**
 
-Initiate the Blocto provider
+#### Initiate Blocto SDK
 
 ```javascript
-import Web3 from 'web3'
 import BloctoSDK from '@blocto/sdk'
 
 const bloctoSDK = new BloctoSDK({
@@ -46,7 +60,7 @@ const bloctoSDK = new BloctoSDK({
 });
 ```
 
-#### Blocto Provider parameters
+#### Blocto SDK Parameters
 
 | Parameter          | Type         | Description                                                                                            | Required                    |
 | ------------------ | ------------ | ------------------------------------------------------------------------------------------------------ | --------------------------- |

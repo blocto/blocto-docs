@@ -10,11 +10,29 @@ If you are using `Web3Modal` for your project, we provide a `BloctoConnector` fo
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
-Install from npm/yarn
+### Installation
 
-```sh
-$ yarn add @blocto/wagmi-connector
+Install from npm/yarn/pnpm
+
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm i @blocto/wagmi-connector
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @blocto/wagmi-connector
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm add @blocto/wagmi-connector
+```
+{% endtab %}
+{% endtabs %}
 
 ### Step 1 - Configure `CreateClient` with `BloctoConnector`
 
@@ -44,11 +62,11 @@ export const client = createClient({
 
 #### `BloctoConnector` parameters
 
-| Paramter          | Type     | Description                                                                                             | Required |
-| ----------------- | -------- | ------------------------------------------------------------------------------------------------------- | -------- |
-| `chains`          | Chain\[] | Connector supports Chains                                                                               | **No**   |
-| `options.chainId` | Number   | <p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a> </p> | **Yes**  |
-| `options.rpc`     | String   | JSON RPC endpoint                                                                                       | **Yes**  |
+| Paramter          | Type     | Description                                                                                            | Required |
+| ----------------- | -------- | ------------------------------------------------------------------------------------------------------ | -------- |
+| `chains`          | Chain\[] | Connector supports Chains                                                                              | **No**   |
+| `options.chainId` | Number   | <p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a></p> | **Yes**  |
+| `options.rpc`     | String   | JSON RPC endpoint                                                                                      | **Yes**  |
 
 ### Step 2 - Configure `<Web3Modal />`
 
@@ -74,6 +92,3 @@ function App({ Component, pageProps }: AppProps) {
 ### Code Sandbox Sample
 
 {% embed url="https://codesandbox.io/s/blocto-web3modal-integrate-sczssb" %}
-
-
-

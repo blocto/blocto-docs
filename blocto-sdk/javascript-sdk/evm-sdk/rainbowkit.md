@@ -2,11 +2,13 @@
 description: You can easily add Blocto wallet to RainbowKit
 ---
 
-# RainbowKit
+# Integrate with RainbowKit
 
 {% hint style="warning" %}
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
+
+### Installation
 
 Install from npm/yarn/pnpm
 
@@ -28,11 +30,11 @@ yarn add @rainbow-me/rainbowkit wagmi ethers@^5 @blocto/rainbowkit-connector
 pnpm add @rainbow-me/rainbowkit wagmi ethers@^5 @blocto/rainbowkit-connector
 ```
 {% endtab %}
-
 {% endtabs %}
+
 ### Step 1 - Import Rainbowkit
 
-#### Import RainbowKit, wagmi, and bloctoWallet.
+Import RainbowKit, wagmi, and bloctoWallet.
 
 ```javascript
 import '@rainbow-me/rainbowkit/styles.css';
@@ -48,13 +50,13 @@ import { publicProvider } from 'wagmi/providers/public';
 import { bloctoWallet } from '@blocto/rainbowkit-connector';
 ```
 
-### Step 2 - Configure 
+### Step 2 - Configure
 
-#### Configure your desired chains and generate the required connectors. You will also need to setup a wagmi client.
+Configure your desired chains and generate the required connectors. You will also need to setup a wagmi client.
+
 {% hint style="warning" %}
 Note: Note: Every dApp that relies on WalletConnect now needs to obtain a projectId from [WalletConnect Cloud](https://cloud.walletconnect.com/sign-in). This is absolutely free and only takes a few minutes.
 {% endhint %}
-
 
 ```javascript
 const { chains, provider } = configureChains(
@@ -88,11 +90,11 @@ const wagmiClient = createClient({
 })
 ```
 
-##### [Read more about configuring chains & providers with wagmi.](https://wagmi.sh/react/providers/configuring-chains)
+[**Read more about configuring chains & providers with wagmi.**](https://wagmi.sh/react/providers/configuring-chains)
 
 ### Step 3 - Wrap providers
 
-#### Wrap your application with RainbowKitProvider and WagmiConfig.
+Wrap your application with RainbowKitProvider and WagmiConfig.
 
 ```javascript
 const App = () => {
@@ -108,7 +110,7 @@ const App = () => {
 
 ### Step 4 - Add the connect button
 
-#### Then, in your app, import and render the ```ConnectButton``` component.
+Then, in your app, import and render the `ConnectButton` component.
 
 ```javascript
 import { ConnectButton } from '@rainbow-me/rainbowkit';
@@ -116,9 +118,10 @@ export const YourApp = () => {
   return <ConnectButton />;
 };
 ```
-##### RainbowKit will now handle your user's wallet selection, display wallet/transaction information and handle network/wallet switching.
 
-Now you can easily use `Rainbowkit` connect `BloctoWallet` 
+**RainbowKit will now handle your user's wallet selection, display wallet/transaction information and handle network/wallet switching.**
+
+Now you can easily use `Rainbowkit` connect `BloctoWallet`
 
 To see more configurations, please check out
 

@@ -10,13 +10,31 @@ If you are using `web3-react` for your project, we provide a connector module fo
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
-Install from npm/yarn
+### Installation
 
+Install from npm/yarn/pnpm
+
+{% tabs %}
+{% tab title="npm" %}
 ```bash
-$ yarn add @blocto/react-web3-connector
+npm i @blocto/react-web3-connector
 ```
+{% endtab %}
 
-Import and initiate react-web3-connector
+{% tab title="yarn" %}
+```bash
+yarn add @blocto/react-web3-connector
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm add @blocto/react-web3-connector
+```
+{% endtab %}
+{% endtabs %}
+
+#### Import and initiate react-web3-connector
 
 ```javascript
 import { BloctoConnector } from '@blocto/react-web3-connector'

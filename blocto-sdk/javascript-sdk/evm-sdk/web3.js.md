@@ -10,10 +10,33 @@ You can use Blocto wallet service with your current [web3.js](https://web3js.rea
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
+### Installation
+
+Install from npm/yarn/pnpm
+
+{% tabs %}
+{% tab title="npm" %}
 ```bash
-$ yarn add web3
-$ yarn add @blocto/sdk
+npm i web3 @blocto/sdk
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add web3 @blocto/sdk
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm add web3 @blocto/sdk
+```
+{% endtab %}
+{% endtabs %}
+
+### Usage
+
+#### Initiate Blocto SDK and Web3
 
 ```javascript
 import Web3 from 'web3'
@@ -33,6 +56,8 @@ const bloctoSDK = new BloctoSDK({
 
 const web3 = new Web3(bloctoSDK.ethereum);
 ```
+
+#### Blocto SDK Parameters
 
 | Parameter          | Type         | Description                                                                                            | Required                    |
 | ------------------ | ------------ | ------------------------------------------------------------------------------------------------------ | --------------------------- |
