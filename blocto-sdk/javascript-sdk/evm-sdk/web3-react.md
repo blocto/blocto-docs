@@ -34,6 +34,8 @@ pnpm add @blocto/web3-react-connector
 {% endtab %}
 {% endtabs %}
 
+### Usage
+
 #### Import and initiate web3-react-connector
 
 ```javascript
@@ -105,7 +107,7 @@ const connector = new BloctoConnector({
 | Avalanche Mainnet        | 43114    |
 | Avalanche Fuji Testnet   | 43113    |
 
-#### Usage
+#### Use useWeb3React
 
 After connector is ready, now you can activate it using `useWeb3React` hook provided by `web3-react` . Now your code might look like:
 
