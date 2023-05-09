@@ -38,17 +38,15 @@ export { web3, bloctoSDK };
 
 ```javascript
 const loginHandler = async () => {
-  // (optional) when the email is provided, the login modal will prefill the email field.
-  const accounts = await bloctoSDK?.ethereum?.request({
-    method: "eth_requestAccounts",
-    params: ["client@email.com"]
+  const accounts = await bloctoSDK.ethereum.request({
+    method: "eth_requestAccounts"
   });
   setAddress(accounts[0]);
 };
 
 const logoutHandler = async () => {
   try {
-    await bloctoSDK?.ethereum?.request({ method: "wallet_disconnect" });
+    await bloctoSDK.ethereum.request({ method: "wallet_disconnect" });
     localStorage.removeItem("sdk.session");
     setAddress(null);
   } catch (error) {
@@ -56,5 +54,19 @@ const logoutHandler = async () => {
   }
 };
 ```
+
+#### Connect with prefilled email
+
+```javascript
+const loginWithPrefilledEmailHandler = async () => {
+  const accounts = await bloctoSDK?.ethereum?.request({
+    method: "eth_requestAccounts",
+    params: ["client@email.com"] // When the email is provided, the login modal will prefill the email field.
+  });
+  setAddress(accounts[0]);
+};
+```
+
+### Sample
 
 {% embed url="https://codesandbox.io/s/blocto-sdk-y1l23o?file=/src/App.js" %}
