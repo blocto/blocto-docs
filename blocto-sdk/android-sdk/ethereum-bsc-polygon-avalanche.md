@@ -8,7 +8,7 @@ Note that Blocto Android SDK for EVM is still in **Beta**. APIs are subject to b
 
 * **Get access to all the web3.js functionalities**
   * Interact with EVM-compatible blockchains
-    * Ethereum Mainnet & Rinkeby Testnet
+    * Ethereum Mainnet & Goerli Testnet
     * BSC Mainnet & Tesnet
     * Polygon Mainnet & Testnet
     * Avalanche Mainnet & Testnet

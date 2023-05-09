@@ -45,7 +45,7 @@ bloctoWalletProvider.Chain = [ChainEnum.Ethereum/ChainEnum.BSC/...];
 
 regarding the blockchain supported by Evm SDK, we provide ChainEnum.Ethereum (Ethereum), ChainEnum.BSC (Bsc), ChainEnum.Polygon (Polygon), ChainEnum.Avalanche (Avalanche).
 
-in Ethereum`dev` for Rinkeby and `prod` for mainnet.\
+in Ethereum`dev` for Goerli and `prod` for mainnet.\
 in BSC`dev` for testnet and `prod` for mainnet.\
 in Polygon`dev` for Mumbai and `prod` for mainnet.\
 in Avalanche`dev` for FUJI Testnet and `prod` for mainnet.

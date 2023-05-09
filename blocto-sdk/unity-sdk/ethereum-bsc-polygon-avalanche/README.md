@@ -4,7 +4,7 @@
 
 * **Get access to all the web3.js functionalities**
   * Interact with EVM-compatible blockchains
-    * Ethereum Mainnet & Rinkeby Testnet
+    * Ethereum Mainnet & Goerli Testnet
     * BSC Mainnet & Tesnet
     * Polygon Mainnet & Testnet
     * Avalanche Mainnet & Testnet

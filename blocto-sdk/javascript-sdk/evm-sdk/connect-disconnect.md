@@ -16,7 +16,7 @@ $ yarn add @blocto/sdk
 
 ### Step 1 - Configure Web3 and @blocto/sdk
 
-#### Rinkeby RPC demo
+#### Goerli RPC demo
 
 ```javascript
 import Web3 from "web3";
@@ -24,8 +24,8 @@ import BloctoSDK from "@blocto/sdk";
 
 const bloctoSDK = new BloctoSDK({
   ethereum: {
-    chainId: "0x4", // (required) chainId to be used
-    rpc: `https://rinkeby.infura.io/v3/ef5a5728e2354955b562d2ffa4ae5305`, // (required for Ethereum) JSON RPC endpoint
+    chainId: "0x5", // (required) chainId to be used
+    rpc: `https://goerli.infura.io/v3/ef5a5728e2354955b562d2ffa4ae5305`, // (required for Ethereum) JSON RPC endpoint
   },
 });
 

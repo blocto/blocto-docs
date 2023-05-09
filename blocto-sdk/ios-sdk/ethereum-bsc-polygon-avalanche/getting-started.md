@@ -37,13 +37,11 @@ BloctoSDK.shared.initialize(
 
 {% hint style="info" %}
 parameter `environment`:\
-in Ethereum`dev` for Rinkeby and `prod` for mainnet.\
-in BSC`dev` for testnet  and `prod` for mainnet.\
+in Ethereum`dev` for Goerli and `prod` for mainnet.\
+in BSC`dev` for testnet and `prod` for mainnet.\
 in Polygon`dev` for Mumbai and `prod` for mainnet.\
 in Avalanche`dev` for FUJI Testnet and `prod` for mainnet.
 {% endhint %}
-
-
 
 #### UIApplicationDelegate delegate method implementation
 
