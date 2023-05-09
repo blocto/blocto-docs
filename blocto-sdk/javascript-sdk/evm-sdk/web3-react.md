@@ -17,27 +17,27 @@ Install from npm/yarn/pnpm
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm i @blocto/react-web3-connector
+npm i @blocto/web3-react-connector
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @blocto/react-web3-connector
+yarn add @blocto/web3-react-connector
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @blocto/react-web3-connector
+pnpm add @blocto/web3-react-connector
 ```
 {% endtab %}
 {% endtabs %}
 
-#### Import and initiate react-web3-connector
+#### Import and initiate web3-react-connector
 
 ```javascript
-import { BloctoConnector } from '@blocto/react-web3-connector'
+import { BloctoConnector } from '@blocto/web3-react-connector'
 
 const connector = new BloctoConnector({
   chainId: NETWORK_CHAIN_ID,
@@ -114,7 +114,7 @@ import React from 'react'
 import { Web3ReactProvider } from '@web3-react/core'
 import { Web3Provider } from '@ethersproject/providers'
 import { useWeb3React } from '@web3-react/core'
-import { BloctoConnector } from '@blocto/blocto-connector'
+import { BloctoConnector } from '@blocto/web3-react-connector'
 
 export const connector = new BloctoConnector({
   chainId: NETWORK_CHAIN_ID,
