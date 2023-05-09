@@ -14,8 +14,6 @@ Note that Blocto iOS SDK for EVM is still in **Beta**. APIs are subject to break
     * Avalanche Mainnet & Testnet
   * Sign messages
   * Send transactions
-  * Lookup smart contract state
-  * Query smart contract events
   * ... and a lot more
 * **Seamless onboarding experience**\
   Users can sign up easily with email and start exploring you dApp in seconds.

@@ -16,8 +16,6 @@ description: Using Blocto SDK in EVM-compatible dApps
     * Avalanche Mainnet & Testnet
   * Sign messages
   * Send transactions
-  * Lookup smart contract state
-  * Query smart contract events
   * ... and a lot more
 * **Seamless onboarding experience**\
   Users can sign up easily with email and start exploring you dApp in seconds.
