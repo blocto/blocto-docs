@@ -128,6 +128,6 @@ To see more configurations, please check out
 * [Rainbowkit](https://www.rainbowkit.com/docs/installation#wrap-providers)
 * [Wagmi](https://wagmi.sh/react/getting-started)
 
-### Code Sandbox Sample
+### CodeSandbox Sample
 
 {% embed url="https://codesandbox.io/s/evm-rainbowkit-dncj9j" %}
