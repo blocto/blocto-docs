@@ -34,7 +34,7 @@ bloctoWalletProvider.SendTransaction(
     });
 </code></pre>
 
-2. Using the `EvmTransaction` Class. The SDK defines a Class that includes four properties: **From**, **To**, **Value**, and **Data**. Users can create an instance of this Class, set the property values accordingly, and then pass it to SendTransaction.
+2. Using the `EvmTransaction` class. The SDK defines a Class that includes four properties: **From**, **To**, **Value**, and **Data**. Users can create an instance of this Class, set the property values accordingly, and then pass it to SendTransaction.
 
 ```csharp
 var web3 = new Web3("{your node url}");
