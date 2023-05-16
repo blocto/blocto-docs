@@ -71,7 +71,7 @@
     * [Send Transaction](blocto-sdk/ios-sdk/solana/send-transaction.md)
 * [Unity SDK](blocto-sdk/unity-sdk/README.md)
   * [Prerequisite](blocto-sdk/unity-sdk/prerequisite.md)
-  * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/unity-sdk/ethereum-bsc-polygon-avalanche/README.md)
+  * [Ethereum / Arbitrum / Optimism / BSC / Polygon / Avalanche](blocto-sdk/unity-sdk/ethereum-bsc-polygon-avalanche/README.md)
     * [Getting Started](blocto-sdk/unity-sdk/ethereum-bsc-polygon-avalanche/getting-started.md)
     * [Connect to Blocto wallet](blocto-sdk/unity-sdk/ethereum-bsc-polygon-avalanche/connect-to-blocto-wallet.md)
     * [Sign Message](blocto-sdk/unity-sdk/ethereum-bsc-polygon-avalanche/sign-message.md)

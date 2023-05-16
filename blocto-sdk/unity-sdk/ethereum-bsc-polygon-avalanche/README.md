@@ -1,10 +1,12 @@
-# Ethereum / BSC / Polygon / Avalanche
+# Ethereum / Arbitrum / Optimism / BSC / Polygon / Avalanche
 
 ### What can I do with Blocto Unity EVM SDK?
 
 * **Get access to all the web3.js functionalities**
   * Interact with EVM-compatible blockchains
     * Ethereum Mainnet & Goerli Testnet
+    * Arbitrum Mainnet & Arbitrum Goerli Testnet
+    * Optimism Mainnet & Optimism Goerli Testnet
     * BSC Mainnet & Tesnet
     * Polygon Mainnet & Testnet
     * Avalanche Mainnet & Testnet
