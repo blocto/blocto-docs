@@ -15,7 +15,7 @@ With Blocto, you can combine multiple transactions into a single transaction for
 
 There are two ways to combine transactions:
 
-#### A. EIP-1193 \(Recommended\)
+#### A. EIP-1193 (Recommended)
 
 ```javascript
 import Web3 from 'web3';
@@ -24,8 +24,8 @@ import Web3 from 'web3';
 const txHash = await window.ethereum.request({
   method: 'blocto_sendBatchTransaction',
   params: [
-    web3.eth.sendTransaction.request(SOME_REQUEST),
-    web3.eth.sendTransaction.request(SOME_OTHER_REQUEST)
+    ...web3.eth.sendTransaction.request(SOME_REQUEST).params,
+    ...web3.eth.sendTransaction.request(SOME_OTHER_REQUEST).params
   ]
 })
 
@@ -121,4 +121,3 @@ batch.execute();
 ```
 
 For more information about batch transactions, check out [web3.js documentation](https://web3js.readthedocs.io/en/v1.2.0/web3-eth.html#batchrequest).
-
