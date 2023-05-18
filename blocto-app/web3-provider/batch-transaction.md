@@ -37,11 +37,6 @@ console.log(txHash) // ex: 0x12a45b...
 ```javascript
 import Web3 from 'web3';
 
-window.ethereum.request({
-  method: 'blocto_sendBatchTransaction',
-  params: [transactionObject]
-})
-
 // Use the Ethereum provider injected by Blocto app
 const web3 = new Web3(window.ethereum);
 const batch = new web3.BatchRequest();
@@ -79,8 +74,8 @@ const putInPoolTogetherReq = web3.eth.sendTransaction.request({
 const txHash = await window.ethereum.request({
   method: 'blocto_sendBatchTransaction',
   params: [
-    approveDAIReq,
-    putInPoolTogetherReq
+    ...approveDAIReq.params,
+    ...putInPoolTogetherReq.params
   ]
 })
 
