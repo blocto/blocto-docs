@@ -8,16 +8,50 @@ description: Use Blocto SDK to Combine multiple transactions and make them atomi
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
-{% hint style="info" %}
-Visit [batch-transaction.md](../../../blocto-app/web3-provider/batch-transaction.md "mention") for more usage and example.
-{% endhint %}
-
 ### Introduction
+
+With Blocto, you can combine multiple transactions into a single transaction for the following advantages:
 
 1. Save gas fee
 2. Make multiple transactions atomic, so they either all succeed or all fail
 
 ### Usage
+
+There are two ways to combine transactions:
+
+#### A. EIP-1193 (Recommended)
+
+```javascript
+import Web3 from 'web3';
+
+// Use the Ethereum provider injected by Blocto app
+const txHash = await bloctoSDK.ethereum.request({
+  method: 'blocto_sendBatchTransaction',
+  params: [
+    ...web3.eth.sendTransaction.request(SOME_REQUEST).params,
+    ...web3.eth.sendTransaction.request(SOME_OTHER_REQUEST).params
+  ]
+})
+
+console.log(txHash) // ex: 0x12a45b...
+```
+
+#### B. Web3 Batch Request
+
+```javascript
+import Web3 from 'web3';
+
+// Use the Ethereum provider injected by Blocto app
+const web3 = new Web3(bloctoSDK.ethereum);
+const batch = new web3.BatchRequest();
+
+batch.add(web3.eth.sendTransaction.request(SOME_REQUEST));
+batch.add(web3.eth.sendTransaction.request(SOME_OTHER_REQUEST));
+
+batch.execute();
+```
+
+### Example
 
 #### Step 1 - Configure Web3 and @blocto/sdk
 
@@ -51,7 +85,7 @@ const txHash = await bloctoSDK.ethereum.request({
 console.log(txHash) // ex: 0x12a45b...
 ```
 
-### Sample
+#### Sample
 
 {% embed url="https://codesandbox.io/s/evm-batch-transaction-45g0c3?file=/package.json" %}
 
