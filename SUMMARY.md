@@ -19,6 +19,7 @@
     * [Connect / Disconnect](blocto-sdk/javascript-sdk/evm-sdk/connect-disconnect.md)
     * [Sign Message and Verify](blocto-sdk/javascript-sdk/evm-sdk/sign-message.md)
     * [Switch Ethereum Chain](blocto-sdk/javascript-sdk/evm-sdk/switch-ethereum-chain.md)
+    * [Batch Transaction](blocto-sdk/javascript-sdk/evm-sdk/batch-transaction.md)
   * [Flow](blocto-sdk/javascript-sdk/flow/README.md)
     * [Tutorial](blocto-sdk/javascript-sdk/flow/tutorial.md)
     * [Login / Register](blocto-sdk/javascript-sdk/flow/login-register.md)
