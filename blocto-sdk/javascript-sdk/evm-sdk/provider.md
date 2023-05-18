@@ -133,7 +133,8 @@ const bloctoSDK = new BloctoSDK({
 | Avalanche Mainnet       | 43114    |
 | Avalanche Fuji Testnet  | 43113    |
 
-**Connect to Blocto wallet**\
+#### **Connect to Blocto wallet**
+
 Once the connection request is fired, there would be a prompt modal to guide user to register/login to Blocto wallet
 
 ```javascript
