@@ -11,7 +11,8 @@ Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are su
 ### Installation
 
 Install from npm/yarn/pnpm
-Install RainbowKit and its peer dependencies, [wagmi](https://wagmi.sh/react/getting-started) and [viem](https://viem.sh/).
+
+RainbowKit and its peer dependencies, [wagmi](https://wagmi.sh/react/getting-started) and [viem](https://viem.sh/).
 
 {% tabs %}
 {% tab title="npm" %}
