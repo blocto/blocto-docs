@@ -11,23 +11,24 @@ Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are su
 ### Installation
 
 Install from npm/yarn/pnpm
+Install RainbowKit and its peer dependencies, [wagmi](https://wagmi.sh/react/getting-started) and [viem](https://viem.sh/).
 
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm i @rainbow-me/rainbowkit wagmi ethers@^5 @blocto/rainbowkit-connector
+npm install @rainbow-me/rainbowkit wagmi viem @blocto/rainbowkit-connector
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @rainbow-me/rainbowkit wagmi ethers@^5 @blocto/rainbowkit-connector
+yarn add @rainbow-me/rainbowkit wagmi viem @blocto/rainbowkit-connector
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @rainbow-me/rainbowkit wagmi ethers@^5 @blocto/rainbowkit-connector
+pnpm add @rainbow-me/rainbowkit wagmi viem @blocto/rainbowkit-connector
 ```
 {% endtab %}
 {% endtabs %}
@@ -43,10 +44,10 @@ import {
   connectorsForWallets,
   RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
-import { configureChains, createClient, WagmiConfig } from 'wagmi';
-import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
-import { alchemyProvider } from 'wagmi/providers/alchemy';
+import { configureChains, createConfig, WagmiConfig } from "wagmi";
+import { polygon, optimism, arbitrum, bsc, mainnet } from "wagmi/chains";
 import { publicProvider } from 'wagmi/providers/public';
+import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { bloctoWallet } from '@blocto/rainbowkit-connector';
 ```
 
@@ -59,35 +60,33 @@ Note: Note: Every dApp that relies on WalletConnect now needs to obtain a projec
 {% endhint %}
 
 ```javascript
-const { chains, provider } = configureChains(
-  [mainnet, polygon, optimism, arbitrum], 
-  [
-    alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
-    publicProvider()
-  ]
+const { chains, publicClient, webSocketPublicClient } = configureChains(
+  [polygon, optimism, arbitrum, bsc, mainnet],
+  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID || "" }), publicProvider()]
 );
 
 const { wallets } = getDefaultWallets({
-  appName: 'My RainbowKit App',
-  projectId: 'YOUR_PROJECT_ID',
+  appName: "My RainbowKit App",
+  projectId: "YOUR_PROJECT_ID",
   chains
 });
 
 const connectors = connectorsForWallets([
   ...wallets,
   {
-    groupName: 'Other',
+    groupName: "Other",
     wallets: [
       bloctoWallet({ chains }), // add BloctoWallet
-    ],
-  },
+    ]
+  }
 ]);
 
-const wagmiClient = createClient({
+const wagmiConfig = createConfig({
   autoConnect: true,
   connectors,
-  provider
-})
+  publicClient,
+  webSocketPublicClient,
+});
 ```
 
 [**Read more about configuring chains & providers with wagmi.**](https://wagmi.sh/react/providers/configuring-chains)
@@ -99,7 +98,7 @@ Wrap your application with RainbowKitProvider and WagmiConfig.
 ```javascript
 const App = () => {
   return (
-    <WagmiConfig client={wagmiClient}>
+    <WagmiConfig client={wagmiConfig}>
       <RainbowKitProvider chains={chains}>
         <YourApp />
       </RainbowKitProvider>
