@@ -126,8 +126,13 @@ Now you can easily use `Rainbowkit` connect `BloctoWallet`
 To see more configurations, please check out
 
 * [Rainbowkit](https://www.rainbowkit.com/docs/installation#wrap-providers)
+* [Rainbowkit Custom Authentication](https://www.rainbowkit.com/docs/custom-authentication)
 * [Wagmi](https://wagmi.sh/react/getting-started)
 
 ### CodeSandbox Sample
 
 {% embed url="https://codesandbox.io/s/evm-rainbowkit-dncj9j" %}
+
+### CodeSandbox Sample - Custom Authentication
+
+{% embed url="https://codesandbox.io/s/evm-rainbowkit-custom-authentication-8l6w65" %}
