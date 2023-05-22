@@ -24,8 +24,8 @@ import Web3 from 'web3';
 const txHash = await window.ethereum.request({
   method: 'blocto_sendBatchTransaction',
   params: [
-    ...web3.eth.sendTransaction.request(SOME_REQUEST).params,
-    ...web3.eth.sendTransaction.request(SOME_OTHER_REQUEST).params
+    web3.eth.sendTransaction.request(SOME_REQUEST),
+    web3.eth.sendTransaction.request(SOME_OTHER_REQUEST)
   ]
 })
 
@@ -74,8 +74,8 @@ const putInPoolTogetherReq = web3.eth.sendTransaction.request({
 const txHash = await window.ethereum.request({
   method: 'blocto_sendBatchTransaction',
   params: [
-    ...approveDAIReq.params,
-    ...putInPoolTogetherReq.params
+    approveDAIReq,
+    putInPoolTogetherReq
   ]
 })
 
