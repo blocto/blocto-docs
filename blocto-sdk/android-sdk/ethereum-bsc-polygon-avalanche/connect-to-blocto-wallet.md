@@ -16,8 +16,9 @@ and ask user to connect the wallet.
 ```kotlin
 // Request account based on specific chain
 
-BloctoSDK.[ethereum/bnb/polygon/avalanche].requestAccount(
+BloctoSDK.evm.requestAccount(
     context = context,
+    blockchain = Blockchain.ETHEREUM,
     onSuccess = { address ->
         // wallet connected
     },

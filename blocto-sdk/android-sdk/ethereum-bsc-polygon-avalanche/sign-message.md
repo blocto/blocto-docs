@@ -19,8 +19,9 @@ To sign a message, the app must specify the sign type. All available types are l
 ```kotlin
 // Sign message based on specific chain
 
-BloctoSDK.[ethereum/bnb/polygon/avalanche].signMessage(
+BloctoSDK.evm.signMessage(
     context = context,
+    blockchain = Blockchain.ETHEREUM,
     fromAddress = address,
     signType = [EvmSignType.ETH_SIGN/EvmSignType.PERSONAL_SIGN/...],
     message = message,

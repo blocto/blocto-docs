@@ -31,8 +31,9 @@ val data = FunctionEncoder.encode(donateFunction)
 val value = Convert.toWei("1", Convert.Unit.ETHER).toBigInteger()
 
 // Send transaction based on specific chain
-BloctoSDK.[ethereum/bnb/polygon/avalanche].sendTransaction(
+BloctoSDK.evm.sendTransaction(
     context = context,
+    blockchain = Blockchain.ETHEREUM,
     fromAddress = fromAddress,
     toAddress = toAddress,
     data = data,

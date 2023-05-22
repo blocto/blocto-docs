@@ -39,7 +39,7 @@
     * [Server Sider Render](blocto-sdk/javascript-sdk/solana/server-sider-render.md)
 * [Android SDK](blocto-sdk/android-sdk/README.md)
   * [Prerequest](blocto-sdk/android-sdk/prerequest.md)
-  * [Ethereum / BSC / Polygon / Avalanche](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche.md)
+  * [EVM](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche.md)
     * [Getting Started](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche/getting-started.md)
     * [Connect to Blocto wallet](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche/connect-to-blocto-wallet.md)
     * [Sign Message](blocto-sdk/android-sdk/ethereum-bsc-polygon-avalanche/sign-message.md)
