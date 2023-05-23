@@ -19,21 +19,22 @@ public enum EVMBaseSignType: String {
 ```
 
 {% hint style="warning" %}
-When using **`sign`** type, please make sure input message is hex string with **`0x`**prefix.
+When using **`sign`** type, please make sure input message is hex string with \*\*`0x`\*\*prefix.
 {% endhint %}
 
 {% hint style="warning" %}
-We highly recommend you specify version when using typedSign. Because we can't make sure what version of Blocto Wallet app the user installed. When using **`typedSign`**we just use the latest version of typedSign, but the "latest" typedSign in user's current Blocto Wallet app might not match with the "latest" typedSign in BloctoSDK. In such case, it may lead to unexpected result.
+We highly recommend you specify version when using typedSign. Because we can't make sure what version of Blocto Wallet app the user installed. When using \*\*`typedSign`\*\*we just use the latest version of typedSign, but the "latest" typedSign in user's current Blocto Wallet app might not match with the "latest" typedSign in BloctoSDK. In such case, it may lead to unexpected result.
 {% endhint %}
 
-Let's take Ethereum for example. BSC, Polygon and Avalanche use the same **`signMessage`** method as below.
+Let's take Ethereum for example. Arbitrum, Optimism, BSC, Polygon and Avalanche use the same **`signMessage`** method as below.
 
 ### Sign message
 
 #### Sign
 
 ```swift
-BloctoSDK.shared.ethereum.signMessage(
+BloctoSDK.shared.evm.signMessage(
+    blockchain: .ethereum,
     from: "0x...", // user address
     message: "0x50...3A", // must be hex string with 0x prefix
     signType: .sign) { [weak self] result in
@@ -50,7 +51,8 @@ BloctoSDK.shared.ethereum.signMessage(
 #### Personal sign
 
 ```swift
-BloctoSDK.shared.ethereum.signMessage(
+BloctoSDK.shared.evm.signMessage(
+    blockchain: .ethereum,
     from: "0x...", // user address
     message: "any message",
     signType: .personalSign) { [weak self] result in
@@ -67,7 +69,8 @@ BloctoSDK.shared.ethereum.signMessage(
 #### Typed sign v3
 
 ```swift
-BloctoSDK.shared.ethereum.signMessage(
+BloctoSDK.shared.evm.signMessage(
+    blockchain: .ethereum,
     from: "0x...", // user address
     message: #"{ "abc": 123 }"#, // must be valid json format.
     signType: .typedSignV3) { [weak self] result in
@@ -84,7 +87,8 @@ BloctoSDK.shared.ethereum.signMessage(
 #### Typed sign v4
 
 ```swift
-BloctoSDK.shared.ethereum.signMessage(
+BloctoSDK.shared.evm.signMessage(
+    blockchain: .ethereum,
     from: "0x...", // user address
     message: #"{ "abc": 123 }"#, // must be valid json format.
     signType: .typedSignV4) { [weak self] result in

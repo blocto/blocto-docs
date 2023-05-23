@@ -1,4 +1,4 @@
-# Connect to Blocto wallet
+# Connect to Blocto Wallet
 
 {% hint style="warning" %}
 Make sure you [initialize Blocto SDK](../solana/getting-started.md) first
@@ -14,40 +14,7 @@ Once the wallet connection requested, it would
 and ask user to connect the wallet.
 
 ```swift
-BloctoSDK.shared.ethereum.requestAccount { [weak self] result in
-    switch result {
-    case .success(let address):
-        // handle address here
-    case .failure(let error):
-        // handle error here
-    }
-}
-```
-
-```swift
-BloctoSDK.shared.bsc.requestAccount { [weak self] result in
-    switch result {
-    case .success(let address):
-        // handle address here
-    case .failure(let error):
-        // handle error here
-    }
-}
-```
-
-```swift
-BloctoSDK.shared.polygon.requestAccount { [weak self] result in
-    switch result {
-    case .success(let address):
-        // handle address here
-    case .failure(let error):
-        // handle error here
-    }
-}
-```
-
-```swift
-BloctoSDK.shared.avalanche.requestAccount { [weak self] result in
+BloctoSDK.shared.evm.requestAccount(blockchain: .ethereum) { [weak self] result in
     switch result {
     case .success(let address):
         // handle address here

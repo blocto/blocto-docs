@@ -1,4 +1,4 @@
-# Ethereum / BSC / Polygon / Avalanche
+# EVM
 
 {% hint style="warning" %}
 Note that Blocto iOS SDK for EVM is still in **Beta**. APIs are subject to breaking changes.
@@ -9,6 +9,8 @@ Note that Blocto iOS SDK for EVM is still in **Beta**. APIs are subject to break
 * **Get access to all the web3.js functionalities**
   * Interact with EVM-compatible blockchains
     * Ethereum Mainnet & Goerli Testnet
+    * Arbitrum One Mainnet & Goerli Testnet
+    * Optimism Mainnet & Goerli Testnet
     * BSC Mainnet & Tesnet
     * Polygon Mainnet & Testnet
     * Avalanche Mainnet & Testnet

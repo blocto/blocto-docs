@@ -22,7 +22,8 @@ let evmBaseTransaction = EVMBaseTransaction(
     from: "0x...", // user address.
     value: "0x64", // 100 wei hex string with 0x prefix, default is 0.
     data: functionData) // functionData stands for data in ethereum transaction, default is Empty data.
-BloctoSDK.shared.ethereum.sendTransaction(
+BloctoSDK.shared.evm.sendTransaction(
+    blockchain: .ethereum,
     transaction: evmBaseTransaction
 ) { [weak self] result in
     guard let self = self else { return }
