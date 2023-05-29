@@ -113,7 +113,7 @@
 
 ## Technical Documents
 
-* [Contract Wallet](technical-documents/contract-wallet.md)
+* [Account Abstraction (EVM)](technical-documents/contract-wallet.md)
 * [Key Management](technical-documents/key-management.md)
 
 ## BloctoSwap

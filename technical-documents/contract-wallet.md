@@ -1,10 +1,12 @@
 ---
-description: Blocto wallets are built with smart contracts
+description: Blocto wallets are built with chain-agnostic account abstraction
 ---
 
-# Contract Wallet
+# Account Abstraction (EVM)
 
-Blocto wallets are built with smart contracts. This gives Blocto wallets a lot of advantages over regular private-key wallets.
+Blocto wallets are built with chain-agnostic account abstraction. On chains with native account abstraction, such as [Aptos](https://aptos.dev) and [Flow](https://flow.com/), Blocto utilizes the native account system to provide account abstraction functionalities; On chains without native account abstraction, such as Ethereum, Polygon and Solana, Blocto builds uses smart contracts to achieve account abstraction. This gives Blocto wallets a lot of advantages over regular private-key wallets.
+
+This article describes our [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337) compliant smart contract wallet on EVM.
 
 ### Meta Transaction
 
@@ -36,21 +38,18 @@ In Blocto, contract wallet makes it possible for us to build our [mixed-custodia
 In any of the supported chains (Ethereum, Flow, Solana and Tron), there are three different roles on the contract wallets:
 
 1. **Device Key or Signer Key**\
-   The key stored on users device. In custodial mode, this key is also managed by Blocto backend service and gets distributed to users' local device when users logs in. In non-custodial mode, each device has its own device private key and is stored only on the device keychain or keystore.\
-
+   The key stored on users device. In custodial mode, this key is also managed by Blocto backend service and gets distributed to users' local device when users logs in. In non-custodial mode, each device has its own device private key and is stored only on the device keychain or keystore.\\
 2. **Co-signer Key**\
-   ****The key managed by Blocto backend service. On EVM chains, this key is also used as the fee payer account for meta-transactions.\
-
+   \*\*\*\*The key managed by Blocto backend service. On EVM chains, this key is also used as the fee payer account for meta-transactions.\\
 3. **Recovery Key**\
-   ****The key used to reset account access. In custodial mode, this key is managed by Blocto backend service and is used when user sets up non-custodial mode or reset non-custodial mode. In non-custodial mode, the recovery key is generated from users' device and is encrypted with the recovery password set by the users. The encrypted recovery key is then sent to users' email for backup.
+   \*\*\*\*The key used to reset account access. In custodial mode, this key is managed by Blocto backend service and is used when user sets up non-custodial mode or reset non-custodial mode. In non-custodial mode, the recovery key is generated from users' device and is encrypted with the recovery password set by the users. The encrypted recovery key is then sent to users' email for backup.
 
 For different account operations, different keys are used:
 
 1. **Send Transaction**\
-   ****To send out transactions from users' account, the transaction has to be signed with both users' **device key** and **co-signer** key. The device key is kept on users' devices, while the co-signer key is kept in Blocto backend service and is authorized with users' login access token.\
-
+   \*\*\*\*To send out transactions from users' account, the transaction has to be signed with both users' **device key** and **co-signer** key. The device key is kept on users' devices, while the co-signer key is kept in Blocto backend service and is authorized with users' login access token.\\
 2. **Setup or reset non-custodial mode**\
-   ****When a user sets up or resets non-custodial mode, a new pair of device key and recovery key is generated on the user's device. The new keys get registered into the contract wallet as the new owner keys with the authorization of the old recovery key. Once the setup is complete, the old recovery key and old device keys will not work anymore.
+   \*\*\*\*When a user sets up or resets non-custodial mode, a new pair of device key and recovery key is generated on the user's device. The new keys get registered into the contract wallet as the new owner keys with the authorization of the old recovery key. Once the setup is complete, the old recovery key and old device keys will not work anymore.
 
 ### Batch Transaction
 
@@ -61,4 +60,4 @@ With contract wallet, Blocto can combine multiple transactions into a single tra
 
 ### Acknowledgement
 
-Blocto's EVM contract wallet was modified from [Dapper Wallet](https://github.com/dapperlabs/dapper-contracts).&#x20;
+Blocto's EVM contract wallet was modified from [Dapper Wallet](https://github.com/dapperlabs/dapper-contracts).
