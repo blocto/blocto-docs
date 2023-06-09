@@ -2,55 +2,41 @@
 description: Connect to Blocto wallet through Flow Client Library (FCL)
 ---
 
-# Login / Register
+# Authenticate / Unauthenticate
 
 ### Step 1 - Configure FCL
 
 ```javascript
-import * as fcl from "@blocto/fcl"
+import * as fcl from "@blocto/fcl";
 
-fcl.config()
-    // connect to Flow testnet
-    // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
-    .put("accessNode.api", "https://rest-testnet.onflow.org")
-    
-    // use Blocto testnet wallet
-    .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
-    
-```
-
-Alternatively, if you already have user's email and would like to pre-fill it for user's Blocto account, you can use the custom handshake URL instead:
-
-```javascript
-import * as fcl from "@blocto/fcl"
-
-fcl.config()
-    // connect to Flow testnet
-    // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
-    .put("accessNode.api", "https://rest-testnet.onflow.org")
-    // use Blocto testnet wallet
-    .put(
-        "challenge.handshake",
-        "https://flow-wallet-testnet.blocto.app/authn/-/user@some.where"
-    )
-```
-
-Starting from `@blocto/fcl@0.0.77` you can also use HTTP/POST to initiate login requests, instead of popup. Simply modify your wallet connection to:
-
-```javascript
-import * as fcl from "@blocto/fcl"
-
-fcl.config()
+fcl
+  .config()
   // connect to Flow testnet
-  // for fcl@<1.0.0 this should be https://access-testnet.onflow.org
   .put("accessNode.api", "https://rest-testnet.onflow.org")
-  
-  // use Blocto testnet wallet with HTTP/POST
+  // use Blocto testnet wallet
   .put(
     "discovery.wallet",
-    "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+    `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn`
   )
-  .put("discovery.wallet.method", "HTTP/POST")
+```
+
+Alternatively, if you already have user's email and would like to pre-fill it for user's Blocto account, you can use the custom `discovery.wallet` URL instead:
+
+```javascript
+import * as fcl from "@blocto/fcl";
+
+const USER_EMAIL = "client@email.com";
+
+fcl
+  .config()
+  // connect to Flow testnet
+  .put("accessNode.api", "https://rest-testnet.onflow.org")
+  // use Blocto testnet wallet
+  .put(
+    "discovery.wallet",
+    `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn/${USER_EMAIL}`
+  )
+
 ```
 
 ### Step 2 - Authenticate
@@ -58,23 +44,23 @@ fcl.config()
 ```javascript
 import * as fcl from "@blocto/fcl";
 
-fcl.currentUser().subscribe(console.log); // fires everytime account connection status updates
+// fires everytime account connection status updates
+fcl.currentUser().subscribe(console.log);
 
 // authenticate
 fcl.authenticate();
 ```
-
-{% embed url="https://codesandbox.io/s/blocto-fcl-login-g0lq48?file=/src/index.js" %}
 
 ### Step 3 - Unauthenticate
 
 ```javascript
 import * as fcl from "@blocto/fcl";
 
-fcl.currentUser().subscribe(console.log); // fires everytime account connection status updates
+// fires everytime account connection status updates
+fcl.currentUser().subscribe(console.log);
 
 // unauthenticate and clear account info in FCL
 fcl.unauthenticate();
 ```
 
-{% embed url="https://codesandbox.io/s/blocto-fcl-authenticate-x8vzni?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/flow-autenticate-unauthenticate-v2-hfq56w" %}

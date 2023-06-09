@@ -4,14 +4,13 @@ description: Prove account ownership of a Flow account
 
 # Account Proof
 
-Flow provides a way for dapps to ask for users' signatures when they connect a wallet and verify account ownership. For more information, refer to [Account Proof on Flow](https://docs.onflow.org/fcl/reference/proving-authentication/).
+Flow provides a way for dApps to ask for users' signatures when they connect a wallet and verify account ownership. For more information, refer to [Account Proof on Flow](https://docs.onflow.org/fcl/reference/proving-authentication/).
 
 Currently Blocto self-custody accounts generate this signature slightly differently and needs an alternative way to verify ownership.
 
 ```javascript
-import { AppUtils } from '@onflow/fcl'
+import { AppUtils } from '@blocto/fcl'
 
-// as of fcl@^1.0.0
 const isSignatureValid = await AppUtils.verifyAccountProof(
   appIdentifier,
   {
@@ -19,15 +18,6 @@ const isSignatureValid = await AppUtils.verifyAccountProof(
     nonce,
     signatures,
   },
-  {
-    fclCryptoContract: BLOCTO_FCLCRYPTO_CONTRACT_ADDRESS
-  }
-)
-
-// as of fcl@0.0.79
-const isSignatureValid = const isValid = await fcl.verifyUserSignatures(
-  message,
-  signatures,
   {
     fclCryptoContract: BLOCTO_FCLCRYPTO_CONTRACT_ADDRESS
   }
@@ -43,6 +33,4 @@ The addresses of the Blocto FCLCrypto contract `BLOCTO_FCLCRYPTO_CONTRACT_ADDRES
 
 [More about verifyAccountProof api](https://github.com/onflow/fcl-js/blob/master/docs/reference/proving-authentication.mdx)
 
-## as of fcl@^1.0.0
-
-{% embed url="https://codesandbox.io/s/blocto-fcl-proofaccount-6cdr4h?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/flow-account-proof-v2-u3twk1" %}

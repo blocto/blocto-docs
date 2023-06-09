@@ -6,30 +6,62 @@ description: Flow networks that Blocto supports
 
 ### Mainnet
 
-* Access Node
-  * RESTful `https://rest-mainnet.onflow.org`
-  * gRPC `https://access-mainnet-beta.onflow.org`
-* Blocto Wallet `https://flow-wallet.blocto.app/authn`
+* Access Node `https://rest-mainnet.onflow.org`
+* Blocto Wallet&#x20;
+  * front channel `https://wallet-v2.blocto.app/${YOUR_DAPP_ID}/flow/authn`
+  * back channel `https://wallet-v2.blocto.app/api/flow/authn`
+
+#### Front Channel
 
 ```javascript
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl"
 
-fcl.config()
-  .put("accessNode.api", "https://flow-access-mainnet.portto.io") // connect to Flow mainnet
-  .put("challenge.handshake", "https://flow-wallet.blocto.app/authn") // use Blocto wallet
+fcl
+  .config()
+  .put("accessNode.api", "https://rest-mainnet.onflow.org")// connect to Flow mainnet
+  .put("discovery.wallet", `https://wallet-v2.blocto.app/${YOUR_DAPP_ID}/flow/authn`)// use Blocto wallet
 ```
 
-### Testnet&#x20;
-
-* Access Node
-  * RESTful `https://rest-testnet.onflow.org`
-  * gRPC `https://access-testnet.onflow.org`
-* Blocto Wallet `https://flow-wallet-testnet.blocto.app/authn`
+#### Back Channel
 
 ```javascript
-import * as fcl from "@onflow/fcl"
+import * as fcl from "@blocto/fcl";
 
-fcl.config()
-  .put("accessNode.api", "https://access-testnet.onflow.org") // connect to Flow testnet
-  .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn") // use Blocto testnet wallet
+fcl
+  .config()
+  .put("accessNode.api", "https://rest-mainnet.onflow.org")// connect to Flow mainnet
+  .put("discovery.wallet","https://wallet-v2.blocto.app/api/flow/authn")// use Blocto wallet
+  .put("discovery.wallet.method", "HTTP/POST")
+  .put("app.detail.id", YOUR_DAPP_ID)// this line is optional
+```
+
+### Testnet
+
+* Access Node `https://rest-testnet.onflow.org`
+* Blocto Wallet&#x20;
+  * front channel `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn`
+  * back channel `https://wallet-v2-dev.blocto.app/api/flow/authn`
+
+#### Front Channel
+
+```javascript
+import * as fcl from "@blocto/fcl"
+
+fcl
+  .config()
+  .put("accessNode.api", "https://rest-testnet.onflow.org")// connect to Flow testnet
+  .put("discovery.wallet", `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn`)// use Blocto testnet wallet
+```
+
+#### Back Channel
+
+```javascript
+import * as fcl from "@blocto/fcl";
+
+fcl
+  .config()
+  .put("accessNode.api", "https://rest-testnet.onflow.org")// connect to Flow testnet
+  .put("discovery.wallet","https://wallet-v2-dev.blocto.app/api/flow/authn")// use Blocto testnet wallet
+  .put("discovery.wallet.method", "HTTP/POST")
+  .put("app.detail.id", YOUR_DAPP_ID)// this line is optional
 ```

@@ -20,13 +20,12 @@ $ npx create-react-app hello-world
 
 In the `hello-world` folder you've just created, install dependencies necessary for this project.
 
-```
-$ yarn add @blocto/fcl
-$ yarn add styled-components
-```
+<pre><code>$ yarn add @blocto/fcl@^1.4.0
+<strong>$ yarn add styled-components
+</strong></code></pre>
 
 {% hint style="danger" %}
-FCL is under heavy developments and the versions are not always backward compatible. We recommend that you use `@blocto/fcl@^0.0.71` for now.
+FCL is under heavy developments and the versions are not always backward compatible. We recommend that you use `@blocto/fcl@^1.4.0` for now.
 {% endhint %}
 
 You can start the app and see it running on `http://localhost:3000`
@@ -70,7 +69,7 @@ const GetLatestBlock = () => {
     event.preventDefault()
 
     const response = await fcl.send([
-      fcl.getLatestBlock(),
+      fcl.getBlock(true)
     ])
     
     setData(await fcl.decode(response))
@@ -125,7 +124,7 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 
 fcl.config()
-  .put("accessNode.api", "https://access-testnet.onflow.org") // connect to Flow testnet
+  .put("accessNode.api", "https://rest-testnet.onflow.org") // connect to Flow testnet
 
 ReactDOM.render(
   <React.StrictMode>
@@ -240,8 +239,8 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 
 fcl.config()
-  .put("accessNode.api", "https://access-testnet.onflow.org") // connect to Flow testnet
-  .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn") // use Blocto testnet wallet
+  .put("accessNode.api", "https://rest-testnet.onflow.org") // connect to Flow testnet
+  .put("discovery.wallet", `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn`) // use Blocto testnet wallet
 
 ReactDOM.render(
   <React.StrictMode>
@@ -324,6 +323,7 @@ const SendTransaction = () => {
         fcl.proposer(fcl.currentUser().authorization),
         fcl.payer(fcl.currentUser().authorization),
         fcl.ref(block.id),
+        fcl.limit(100)
       ])
 
       const { transactionId } = tx
@@ -402,20 +402,11 @@ When user clicks the `send` button, FCL summons Blocto wallet and prompts user t
 Awesome! You have sent a transaction to Flow testnet with Blocto wallet!
 {% endhint %}
 
-You can find the complete code of the Hello World project here: [https://github.com/portto/flow-hello-world](https://github.com/portto/flow-hello-world)
-
-## Demo Project
-
-More example interactions with FCL can be found in this project: [https://github.com/portto/fcl-demo](https://github.com/portto/fcl-demo)\
-Hosted online demo: [https://fcl-demo.netlify.app/](https://fcl-demo.netlify.app/)
-
-{% hint style="success" %}
-The demo project also shows how you can run local **Flow emulator** and **dev-wallet**
-{% endhint %}
+{% embed url="https://codesandbox.io/s/flow-tutorial-918v90" %}
 
 ## Other Resources
 
 * **Flow App Quickstart**: [https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/](https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/)
 * **Other frameworks (community built)**
-  * \*\*\*\*[Angular](https://github.com/ic3guy/FlowAngularExample)
+  * [Angular](https://github.com/ic3guy/FlowAngularExample)
   * [Svelte](https://github.com/amitkothari/crypto-candy)

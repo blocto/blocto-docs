@@ -1,8 +1,8 @@
 ---
-description: Sign message with Blocto wallet through Flow Client Library (FCL)
+description: Send Transaction with Blocto wallet through Flow Client Library (FCL)
 ---
 
-# Sign Transaction
+# Send Transaction
 
 {% hint style="warning" %}
 Before sending a transaction, user needs to connect to Blocto wallet first.
@@ -21,6 +21,7 @@ transaction {
 }
 `;
 
+
 const transactionId = await fcl.mutate({
   cadence: SIMPLE_TRANSACTION,
   proposer: fcl.currentUser,
@@ -28,16 +29,14 @@ const transactionId = await fcl.mutate({
   limit: 50,
 });
 
-const transaction = await fcl.tx(transactionId).onceSealed(); // The transactions status and events after being sealed
+// The transactions status and events after being sealed
+const transaction = await fcl.tx(transactionId).onceSealed();
 ```
 
 ### Step 2 - Authorizing a transaction
 
 ```javascript
 import * as fcl from "@blocto/fcl";
-
-// Authorizing a transaction
-import * as fcl from "@onflow/fcl";
 
 const transactionId = await fcl.mutate({
   cadence: `
@@ -60,4 +59,4 @@ const transaction = await fcl.tx(transactionId).onceSealed();
 console.log(transaction); // The transactions status and events after being sealed
 ```
 
-{% embed url="https://codesandbox.io/s/blocto-fcl-sign-dm4sc4?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/flow-sign-transaction-v2-lxgc0g" %}
