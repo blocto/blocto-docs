@@ -58,6 +58,10 @@ fcl
 
 For dApps that haven't applied for a dApp ID, we recommend you apply for a better user experience, or use '-' as an alternative.
 
+{% hint style="info" %}
+Visit [register-app-id.md](../../register-app-id.md "mention") to learn how to register App ID
+{% endhint %}
+
 If you have been using the back channel to communicate with FCL, follow the guide below:
 
 ```git
