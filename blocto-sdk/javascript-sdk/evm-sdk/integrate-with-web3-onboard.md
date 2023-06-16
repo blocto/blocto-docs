@@ -68,6 +68,7 @@ const onboard = Onboard({
     },
   ],
 });
+
 // connect wallet
 const connectWallet = async () => {
   await onboard.connectWallet();
@@ -98,6 +99,7 @@ const App = () => {
     </button>
   );
 };
+```
 
 Now you can easily use `Web3-Onboard` connect `BloctoWallet`
 
@@ -106,6 +108,6 @@ To see more configurations, please check out
 - [Web3-Onboard](https://onboard.blocknative.com/)
 
 
-### Code Sandbox Sample (React)
+### CodeSandbox Sample (React)
 
 {% embed url="https://codesandbox.io/s/evm-web3-onbard-4u055j" %}
