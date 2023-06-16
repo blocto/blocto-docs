@@ -53,7 +53,6 @@ import { ethers } from "ethers";
 Configure your desired chains and generate the required connectors.
 
 ```javascript
-const MAINNET_RPC_URL = "https://mainnet.infura.io/v3/<INFURA_KEY>";
 
 const blocto = bloctoModule();
 
@@ -61,10 +60,10 @@ const onboard = Onboard({
   wallets: [blocto],
   chains: [
     {
-      id: "0x1",
-      token: "ETH",
-      label: "Ethereum Mainnet",
-      rpcUrl: MAINNET_RPC_URL,
+      id: "0x13881",
+      token: "Polygon",
+      label: "Polygon testnet",
+      rpcUrl: "https://rpc-mumbai.maticvigil.com" // rpc
     },
   ],
 });
