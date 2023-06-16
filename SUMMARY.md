@@ -15,6 +15,7 @@
     * [Integrate with Web3-React](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3-react.md)
     * [Integrate with RainbowKit](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-rainbowkit.md)
     * [Integrate with Web3Modal](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3modal.md)
+    * [Integrate with Web3-Onboard](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3-onboard.md)
     * [Server Side Render](blocto-sdk/javascript-sdk/evm-sdk/server-side-render.md)
     * [Connect / Disconnect](blocto-sdk/javascript-sdk/evm-sdk/connect-disconnect.md)
     * [Sign Message and Verify](blocto-sdk/javascript-sdk/evm-sdk/sign-message.md)
