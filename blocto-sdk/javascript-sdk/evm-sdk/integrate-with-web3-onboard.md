@@ -223,6 +223,10 @@ const App = () => {
   );
 };
 ```
+
+To see more configurations, please check out
+- [Web3-Onboard React](https://onboard.blocknative.com/docs/modules/react)
+
 ### CodeSandbox Sample
 
 {% embed url="https://codesandbox.io/s/evm-web3-onbard-4u055j" %}
