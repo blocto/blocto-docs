@@ -147,7 +147,7 @@ async function debug() {
 
 According to ERC-191 and ERC-1271, when receiving `personalSign` request with `message`, Blocto will sign:
 
-> `0x19` + `0x0` + \[user’s wallet address] + hash(`0x19` + `0x45 (E)` + `thereum Signed Message:\n` + `len(message)` + `message`)
+> `0x19` + `0x0` + `[User’s wallet address]` + hash(`0x19` + `0x45 (E)` + `thereum Signed Message:\n` + `len(message)` + `message`)
 
 #### Migration Guide for dApps which Follow the Old Protocol [ERC-1654](https://github.com/ethereum/EIPs/issues/1654)
 
