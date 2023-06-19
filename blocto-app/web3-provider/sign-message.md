@@ -4,12 +4,12 @@ description: Sign and verify challenges for off-chain authentication
 
 # Sign Message
 
-For dApps relying on `signMessage` for off-chain authentication, Blocto follows [EIP-1654](https://github.com/ethereum/EIPs/issues/1654). To verify the signature, you need to call a method on the wallet contract to check if the signature came from a rightful owner of the wallet contract.
+For dApps relying on `signMessage` for off-chain authentication, Blocto follows [ERC-1271](https://eips.ethereum.org/EIPS/eip-1271) and [ERC-191](https://eips.ethereum.org/EIPS/eip-191). To verify the signature, you need to call a method on the wallet contract to check if the signature came from a rightful owner of the wallet contract.
 
-Dapper Labs has built the tools to carry out this verification:
+Blocto have built the tools to carry out this verification:
 
-* [Go implementation](https://github.com/dapperlabs/dappauth)
-* [JavaScript implementation](https://github.com/dapperlabs/dappauth.js)
+* [Go implementation](https://github.com/portto/dappauth)
+* [JavaScript implementation](https://github.com/portto/dappauth.js)
 
 Use it in your dApps:
 
@@ -23,7 +23,7 @@ import (
 	"net/http"
 
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/dapperlabs/dappauth"
+	"github.com/portto/dappauth"
 )
 
 // AuthenticationHandler ..
@@ -74,7 +74,7 @@ func main() {
 {% tab title="JavaScript" %}
 ```javascript
 const Web3 = require('web3');
-const DappAuth = require('@dapperlabs/dappauth');
+const DappAuth = require('@blocto/dappauth');
 
 const dappAuth = new DappAuth(new Web3.providers.HttpProvider('http://localhost:8545'));
 
@@ -100,3 +100,16 @@ async function debug() {
 {% endtab %}
 {% endtabs %}
 
+
+
+#### PersonalSign Technical Details
+
+According to ERC-191 and ERC-1271, when receiving `personalSign` request with `message`, Blocto will sign:
+
+> `0x19` + `0x0` + \[user’s wallet address] + hash(`0x19` + `0x45 (E)` + `thereum Signed Message:\n` + `len(message)` + `message`)
+
+
+
+#### Migration Guide for dApps which follow old protocol [ERC-1654](https://github.com/ethereum/EIPs/issues/1654)
+
+Please check [the doc](https://portto.notion.site/Off-Chain-Signature-Verification-personalSign-Migration-Guide-509bbea098084542902554c65c6133d8).
