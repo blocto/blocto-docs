@@ -109,3 +109,7 @@ bloctoSDK.ethereum.request({
   params: [{ chainId: 97 }],
 });
 ```
+
+### Sample Code
+
+{% embed url="https://codesandbox.io/s/evm-wallet-switchethereumchain-3r8sg5" %}
