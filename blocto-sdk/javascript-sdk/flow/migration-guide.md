@@ -50,13 +50,13 @@ import * as fcl from "@blocto/fcl";
 
 fcl
   .config()
-- .put("accessNode.api", "https://access-testnet.onflow.org")
-+ .put("accessNode.api", "https://rest-testnet.onflow.org")
-- .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
-+ .put("discovery.wallet",`https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID || "-"}/flow/authn`)
+- .put("accessNode.api", "https://access-mainnet.onflow.org")
++ .put("accessNode.api", "https://rest-mainnet.onflow.org")
+- .put("challenge.handshake", "https://flow-wallet.blocto.app/authn")
++ .put("discovery.wallet",`https://wallet-v2.blocto.app/${YOUR_DAPP_ID || "-"}/flow/authn`)
 ```
 
-For dApps that haven't applied for a dApp ID, we recommend you apply for a better user experience, or use '-' as an alternative.
+For dApps that haven't applied for a dApp ID, we recommend you apply for a better user experience, or use `-` as an alternative.
 
 {% hint style="info" %}
 Visit [register-app-id.md](../../register-app-id.md "mention") to learn how to register App ID
@@ -68,9 +68,9 @@ If you have been using the back channel to communicate with FCL, follow the guid
 import * as fcl from "@blocto/fcl";
 
 fcl.config()
-- .put("accessNode.api", "https://access-testnet.onflow.org")
-+ .put("accessNode.api", "https://rest-testnet.onflow.org")
-- .put("discovery.wallet", "https://flow-wallet-testnet.blocto.app/api/flow/authn")
+- .put("accessNode.api", "https://access-mainnet.onflow.org")
++ .put("accessNode.api", "https://rest-mainnet.onflow.org")
+- .put("discovery.wallet", "https://flow-wallet.blocto.app/api/flow/authn")
 + .put("discovery.wallet",`https://wallet-v2.blocto.app/api/flow/authn`)
 + .put("app.detail.id", YOUR_DAPP_ID)// this line is optional
   .put("discovery.wallet.method", "HTTP/POST")
