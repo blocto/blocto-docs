@@ -4,6 +4,8 @@ description: You can easily add Blocto wallet to RainbowKit
 
 # Integrate with RainbowKit
 
+RainbowKit provides a fast, easy and highly customizable way for developers to add a great wallet experience to their application. It handle the hard stuff so developers and teams can focus on building amazing products and communities for their users.
+
 {% hint style="warning" %}
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}

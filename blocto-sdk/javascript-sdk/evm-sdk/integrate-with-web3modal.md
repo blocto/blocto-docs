@@ -4,7 +4,7 @@ description: Use BloctoConnector to Integrate with Web3modal easily.
 
 # Integrate with Web3Modal
 
-If you are using `Web3Modal` for your project, we provide a `BloctoConnector` for you to Integrate with `Web3Modal` easily.
+Web3Modal is an elegantly simple yet powerful library that helps you manage your multi-chain wallet connection flows, all in one place. We provide a `BloctoConnector` for you to Integrate with `Web3Modal` easily.
 
 {% hint style="warning" %}
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.

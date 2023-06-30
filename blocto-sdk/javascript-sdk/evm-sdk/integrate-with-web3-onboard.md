@@ -4,11 +4,11 @@ description: You can easily add Blocto wallet to Web3-Onboard
 
 # Integrate with Web3-Onboard
 
+Web3-Onboard is an open-source, framework-agnostic JavaScript library to onboard users to web3 apps. Help your users transact with ease by enabling wallet connection, real-time transaction states, and more.
+
 {% hint style="warning" %}
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
-
-
 
 ## VanillaJS
 
@@ -18,27 +18,21 @@ Install from npm/yarn/pnpm
 
 {% tabs %}
 {% tab title="npm" %}
-
 ```bash
 npm i @web3-onboard/core @web3-onboard/blocto ethers
 ```
-
 {% endtab %}
 
 {% tab title="yarn" %}
-
 ```bash
 yarn add @web3-onboard/core @web3-onboard/blocto ethers
 ```
-
 {% endtab %}
 
 {% tab title="pnpm" %}
-
 ```bash
 pnpm add @web3-onboard/core @web3-onboard/blocto ethers
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -108,8 +102,7 @@ Now you can easily use `Web3-Onboard` connect `BloctoWallet`
 
 To see more configurations, please check out
 
-- [Web3-Onboard](https://onboard.blocknative.com/)
-
+* [Web3-Onboard](https://onboard.blocknative.com/)
 
 ### CodeSandbox Sample
 
@@ -123,27 +116,21 @@ Install from npm/yarn/pnpm
 
 {% tabs %}
 {% tab title="npm" %}
-
 ```bash
 npm i @web3-onboard/react @web3-onboard/blocto ethers
 ```
-
 {% endtab %}
 
 {% tab title="yarn" %}
-
 ```bash
 yarn add @web3-onboard/react @web3-onboard/blocto ethers
 ```
-
 {% endtab %}
 
 {% tab title="pnpm" %}
-
 ```bash
 pnpm add @web3-onboard/react @web3-onboard/blocto ethers
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -158,10 +145,10 @@ import bloctoModule from "@web3-onboard/blocto";
 import { ethers } from "ethers";
 ```
 
-
 ### Step 2 - Configure
 
 Configure your desired chains and generate the required connectors.
+
 ```javascript
 const polygonTestnet = {
   id: "0x13881",
@@ -183,7 +170,9 @@ const web3Onboard = init({
   }
 });
 ```
+
 ### Step 3 - Wrap providers
+
 Wrap your application with Web3OnboardProvider.
 
 ```javascript
@@ -192,7 +181,8 @@ Wrap your application with Web3OnboardProvider.
   </Web3OnboardProvider>
 ```
 
-### Step 4 - Inject provider  and ```connect wallet```
+### Step 4 - Inject provider and `connect wallet`
+
 ```javascript
   const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
 
@@ -225,7 +215,8 @@ const App = () => {
 ```
 
 To see more configurations, please check out
-- [Web3-Onboard React](https://onboard.blocknative.com/docs/modules/react)
+
+* [Web3-Onboard React](https://onboard.blocknative.com/docs/modules/react)
 
 ### CodeSandbox Sample
 
