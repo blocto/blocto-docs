@@ -2,13 +2,13 @@
 
 ## Latest Version
 
-* [Portto.Blocto.Core](https://github.com/portto/blocto-unity-sdk/releases/tag/protto.blocto.core.0.2.1)
-  * [For Aptos](https://github.com/portto/blocto-unity-sdk/releases/tag/protto.blocto.core.0.2.2)
-  * [For EVM base, Flow, Solana](https://github.com/portto/blocto-unity-sdk/releases/tag/protto.blocto.core.0.2.1)
-* [Portto.Blocto.Evm](https://github.com/portto/blocto-unity-sdk/releases/tag/portto.blocto.evm.0.1.0)
-* [Portto.Blocto.Solana](https://github.com/portto/blocto-unity-sdk/releases/tag/portto.blocto.solana.0.1.1)
-* [Portto.Blocto.Flow](https://github.com/portto/blocto-unity-sdk/releases/tag/protto.blocto.flow.0.2.5)
-* [Portto.Blocto.Aptos](https://github.com/portto/blocto-unity-sdk/releases/tag/protto.blocto.aptos.0.1.0)
+* [Portto.Blocto.Core](https://github.com/blocto/blocto-unity-sdk/releases/tag/protto.blocto.core.0.2.1)
+  * [For Aptos](https://github.com/blocto/blocto-unity-sdk/releases/tag/protto.blocto.core.0.2.2)
+  * [For EVM base, Flow, Solana](https://github.com/blocto/blocto-unity-sdk/releases/tag/protto.blocto.core.0.2.1)
+* [Portto.Blocto.Evm](https://github.com/blocto/blocto-unity-sdk/releases/tag/portto.blocto.evm.0.1.0)
+* [Portto.Blocto.Solana](https://github.com/blocto/blocto-unity-sdk/releases/tag/portto.blocto.solana.0.1.1)
+* [Portto.Blocto.Flow](https://github.com/blocto/blocto-unity-sdk/releases/tag/protto.blocto.flow.0.2.5)
+* [Portto.Blocto.Aptos](https://github.com/blocto/blocto-unity-sdk/releases/tag/protto.blocto.aptos.0.1.0)
 
 Blocto Unity SDK supports two flows depending on whether the Blocto app is installed or not.
 

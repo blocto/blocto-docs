@@ -4,7 +4,7 @@
 Note that Blocto iOS SDK for Flow is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
-We highly recommend using [FCL-Swift](https://github.com/portto/fcl-swift) to interact with Flow blockchain instead of using Blocto Flow SDK directly due to Flow blockchain's unique transaction flow for web. Blocto serves both native experience (has Blocto wallet app installed) and web experience (not install Blocto wallet app), so we handled that troublesome in [BloctoWalletProvider](https://github.com/portto/fcl-swift/blob/main/Sources/FCL-SDK/WalletProvider/BloctoWalletProvider.swift) for you. Blocto Flow SDK will be used inside [BloctoWalletProvider](https://github.com/portto/fcl-swift/blob/main/Sources/FCL-SDK/WalletProvider/BloctoWalletProvider.swift) from [FCL-Swift](https://github.com/portto/fcl-swift).
+We highly recommend using [FCL-Swift](https://github.com/blocto/fcl-swift) to interact with Flow blockchain instead of using Blocto Flow SDK directly due to Flow blockchain's unique transaction flow for web. Blocto serves both native experience (has Blocto wallet app installed) and web experience (not install Blocto wallet app), so we handled that troublesome in [BloctoWalletProvider](https://github.com/blocto/fcl-swift/blob/main/Sources/FCL-SDK/WalletProvider/BloctoWalletProvider.swift) for you. Blocto Flow SDK will be used inside [BloctoWalletProvider](https://github.com/blocto/fcl-swift/blob/main/Sources/FCL-SDK/WalletProvider/BloctoWalletProvider.swift) from [FCL-Swift](https://github.com/blocto/fcl-swift).
 
 ### What can I do with Blocto iOS Flow SDK?
 

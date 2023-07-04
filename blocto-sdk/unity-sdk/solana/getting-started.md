@@ -2,7 +2,7 @@
 
 In this guide we will show you prerequisite for Blocto Solana SDK.&#x20;
 
-A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https://github.com/portto/blocto-unity-sdk)
+A sample app is available at: [https://github.com/blocto/blocto-unity-sdk](https://github.com/blocto/blocto-unity-sdk)
 
 ## Requirements <a href="#requirements-a-hrefrequirements-idrequirementsa" id="requirements-a-hrefrequirements-idrequirementsa"></a>
 
@@ -12,7 +12,7 @@ A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https
 
 ## Release Page <a href="#release-page" id="release-page"></a>
 
-Portto.Blocto.Core and Portto.Blocto.Solana is available through [github](https://github.com/portto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/portto/blocto-unity-sdk/releases)
+Portto.Blocto.Core and Portto.Blocto.Solana is available through [github](https://github.com/blocto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/blocto/blocto-unity-sdk/releases)
 
 * [Portto.Blocto.Core](../prerequisite.md#latest-version)
 * [Portto.Blocto.Solana](../prerequisite.md#latest-version)

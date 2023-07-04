@@ -5,7 +5,7 @@ Note that Blocto unity SDK for Flow is still in **Beta**.\
 APIs are subject to breaking changes.
 {% endhint %}
 
-We highly recommend using [FCL-Unity](https://github.com/portto/blocto-unity-sdk/tree/main/Assets/Plugins/Flow) to interact with Flow blockchain instead of using Blocto Flow SDK directly due to Flow blockchain's unique transaction flow for web. Blocto serves both native experience (has Blocto wallet app installed) and web experience (not install Blocto wallet app), so we handled that troublesome in [BloctoWalletProvider](https://github.com/portto/blocto-unity-sdk/tree/main/Assets/Plugins/Blocto.Sdk/Flow) for you. Blocto Flow SDK will be used inside [BloctoWalletProvider](https://github.com/portto/blocto-unity-sdk/tree/main/Assets/Plugins/Blocto.Sdk/Flow) from [FCL-Unity](https://github.com/portto/blocto-unity-sdk/tree/main/Assets/Plugins/Flow).
+We highly recommend using [FCL-Unity](https://github.com/blocto/blocto-unity-sdk/tree/main/Assets/Plugins/Flow) to interact with Flow blockchain instead of using Blocto Flow SDK directly due to Flow blockchain's unique transaction flow for web. Blocto serves both native experience (has Blocto wallet app installed) and web experience (not install Blocto wallet app), so we handled that troublesome in [BloctoWalletProvider](https://github.com/blocto/blocto-unity-sdk/tree/main/Assets/Plugins/Blocto.Sdk/Flow) for you. Blocto Flow SDK will be used inside [BloctoWalletProvider](https://github.com/blocto/blocto-unity-sdk/tree/main/Assets/Plugins/Blocto.Sdk/Flow) from [FCL-Unity](https://github.com/blocto/blocto-unity-sdk/tree/main/Assets/Plugins/Flow).
 
 #### What can I do with Blocto unity flow SDK?
 

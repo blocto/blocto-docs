@@ -45,8 +45,8 @@ For dApps relying on `signMessage` for off-chain authentication, Blocto follows 
 
 We have built the tools to carry out this verification:
 
-* [Go implementation](https://github.com/portto/dappauth)
-* [JavaScript implementation](https://github.com/portto/dappauth.js)
+* [Go implementation](https://github.com/blocto/dappauth)
+* [JavaScript implementation](https://github.com/blocto/dappauth.js)
 
 Use it in your dApps (usually on backend):
 
@@ -64,7 +64,7 @@ import (
 	"net/http"
 
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/portto/dappauth"
+	"github.com/blocto/dappauth"
 )
 
 // AuthenticationHandler ..

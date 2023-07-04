@@ -6,7 +6,7 @@ description: Initialize FCL and add Blocto as a wallet provider
 
 In this guide we will show you prerequisite for Blocto Flow SDK.
 
-A sample app is available at: [https://github.com/portto/fcl-android/tree/main/fcl-sample](https://github.com/portto/fcl-android/tree/main/fcl-sample)
+A sample app is available at: [https://github.com/blocto/fcl-android/tree/main/fcl-sample](https://github.com/blocto/fcl-android/tree/main/fcl-sample)
 
 ### Installation
 

@@ -48,4 +48,4 @@ the amount of Blocto points to send
 
 ### Demo
 
-You can find the demo project here: [https://github.com/portto/reward-demo](https://github.com/portto/reward-demo)
+You can find the demo project here: [https://github.com/blocto/reward-demo](https://github.com/blocto/reward-demo)

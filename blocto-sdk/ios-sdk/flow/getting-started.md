@@ -6,7 +6,7 @@ description: Initialize FCL and add Blocto as a wallet provider
 
 In this guide we will show you prerequisite for Blocto Flow SDK.
 
-A sample app is available at: [https://github.com/portto/fcl-swift/tree/main/Demo/FCL\_Cocoa\_Demo](https://github.com/portto/fcl-swift/tree/main/Demo/FCL\_Cocoa\_Demo)
+A sample app is available at: [https://github.com/blocto/fcl-swift/tree/main/Demo/FCL\_Cocoa\_Demo](https://github.com/blocto/fcl-swift/tree/main/Demo/FCL\_Cocoa\_Demo)
 
 ## Installation
 
@@ -26,7 +26,7 @@ pod 'FCL-SDK', '~> 0.2.0'
 ### Swift Package Manager <a href="#swift-package-manager" id="swift-package-manager"></a>
 
 ```swift
-.package(url: "https://github.com/portto/fcl-swift", .upToNextMinor(from: "0.2.0"))
+.package(url: "https://github.com/blocto/fcl-swift", .upToNextMinor(from: "0.2.0"))
 ```
 
 Here's an example PackageDescription:
@@ -44,7 +44,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/portto/fcl-swift", .upToNextMinor(from: "0.2.0"))
+        .package(url: "https://github.com/blocto/fcl-swift", .upToNextMinor(from: "0.2.0"))
     ],
     targets: [
         .target(

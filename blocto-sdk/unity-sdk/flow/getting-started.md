@@ -7,7 +7,7 @@ coverY: 0
 
 In this guide we will show you prerequisite for Blocto Flow SDK.
 
-A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https://github.com/portto/blocto-unity-sdk)
+A sample app is available at: [https://github.com/blocto/blocto-unity-sdk](https://github.com/blocto/blocto-unity-sdk)
 
 ## Installation
 
@@ -19,9 +19,9 @@ A sample app is available at: [https://github.com/portto/blocto-unity-sdk](https
 
 ### Release Page
 
-FCL-Unity and Blocto-unity-SDK is available through [github](https://github.com/portto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/portto/blocto-unity-sdk/releases)
+FCL-Unity and Blocto-unity-SDK is available through [github](https://github.com/blocto/blocto-unity-sdk/releases). You can download at github [release page](https://github.com/blocto/blocto-unity-sdk/releases)
 
-* [FCL-Unity latest version](https://github.com/portto/blocto-unity-sdk/releases/tag/fcl-unity0.2.1)
+* [FCL-Unity latest version](https://github.com/blocto/blocto-unity-sdk/releases/tag/fcl-unity0.2.1)
 * [Portto.Blocto.Core](../prerequisite.md#latest-version)
 * [Portto.Blocto.Flow](../prerequisite.md#unity-build-setting)
 

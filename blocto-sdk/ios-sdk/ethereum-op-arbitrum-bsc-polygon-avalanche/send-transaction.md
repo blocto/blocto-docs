@@ -12,7 +12,7 @@ In order to send a transaction, the app must:
 * Have it be signed by the user's Blocto wallet.
 * Send it with Blocto custom JSON-RPC.
 
-For more information about the transaction on EVMBase, it is recommended to check out the [Ethereum Web3](https://github.com/portto/web3.swift) as well as [official Ethereum docs](https://ethereum.org/en/developers/docs/transactions/).
+For more information about the transaction on EVMBase, it is recommended to check out the [Ethereum Web3](https://github.com/blocto/web3.swift) as well as [official Ethereum docs](https://ethereum.org/en/developers/docs/transactions/).
 
 **Send Transaction**
 

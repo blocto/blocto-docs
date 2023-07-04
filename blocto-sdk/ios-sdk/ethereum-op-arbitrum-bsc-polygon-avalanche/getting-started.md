@@ -2,7 +2,7 @@
 
 In this guide we show how to use it.
 
-A sample application is available at: [https://github.com/portto/blocto-ios-sdk/tree/main/Example](https://github.com/portto/blocto-ios-sdk/tree/main/Example)
+A sample application is available at: [https://github.com/blocto/blocto-ios-sdk/tree/main/Example](https://github.com/blocto/blocto-ios-sdk/tree/main/Example)
 
 ## Installation
 

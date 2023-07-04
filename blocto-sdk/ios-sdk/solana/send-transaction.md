@@ -12,11 +12,11 @@ In order to send a transaction, the app must:
 * Have it be signed by the user's Blocto wallet.
 * Send it with Blocto custom JSON-RPC.
 
-For more information about the transactions on Solana, it is recommended to check out the [SolanaWeb3](https://github.com/portto/solana-web3.swift) as well as the [official Solana docs](https://docs.solana.com/developing/programming-model/transactions).
+For more information about the transactions on Solana, it is recommended to check out the [SolanaWeb3](https://github.com/blocto/solana-web3.swift) as well as the [official Solana docs](https://docs.solana.com/developing/programming-model/transactions).
 
 **Plain Transaction**
 
-For plain transactions (no dApp-side signing involved), you can just create transaction with [SolanaWeb3](https://github.com/portto/solana-web3.swift) and sign-and-send the transaction with `signAndSendTransaction` method.
+For plain transactions (no dApp-side signing involved), you can just create transaction with [SolanaWeb3](https://github.com/blocto/solana-web3.swift) and sign-and-send the transaction with `signAndSendTransaction` method.
 
 ```swift
 val userWalletAddress = "SOLANA_ADDRESS"
