@@ -38,9 +38,9 @@ In Blocto, contract wallet makes it possible for us to build our [mixed-custodia
 In any of the supported chains (Ethereum, Flow, Solana and Tron), there are three different roles on the contract wallets:
 
 1. **Device Key or Signer Key**\
-   The key stored on users device. In custodial mode, this key is also managed by Blocto backend service and gets distributed to users' local device when users logs in. In non-custodial mode, each device has its own device private key and is stored only on the device keychain or keystore.\\
+   The key stored on users device. In custodial mode, this key is also managed by Blocto backend service and gets distributed to users' local device when users logs in. In non-custodial mode, each device has its own device private key and is stored only on the device keychain or keystore.
 2. **Co-signer Key**\
-   \*\*\*\*The key managed by Blocto backend service. On EVM chains, this key is also used as the fee payer account for meta-transactions.\\
+   \*\*\*\*The key managed by Blocto backend service. On EVM chains, this key is also used as the fee payer account for meta-transactions.
 3. **Recovery Key**\
    \*\*\*\*The key used to reset account access. In custodial mode, this key is managed by Blocto backend service and is used when user sets up non-custodial mode or reset non-custodial mode. In non-custodial mode, the recovery key is generated from users' device and is encrypted with the recovery password set by the users. The encrypted recovery key is then sent to users' email for backup.
 
@@ -58,6 +58,6 @@ With contract wallet, Blocto can combine multiple transactions into a single tra
 1. Save gas fee
 2. Make multiple transactions atomic, so they either all succeed or all fail
 
-### Acknowledgement
+### Acknowledgment
 
 Blocto's EVM contract wallet was modified from [Dapper Wallet](https://github.com/dapperlabs/dapper-contracts).
