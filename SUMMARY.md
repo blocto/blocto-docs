@@ -86,15 +86,15 @@
     * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/flow/connect-to-blocto-wallet.md)
     * [Sign User Message](blocto-sdk/unity-sdk/flow/sign-user-message.md)
     * [Blockchain Interactions](blocto-sdk/unity-sdk/flow/blockchain-interactions.md)
-  * [Solana](blocto-sdk/unity-sdk/solana/README.md)
-    * [Getting Started](blocto-sdk/unity-sdk/solana/getting-started.md)
-    * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/solana/connect-to-blocto-wallet.md)
-    * [Send Transaction](blocto-sdk/unity-sdk/solana/send-transaction.md)
   * [Aptos](blocto-sdk/unity-sdk/aptos/README.md)
     * [Getting Started](blocto-sdk/unity-sdk/aptos-coming-soon/getting-started.md)
     * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/aptos-coming-soon/connect-to-blocto-wallet.md)
     * [Sign User Message](blocto-sdk/unity-sdk/aptos-coming-soon/sign-user-message.md)
     * [Send Transaction](blocto-sdk/unity-sdk/aptos-coming-soon/send-transaction.md)
+  * [Solana](blocto-sdk/unity-sdk/solana/README.md)
+    * [Getting Started](blocto-sdk/unity-sdk/solana/getting-started.md)
+    * [Connect to Blocto Wallet](blocto-sdk/unity-sdk/solana/connect-to-blocto-wallet.md)
+    * [Send Transaction](blocto-sdk/unity-sdk/solana/send-transaction.md)
 
 ## Blocto App
 
