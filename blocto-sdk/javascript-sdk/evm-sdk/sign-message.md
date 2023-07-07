@@ -36,7 +36,7 @@ const handleSignMessage = () => {
 
 {% embed url="https://codesandbox.io/s/blocto-sdk-evm-sign-c1c4mb?file=/src/App.js" %}
 
-#### Verify Signature
+### Verify Signature (personal.sign)
 
 For dApps relying on `signMessage` for off-chain authentication, Blocto follows [ERC-1271](https://eips.ethereum.org/EIPS/eip-1271) and [ERC-191](https://eips.ethereum.org/EIPS/eip-191). To verify the signature, you need to call a method on the wallet contract to check if the signature came from a rightful owner of the wallet contract.
 
@@ -141,15 +141,30 @@ async function debug() {
 {% endtab %}
 {% endtabs %}
 
+#### Demo
+
 {% embed url="https://codesandbox.io/s/evm-verify-the-signature-drjjnz?file=/src/App.js" %}
 
 #### PersonalSign Technical Details
 
 According to ERC-191 and ERC-1271, when receiving `personalSign` request with `message`, Blocto will sign:
 
-> `0x19` + `0x0` + `[User’s wallet address]` + hash(`0x19` + `0x45 (E)` + `thereum Signed Message:\n` + `len(message)` + `message`)
+> `0x19` + `0x0` + `[User’s wallet address]` + hash(`0x19` + `0x45 (E)` + `thereum Signed Message:` + `len(message)` + `message`)
+
+###
+
+### Verify Signature (typed data sign)
+
+According to ERC-191 and ERC-1271, when receiving `typeDataSign` request, Blocto will sign:
+
+> `0x19` + `0x0` + `[User’s wallet address]` + `[typed-data-hash]`
+
+#### Demo
+
+{% embed url="https://codesandbox.io/s/evm-verify-the-signature-of-typed-data-g53zjl?file=/src/App.js" %}
+
+
 
 #### Migration Guide for dApps which Follow the Old Protocol [ERC-1654](https://github.com/ethereum/EIPs/issues/1654)
 
 Please check [the doc](https://portto.notion.site/Off-Chain-Signature-Verification-personalSign-Migration-Guide-509bbea098084542902554c65c6133d8).
-
