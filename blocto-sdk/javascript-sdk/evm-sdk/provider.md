@@ -6,7 +6,7 @@ description: A thin JSON-RPC wrapper for interacting with chains and Blocto wall
 
 Blocto SDK comes with an [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md) compatible provider, you can use it to interact with EVM-compatible chains.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
@@ -51,7 +51,7 @@ const bloctoSDK = new BloctoSDK({
     ethereum: {
         // (required) chainId to be used
         chainId: '0x1', 
-        // (required for Ethereum) JSON RPC endpoint
+        // (required) JSON RPC endpoint
         rpc: 'https://mainnet.infura.io/v3/YOUR_INFURA_ID',
     },
     
@@ -62,7 +62,7 @@ const bloctoSDK = new BloctoSDK({
 
 #### Blocto SDK Parameters
 
-<table><thead><tr><th width="212">Parameter</th><th width="138">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td><code>ethereum.chainId</code></td><td>String (hex)</td><td><p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a></p></td><td><strong>Yes</strong></td></tr><tr><td><code>ethereum.rpc</code></td><td>String</td><td>JSON RPC endpoint</td><td><strong>Yes</strong> (only for Ethereum)</td></tr><tr><td><code>appId</code></td><td>String</td><td>Blocto dApp ID</td><td><strong>No</strong></td></tr></tbody></table>
+<table><thead><tr><th width="212">Parameter</th><th width="138">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td><code>ethereum.chainId</code></td><td>String (hex)<br>Number</td><td><p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a></p></td><td><strong>Yes</strong></td></tr><tr><td><code>ethereum.rpc</code></td><td>String</td><td>JSON RPC endpoint</td><td><strong>Yes</strong></td></tr><tr><td><code>appId</code></td><td>String</td><td>Blocto dApp ID</td><td><strong>No</strong></td></tr></tbody></table>
 
 #### Examples
 

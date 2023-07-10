@@ -22,6 +22,7 @@
     * [Switch Ethereum Chain](blocto-sdk/javascript-sdk/evm-sdk/switch-ethereum-chain.md)
     * [Batch Transaction](blocto-sdk/javascript-sdk/evm-sdk/batch-transaction.md)
     * [Server Side Render](blocto-sdk/javascript-sdk/evm-sdk/server-side-render.md)
+    * [Send ERC-4337 UserOperation](blocto-sdk/javascript-sdk/evm-sdk/send-erc-4337-useroperation.md)
   * [Flow](blocto-sdk/javascript-sdk/flow/README.md)
     * [Tutorial](blocto-sdk/javascript-sdk/flow/tutorial.md)
     * [Configure FCL](blocto-sdk/javascript-sdk/flow/configure-fcl.md)

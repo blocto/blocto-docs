@@ -83,22 +83,32 @@ See the `wallet_addEthereumChain`[#example](switch-ethereum-chain.md#example "me
 
 ### Batch Add Ethereum Chain
 
-If you wish to load all chain settings you want to switch, we provided  `ethereum.loadSwitchableNetwork` method to load multiple chain setting into Blocto SDK.&#x20;
+You can also add multiple params in `wallet_addEthereumChain` .
 
 #### Example
 
 ```javascript
 bloctoSDK.ethereum
-  .loadSwitchableNetwork([
-    {
-      chainId: 97, // BSC testnet
-      rpcUrls: ["https://..."],
-    },
-    {
-      chainId: 80001, // Polygon testnet
-      rpcUrls: ["https://..."],
-    },
-  ])
+  .request({
+    method: "wallet_addEthereumChain", // load all chains you want to switch
+    params: [
+      {
+        chainId: 97, // BSC testnet
+        rpcUrls: ["https://..."],
+      },
+      {
+        chainId: 80001, // Polygon testnet
+        rpcUrls: ["https://..."],
+      },
+    ],
+  })
+  .then(() => {
+    // you can switch to chain 97 now
+    bloctoSDK.ethereum.request({
+      method: "wallet_switchEthereumChain",
+      params: [{ chainId: 97 }],
+    });
+  });
 ```
 
 Then you can switch between BSC and polygon using `wallet_switchEthereumChain` method.&#x20;
