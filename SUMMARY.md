@@ -1,6 +1,7 @@
 # Table of contents
 
 * [📣 Introduction](README.md)
+* [Wallet Web UI v2 Upgrade](wallet-web-ui-v2-upgrade.md)
 * [Blocto Environment](blocto-environment.md)
 * [Give Feedback](give-feedback.md)
 
