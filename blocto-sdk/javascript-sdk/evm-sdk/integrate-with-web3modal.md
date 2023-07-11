@@ -17,24 +17,24 @@ Install from npm/yarn/pnpm
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm i @blocto/wagmi-connector
+npm i @blocto/wagmi-connector@^1.0.0
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @blocto/wagmi-connector
+yarn add @blocto/wagmi-connector@^1.0.0
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @blocto/wagmi-connector
+pnpm add @blocto/wagmi-connector@^1.0.0
 ```
 {% endtab %}
 {% endtabs %}
 
-### Step 1 - Configure `CreateClient` with `BloctoConnector`
+### Step 1 - Configure `CreateConfig` with `BloctoConnector`
 
 #### Arbitrum RPC demo
 
@@ -43,21 +43,19 @@ import { BloctoConnector } from '@blocto/wagmi-connector'
 
 // ...
 
-export const client = createClient({
+const wagmiConfig = createConfig({
   autoConnect: false,
   connectors: [new BloctoConnector({
-    chains: [mainnet, arbitrum ],
-    options: {
-      chainId: '0x66eed',
-      rpc: 'YOUR_ARBITRUM_RPCURL'
-    }
-  }),...w3mConnectors({
     chains,
-    projectId: walletConnectProjectId,
-    version: 1,
-  })],
-  // ...
-})
+    options: {
+      chainId: arbitrum.id,
+      rpc: 'REPLACE_WITH_YOUR_ARB_RPC',
+    }
+  }), ...w3mConnectors({ version: 1, chains, projectId })],
+  publicClient,
+});
+
+// ...
 ```
 
 #### `BloctoConnector` parameters
@@ -75,17 +73,24 @@ import { BloctoWeb3ModalConfig } from '@blocto/wagmi-connector'
 
 // ...
 
-function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
+  // ...
+
   return (
-    <WagmiConfig client={client}>
-      <Component {...pageProps} />
+    <>
+      {ready ? (
+        <WagmiConfig config={wagmiConfig}>
+          <Component {...pageProps} />
+        </WagmiConfig>
+      ) : null}
+
       <Web3Modal
         { ...BloctoWeb3ModalConfig }
-        projectId={walletConnectProjectId}
+        projectId={projectId}
         ethereumClient={ethereumClient}
       />
-    </WagmiConfig>
-  )
+    </>
+  );
 }
 ```
 
