@@ -1,7 +1,7 @@
 # Table of contents
 
 * [📣 Introduction](README.md)
-* [Wallet Web UI v2 Upgrade](wallet-web-ui-v2-upgrade.md)
+* [Web Wallet v1 Sunset Notice and Migration Guide](web-wallet-v1-sunset-notice-and-migration-guide.md)
 * [Blocto Environment](blocto-environment.md)
 * [Give Feedback](give-feedback.md)
 
