@@ -4,9 +4,9 @@ description: Please upgrade your Blocto SDK / FCL URL ASAP
 
 # Wallet Web UI v2 Upgrade
 
-We will sunset Blocto Wallet Web v.1 on **October 2nd**, 2023. After this date, Blocto users will _no longer have access_ to dApps that have installed Wallet Web v.1 SDK. This means dApps have to upgrade the SDK version to continue providing services with Blocto Wallet. This decision is driven by our commitment to improving user experience and security. By migrating to v.2, Blocto users will enjoy an enhanced and safer experience.
+To enhance user experience and safety, we will sunset Blocto Wallet Web v.1 on October 2nd, 2023. After this date, users will _no longer have access_ to Blocto Wallet on dApps which use Wallet Web v.1 SDK. To continue providing services with Blocto Wallet, dApps need to upgrade to v.2 SDK.
 
-To continue using Blocto Wallet and benefit from our new features (such as social login), please upgrade your Blocto SDK or update the FCL URL using the following guide. The upgrade can be normally done in **15 minutes**.
+By migrating to v.2, Blocto users will enjoy an enhanced and safer experience, including new features like social login. To continue using Blocto Wallet and benefit from these features, please upgrade your Blocto SDK or update the FCL URL using the following guide. The upgrade process takes approximately 15 minutes.&#x20;
 
 
 
