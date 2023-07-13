@@ -16,10 +16,10 @@ description: Flow networks that Blocto supports
 ```javascript
 import * as fcl from "@blocto/fcl"
 
-fcl
-  .config()
-  .put("accessNode.api", "https://rest-mainnet.onflow.org")// connect to Flow mainnet
-  .put("discovery.wallet", `https://wallet-v2.blocto.app/${YOUR_DAPP_ID}/flow/authn`)// use Blocto wallet
+fcl.config({
+  "accessNode.api": "https://rest-mainnet.onflow.org", // connect to Flow mainnet
+  "discovery.wallet": `https://wallet-v2.blocto.app/${YOUR_DAPP_ID}/flow/authn` // use Blocto mainnet wallet
+});
 ```
 
 #### Back Channel
@@ -27,12 +27,12 @@ fcl
 ```javascript
 import * as fcl from "@blocto/fcl";
 
-fcl
-  .config()
-  .put("accessNode.api", "https://rest-mainnet.onflow.org")// connect to Flow mainnet
-  .put("discovery.wallet","https://wallet-v2.blocto.app/api/flow/authn")// use Blocto wallet
-  .put("discovery.wallet.method", "HTTP/POST")
-  .put("app.detail.id", YOUR_DAPP_ID)// this line is optional
+fcl.config({
+  "accessNode.api": "https://rest-mainnet.onflow.org", // connect to Flow mainnet
+  "discovery.wallet": "https://wallet-v2.blocto.app/api/flow/authn", // use Blocto mainnet wallet
+  "discovery.wallet.method": "HTTP/POST",
+  "app.detail.id": "YOUR_DAPP_ID"
+});
 ```
 
 ### Testnet
@@ -47,10 +47,10 @@ fcl
 ```javascript
 import * as fcl from "@blocto/fcl"
 
-fcl
-  .config()
-  .put("accessNode.api", "https://rest-testnet.onflow.org")// connect to Flow testnet
-  .put("discovery.wallet", `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn`)// use Blocto testnet wallet
+fcl.config({
+  "accessNode.api": "https://rest-testnet.onflow.org", // connect to Flow testnet
+  "discovery.wallet": `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn` // use Blocto testnet wallet
+});
 ```
 
 #### Back Channel
@@ -58,10 +58,10 @@ fcl
 ```javascript
 import * as fcl from "@blocto/fcl";
 
-fcl
-  .config()
-  .put("accessNode.api", "https://rest-testnet.onflow.org")// connect to Flow testnet
-  .put("discovery.wallet","https://wallet-v2-dev.blocto.app/api/flow/authn")// use Blocto testnet wallet
-  .put("discovery.wallet.method", "HTTP/POST")
-  .put("app.detail.id", YOUR_DAPP_ID)// this line is optional
+fcl.config({
+  "accessNode.api": "https://rest-testnet.onflow.org", // connect to Flow testnet
+  "discovery.wallet": "https://wallet-v2-dev.blocto.app/api/flow/authn", // use Blocto testnet wallet
+  "discovery.wallet.method": "HTTP/POST",
+  "app.detail.id": "YOUR_DAPP_ID"
+});
 ```

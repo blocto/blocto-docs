@@ -9,15 +9,10 @@ description: Connect to Blocto wallet through Flow Client Library (FCL)
 ```javascript
 import * as fcl from "@blocto/fcl";
 
-fcl
-  .config()
-  // connect to Flow testnet
-  .put("accessNode.api", "https://rest-testnet.onflow.org")
-  // use Blocto testnet wallet
-  .put(
-    "discovery.wallet",
-    `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn`
-  )
+fcl.config({
+  "accessNode.api": "https://rest-testnet.onflow.org", // connect to Flow testnet
+  "discovery.wallet": `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn` // use Blocto testnet wallet
+});
 ```
 
 Alternatively, if you already have user's email and would like to pre-fill it for user's Blocto account, you can use the custom `discovery.wallet` URL instead:
@@ -27,16 +22,10 @@ import * as fcl from "@blocto/fcl";
 
 const USER_EMAIL = "client@email.com";
 
-fcl
-  .config()
-  // connect to Flow testnet
-  .put("accessNode.api", "https://rest-testnet.onflow.org")
-  // use Blocto testnet wallet
-  .put(
-    "discovery.wallet",
-    `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn/${USER_EMAIL}`
-  )
-
+fcl.config({
+  "accessNode.api": "https://rest-testnet.onflow.org", // connect to Flow testnet
+  "discovery.wallet": `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn/${USER_EMAIL}` // use Blocto testnet wallet
+});
 ```
 
 ### Step 2 - Authenticate

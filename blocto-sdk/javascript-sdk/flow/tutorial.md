@@ -123,8 +123,9 @@ import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
-fcl.config()
-  .put("accessNode.api", "https://rest-testnet.onflow.org") // connect to Flow testnet
+fcl.config({
+  "accessNode.api": "https://rest-testnet.onflow.org" // connect to Flow testnet
+});
 
 ReactDOM.render(
   <React.StrictMode>
@@ -238,9 +239,10 @@ import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
-fcl.config()
-  .put("accessNode.api", "https://rest-testnet.onflow.org") // connect to Flow testnet
-  .put("discovery.wallet", `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn`) // use Blocto testnet wallet
+fcl.config({
+  "accessNode.api": "https://rest-testnet.onflow.org", // connect to Flow testnet
+  "discovery.wallet": `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn` // use Blocto testnet wallet
+});
 
 ReactDOM.render(
   <React.StrictMode>
