@@ -44,17 +44,14 @@ npm install @blocto/fcl@^1.4.0
 
 Replace the value of `accessNode.api` and configuration keys:
 
-```git
-import * as fcl from "@blocto/fcl";
-
-
-fcl
-  .config()
-- .put("accessNode.api", "https://access-mainnet.onflow.org")
-+ .put("accessNode.api", "https://rest-mainnet.onflow.org")
-- .put("challenge.handshake", "https://flow-wallet.blocto.app/authn")
-+ .put("discovery.wallet",`https://wallet-v2.blocto.app/${YOUR_DAPP_ID || "-"}/flow/authn`)
-```
+<pre class="language-javascript"><code class="lang-javascript">import * as fcl from "@blocto/fcl";
+<strong>
+</strong><strong>fcl
+</strong><strong>  .config({
+</strong>    "accessNode.api": "https://rest-mainnet.onflow.org",
+    "discovery.wallet": `https://wallet-v2.blocto.app/${YOUR_DAPP_ID || "-"}/flow/authn`
+  })
+</code></pre>
 
 For dApps that haven't applied for a dApp ID, we recommend you apply for a better user experience, or use `-` as an alternative.
 
@@ -64,16 +61,16 @@ Visit [register-app-id.md](../../register-app-id.md "mention") to learn how to r
 
 If you have been using the back channel to communicate with FCL, follow the guide below:
 
-```git
+```javascript
 import * as fcl from "@blocto/fcl";
 
-fcl.config()
-- .put("accessNode.api", "https://access-mainnet.onflow.org")
-+ .put("accessNode.api", "https://rest-mainnet.onflow.org")
-- .put("discovery.wallet", "https://flow-wallet.blocto.app/api/flow/authn")
-+ .put("discovery.wallet",`https://wallet-v2.blocto.app/api/flow/authn`)
-+ .put("app.detail.id", YOUR_DAPP_ID)// this line is optional
-  .put("discovery.wallet.method", "HTTP/POST")
+fcl
+  .config({
+    "accessNode.api": "https://rest-mainnet.onflow.org",
+    "discovery.wallet": "https://wallet-v2.blocto.app/api/flow/authn",
+    "app.detail.id": "YOUR_DAPP_ID"// this line is optional
+    "discovery.wallet.method": "HTTP/POST"
+  })
 ```
 
 For dApps that haven't applied for a dApp ID, there is no need to set the `app.detail.id` key.
