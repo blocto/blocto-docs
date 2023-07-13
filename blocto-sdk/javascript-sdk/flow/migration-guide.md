@@ -44,14 +44,15 @@ npm install @blocto/fcl@^1.4.0
 
 Replace the value of `accessNode.api` and configuration keys:
 
-<pre class="language-javascript"><code class="lang-javascript">import * as fcl from "@blocto/fcl";
-<strong>
-</strong><strong>fcl
-</strong><strong>  .config({
-</strong>    "accessNode.api": "https://rest-mainnet.onflow.org",
+```javascript
+import * as fcl from "@blocto/fcl";
+
+fcl
+  .config({
+    "accessNode.api": "https://rest-mainnet.onflow.org",
     "discovery.wallet": `https://wallet-v2.blocto.app/${YOUR_DAPP_ID || "-"}/flow/authn`
   })
-</code></pre>
+```
 
 For dApps that haven't applied for a dApp ID, we recommend you apply for a better user experience, or use `-` as an alternative.
 
