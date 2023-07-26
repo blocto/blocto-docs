@@ -23,13 +23,13 @@ npm i @blocto/wagmi-connector@^1.1.0
 
 {% tab title="yarn" %}
 ```bash
-yarn add @blocto/wagmi-connector@^1.0.0
+yarn add @blocto/wagmi-connector@^1.1.0
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @blocto/wagmi-connector@^1.0.0
+pnpm add @blocto/wagmi-connector@^1.1.0
 ```
 {% endtab %}
 {% endtabs %}
