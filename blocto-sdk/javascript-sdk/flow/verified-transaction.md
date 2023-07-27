@@ -4,8 +4,8 @@ If you would like to show the verified badge on Blocto wallet, please send the P
 
 #### UI Example
 
-| Not Verified                                                                | Verified                                                                |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/Screenshot 2023-07-27 at 4.02.46 PM.png>)     | ![](<../../../.gitbook/assets/Screenshot 2023-07-27 at 4.02.20 PM.png>) |
-| ![](<../../../.gitbook/assets/Screenshot 2023-07-27 at 3.23.40 PM (1).png>) | ![](<../../../.gitbook/assets/Screenshot 2023-07-27 at 3.59.31 PM.png>) |
+| Not Verified                                                   | Verified                                               |
+| -------------------------------------------------------------- | ------------------------------------------------------ |
+| ![](<../../../.gitbook/assets/tx\_unverified (1).png>)         | ![](../../../.gitbook/assets/tx\_verified.png)         |
+| ![](<../../../.gitbook/assets/tx\_detail\_unverified (1).png>) | ![](../../../.gitbook/assets/tx\_detail\_verified.png) |
 
