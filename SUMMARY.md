@@ -31,6 +31,7 @@
     * [Send Transaction](blocto-sdk/javascript-sdk/flow/authorization.md)
     * [Account Proof](blocto-sdk/javascript-sdk/flow/account-proof.md)
     * [Flow Networks](blocto-sdk/javascript-sdk/flow/flow-networks.md)
+    * [Verified Transaction](blocto-sdk/javascript-sdk/flow/verified-transaction.md)
     * [Migration Guide](blocto-sdk/javascript-sdk/flow/migration-guide.md)
   * [Aptos](blocto-sdk/javascript-sdk/aptos/README.md)
     * [Provider](blocto-sdk/javascript-sdk/aptos/provider.md)
