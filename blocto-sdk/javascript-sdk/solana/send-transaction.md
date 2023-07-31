@@ -88,4 +88,6 @@ const txHash = await bloctoSDK.solana.request({
 {% endtab %}
 {% endtabs %}
 
-{% embed url="https://codesandbox.io/s/sol-send-token-dgy4jf?file=/src/App.js" %}
+### Sample Code
+
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-solana-blocto-send-transaction" %}

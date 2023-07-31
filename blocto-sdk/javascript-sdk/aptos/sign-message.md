@@ -59,6 +59,6 @@ for (let i = 0; i < signature.length; i++) {
 }
 ```
 
-#### Demo
+## Sample Code
 
-{% embed url="https://codesandbox.io/embed/aptos-sign-message-and-verify-321x74?fontsize=14&hidenavigation=1&theme=dark" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-aptos-blocto-sign" %}

@@ -61,4 +61,6 @@ const getContract = async () => {
 };
 ```
 
-{% embed url="https://codesandbox.io/s/blocto-sdk-sol-get-contract-4glqvn?file=/src/App.js" %}
+### Sample Code
+
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-solana-blocto-get-contract" %}

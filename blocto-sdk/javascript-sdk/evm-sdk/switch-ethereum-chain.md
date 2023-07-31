@@ -122,4 +122,4 @@ bloctoSDK.ethereum.request({
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/s/evm-wallet-switchethereumchain-3r8sg5" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-blocto-switch-chain" %}

@@ -93,6 +93,6 @@ export default function App({ Component, pageProps }) {
 }
 ```
 
-### Code Sandbox Sample
+### Sample Code
 
 {% embed url="https://codesandbox.io/s/blocto-web3modal-integrate-sczssb" %}

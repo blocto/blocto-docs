@@ -260,4 +260,4 @@ const result = await bloctoSDK.ethereum
 
 ## Sample Code
 
-{% embed url="https://codesandbox.io/s/evm-send-useroperation-zfm4vw?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-blocto-send-useroperation" %}

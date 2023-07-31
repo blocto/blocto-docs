@@ -32,6 +32,6 @@ Check out step-by-step guide [here](https://docs.dynamic.xyz/docs/integrating-wi
 
 
 
-### CodeSandbox Sample
+## Sample Code
 
-{% embed url="https://codesandbox.io/embed/evm-dynamic-integration-xgl8mf" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-dynamic" %}

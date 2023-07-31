@@ -159,9 +159,9 @@ According to ERC-191 and ERC-1271, when receiving `typeDataSign` request, Blocto
 
 > `0x19` + `0x0` + `[User’s wallet address]` + `[typed-data-hash]`
 
-#### Demo
+#### Sample Code
 
-{% embed url="https://codesandbox.io/s/evm-verify-the-signature-of-typed-data-g53zjl?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-blocto-sign" %}
 
 
 

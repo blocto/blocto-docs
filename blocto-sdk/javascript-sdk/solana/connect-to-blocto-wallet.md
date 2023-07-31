@@ -29,4 +29,6 @@ const disconnectWallet = async () {
 }
 ```
 
-{% embed url="https://codesandbox.io/s/sol-login-wgc4b6?file=/src/App.js" %}
+### Sample Code
+
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-solana-blocto-connect" %}

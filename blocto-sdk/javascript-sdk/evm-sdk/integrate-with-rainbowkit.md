@@ -131,10 +131,10 @@ To see more configurations, please check out
 * [Rainbowkit Custom Authentication](https://www.rainbowkit.com/docs/custom-authentication)
 * [Wagmi](https://wagmi.sh/react/getting-started)
 
-### CodeSandbox Sample
+## Sample Code
 
-{% embed url="https://codesandbox.io/s/evm-rainbowkit-dncj9j" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-rainbowkit" %}
 
-### CodeSandbox Sample - Custom Authentication
+## Sample Code - Custom Authentication
 
-{% embed url="https://codesandbox.io/s/evm-rainbowkit-custom-authentication-8l6w65" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-rainbowkit-custom-authentication" %}

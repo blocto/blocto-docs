@@ -85,8 +85,8 @@ const txHash = await bloctoSDK.ethereum.request({
 console.log(txHash) // ex: 0x12a45b...
 ```
 
-#### Sample
+## Sample Code
 
-{% embed url="https://codesandbox.io/s/evm-batch-transaction-45g0c3?file=/package.json" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-blocto-batch-transaction" %}
 
 For more information about batch transactions, check out [web3.js documentation](https://web3js.readthedocs.io/en/v1.2.0/web3-eth.html#batchrequest).

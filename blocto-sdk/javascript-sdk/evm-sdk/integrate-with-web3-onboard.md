@@ -104,9 +104,9 @@ To see more configurations, please check out
 
 * [Web3-Onboard](https://onboard.blocknative.com/)
 
-### CodeSandbox Sample
+### Sample Code 
 
-{% embed url="https://codesandbox.io/s/evm-web3-onboard-vanillajs-d6wndx" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-web3onboard-vanilla" %}
 
 ## React.js
 
@@ -218,6 +218,6 @@ To see more configurations, please check out
 
 * [Web3-Onboard React](https://onboard.blocknative.com/docs/modules/react)
 
-### CodeSandbox Sample
+### Sample Code
 
-{% embed url="https://codesandbox.io/s/evm-web3-onbard-4u055j" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-web3onboard" %}
