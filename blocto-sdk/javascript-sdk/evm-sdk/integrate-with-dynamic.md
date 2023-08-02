@@ -28,9 +28,7 @@ pnpm add @dynamic-labs/sdk-react
 {% endtab %}
 {% endtabs %}
 
-Check out step-by-step guide [here](https://docs.dynamic.xyz/docs/integrating-with-dynamic-blocto).
-
-
+Check out step-by-step guide [here](https://docs.dynamic.xyz/wallets/embedded-wallets/key-management/blocto).
 
 ## Sample Code
 
