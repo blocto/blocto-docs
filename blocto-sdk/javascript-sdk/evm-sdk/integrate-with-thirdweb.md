@@ -96,7 +96,7 @@ export default Home;
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/p/sandbox/with-evm-thirdweb-next-8zfkjt" %}
+{% embed url="https://codesandbox.io/p/sandbox/with-evm-thirdweb-next-8zfkjt?embed=1&file=/pages/_app.tsx:1,1" %}
 
 ### Resources
 
