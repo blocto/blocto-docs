@@ -118,7 +118,7 @@
   * [Send API](blocto-app/push-notification/send-api.md)
 * [Rewards](blocto-app/sending-rewards.md)
 * [Token Listing](blocto-app/token-listing.md)
-* [NFT Listing (on Flow)](blocto-app/token-listing-1.md)
+* [NFT Listing (on Flow) / Coming Soon](blocto-app/token-listing-1.md)
 
 ## Technical Documents
 
