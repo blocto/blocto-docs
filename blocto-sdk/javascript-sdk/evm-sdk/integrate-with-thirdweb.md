@@ -96,6 +96,7 @@ export default Home;
 
 ### Sample Code
 
+<iframe style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" src="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk/tree/feat%2Fadd-web3modal-next-demo/examples/with-evm-thirdweb-next?file=%2Fpages%2F_app.tsx%3A18%2C6&embed=1&view=preview" allowfullscreen></iframe>
 
 
 ### Resources
