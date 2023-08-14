@@ -10,6 +10,10 @@ RainbowKit provides a fast, easy and highly customizable way for developers to a
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
+{% hint style="warning" %}
+If you wish to use autoconnect, ensure that your version of @blocto/rainbowkit-connector is 0.2.4 or higher.
+{% endhint %}
+
 ### Installation
 
 Install from npm/yarn/pnpm
