@@ -148,6 +148,6 @@ After connected with Blocto wallet, you can start to send JSON-RPC request with 
 // sign a message
 bloctoSDK.ethereum.request({
   method: 'eth_sign', 
-  params: ["0xyourethaddress", "0x48656c6c6f20776f726c64"
-]})
+  params: ["0xyourethaddress", "0x48656c6c6f20776f726c64"]
+})
 ```
