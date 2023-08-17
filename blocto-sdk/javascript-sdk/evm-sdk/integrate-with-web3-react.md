@@ -34,17 +34,29 @@ pnpm add @blocto/web3-react-connector
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+Note: `@blocto/web3-react-connector ^v1.0.0` is now support with `@web3-react` v8.
+{% endhint %}
+
 ### Usage
 
 #### Import and initiate web3-react-connector
 
-```javascript
+```typescript
 import { BloctoConnector } from '@blocto/web3-react-connector'
+import { initializeConnector } from '@web3-react/core'
+import { URLS } from '../chains'
 
-const connector = new BloctoConnector({
-  chainId: NETWORK_CHAIN_ID,
-  rpc: NETWORK_URL
-})
+export const [bloctoSDK, hooks] = initializeConnector<BloctoConnector>(
+  (actions) =>
+    new BloctoConnector({
+      actions,
+      options: {
+        chainId: 1,
+        rpc: <YOUR_RPC_URL>,
+      },
+    })
+)
 ```
 
 #### Blocto Connector parameters
@@ -54,40 +66,40 @@ const connector = new BloctoConnector({
 | `chainId` | Number | <p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a></p> | **Yes**  |
 | `rpc`     | String | JSON RPC endpoint                                                                                      | **Yes**  |
 
-#### Parameters Example
+#### Options Example
 
 {% tabs %}
 {% tab title="Ethereum Mainnet" %}
 ```javascript
-const connector = new BloctoConnector({
-    chainId: 1,
-    rpc: 'https://mainnet.infura.io/v3/YOUR_INFURA_ID',
-});
+{
+   chainId: 1,
+   rpc: 'https://mainnet.infura.io/v3/YOUR_INFURA_ID',
+}
 ```
 {% endtab %}
 
 {% tab title="Ethereum Testnet (Goerli)" %}
 ```javascript
-const connector = new BloctoConnector({
+{
     chainId: 5,
     rpc: 'https://rpc.ankr.com/eth_goerli',
-});
+}
 ```
 {% endtab %}
 
 {% tab title="BSC Mainnet" %}
 ```javascript
-const connector = new BloctoConnector({
+{
     chainId: 56,
-});
+}
 ```
 {% endtab %}
 
 {% tab title="BSC Testnet (Chapel)" %}
 ```javascript
-const connector = new BloctoConnector({
+{
     chainId: 97,
-});
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -112,36 +124,40 @@ const connector = new BloctoConnector({
 After connector is ready, now you can activate it using `useWeb3React` hook provided by `web3-react` . Now your code might look like:
 
 ```jsx
-import React from 'react'
-import { Web3ReactProvider } from '@web3-react/core'
-import { Web3Provider } from '@ethersproject/providers'
-import { useWeb3React } from '@web3-react/core'
+import { useState } from 'react'
 import { BloctoConnector } from '@blocto/web3-react-connector'
+import { initializeConnector } from '@web3-react/core'
 
-export const connector = new BloctoConnector({
-  chainId: NETWORK_CHAIN_ID,
-  rpc: NETWORK_URL
-})
-
-function getLibrary(provider: any): Web3Provider {
-  // this will vary according to whether you use e.g. ethers or web3.js
-  const library = new Web3Provider(provider)
-  library.pollingInterval = 12000
-  return library
-}
+export const [bloctoSDK, hooks] = initializeConnector<BloctoConnector>(
+  (actions) =>
+    new BloctoConnector({
+      actions,
+      options: {
+        chainId: 1,
+        rpc: <YOUR_RPC_URL>,
+      },
+    })
+)
 
 export const Wallet = () => {
-  const { chainId, account, activate, active } = useWeb3React<Web3Provider>()
+  const chainId = useChainId()
+  const accounts = useAccounts()
+  const isActivating = useIsActivating()
+  const isActive = useIsActive()
+  const [error, setError] = useState(undefined)
 
   const onClick = () => {
-    activate(connector)
+    bloctoSDK
+      .activate(connector)
+      .then(() => setError(undefined))
+      .catch(setError)
   }
 
   return (
     <div>
       <div>ChainId: {chainId}</div>
-      <div>Account: {account}</div>
-      {active ? (
+      <div>Account: {accounts[0]}</div>
+      {isActive ? (
         <div>✅</div>
       ) : (
         <button type="button" onClick={onClick}>
@@ -153,15 +169,11 @@ export const Wallet = () => {
 }
 
 export const App = () => {
-  return (
-    <Web3ReactProvider getLibrary={getLibrary}>
-      <Wallet />
-    </Web3ReactProvider>
-  )
+  return (<Wallet />)
 }
 ```
 
-`web3-react` uses [Context](https://reactjs.org/docs/context.html) to efficiently store this data, and inject it wherever you need it in your application. For more information using `web3-react`, please check out
+For more information using `web3-react`, please check out:
 
 * [Web3-React](https://github.com/NoahZinsmeister/web3-react)
 * [Web3-React Documentation](https://github.com/NoahZinsmeister/web3-react/tree/v6/docs)
