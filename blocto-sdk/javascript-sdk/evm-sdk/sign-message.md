@@ -38,10 +38,7 @@ const handleSignMessage = () => {
 
 ### Verify Signature (personal.sign)
 
-For dApps relying on `signMessage` for off-chain authentication, Blocto follows [ERC-1271](https://eips.ethereum.org/EIPS/eip-1271) and [ERC-191](https://eips.ethereum.org/EIPS/eip-191). To verify the signature, you need to call a method on the wallet contract to check if the signature came from a rightful owner of the wallet contract.
-
-* For single-sig wallet like MetaMask, there is only one signature returned and it's 65 bytes, e.g., `0xca5955c4098c061254ee83deda2b50ad9209beb3af41ca405578409646134bfb2963866d6d4a814e669e028c178e87c77a1aff1b39f5bac4eb84d90740e6b8511c`
-* For multi-sig wallet like Blocto, there are two signatures returned and their combined size is 130 bytes, e.g., `0x0cf4603f53d0cdb797cd355d94b2d9473c5d67f93fafd99336d7525c8b6a2c262d8369949e98208433051f6386afa75d3071401a332a024fcfa418bcb9f0c6201b1bc91252375039bbd94e50c1f9caf7bf6e31dc6fadf3371592df73aeb2f4637f686ce3fc4d77c55749e9cd623eba126ea5632046d88c4286957d4d622168dda11c` from smart contract account [0xAD75944Fb47Db43dE12867eC9B48C40FEdF4d8E8](https://etherscan.io/address/0xAD75944Fb47Db43dE12867eC9B48C40FEdF4d8E8#code).
+For dApps relying on `signMessage` for off-chain authentication, Blocto follows [ERC-1271](https://eips.ethereum.org/EIPS/eip-1271) and [ERC-191](https://eips.ethereum.org/EIPS/eip-191). To verify the signature, you need to call a `isValidSignature` method on the wallet contract to check if the signature came from a rightful owner of the wallet contract.
 
 We have built the tools to carry out this verification:
 
@@ -162,9 +159,3 @@ According to ERC-191 and ERC-1271, when receiving `typeDataSign` request, Blocto
 #### Sample Code
 
 {% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-blocto-sign" %}
-
-
-
-#### Migration Guide for dApps which Follow the Old Protocol [ERC-1654](https://github.com/ethereum/EIPs/issues/1654)
-
-Please check [the doc](https://portto.notion.site/Off-Chain-Signature-Verification-personalSign-Migration-Guide-509bbea098084542902554c65c6133d8).
