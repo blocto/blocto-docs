@@ -38,7 +38,7 @@ const handleSignMessage = () => {
 
 ### Verify Signature (personal.sign)
 
-For dApps relying on `signMessage` for off-chain authentication, Blocto follows [ERC-1271](https://eips.ethereum.org/EIPS/eip-1271) and [ERC-191](https://eips.ethereum.org/EIPS/eip-191). To verify the signature, you need to call a `isValidSignature` method on the wallet contract to check if the signature came from a rightful owner of the wallet contract.
+For dApps relying on `signMessage` for off-chain authentication, Blocto follows [ERC-1271](https://eips.ethereum.org/EIPS/eip-1271) and [ERC-191](https://eips.ethereum.org/EIPS/eip-191). To verify the signature, you need to call an `isValidSignature` method on the wallet contract to check if the signature came from the rightful owner of the wallet contract.
 
 We have built the tools to carry out this verification:
 
