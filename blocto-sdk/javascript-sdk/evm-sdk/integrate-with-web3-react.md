@@ -35,7 +35,7 @@ pnpm add @blocto/web3-react-connector
 {% endtabs %}
 
 {% hint style="info" %}
-Note: `@blocto/web3-react-connector ^v1.0.0` is now support with `@web3-react` v8.
+`@blocto/web3-react-connector ^v1.0.0` is now support with `@web3-react` v8. For those using web3-react v6, please check [#using-web3-react-v6](integrate-with-web3-react.md#using-web3-react-v6 "mention")
 {% endhint %}
 
 ### Usage
@@ -177,3 +177,40 @@ For more information using `web3-react`, please check out:
 
 * [Web3-React](https://github.com/NoahZinsmeister/web3-react)
 * [Web3-React Documentation](https://github.com/NoahZinsmeister/web3-react/tree/v6/docs)
+
+## Using web3-react v6
+
+For those still using web3-react v6, please use `@blocto/web3-react-connector@0.5.3`instead.
+
+{% hint style="warning" %}
+Some new feature might not support old connector in the future.
+{% endhint %}
+
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm i @blocto/web3-react-connector@0.5.3
+```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @blocto/web3-react-connector@0.5.3
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm add @blocto/web3-react-connector@0.5.3
+```
+{% endtab %}
+{% endtabs %}
+
+```typescript
+import { BloctoConnector } from '@blocto/web3-react-connector'
+
+const connector = new BloctoConnector({
+  chainId: NETWORK_CHAIN_ID,
+  rpc: NETWORK_URL
+})
+```
