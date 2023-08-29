@@ -148,7 +148,7 @@ export const Wallet = () => {
 
   const onClick = () => {
     bloctoSDK
-      .activate(connector)
+      .activate()
       .then(() => setError(undefined))
       .catch(setError)
   }
