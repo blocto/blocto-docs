@@ -19,6 +19,7 @@
     * [Integrate with Web3-Onboard](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3-onboard.md)
     * [Integrate with Dynamic](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-dynamic.md)
     * [Integrate with thirdweb](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-thirdweb.md)
+    * [Integrate with wagmi](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-wagmi.md)
     * [Connect / Disconnect](blocto-sdk/javascript-sdk/evm-sdk/connect-disconnect.md)
     * [Sign Message and Verify](blocto-sdk/javascript-sdk/evm-sdk/sign-message.md)
     * [Switch Ethereum Chain](blocto-sdk/javascript-sdk/evm-sdk/switch-ethereum-chain.md)
