@@ -1,5 +1,5 @@
 ---
-description: you can easily use Blocto on wagmi
+description: You can easily use Blocto on wagmi
 ---
 
 # Integrate with wagmi

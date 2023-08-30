@@ -1,5 +1,5 @@
 ---
-description: you can easily connect Blocto on thirdweb
+description: You can easily connect Blocto on thirdweb
 ---
 
 # Integrate with thirdweb
