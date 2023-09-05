@@ -178,6 +178,10 @@ For more information using `web3-react`, please check out:
 * [Web3-React](https://github.com/NoahZinsmeister/web3-react)
 * [Web3-React Documentation](https://github.com/NoahZinsmeister/web3-react/tree/v6/docs)
 
+### Sample Code
+
+{% embed url="https://codesandbox.io/p/sandbox/with-evm-web3-react-next-wh62tz?file=/connectors/bloctoSdk.ts" %}
+
 ## Using web3-react v6
 
 For those still using web3-react v6, please use `@blocto/web3-react-connector@0.5.3`instead.
