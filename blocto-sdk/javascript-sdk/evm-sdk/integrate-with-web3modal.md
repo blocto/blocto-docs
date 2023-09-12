@@ -11,7 +11,7 @@ Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are su
 {% endhint %}
 
 {% hint style="warning" %}
-Blocto has migrated its support for web3modal from the initial `@blocto/wagmi-connector` to `@blocto/web3modal-connector`.Beginning with version 1.2.0, `@blocto/wagmi-connector` will cease to offer support for web3modal.
+Beginning with @blocto/wagmi-connector@1.2.0, Blocto has migrated its support for web3modal from the initial `@blocto/wagmi-connector` to `@blocto/web3modal-connector,`for earlier version's developer you can check our [migration guide](https://github.com/blocto/blocto-sdk/tree/develop/adapters/wagmi-connector#migration-guide).
 {% endhint %}
 
 ### Installation
