@@ -10,6 +10,10 @@ Web3Modal is an elegantly simple yet powerful library that helps you manage your
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
 
+{% hint style="warning" %}
+Blocto has migrated its support for web3modal from the initial `@blocto/wagmi-connector` to `@blocto/web3modal-connector`.Beginning with version 1.2.0, `@blocto/wagmi-connector` will cease to offer support for web3modal.
+{% endhint %}
+
 ### Installation
 
 Install from npm/yarn/pnpm
@@ -17,19 +21,19 @@ Install from npm/yarn/pnpm
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm i @blocto/wagmi-connector@^1.1.0
+npm i @blocto/web3modal-connector
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @blocto/wagmi-connector@^1.1.0
+yarn add @blocto/web3modal-connector
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @blocto/wagmi-connector@^1.1.0
+pnpm add @blocto/web3modal-connector
 ```
 {% endtab %}
 {% endtabs %}
@@ -41,7 +45,7 @@ pnpm add @blocto/wagmi-connector@^1.1.0
 ```typescript
 import { w3mConnectors } from "@web3modal/ethereum";
 import { createConfig } from "wagmi";
-import { BloctoConnector } from '@blocto/wagmi-connector'
+import { BloctoConnector } from '@blocto/web3modal-connector'
 
 // ...
 
@@ -59,7 +63,7 @@ const wagmiConfig = createConfig({
 
 #### `BloctoConnector` parameters
 
-<table><thead><tr><th width="211">Paramter</th><th width="100">Type</th><th width="318">Description</th><th>Required</th></tr></thead><tbody><tr><td><code>chains</code></td><td>Chain[]</td><td>Connector supports Chains</td><td><strong>YES</strong></td></tr><tr><td><code>options.appId</code></td><td>String</td><td>Blocto dApp ID</td><td><strong>NO</strong></td></tr><tr><td><code>options.chainId</code> (Deprecated)</td><td>Number</td><td><p>Use <code>Web3Modal.defaultChain</code> instead</p><p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a></p></td><td><strong>NO</strong></td></tr><tr><td><code>options.rpc</code></td><td>String</td><td>JSON RPC endpoint</td><td><strong>NO</strong></td></tr></tbody></table>
+<table><thead><tr><th width="211">Paramter</th><th width="100">Type</th><th width="318">Description</th><th>Required</th></tr></thead><tbody><tr><td><code>chains</code></td><td>Chain[]</td><td>Connector supports Chains</td><td><strong>YES</strong></td></tr><tr><td><code>options.appId</code></td><td>String</td><td>Blocto dApp ID</td><td><strong>NO</strong></td></tr></tbody></table>
 
 #### Blocto supportedChains
 
@@ -71,7 +75,7 @@ const wagmiConfig = createConfig({
 import { arbitrum } from "wagmi/chains";
 import { Web3Modal } from "@web3modal/react";
 import { WagmiConfig } from "wagmi";
-import { BloctoWeb3ModalConfig } from '@blocto/wagmi-connector'
+import { BloctoWeb3ModalConfig } from '@blocto/web3modal-connector'
 
 // ...
 
@@ -99,4 +103,4 @@ export default function App({ Component, pageProps }) {
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/s/blocto-web3modal-integrate-sczssb" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/develop/examples/with-evm-web3modal?file=/src/App.tsx" %}
