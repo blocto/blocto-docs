@@ -4,7 +4,7 @@ description: You can easily add Blocto wallet to Web3-Onboard
 
 # Integrate with Web3-Onboard
 
-Web3-Onboard is an open-source, framework-agnostic JavaScript library to onboard users to web3 apps. Help your users transact with ease by enabling wallet connection, real-time transaction states, and more.
+Web3-Onboard is an open-source, framework-agnostic JavaScript library made by Blocknative to onboard users to web3 apps. Help your users transact with ease by enabling wallet connection, real-time transaction states, and more.
 
 {% hint style="warning" %}
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
@@ -104,7 +104,7 @@ To see more configurations, please check out
 
 * [Web3-Onboard](https://onboard.blocknative.com/)
 
-### Sample Code 
+### Sample Code
 
 {% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-web3onboard-vanilla" %}
 
