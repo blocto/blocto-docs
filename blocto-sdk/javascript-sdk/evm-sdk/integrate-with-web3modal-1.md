@@ -17,19 +17,19 @@ Install from npm/yarn/pnpm
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm i @blocto/connectkit-connector
+npm i @blocto/connectkit-connector connectkit
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @blocto/connectkit-connector
+yarn add @blocto/connectkit-connector connectkit
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @blocto/connectkit-connector
+pnpm add @blocto/connectkit-connector connectkit
 ```
 {% endtab %}
 {% endtabs %}
@@ -52,15 +52,12 @@ import { publicProvider } from 'wagmi/providers/public'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [arbitrumGoerli],
-  [
-    publicProvider(),
-  ],
+  [publicProvider()],
 )
 
 const walletConnectProjectId = 'YOUR_WALLETCONNECT_PROJECT_ID'
 
 export const config = createConfig({
-  autoConnect: true,
   connectors: [
     new BloctoConnector({ chains }),
     ...getDefaultConnectors({ chains, app: { name: 'YOUR_DAPP_NAME' }, walletConnectProjectId }),
@@ -69,8 +66,6 @@ export const config = createConfig({
   webSocketPublicClient,
 })
 ```
-
-Since the `getDefaultConnectors` method is available starting from ConnectKit 1.5.3, please ensure that you have a version installed that is greater than or equal to 1.5.3
 
 #### `BloctoConnector` parameters
 
@@ -103,7 +98,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <App />
       </ConnectKitProvider>
     </WagmiConfig>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
 ```
 
