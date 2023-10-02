@@ -44,7 +44,11 @@ npm install @blocto/fcl@^1.4.0
 
 Replace the value of `accessNode.api` and configuration keys:
 
-```javascript
+
+
+{% tabs %}
+{% tab title="Mainnet" %}
+```
 import * as fcl from "@blocto/fcl";
 
 fcl
@@ -53,6 +57,20 @@ fcl
     "discovery.wallet": `https://wallet-v2.blocto.app/${YOUR_DAPP_ID || "-"}/flow/authn`
   })
 ```
+{% endtab %}
+
+{% tab title="Testnet" %}
+```
+import * as fcl from "@blocto/fcl";
+
+fcl
+  .config({
+    "accessNode.api": "https://rest-testnet.onflow.org",
+    "discovery.wallet": `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID || "-"}/flow/authn`
+  })
+```
+{% endtab %}
+{% endtabs %}
 
 For dApps that haven't applied for a dApp ID, we recommend you apply for a better user experience, or use `-` as an alternative.
 
@@ -62,7 +80,13 @@ Visit [register-app-id.md](../../register-app-id.md "mention") to learn how to r
 
 If you have been using the back channel to communicate with FCL, follow the guide below:
 
-```javascript
+
+
+
+
+{% tabs %}
+{% tab title="Mainnet" %}
+```
 import * as fcl from "@blocto/fcl";
 
 fcl
@@ -73,5 +97,27 @@ fcl
     "discovery.wallet.method": "HTTP/POST"
   })
 ```
+{% endtab %}
+
+{% tab title="Testnet" %}
+```
+import * as fcl from "@blocto/fcl";
+
+fcl
+  .config({
+    "accessNode.api": "https://rest-testnet.onflow.org",
+    "discovery.wallet": "https://wallet-v2-dev.blocto.app/api/flow/authn",
+    "app.detail.id": "YOUR_DAPP_ID"// this line is optional
+    "discovery.wallet.method": "HTTP/POST"
+  })
+```
+{% endtab %}
+{% endtabs %}
 
 For dApps that haven't applied for a dApp ID, there is no need to set the `app.detail.id` key.
+
+
+
+### FCL Wallet Discovery
+
+Good news for those who use [wallet discovery](https://github.com/onflow/fcl-discovery) to support multiple wallet on Flow, there is no action required from your side. You can keep the configuration as you did in FCL and Blocto wallet v2 will show up there automatically.
