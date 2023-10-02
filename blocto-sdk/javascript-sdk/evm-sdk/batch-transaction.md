@@ -77,8 +77,8 @@ export { web3, bloctoSDK };
 const txHash = await bloctoSDK.ethereum.request({
   method: 'blocto_sendBatchTransaction',
   params: [
-    ...web3.eth.sendTransaction.request(SOME_REQUEST).params,
-    ...web3.eth.sendTransaction.request(SOME_OTHER_REQUEST).params
+    ...web3.eth.sendTransaction.request(SOME_REQUEST),
+    ...web3.eth.sendTransaction.request(SOME_OTHER_REQUEST)
   ]
 })
 
