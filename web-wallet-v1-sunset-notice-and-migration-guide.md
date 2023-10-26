@@ -22,11 +22,11 @@ By migrating to v2, Blocto users will enjoy an enhanced and safer experience, in
 
 ### **fcl.js:**
 
-Please upgrade fcl.js to `1.4.0` and update the configuration referring to the following migration guide: [https://docs.blocto.app/blocto-sdk/javascript-sdk/flow/migration-guide](https://docs.blocto.app/blocto-sdk/javascript-sdk/flow/migration-guide)
+Please upgrade fcl.js to `1.6.1` and update the configuration referring to the following migration guide: [https://docs.blocto.app/blocto-sdk/javascript-sdk/flow/migration-guide](https://docs.blocto.app/blocto-sdk/javascript-sdk/flow/migration-guide)
 
 ### **Blocto JavaScript SDK:**
 
-Please upgrade to at least `0.4.0` (`0.5.0` is better) through [npmjs](https://www.npmjs.com/package/@blocto/sdk).
+Please upgrade to at least `0.4.0` (`0.7.1` is better) through [npmjs](https://www.npmjs.com/package/@blocto/sdk).
 
 repo: [https://github.com/portto/blocto-sdk](https://github.com/portto/blocto-sdk)
 

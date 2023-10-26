@@ -12,30 +12,30 @@ For why to use `@blocto/fcl` instead of `@onflow/fcl`, check out this [Github PR
 
 ### Changes
 
-* Latest version of `@blocto/fcl@1.4.0` has been released
+* Latest version of `@blocto/fcl@1.6.1` has been released
 * New version of the blocto wallet interface and endpoints
 * Update some deprecated methods or properties
 
 ### Upgrading Dependency
 
-Upgrade the `@blocto/fcl` in the package.json to `^1.4.0`
+Upgrade the `@blocto/fcl` in the package.json to `^1.6.1`
 
 {% tabs %}
 {% tab title="yarn" %}
 ```bash
-yarn upgrade @blocto/fcl@^1.4.0
+yarn upgrade @blocto/fcl@^1.6.1
 ```
 {% endtab %}
 
 {% tab title="npm" %}
 ```bash
-npm install @blocto/fcl@^1.4.0
+npm install @blocto/fcl@^1.6.1
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-npm install @blocto/fcl@^1.4.0
+npm install @blocto/fcl@^1.6.1
 ```
 {% endtab %}
 {% endtabs %}
