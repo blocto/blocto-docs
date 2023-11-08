@@ -1,7 +1,7 @@
 # Connect to Blocto Wallet
 
 {% hint style="warning" %}
-Make sure you [initialize Blocto SDK](../solana/getting-started.md) first
+Make sure you [initialize Blocto SDK](broken-reference) first
 {% endhint %}
 
 Before you start to interact with Blocto wallet, you need to have wallet connected.
