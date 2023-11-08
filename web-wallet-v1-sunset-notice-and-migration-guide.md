@@ -26,7 +26,7 @@ Please upgrade fcl.js to `1.6.1` and update the configuration referring to the f
 
 ### **Blocto JavaScript SDK:**
 
-Please upgrade to at least `0.4.0` (`0.7.2` is better) through [npmjs](https://www.npmjs.com/package/@blocto/sdk).
+Please upgrade to at least `0.5.0` (`0.7.2` is better) through [npmjs](https://www.npmjs.com/package/@blocto/sdk).
 
 repo: [https://github.com/portto/blocto-sdk](https://github.com/portto/blocto-sdk)
 
