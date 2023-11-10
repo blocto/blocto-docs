@@ -83,7 +83,7 @@ const bloctoSDK = new BloctoSDK({
 ```javascript
 const bloctoSDK = new BloctoSDK({
     ethereum: {
-        chainId: '0x5', // 4
+        chainId: '0x5', // 5
         rpc: 'https://rpc.ankr.com/eth_goerli',
     },
     appId: 'YOUR_BLOCTO_APP_ID',
