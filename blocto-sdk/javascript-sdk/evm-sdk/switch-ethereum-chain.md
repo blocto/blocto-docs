@@ -4,11 +4,11 @@ description: Switch between EVM compatible chains
 
 # Switch Ethereum Chain
 
-Start from `@blocto/sdk` version `^0.4.1`, we support two new RPC method `wallet_switchEthereumChain` and `wallet_addEthereumChain` let developers easier to switch between EVM compatible chains​.&#x20;
+Start from `@blocto/sdk` version `^0.6.0`, we support two new RPC method `wallet_switchEthereumChain` and `wallet_addEthereumChain` which let developers be able to switch between EVM compatible chains​ easier.
 
 ### wallet\_addEthereumChain[​](https://docs.metamask.io/wallet/reference/rpc-api/#wallet\_addethereumchain) <a href="#wallet_addethereumchain" id="wallet_addethereumchain"></a>
 
-This method will add the specified chain into Blocto SDK instance.&#x20;
+This method will add the specified chain into Blocto SDK instance.
 
 Blocto SDK will validate the parameters for this method, and rejects the request if any parameter is incorrectly formatted. Blocto SDK also rejects the request if any of the following occurs:
 
@@ -111,7 +111,7 @@ bloctoSDK.ethereum
   });
 ```
 
-Then you can switch between BSC and polygon using `wallet_switchEthereumChain` method.&#x20;
+Then you can switch between BSC and polygon using `wallet_switchEthereumChain` method.
 
 ```javascript
 bloctoSDK.ethereum.request({
