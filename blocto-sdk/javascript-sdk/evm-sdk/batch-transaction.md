@@ -62,7 +62,7 @@ import BloctoSDK from "@blocto/sdk";
 const bloctoSDK = new BloctoSDK({
   ethereum: {
     chainId: "0x5", // (required) chainId to be used
-    rpc: `https://goerli.infura.io/v3/ef5a5728e2354955b562d2ffa4ae5305`, // (required for Ethereum) JSON RPC endpoint
+    rpc: `https://goerli.infura.io/v3/${YOUR_INFURA_ID}`, // (required for Ethereum) JSON RPC endpoint
   },
 });
 
