@@ -32,4 +32,4 @@ Check out step-by-step guide [here](https://docs.dynamic.xyz/wallets/embedded-wa
 
 ## Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-dynamic" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-dynamic?file=/src/App.js" %}

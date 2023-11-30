@@ -106,7 +106,7 @@ To see more configurations, please check out
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-web3onboard-vanilla" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3onboard-vanilla?file=/service.js" %}
 
 ## React.js
 
@@ -220,4 +220,4 @@ To see more configurations, please check out
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-web3onboard" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3onboard?file=/src/service/index.js" %}

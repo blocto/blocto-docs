@@ -26,7 +26,6 @@ pnpm add @aptos-labs/wallet-adapter-react @blocto/aptos-wallet-adapter-plugin
 {% endtab %}
 {% endtabs %}
 
-
 ### Step 1 - Import Adapter
 
 Import Aptos Adapter, bloctoWallet.
@@ -107,4 +106,4 @@ const App = () => {
 
 ## Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-aptos-adapter" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-aptos-adapter?file=/src/App.js" %}

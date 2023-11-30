@@ -112,7 +112,7 @@ function Profile() {
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/develop/examples/with-evm-wagmi?file=/src/App.tsx" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi?file=/src/wagmi.ts" %}
 
 ### Resources
 

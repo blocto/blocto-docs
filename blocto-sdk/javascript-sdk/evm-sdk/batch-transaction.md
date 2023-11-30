@@ -87,6 +87,6 @@ console.log(txHash) // ex: 0x12a45b...
 
 ## Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-blocto-batch-transaction" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-batch-transaction?file=/src/App.js" %}
 
 For more information about batch transactions, check out [web3.js documentation](https://web3js.readthedocs.io/en/v1.2.0/web3-eth.html#batchrequest).

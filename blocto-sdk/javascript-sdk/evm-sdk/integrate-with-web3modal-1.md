@@ -104,4 +104,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/develop/examples/with-evm-connectkit" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-connectkit?file=/src/index.tsx" %}

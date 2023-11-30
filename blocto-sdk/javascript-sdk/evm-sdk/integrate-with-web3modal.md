@@ -103,4 +103,4 @@ export default function App({ Component, pageProps }) {
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/develop/examples/with-evm-web3modal?file=/src/App.tsx" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3modal?file=/src/index.tsx" %}
