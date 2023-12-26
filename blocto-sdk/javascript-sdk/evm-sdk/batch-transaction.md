@@ -15,41 +15,35 @@ With Blocto, you can combine multiple transactions into a single transaction for
 1. Save gas fee
 2. Make multiple transactions atomic, so they either all succeed or all fail
 
+### Requirements
+
+[@blocto/sdk](https://www.npmjs.com/package/@blocto/sdk) minimum required version is 0.9.x.
+
 ### Usage
 
 There are two ways to combine transactions:
 
-#### A. EIP-1193 (Recommended)
+#### A. EIP-1193
 
 ```javascript
-import Web3 from 'web3';
+import Web3 from "web3";
 
 // Use the Ethereum provider injected by Blocto app
 const txHash = await bloctoSDK.ethereum.request({
-  method: 'blocto_sendBatchTransaction',
+  method: "wallet_sendMultiCallTransaction",
   params: [
-    web3.eth.sendTransaction.request(SOME_REQUEST),
-    web3.eth.sendTransaction.request(SOME_OTHER_REQUEST)
-  ]
-})
+    [
+      ...web3.eth.sendTransaction.request(SOME_REQUEST).params,
+      ...web3.eth.sendTransaction.request(SOME_OTHER_REQUEST).params,
+    ],
+    false, // revert flag default is false
+  ],
+});
 
-console.log(txHash) // ex: 0x12a45b...
+console.log(txHash); // ex: 0x12a45b...
 ```
 
-#### B. Web3 Batch Request
-
-```javascript
-import Web3 from 'web3';
-
-// Use the Ethereum provider injected by Blocto app
-const web3 = new Web3(bloctoSDK.ethereum);
-const batch = new web3.BatchRequest();
-
-batch.add(web3.eth.sendTransaction.request(SOME_REQUEST));
-batch.add(web3.eth.sendTransaction.request(SOME_OTHER_REQUEST));
-
-batch.execute();
-```
+#### B. Web3.js Batch Request
 
 ### Example
 
@@ -71,18 +65,21 @@ const web3 = new Web3(bloctoSDK.ethereum);
 export { web3, bloctoSDK };
 ```
 
-#### Step 2 - Send Batch Transaction
+#### Step 2 - Use web3.js `BatchRequest`
+
+**web3.js 1.x.x version**:
 
 ```javascript
-const txHash = await bloctoSDK.ethereum.request({
-  method: 'blocto_sendBatchTransaction',
-  params: [
-    web3.eth.sendTransaction.request(SOME_REQUEST),
-    web3.eth.sendTransaction.request(SOME_OTHER_REQUEST)
-  ]
-})
+import Web3 from "web3";
 
-console.log(txHash) // ex: 0x12a45b...
+// Use the Ethereum provider injected by Blocto app
+const web3 = new Web3(bloctoSDK.ethereum);
+const batch = new web3.BatchRequest();
+
+batch.add(web3.eth.sendTransaction.request(SOME_REQUEST));
+batch.add(web3.eth.sendTransaction.request(SOME_OTHER_REQUEST));
+
+batch.execute();
 ```
 
 ## Sample Code
@@ -90,3 +87,40 @@ console.log(txHash) // ex: 0x12a45b...
 {% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-batch-transaction?file=/src/App.js" %}
 
 For more information about batch transactions, check out [web3.js documentation](https://web3js.readthedocs.io/en/v1.2.0/web3-eth.html#batchrequest).
+
+**web3.js 4.x.x version**:
+
+```javascript
+import Web3 from "web3";
+
+// Use the Ethereum provider injected by Blocto app
+const web3 = new Web3(bloctoSDK.ethereum);
+const batch = new web3.BatchRequest();
+const request1 = {
+  jsonrpc: "2.0",
+  id: 10,
+  method: "eth_getBalance",
+  params: ["0xf4ffff492596ac13fee6126846350433bf9a5021", "latest"],
+};
+const request2 = {
+  jsonrpc: "2.0",
+  id: 12,
+  method: "eth_getBalance",
+  params: ["0xdc6bad79dab7ea733098f66f6c6f9dd008da3258", "latest"],
+};
+batch.add(request1);
+batch.add(request2);
+
+const txHash = await batch.execute();
+
+console.log(txHash); // ex: 0x12a45b...
+```
+
+## Sample Code
+
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-batch-transaction-v4?file=%2Fsrc%2FApp.js" %}
+
+For more information about batch transactions
+
+- [web3.js 1.x.x documentation](https://web3js.readthedocs.io/en/v1.2.0/web3-eth.html#batchrequest).
+- [web3.js 4.x.x documentation](https://docs.web3js.org/guides/web3_upgrade_guide/x/#web3-batchrequest).
