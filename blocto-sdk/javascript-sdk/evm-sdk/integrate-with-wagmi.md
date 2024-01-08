@@ -6,8 +6,6 @@ description: You can easily use Blocto on wagmi
 
 wagmi is a collection of React Hooks containing everything you need to start working with Ethereum. wagmi makes it easy to "Connect Wallet," display ENS and balance information, sign messages, interact with contracts, and much more — all with caching, request deduplication, and persistence.
 
-
-
 Blocto currently supported various wallet connect solutions based on wagmi,
 
 * [Integrate with RainbowKit](integrate-with-rainbowkit.md)
@@ -63,7 +61,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 
 #### Blocto supportedChains
 
-<table><thead><tr><th width="373">Mainnet</th><th>Testnet</th><th data-hidden></th></tr></thead><tbody><tr><td>Ethereum</td><td>Goerli</td><td></td></tr><tr><td>Arbitrum</td><td>ArbitrumGoerli</td><td></td></tr><tr><td>Optimism</td><td>OptimismGoerli</td><td></td></tr><tr><td>Polygon</td><td>Mumbai</td><td></td></tr><tr><td>Binance</td><td>BinanceTestnet</td><td></td></tr><tr><td>Avalanche</td><td>AvalancheFuji</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="373">Mainnet</th><th>Testnet</th><th data-hidden></th></tr></thead><tbody><tr><td>Ethereum</td><td>Goerli</td><td></td></tr><tr><td>Ethereum</td><td>Sepolia</td><td></td></tr><tr><td>Arbitrum</td><td>ArbitrumGoerli</td><td></td></tr><tr><td>Optimism</td><td>OptimismGoerli</td><td></td></tr><tr><td>Polygon</td><td>Mumbai</td><td></td></tr><tr><td>Binance</td><td>BinanceTestnet</td><td></td></tr><tr><td>Avalanche</td><td>AvalancheFuji</td><td></td></tr><tr><td>Base</td><td>BaseGoerli</td><td></td></tr><tr><td>Zora</td><td>ZoraTestnet</td><td></td></tr><tr><td>Scroll</td><td>ScrollSepolia</td><td></td></tr></tbody></table>
 
 ### Create config with Blocto
 
@@ -119,4 +117,3 @@ function Profile() {
 [**Getting Started**](https://wagmi.sh/react/getting-started)
 
 [**Example**](https://wagmi.sh/examples/connect-wallet)
-

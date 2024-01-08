@@ -8,12 +8,15 @@ description: Using Blocto SDK in EVM-compatible dApps
 
 * **Get access to all the web3.js functionalities**
   * Interact with Ethereum-compatible blockchains
-    * Ethereum Mainnet & Goerli Testnet
+    * Ethereum Mainnet & Goerli Testnet & Sepolia Testnet
     * Arbitrum Mainnet & Arbitrum Goerli Testnet
     * Optimism Mainnet & Optimism Goerli Testnet
     * Polygon Mainnet & Testnet
     * BNB Smart Chain Mainnet & Tetsnet
     * Avalanche Mainnet & Testnet
+    * Base Mainnet & Goerli Testnet
+    * Zora Mainnet & Goerli Testnet
+    * Scroll Mainnet & Sepolia Testnet
   * Sign messages
   * Send transactions
   * ... and a lot more

@@ -74,7 +74,7 @@ The default supportedChains of ThirdwebProvider includes the Blocto unsupported 
 
 #### Blocto supportedChains
 
-<table><thead><tr><th width="373">Mainnet</th><th>Testnet</th><th data-hidden></th></tr></thead><tbody><tr><td>Ethereum</td><td>Goerli</td><td></td></tr><tr><td>Arbitrum</td><td>ArbitrumGoerli</td><td></td></tr><tr><td>Optimism</td><td>OptimismGoerli</td><td></td></tr><tr><td>Polygon</td><td>Mumbai</td><td></td></tr><tr><td>Binance</td><td>BinanceTestnet</td><td></td></tr><tr><td>Avalanche</td><td>AvalancheFuji</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="373">Mainnet</th><th>Testnet</th><th data-hidden></th></tr></thead><tbody><tr><td>Ethereum</td><td>Goerli</td><td></td></tr><tr><td>Ethereum</td><td>Sepolia</td><td></td></tr><tr><td>Arbitrum</td><td>ArbitrumGoerli</td><td></td></tr><tr><td>Optimism</td><td>OptimismGoerli</td><td></td></tr><tr><td>Polygon</td><td>Mumbai</td><td></td></tr><tr><td>Binance</td><td>BinanceTestnet</td><td></td></tr><tr><td>Avalanche</td><td>AvalancheFuji</td><td></td></tr><tr><td>Base</td><td>BaseGoerli</td><td></td></tr><tr><td>Zora</td><td>ZoraTestnet</td><td></td></tr><tr><td>Scroll</td><td>ScrollSepoliaTestnet</td><td></td></tr></tbody></table>
 
 ### Connect to Wallet
 
