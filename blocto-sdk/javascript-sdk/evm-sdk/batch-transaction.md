@@ -20,10 +20,6 @@ With Blocto, you can combine multiple transactions into a single transaction for
 1. Save gas fee
 2. Make multiple transactions atomic, so they either all succeed or all fail
 
-### Requirements
-
-[@blocto/sdk](https://www.npmjs.com/package/@blocto/sdk) minimum required version is 0.9.x.
-
 ### Usage
 
 There are two ways to combine transactions:
