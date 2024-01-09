@@ -87,7 +87,7 @@
 ## Blocto App
 
 * [Overview](blocto-app/overview.md)
-* [Web3.js Integration - Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche / Tron](blocto-app/web3-provider/README.md)
+* [Web3.js Integration - Ethereum & EVMs & Layer2](blocto-app/web3-provider/README.md)
   * [Sign Message](blocto-app/web3-provider/sign-message.md)
   * [Batch Transaction](blocto-app/web3-provider/batch-transaction.md)
   * [Switch Chain](blocto-app/web3-provider/switch-chain/README.md)

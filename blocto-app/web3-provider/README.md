@@ -4,7 +4,7 @@ description: >-
   blockchain
 ---
 
-# Web3.js Integration - Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche / Tron
+# Web3.js Integration - Ethereum & EVMs & Layer2
 
 ### Injection
 
@@ -14,7 +14,7 @@ Blocto injects web3 provider to web context as `window.BLOCKCHAIN` where BLOCKCH
   * support BNB Smart Chain network starting from 2.8.0 on Android/iOS
   * support Polygon/Avalanche(c-chain) network starting from 2.14.0 on Android/iOS
   * support Arbitrum/Optimism network starting from 3.22.0 on Android/iOS
-* `tron`
+  * support Scroll/Base/Zora network starting from 4.11.0 on Android/iOS
 
 You can use the provider with your web3.js like
 
@@ -30,7 +30,4 @@ console.log(window.ethereum.isBlocto);
 
 You can use all the web3.js functionalities and Blocto will handle all the wallet operations and blockchain interactions for you.
 
-For more documentation for what you can do with web3.js, check out
-
-* [web3.js 1.2.x docs](https://web3js.readthedocs.io/en/v1.2.11/index.html)
-* [web3.js 0.2x.x docs](https://github.com/ethereum/web3.js/blob/0.20.7/DOCUMENTATION.md)
+For more documentation for what you can do with web3.js, check out the [documentation](https://docs.web3js.org/).

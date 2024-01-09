@@ -6,7 +6,7 @@ description: Switch the blockchain network to another one
 
 ### Introduction
 
-It supports Ethereum/BSC/Polygon/Avalanche injected at `window.ethereum`. Blocto follows [eip-3326](https://github.com/rekmarks/EIPs/blob/3326-create/EIPS/eip-3326.md) and will not reload the webpage after switching the network.
+It supports Ethereum/EVMs/Layer2 injected at `window.ethereum`. Blocto follows [eip-3326](https://github.com/rekmarks/EIPs/blob/3326-create/EIPS/eip-3326.md) and will not reload the webpage after switching the network.
 
 ### Usage
 

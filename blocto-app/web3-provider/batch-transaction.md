@@ -22,20 +22,22 @@ import Web3 from 'web3';
 
 // Use the Ethereum provider injected by Blocto app
 const txHash = await window.ethereum.request({
-  method: 'blocto_sendBatchTransaction',
+  method: 'wallet_sendMultiCallTransaction',
   params: [
-    web3.eth.sendTransaction.request(SOME_REQUEST),
-    web3.eth.sendTransaction.request(SOME_OTHER_REQUEST)
+    [
+      web3.eth.sendTransaction.request(SOME_REQUEST),
+      web3.eth.sendTransaction.request(SOME_OTHER_REQUEST)
+    ],
+    true // revert flag, could be true or false
   ]
-})
+});
 
-console.log(txHash) // ex: 0x12a45b...
+console.log(txHash); // ex: 0x12a45b...
 ```
 
 #### B. Web3 Batch Request
 
-```javascript
-import Web3 from 'web3';
+<pre class="language-javascript"><code class="lang-javascript">import Web3 from 'web3';
 
 // Use the Ethereum provider injected by Blocto app
 const web3 = new Web3(window.ethereum);
@@ -44,8 +46,8 @@ const batch = new web3.BatchRequest();
 batch.add(web3.eth.sendTransaction.request(SOME_REQUEST));
 batch.add(web3.eth.sendTransaction.request(SOME_OTHER_REQUEST));
 
-batch.execute();
-```
+<strong>const responses = await batch.execute();
+</strong></code></pre>
 
 ### Example
 
@@ -61,23 +63,26 @@ const approveDAIReq = web3.eth.sendTransaction.request({
   from: address,
   to: '0x6b175474e89094c44da98b954eedeac495271d0f',
   data: '0x095ea7b300000000000000000000000029fe7d60ddf151e5b52e5fab4f1325da6b2bd9580000000000000000000000000000000000000000000845951614014849ffffff',
-}, 'latest')
+}, 'latest');
 
 // put in PoolTogether
 const putInPoolTogetherReq = web3.eth.sendTransaction.request({
   from: address,
   to: '0x29fe7D60DdF151E5b52e5FAB4f1325da6b2bD958',
   data: '0x234409440000000000000000000000000000000000000000000000000de0b6b3a7640000',
-}, 'latest')
+}, 'latest');
 
 // Use the Ethereum provider injected by Blocto app
 const txHash = await window.ethereum.request({
-  method: 'blocto_sendBatchTransaction',
+  method: 'wallet_sendMultiCallTransaction',
   params: [
-    approveDAIReq,
-    putInPoolTogetherReq
+    [
+      approveDAIReq,
+      putInPoolTogetherReq
+    ],
+    true
   ]
-})
+});
 
 console.log(txHash) // ex: 0x12a45b...
 ```
@@ -112,7 +117,7 @@ batch.add(web3.eth.sendTransaction.request({
   data: '0x234409440000000000000000000000000000000000000000000000000de0b6b3a7640000',
 }, 'latest'));
 
-batch.execute();
+const responses = await batch.execute();
 ```
 
-For more information about batch transactions, check out [web3.js documentation](https://web3js.readthedocs.io/en/v1.2.0/web3-eth.html#batchrequest).
+For more information about batch transactions, check out [web3.js documentation](https://docs.web3js.org/guides/web3\_upgrade\_guide/x/#web3-batchrequest).
