@@ -46,23 +46,7 @@ console.log(txHash); // ex: 0x12a45b...
 
 #### B. Web3.js Batch Request
 
-#### Step 1 - Configure Web3 and @blocto/sdk
 
-```javascript
-import Web3 from "web3";
-import BloctoSDK from "@blocto/sdk";
-
-const bloctoSDK = new BloctoSDK({
-  ethereum: {
-    chainId: "0x5", // (required) chainId to be used
-    rpc: `https://goerli.infura.io/v3/${YOUR_INFURA_ID}`, // (required for Ethereum) JSON RPC endpoint
-  },
-});
-
-const web3 = new Web3(bloctoSDK.ethereum);
-
-export { web3, bloctoSDK };
-```
 
 #### web3.js 1.x.x version:
 
@@ -110,13 +94,11 @@ batch.add(request2);
 
 const txHash = await batch.execute();
 
-console.log(txHash); // ex:  [{ "id":"10", "jsonrpc":"2.0", "method":"eth_getBalance", "result":"0x0" }]
+console.log(txHash); // ex:  [{ "id":"10", "jsonrpc":"2.0", "method":"eth_getBalance", "result":"0x0" }, ...]
 ```
 
 ## Sample Code
 
 {% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-batch-transaction-v4?file=%2Fsrc%2FApp.js" %}
 
-For more information about batch transactions
-
-- [web3.js 4.x.x documentation](https://docs.web3js.org/guides/web3_upgrade_guide/x/#web3-batchrequest).
+For more information about batch transactions [web3.js 4.x.x documentation](https://docs.web3js.org/guides/web3_upgrade_guide/x/#web3-batchrequest).
