@@ -7,7 +7,8 @@ description: Use Blocto SDK to Combine multiple transactions and make them atomi
 {% hint style="warning" %}
 Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are subject to breaking changes.
 {% endhint %}
-
+{% hint style="info" %} Blocto SDK now supports [Web3.js v4 batch transactions](https://docs.web3js.org/guides/web3_upgrade_guide/x/#web3-batchrequest). with version >= v.0.9.0.
+For version < v0.9.0, please use it along with web3.js v1. {% endhint %}
 ### Introduction
 
 With Blocto, you can combine multiple transactions into a single transaction for the following advantages:
@@ -23,7 +24,7 @@ With Blocto, you can combine multiple transactions into a single transaction for
 
 There are two ways to combine transactions:
 
-#### A. EIP-1193
+#### A. EIP-1193 (Recommended)
 
 ```javascript
 import Web3 from "web3";
@@ -36,7 +37,7 @@ const txHash = await bloctoSDK.ethereum.request({
       ...web3.eth.sendTransaction.request(SOME_REQUEST).params,
       ...web3.eth.sendTransaction.request(SOME_OTHER_REQUEST).params,
     ],
-    false, // revert flag default is false
+    false, //  (optional) revert flag default is false
   ],
 });
 
@@ -44,8 +45,6 @@ console.log(txHash); // ex: 0x12a45b...
 ```
 
 #### B. Web3.js Batch Request
-
-### Example
 
 #### Step 1 - Configure Web3 and @blocto/sdk
 
@@ -65,9 +64,7 @@ const web3 = new Web3(bloctoSDK.ethereum);
 export { web3, bloctoSDK };
 ```
 
-#### Step 2 - Use web3.js `BatchRequest`
-
-**web3.js 1.x.x version**:
+#### web3.js 1.x.x version:
 
 ```javascript
 import Web3 from "web3";
@@ -88,7 +85,7 @@ batch.execute();
 
 For more information about batch transactions, check out [web3.js documentation](https://web3js.readthedocs.io/en/v1.2.0/web3-eth.html#batchrequest).
 
-**web3.js 4.x.x version**:
+#### web3.js 4.x.x version:
 
 ```javascript
 import Web3 from "web3";
@@ -113,7 +110,7 @@ batch.add(request2);
 
 const txHash = await batch.execute();
 
-console.log(txHash); // ex: 0x12a45b...
+console.log(txHash); // ex:  [{ "id":"10", "jsonrpc":"2.0", "method":"eth_getBalance", "result":"0x0" }]
 ```
 
 ## Sample Code
@@ -122,5 +119,4 @@ console.log(txHash); // ex: 0x12a45b...
 
 For more information about batch transactions
 
-- [web3.js 1.x.x documentation](https://web3js.readthedocs.io/en/v1.2.0/web3-eth.html#batchrequest).
 - [web3.js 4.x.x documentation](https://docs.web3js.org/guides/web3_upgrade_guide/x/#web3-batchrequest).
