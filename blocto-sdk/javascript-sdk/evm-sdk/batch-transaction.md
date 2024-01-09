@@ -76,7 +76,7 @@ console.log(txHash); // ex:  [{ "id":"10", "jsonrpc":"2.0", "method":"eth_getBal
 
 ## Sample Code
 
-{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-batch-transaction-v4?file=%2Fsrc%2FApp.js" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-batch-transaction-v4?file=/src/App.js" %}
 
 For more information about batch transactions [web3.js 4.x.x documentation](https://docs.web3js.org/guides/web3\_upgrade\_guide/x/#web3-batchrequest).
 
