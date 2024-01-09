@@ -10,7 +10,7 @@ Note that Blocto SDK for EVM-compatible chains is still in **Beta**. APIs are su
 
 {% hint style="info" %}
 Blocto SDK now supports [Web3.js v4 batch transactions](https://docs.web3js.org/guides/web3\_upgrade\_guide/x/#web3-batchrequest) with **version >= v.0.9.0**. \
-For version < v0.9.0, please use it along with web3.js v1.
+For version < v0.9.0, please use it along with Web3.js v1.
 {% endhint %}
 
 ### Introduction
