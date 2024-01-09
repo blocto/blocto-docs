@@ -2,12 +2,12 @@
 description: Using Blocto SDK in EVM-compatible dApps
 ---
 
-# Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche
+# Ethereum & EVMs & Layer2
 
 ### What can I do with Blocto Ethereum SDK?
 
 * **Get access to all the web3.js functionalities**
-  * Interact with Ethereum-compatible blockchains
+  * Interact with EVM-compatible blockchains
     * Ethereum Mainnet & Goerli Testnet & Sepolia Testnet
     * Arbitrum Mainnet & Arbitrum Goerli Testnet
     * Optimism Mainnet & Optimism Goerli Testnet

@@ -10,7 +10,7 @@
 * [Overview](blocto-sdk/overview.md)
 * [Register App ID](blocto-sdk/register-app-id.md)
 * [JavaScript SDK](blocto-sdk/javascript-sdk/README.md)
-  * [Ethereum / Arbitrum / Optimism / Polygon / BSC / Avalanche](blocto-sdk/javascript-sdk/evm-sdk/README.md)
+  * [Ethereum & EVMs & Layer2](blocto-sdk/javascript-sdk/evm-sdk/README.md)
     * [Provider](blocto-sdk/javascript-sdk/evm-sdk/provider.md)
     * [Integrate with Web3.js](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3.js.md)
     * [Integrate with Web3-React](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3-react.md)
