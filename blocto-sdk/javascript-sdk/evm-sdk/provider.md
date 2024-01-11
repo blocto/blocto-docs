@@ -44,7 +44,43 @@ pnpm add @blocto/sdk
 
 #### Initiate Blocto SDK
 
+After SDK `0.9.0`, you can load all evm-compatiable chains once when initiating.
+
+<table><thead><tr><th width="180">Parameter</th><th width="288">Type</th><th width="195">Description</th><th>Required</th></tr></thead><tbody><tr><td>defaultChainId</td><td>string (hex)</td><td>Hexadecimal chainId</td><td>Yes</td></tr><tr><td>switchableChains</td><td><p>Array</p><pre class="language-typescript"><code class="lang-typescript">AddEthereumChainParameter {
+  chainId: string;
+  rpcUrls: string[];
+}
+</code></pre></td><td>Array of AddEthereumChainParameter</td><td>Yes</td></tr></tbody></table>
+
 ```javascript
+const bloctoSDK = new BloctoSDK({
+  ethereum: {
+    defaultChainId: '0x1',
+    switchableChains: [
+      {
+        chainId: '0x1',
+        rpcUrls: ['https://mainnet.infura.io/v3/...'],
+      },
+      {
+        chainId: '0xa4b1',
+        rpcUrls: ['https://arb1.arbitrum.io/rpc'],
+      },
+      ...
+    ],
+  },
+  
+  // (optional) Blocto app ID
+  appId: 'YOUR_BLOCTO_APP_ID',
+})
+```
+
+#### Initiate Blocto SDK before v0.9.0
+
+Before `0.9.0` , you can only initiate with one evm-compatiable chain.
+
+<table><thead><tr><th width="212">Parameter</th><th width="138">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td><code>ethereum.chainId</code></td><td>String (hex)<br>Number</td><td><p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a></p></td><td><strong>Yes</strong></td></tr><tr><td><code>ethereum.rpc</code></td><td>String</td><td>JSON RPC endpoint</td><td><strong>Yes</strong></td></tr><tr><td><code>appId</code></td><td>String</td><td>Blocto dApp ID</td><td><strong>No</strong></td></tr></tbody></table>
+
+```java
 import BloctoSDK from '@blocto/sdk'
 
 const bloctoSDK = new BloctoSDK({
@@ -60,59 +96,7 @@ const bloctoSDK = new BloctoSDK({
 });
 ```
 
-#### Blocto SDK Parameters
-
-<table><thead><tr><th width="212">Parameter</th><th width="138">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td><code>ethereum.chainId</code></td><td>String (hex)<br>Number</td><td><p>EVM chain ID to connect to</p><p>Reference: <a href="https://chainid.network/">EVM Networks</a></p></td><td><strong>Yes</strong></td></tr><tr><td><code>ethereum.rpc</code></td><td>String</td><td>JSON RPC endpoint</td><td><strong>Yes</strong></td></tr><tr><td><code>appId</code></td><td>String</td><td>Blocto dApp ID</td><td><strong>No</strong></td></tr></tbody></table>
-
-#### Examples
-
-{% tabs %}
-{% tab title="Ethereum Mainnet" %}
-```javascript
-const bloctoSDK = new BloctoSDK({
-    ethereum: {
-        chainId: '0x1', // 1
-        rpc: 'https://mainnet.infura.io/v3/YOUR_INFURA_ID',
-    },
-    appId: 'YOUR_BLOCTO_APP_ID',
-});
-```
-{% endtab %}
-
-{% tab title="Ethereum Testnet (Goerli)" %}
-```javascript
-const bloctoSDK = new BloctoSDK({
-    ethereum: {
-        chainId: '0x5', // 5
-        rpc: 'https://rpc.ankr.com/eth_goerli',
-    },
-    appId: 'YOUR_BLOCTO_APP_ID',
-});
-```
-{% endtab %}
-
-{% tab title="BSC Mainnet" %}
-```javascript
-const bloctoSDK = new BloctoSDK({
-    ethereum: {
-        chainId: '0x38', // 56
-    },
-    appId: 'YOUR_BLOCTO_APP_ID',
-});
-```
-{% endtab %}
-
-{% tab title="BSC Testnet (Chapel)" %}
-```javascript
-const bloctoSDK = new BloctoSDK({
-    ethereum: {
-        chainId: '0x61', // 97
-    },
-    appId: 'YOUR_BLOCTO_APP_ID',
-});
-```
-{% endtab %}
-{% endtabs %}
+### Support Chains
 
 | Network                  | Chain ID |
 | ------------------------ | -------- |
@@ -136,7 +120,7 @@ const bloctoSDK = new BloctoSDK({
 | Scroll Mainnet           | 534352   |
 | Scroll Sepolia Testnet   | 534351   |
 
-#### **Connect to Blocto wallet**
+### **Connect to Blocto wallet**
 
 Once the connection request is fired, there would be a prompt modal to guide user to register/login to Blocto wallet
 
