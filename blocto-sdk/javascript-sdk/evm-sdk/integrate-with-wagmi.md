@@ -21,19 +21,19 @@ Install from npm/yarn/pnpm
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm i @blocto/wagmi-connector wagmi viem
+npm i @blocto/wagmi-connector@^1.3.1 wagmi@^1.4.12 viem@~1.0.0
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @blocto/wagmi-connector wagmi viem
+yarn add @blocto/wagmi-connector@^1.3.1 wagmi@^1.4.12 viem@~1.0.0
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @blocto/wagmi-connector wagmi viem
+pnpm add @blocto/wagmi-connector@^1.3.1 wagmi@^1.4.12 viem@~1.0.0
 ```
 {% endtab %}
 {% endtabs %}
