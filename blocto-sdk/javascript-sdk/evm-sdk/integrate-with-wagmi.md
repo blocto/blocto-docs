@@ -110,7 +110,7 @@ function Profile() {
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi?file=/src/wagmi.ts" %}
+{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi-v1?file=/src/App.tsx" %}
 
 ### Resources
 
