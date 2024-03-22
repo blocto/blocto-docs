@@ -34,7 +34,7 @@ const handleSignMessage = () => {
 };
 ```
 
-{% embed url="https://codesandbox.io/s/blocto-sdk-evm-sign-c1c4mb?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-sign?file=/src/App.js" %}
 
 ### Verify Signature (personal.sign)
 
@@ -138,9 +138,9 @@ async function debug() {
 {% endtab %}
 {% endtabs %}
 
-#### Demo
+#### Sample Code
 
-{% embed url="https://codesandbox.io/s/evm-verify-the-signature-drjjnz?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-verify-sign?file=/src/App.js" %}
 
 #### PersonalSign Technical Details
 
@@ -155,7 +155,3 @@ According to ERC-191 and ERC-1271, when receiving `personalSign` request with `m
 According to ERC-191 and ERC-1271, when receiving `typeDataSign` request, Blocto will sign:
 
 > `0x19` + `0x0` + `[User’s wallet address]` + `[typed-data-hash]`
-
-#### Sample Code
-
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk/tree/main/examples/with-evm-blocto-sign" %}

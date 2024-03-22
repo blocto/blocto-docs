@@ -61,4 +61,4 @@ for (let i = 0; i < signature.length; i++) {
 
 ## Sample Code
 
-{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-aptos-blocto-sign?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/aptos/with-blocto-sign?file=/src/App.js" %}

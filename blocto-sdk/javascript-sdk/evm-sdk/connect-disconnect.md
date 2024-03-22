@@ -69,4 +69,4 @@ const loginWithPrefilledEmailHandler = async () => {
 
 ## Sample Code
 
-{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-connect?file=/src/App.js" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-connect?file=/src/App.js" %}
