@@ -80,6 +80,6 @@ Now you can then use the `provider` and `signer` object for on-chain interaction
 
 ### Example Code
 
-{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3onboard?file=/src/App.js:12,38" %}
+{% embed url="https://codesandbox.io/s/sandbox/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3onboard?file=/src/App.js:12,38" %}
 
 ***

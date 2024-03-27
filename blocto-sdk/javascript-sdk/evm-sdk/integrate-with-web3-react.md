@@ -187,7 +187,7 @@ For more information using `web3-react`, please check out:
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/p/sandbox/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3-react-next?file=/connectors/bloctoSdk.ts" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3-react-next?file=/connectors/bloctoSdk.ts" %}
 
 ## Using web3-react v6
 

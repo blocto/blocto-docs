@@ -92,7 +92,7 @@ function Profile() {
 
 ### Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-wagmi" %}
 
 ### Resources
 
