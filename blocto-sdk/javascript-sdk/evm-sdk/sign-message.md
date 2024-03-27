@@ -155,3 +155,5 @@ According to ERC-191 and ERC-1271, when receiving `personalSign` request with `m
 According to ERC-191 and ERC-1271, when receiving `typeDataSign` request, Blocto will sign:
 
 > `0x19` + `0x0` + `[User’s wallet address]` + `[typed-data-hash]`
+
+{% embed url="https://codesandbox.io/p/sandbox/evm-verify-the-signature-of-typed-data-g53zjl?file=/src/App.js" %}
