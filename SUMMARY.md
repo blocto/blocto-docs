@@ -16,6 +16,7 @@
     * [Integrate with Web3.js](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3.js-1.md)
     * [Integrate with Web3-React](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3-react.md)
     * [Integrate with RainbowKit](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-rainbowkit.md)
+    * [Integrate with RainbowKit v1](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-rainbowkit-v1.md)
     * [Integrate with Web3Modal](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3modal.md)
     * [Integrate with Web3-Onboard](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-web3-onboard.md)
     * [Integrate with Dynamic](blocto-sdk/javascript-sdk/evm-sdk/integrate-with-dynamic.md)
