@@ -85,7 +85,6 @@ const connectors = connectorsForWallets(
       wallets: [
         rainbowWallet,
         metaMaskWallet,
-        // @ts-ignore
         bloctoWallet(),
         coinbaseWallet,
       ],
