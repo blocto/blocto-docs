@@ -18,93 +18,81 @@ If you wish to use autoconnect, ensure that your version of @blocto/rainbowkit-c
 
 Install from npm/yarn/pnpm
 
-RainbowKit and its peer dependencies, [wagmi](https://wagmi.sh/react/getting-started), [viem](https://viem.sh/) and [@tanstack/react-query](https://tanstack.com/query/v5).
+RainbowKit and its peer dependencies, [wagmi](https://wagmi.sh/react/getting-started) and [viem](https://viem.sh/).
 
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm install @rainbow-me/rainbowkit wagmi viem@2.x @tanstack/react-query @blocto/rainbowkit-connector
+npm install @rainbow-me/rainbowkit^1 wagmi@^1 viem@^1 @blocto/rainbowkit-connector@^1
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @rainbow-me/rainbowkit wagmi viem@2.x @tanstack/react-query @blocto/rainbowkit-connector
+yarn add @rainbow-me/rainbowkit^1 wagmi@^1 viem@^1 @blocto/rainbowkit-connector@^1
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm add @rainbow-me/rainbowkit wagmi viem@2.x @tanstack/react-query @blocto/rainbowkit-connector
+pnpm add @rainbow-me/rainbowkit^1 wagmi@^1 viem@^1 @blocto/rainbowkit-connector@^1
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Step 1 - Import Rainbowkit
 
-Import RainbowKit, wagmi, TanStack and bloctoWallet.
+Import RainbowKit, wagmi, and bloctoWallet.
 
 ```javascript
 import '@rainbow-me/rainbowkit/styles.css';
 import {
+  getDefaultWallets,
   connectorsForWallets,
   RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
-import { WagmiProvider } from 'wagmi';
-import { bscTestnet, blastSepolia } from "wagmi/chains";
-import {
-  QueryClientProvider,
-  QueryClient,
-} from "@tanstack/react-query";
-import {
-  metaMaskWallet,
-  rainbowWallet,
-  coinbaseWallet,
-} from "@rainbow-me/rainbowkit/wallets";
+import { configureChains, createConfig, WagmiConfig } from "wagmi";
+import { polygon, optimism, arbitrum, bsc, mainnet } from "wagmi/chains";
+import { publicProvider } from 'wagmi/providers/public';
+import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { bloctoWallet } from '@blocto/rainbowkit-connector';
 ```
 
 ### Step 2 - Configure
 
 Configure your desired chains and generate the required connectors. You will also need to setup a wagmi client.
-If your dApp uses server side rendering (SSR) make sure to set `ssr` to `true`.
 
 {% hint style="warning" %}
 Note: Note: Every dApp that relies on WalletConnect now needs to obtain a projectId from [WalletConnect Cloud](https://cloud.walletconnect.com/sign-in). This is absolutely free and only takes a few minutes.
 {% endhint %}
 
 ```javascript
-const projectId = "YOUR_PROJECT_ID";
-
-const appName = "RainbowKit demo";
-
-const connectors = connectorsForWallets(
-  [
-    {
-      groupName: "Popular",
-      wallets: [
-        rainbowWallet,
-        metaMaskWallet,
-        bloctoWallet(),
-        coinbaseWallet,
-      ],
-    },
-  ],
-  {
-    projectId,
-    appName,
-  }
+const { chains, publicClient, webSocketPublicClient } = configureChains(
+  [polygon, optimism, arbitrum, bsc, mainnet],
+  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID || "" }), publicProvider()]
 );
 
-const config = createConfig({
-  connectors: [...connectors],
-  chains: [bscTestnet, blastSepolia],
-  transports: {
-    [bscTestnet.id]: http(),
-    [blastSepolia.id]: http(),
-  },
-  multiInjectedProviderDiscovery: false,
-  ssr: true, // If your dApp uses server side rendering (SSR)
+const { wallets } = getDefaultWallets({
+  appName: "My RainbowKit App",
+  projectId: "YOUR_PROJECT_ID",
+  chains
+});
+
+const connectors = connectorsForWallets([
+  ...wallets,
+  {
+    groupName: "Other",
+    wallets: [
+      bloctoWallet({ chains }), // add BloctoWallet
+    ]
+  }
+]);
+
+const wagmiConfig = createConfig({
+  autoConnect: true,
+  connectors,
+  publicClient,
+  webSocketPublicClient,
 });
 ```
 
@@ -112,20 +100,16 @@ const config = createConfig({
 
 ### Step 3 - Wrap providers
 
-Wrap your application with RainbowKitProvider, WagmiProvider, and QueryClientProvider.
+Wrap your application with RainbowKitProvider and WagmiConfig.
 
 ```javascript
-const queryClient = new QueryClient();
-
 const App = () => {
   return (
-    <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>
-          {/* Your App */}
-        </RainbowKitProvider>
-      </QueryClientProvider>
-    </WagmiProvider>
+    <WagmiConfig client={wagmiConfig}>
+      <RainbowKitProvider chains={chains}>
+        <YourApp />
+      </RainbowKitProvider>
+    </WagmiConfig>
   );
 };
 ```
@@ -147,9 +131,14 @@ Now you can easily use `Rainbowkit` connect `BloctoWallet`
 
 To see more configurations, please check out
 
-* [Rainbowkit](https://www.rainbowkit.com/docs/installation)
+* [Rainbowkit](https://www.rainbowkit.com/docs/installation#wrap-providers)
+* [Rainbowkit Custom Authentication](https://www.rainbowkit.com/docs/custom-authentication)
 * [Wagmi](https://wagmi.sh/react/getting-started)
 
 ## Sample Code
 
-{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit" %}
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-v1" %}
+
+## Sample Code - Custom Authentication
+
+{% embed url="https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-custom-authentication" %}

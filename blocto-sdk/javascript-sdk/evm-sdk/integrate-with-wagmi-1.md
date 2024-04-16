@@ -8,7 +8,7 @@ Wagmi is a collection of React Hooks containing everything you need to start wor
 
 Blocto currently supported various wallet connect solutions based on Wagmi,
 
-* [Integrate with RainbowKit](integrate-with-rainbowkit.md)
+* [Integrate with RainbowKit(v1)](integrate-with-rainbowkit-v1.md)
 * [Integrate with web3modal](integrate-with-web3modal.md)
 * [Integrate with thirdweb](integrate-with-thirdweb.md)
 
