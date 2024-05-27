@@ -44,6 +44,8 @@ Import Web3-Onboard, ethers, and bloctoWallet.
 import Onboard from "@web3-onboard/core";
 import bloctoModule from "@web3-onboard/blocto";
 import { ethers } from "ethers";
+import { bscTestnet, sepolia } from 'wagmi/chains'
+
 ```
 
 ### Step 2 - Configure and add button
@@ -56,14 +58,7 @@ const blocto = bloctoModule();
 
 const onboard = Onboard({
   wallets: [blocto],
-  chains: [
-    {
-      id: "0x13881",
-      token: "Polygon",
-      label: "Polygon testnet",
-      rpcUrl: "https://rpc-mumbai.maticvigil.com" // rpc
-    },
-  ],
+  chains: [bscTestnet, sepolia],
 });
 
 // connect wallet
@@ -150,11 +145,11 @@ import { ethers } from "ethers";
 Configure your desired chains and generate the required connectors.
 
 ```javascript
-const polygonTestnet = {
-  id: "0x13881",
-  token: "MATIC",
+const bscTestnet = {
+  id: "0x61",
+  token: "BNB",
   label: "Polygon",
-  rpcUrl: "https://rpc-mumbai.maticvigil.com"
+  rpcUrl: "https://data-seed-prebsc-1-s1.binance.org:8545/"
 };
 
 const chains = [polygonTestnet];

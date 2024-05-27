@@ -44,7 +44,7 @@ Only support the accounts which create EVM wallets after July 10, 2023.
 
 #### EIP-4337 Supported Chain List
 
-<table><thead><tr><th width="395">Network</th><th width="172.33333333333331">Chain ID</th><th>EIP-4337 Support</th></tr></thead><tbody><tr><td>Ethereum</td><td>1</td><td>Yes</td></tr><tr><td>Ethereum Goerli Testnet</td><td>5</td><td>Yes</td></tr><tr><td>Arbitrum Mainnet</td><td>42161</td><td>Yes</td></tr><tr><td>Arbitrum Goerli Testnet</td><td>421613</td><td>Yes</td></tr><tr><td>Optimism Mainnet</td><td>10</td><td>Yes</td></tr><tr><td>Optimism Goerli Testnet</td><td>420</td><td>Yes</td></tr><tr><td>Polygon Mainnet</td><td>137</td><td>Yes</td></tr><tr><td>Polygon Mumbai Testnet</td><td>80001</td><td>Yes</td></tr></tbody></table>
+<table><thead><tr><th width="395">Network</th><th width="172.33333333333331">Chain ID</th><th>EIP-4337 Support</th></tr></thead><tbody><tr><td>Ethereum</td><td>1</td><td>Yes</td></tr><tr><td>Ethereum Goerli Testnet</td><td>5</td><td>Yes</td></tr><tr><td>Arbitrum Mainnet</td><td>42161</td><td>Yes</td></tr><tr><td>Arbitrum Goerli Testnet</td><td>421613</td><td>Yes</td></tr><tr><td>Optimism Mainnet</td><td>10</td><td>Yes</td></tr><tr><td>Optimism Goerli Testnet</td><td>420</td><td>Yes</td></tr><tr><td>Polygon Mainnet</td><td>137</td><td>Yes</td></tr><tr><td>Polygon Amoy Testnet</td><td>80002</td><td>Yes</td></tr></tbody></table>
 
 ### Sending like Regular Transaction
 

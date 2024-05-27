@@ -43,13 +43,13 @@ pnpm add @blocto/wagmi-connector@^1.3.1 wagmi@^1.4.12 viem@~1.0.0
 ```javascript
 import { configureChains, mainnet } from 'wagmi'
 import { mainnet, arbitrum, optimism, polygon, bsc, avalanche } from 'wagmi/chains'
-import { goerli, arbitrumGoerli, optimismGoerli, polygonMumbai, bscTestnet, avalancheFuji  } from 'wagmi/chains'
+import { bscTestnet, sepolia  } from 'wagmi/chains'
 import { publicProvider } from 'wagmi/providers/public'
 
 // Mainnet
 const BLOCTO_SUPPORTED_MAINNET_CHAIN = [mainnet, arbitrum, optimism, polygon, bsc, avalanche];
 // Testnet
-const BLOCTO_SUPPORTED_TESTNET_CHAIN = [goerli, arbitrumGoerli, optimismGoerli, polygonMumbai, bscTestnet, avalancheFuji];
+const BLOCTO_SUPPORTED_TESTNET_CHAIN = [bscTestnet, sepolia];
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   BLOCTO_SUPPORTED_TESTNET_CHAIN,
@@ -61,7 +61,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 
 #### Blocto supportedChains
 
-<table><thead><tr><th width="373">Mainnet</th><th>Testnet</th><th data-hidden></th></tr></thead><tbody><tr><td>Ethereum</td><td>Goerli</td><td></td></tr><tr><td>Ethereum</td><td>Sepolia</td><td></td></tr><tr><td>Arbitrum</td><td>ArbitrumGoerli</td><td></td></tr><tr><td>Optimism</td><td>OptimismGoerli</td><td></td></tr><tr><td>Polygon</td><td>Mumbai</td><td></td></tr><tr><td>Binance</td><td>BinanceTestnet</td><td></td></tr><tr><td>Avalanche</td><td>AvalancheFuji</td><td></td></tr><tr><td>Base</td><td>BaseGoerli</td><td></td></tr><tr><td>Zora</td><td>ZoraTestnet</td><td></td></tr><tr><td>Scroll</td><td>ScrollSepolia</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="373">Mainnet</th><th>Testnet</th><th data-hidden></th></tr></thead><tbody><tr><td>Ethereum</td><td>Goerli</td><td></td></tr><tr><td>Ethereum</td><td>Sepolia</td><td></td></tr><tr><td>Arbitrum</td><td>ArbitrumGoerli</td><td></td></tr><tr><td>Optimism</td><td>OptimismGoerli</td><td></td></tr><tr><td>Polygon</td><td>Amoy</td><td></td></tr><tr><td>Binance</td><td>BinanceTestnet</td><td></td></tr><tr><td>Avalanche</td><td>AvalancheFuji</td><td></td></tr><tr><td>Base</td><td>BaseGoerli</td><td></td></tr><tr><td>Zora</td><td>ZoraTestnet</td><td></td></tr><tr><td>Scroll</td><td>ScrollSepolia</td><td></td></tr></tbody></table>
 
 ### Create config with Blocto
 
