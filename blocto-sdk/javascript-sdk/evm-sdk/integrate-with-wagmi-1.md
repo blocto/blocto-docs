@@ -82,7 +82,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     </tr>
     <tr>
       <td>Polygon</td>
-      <td>Amoy</td>
+      <td>X</td>
     </tr>
     <tr>
       <td>Binance</td>
