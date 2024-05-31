@@ -101,22 +101,21 @@ const bloctoSDK = new BloctoSDK({
 | Network                  | Chain ID |
 | ------------------------ | -------- |
 | Ethereum Mainnet         | 1        |
-| Ethereum Goerli Testnet  | 5        |
 | Ethereum Sepolia Testnet | 11155111 |
 | Arbitrum Mainnet         | 42161    |
-| Arbitrum Goerli Testnet  | 421613   |
+| Arbitrum Sepolia         | 421614    |
 | Optimism Mainnet         | 10       |
-| Optimism Goerli Testnet  | 420      |
+| Optimism Sepolia         | 11155420       |
 | Polygon Mainnet          | 137      |
-| Polygon Mumbai Testnet   | 80001    |
+| Polygon Amoy Testnet   | 80002    |
 | BSC Mainnet              | 56       |
 | BSC Chapel Testnet       | 97       |
 | Avalanche Mainnet        | 43114    |
 | Avalanche Fuji Testnet   | 43113    |
 | Base Mainnet             | 8453     |
-| Base Goerli Testnet      | 84531    |
+| Base Sepolia             | 84532     |
 | Zora Mainnet             | 7777777  |
-| Zora Goerli Testnet      | 999      |
+| Zora Sepolia             | 999999999  |
 | Scroll Mainnet           | 534352   |
 | Scroll Sepolia Testnet   | 534351   |
 
