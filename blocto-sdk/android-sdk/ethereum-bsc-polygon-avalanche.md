@@ -18,9 +18,9 @@ Note that Blocto Android SDK for EVM is still in **Beta**. APIs are subject to b
   * Send transactions
   * ... and a lot more
 * **Seamless onboarding experience**\
-  Users can sign up easily with email and start exploring you dApp in seconds.
+  Users can sign up easily with email and start exploring your dApp in seconds.
 * **Fee subsidization**\
-  You have the option to pay transaction fee for your users and provide a better experience. In that case, we will generate daily fee reports for you to review.
+  You have the option to pay transaction fees for your users and provide a better experience. In that case, we will generate daily fee reports for you to review.
 * **Integrated payment**\
   Get paid easily with our payment APIs. Users can pay easily with credit cards or other crypto currencies like Bitcoin, Ethereum, Tron, USDT, ...
 * **Connected to Blocto App**\
