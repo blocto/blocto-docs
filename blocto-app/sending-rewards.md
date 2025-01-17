@@ -26,7 +26,7 @@ Content-Type: application/json
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="blockchain" type="string" %}
-dApp blockchain
+dApp's blockchain
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="wallet_address" type="string" %}
