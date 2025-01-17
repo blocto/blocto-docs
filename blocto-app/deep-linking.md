@@ -4,7 +4,7 @@ description: Open your dApp with Blocto in one click
 
 # Deep Linking
 
-> With Blocto deep link, you can boost the conversion rate new sign-ups. According to our partners, it has improved from **5%** to **80%**
+> With Blocto deep link, you can boost the conversion rate of new sign-ups. According to our partners, it has improved from **5%** to **80%**
 
 ### Usage
 
@@ -13,7 +13,7 @@ https://blocto.app/link?url=URL&blockchains=BLOCKCHAINS
 ```
 
 * `URL`: the URL of your dApp
-* `BLOCKCHAINS`: (optional) blockchains you dApp use, comma separated. `ethereum/tron/flow/bsc/solana/polygon/avalanche`
+* `BLOCKCHAINS`: (optional) blockchains your dApp uses, comma separated. `ethereum/tron/flow/bsc/solana/polygon/avalanche`
 
 For example:
 
