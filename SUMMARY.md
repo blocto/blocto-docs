@@ -120,5 +120,5 @@
 ## Community
 
 * [Discord](https://discord.gg/H34KZqF)
-* [Twitter](https://twitter.com/BloctoApp)
+* [Twitter](https://x.com/BloctoApp)
 * [Facebook](https://www.facebook.com/blocto/)
