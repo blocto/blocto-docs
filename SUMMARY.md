@@ -21,14 +21,12 @@
 
 ## Blocto App
 
-* [Overview](blocto-app/overview.md)
 * [Deep Linking](blocto-app/deep-linking.md)
 * [Token Listing](blocto-app/token-listing.md)
 * [NFT Listing (on Flow)](blocto-app/nft-listing.md)
 
 ## Technical Documents
 
-* [Account Abstraction](technical-documents/contract-wallet.md)
 * [Key Management](technical-documents/key-management.md)
 
 ## BloctoSwap

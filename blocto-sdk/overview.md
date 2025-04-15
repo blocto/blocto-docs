@@ -28,12 +28,10 @@ That's why we're building Blocto SDK so dApp developers can embed the wallet ser
 #### Compared to other wallet SDKs
 
 1. **Freemium model made possible**\
-   You can pay transaction fees for your users to provide a freemium experience. They don't have to buy crypto to pay for fees before they try out your dApp. ([See how meta-transaction works](../technical-documents/contract-wallet.md#meta-transaction))
+   You can pay transaction fees for your users to provide a freemium experience. They don't have to buy crypto to pay for fees before they try out your dApp. ([See how meta-transaction works](broken-reference))
 2. **Integrated payment**\
    Get paid easily with our payment APIs. Users can pay easily with credit cards or other crypto currencies like Bitcoin, Ethereum, Tron, USDT, ... etc.
 3. **Connected to Blocto App**\
    Once you've integrated with Blocto SDK, your users can manage their assets easily and securely through Blocto App. Your dApp can tap into the vast blockchain ecosystem instantly.
 4. **Supports multiple blockchains**\
-   Blocto SDK supports Flow, Ethereum, Tron and a lot more to come. Blocto also helps users convert their assets across different chains.
-5. **Available in different languages and on different platforms**\
-   Most wallet SDKs only supports JavaScript. Blocto SDK is available in JavaScript, Swift (iOS) and Kotlin (Android).
+   Blocto SDK supports Flow. Blocto also helps users convert their assets across different chains.
