@@ -11,7 +11,7 @@ import * as fcl from "@blocto/fcl";
 
 fcl.config({
   "accessNode.api": "https://rest-testnet.onflow.org", // connect to Flow testnet
-  "discovery.wallet": `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn` // use Blocto testnet wallet
+  "discovery.wallet": `https://wallet-v2-dev.blocto.app/-/flow/authn` // use Blocto testnet wallet
 });
 ```
 
@@ -24,7 +24,7 @@ const USER_EMAIL = "client@email.com";
 
 fcl.config({
   "accessNode.api": "https://rest-testnet.onflow.org", // connect to Flow testnet
-  "discovery.wallet": `https://wallet-v2-dev.blocto.app/${YOUR_DAPP_ID}/flow/authn/${USER_EMAIL}` // use Blocto testnet wallet
+  "discovery.wallet": `https://wallet-v2-dev.blocto.app/-/flow/authn/${USER_EMAIL}` // use Blocto testnet wallet
 });
 ```
 
