@@ -7,7 +7,6 @@
 ## BLOCTO SDK
 
 * [Overview](blocto-sdk/overview.md)
-* [Register App ID](blocto-sdk/register-app-id.md)
 * [JavaScript SDK](blocto-sdk/javascript-sdk/README.md)
   * [Flow](blocto-sdk/javascript-sdk/flow/README.md)
     * [Tutorial](blocto-sdk/javascript-sdk/flow/tutorial.md)
@@ -21,17 +20,11 @@
 
 ## Blocto App
 
-* [Deep Linking](blocto-app/deep-linking.md)
 * [Token Listing](blocto-app/token-listing.md)
-* [NFT Listing (on Flow)](blocto-app/nft-listing.md)
 
 ## Technical Documents
 
 * [Key Management](technical-documents/key-management.md)
-
-## BloctoSwap
-
-* [Token Listing](bloctoswap/token-listing.md)
 
 ## Support
 
